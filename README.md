@@ -23,6 +23,6 @@ conda install -n .venv ipykernel --update-deps --force-reinstall
 ## Run for model results
 
 ```
-python paper_v2.py
+
 ```
 
