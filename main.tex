@@ -1,0 +1,131 @@
+\documentclass{article}
+\usepackage{import}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{geometry}
+\geometry{a4paper, portrait, margin=30mm, bmargin=30mm, tmargin=30mm}
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{5}
+
+\makeatletter
+\newcommand\subsubsubsection{\@startsection{paragraph}{4}{\z@}{-2.5ex\@plus -1ex \@minus -.25ex}{1.25ex \@plus .25ex}{\normalfont\normalsize\bfseries}}
+\newcommand\subsubsubsubsection{\@startsection{subparagraph}{5}{\z@}{-2.5ex\@plus -1ex \@minus -.25ex}{1.25ex \@plus .25ex}{\normalfont\normalsize\bfseries}}
+\makeatother
+
+
+\begin{document}
+\setstretch{1.5}
+\include{titlepage.tex}
+
+\tableofcontents
+\newpage
+
+
+
+\section{Introduction}
+
+\subsection{Context and Motivation}
+\noindent University life presents numerous challenges, 
+from navigating academic responsibilities to establishing meaningful connections. 
+This app is designed to serve as a supportive platform, 
+enabling students to better manage their university experience while 
+fostering a sense of community and enhancing overall engagement.
+\subsection{Objectives}
+
+The primary objective of this project is to develop a mobile application designed to streamline the management of university systems. 
+This includes functionalities such as monitoring students' grades, organizing study schedules, and, most notably, introducing 
+a feature that leverages machine learning algorithms to connect students with shared academic interests or hobbies. 
+This advanced approach aims to foster meaningful communication and collaboration, enabling students to engage and study together beyond the classroom.
+
+
+\subsection{Related works}
+
+In this part we will cite some related works/papers that we used mainly for this 
+project. We also summarize the content of these resources.
+
+
+\section{Background}
+\subsubsection{Mobile Application Background}
+In this part we will introduce about the standard mobile application framework.
+
+
+\subsubsection{Machine Learning Background}
+In this part we will explain the theory and mathematical bases for
+the clustering algorithm that we used in this project.
+\begin{itemize} 
+    \item Machine Learning Workflow: describe a standard workflow for a clustering
+    algorithm.
+    \item Data encoding method: One Hot Encoding, Word Embedding TD-IDF
+    \item Dimensionality reduction
+    \item Clustering algorithm: K-mode (? can we use more algorithm for this part)
+    \item Evaluation Metrics: Silhouette score, Davies-Bouldin index
+
+\end{itemize}
+
+\section{Material and Methodology}
+\subsection{Material}
+\subsubsection{Data Sources}
+In this part we will explain about the process of gathering data
+from scratch, by doing survey.
+
+\subsubsection{Experimental Setup}
+Still consider what to write for this part. Maybe unecessary.
+
+\subsection{Methodology}
+
+This part should describe details the implementation process
+of both mobile development app and machine learning
+
+Structure: Data describe $\rightarrow$ Mobile app framework $\leftarrow$ Machine Learning Workflow (integrated inside app) $\rightarrow$ Demo for each feature.
+
+\subsubsection{Mobile App Framework}
+
+\subsubsection{Machine Learning Workflow}
+In this part, we will describe more detail about:
+\subsubsubsection{Data Preprocessing}
+
+\begin{itemize}
+    \item describe the data structure
+    \item how and why we using encoding method
+    \item how we split data for training and testing
+\end{itemize}
+\subsubsubsection{Model Configuration and Training}
+In this part we will descrbie detailed about 
+\begin{itemize}
+    \item Model configuration: describe models that we used and why we choose it.
+    \item Model training: process of training the model
+\end{itemize}
+
+\subsubsubsection{Model Evaluation}
+In this part, we will describe:
+\begin{itemize}
+    \item Attribute we choose to evaluate model performance
+    \item Evaluation metrics: Silhouette score, Davies-Bouldin index
+\end{itemize}
+
+\section{Results and Discussion}
+\subsection{Results}
+
+\subsubsection{Mobile App Results}
+In this part we can have the demo for each feature of the app.
+
+\subsubsection{Machine Learning Results}
+In this part we will show the result of the clustering algorithm, using the evaluation 
+metrics that we mentioned in the previous section.
+
+\subsection{Discussion}
+
+\section{Conclusion {\&} Future Work}
+
+\subsection{Conclusion}
+\subsection{Future Work}
+
+
+\bibliographystyle{plain}
+\bibliography{bibliography}
+
+
+\end{document}
+
