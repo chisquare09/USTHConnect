@@ -22,6 +22,12 @@
 \tableofcontents
 \newpage
 
+\listfigurename
+\newpage
+
+\listtablename
+\newpage
+
 
 
 \section{Introduction}
@@ -32,12 +38,96 @@ from navigating academic responsibilities to establishing meaningful connections
 This app is designed to serve as a supportive platform, 
 enabling students to better manage their university experience while 
 fostering a sense of community and enhancing overall engagement.
-\subsection{Objectives}
+\subsection{Process Flow}
+This section outlines the comprehensive process flow of University Life Assistant and Student Networking Application,
+detailing the progress from system construction to feature integration,
+including authentication with Spring Boot, Google Calendar integration, MapBox integration, Moodle resource fetching, real-time notifications, and the StudyBuddy matching system with machine learning algorithms.
+\subsubsection{System Construction}
+This section details the process of building the system.
+It covers the setup of hardware components, the configuration of software environment,
+the creation of the application's software components, and initial testing to make sure everything works smoothly.
+\subsubsubsection{Hardware Setup}
+The hardware components required for the system include:
+\begin{itemize}
+    \item \textbf{Development Machines: }Computers used for developing and hosting the backend services and databases (Spring Boot and PostgreSQL).
+    \item \textbf{User Devices: }Smartphones or Virtual Devices running the Android app to access features such as Google Calendar, MapBox maps, and Moodle resources.
+    \item \textbf{Networking Equipment: }Tailscale VPN for secure and reliable communication between user devices and the backend server.
+\end{itemize}
 
+\subsubsubsection{Software Environment Configuration}
+The hardware components required for the system include:
+\begin{itemize}
+    \item \textbf{Operating System: }Window was used for hosting the backend services and database, while Android was the main platform for the app.
+    \item \textbf{Database: }PostgreSQL was installed and configured as the relational database management system to store user information, calendar events, location data, and StudyBuddy profiles.
+    \item \textbf{Backend Framework: }Spring Boot was deployed to manage REST API endpoints and handle authentication, authorization, and data synchronization.
+    \item \textbf{Mobile Development Tools: }Android Studio served as the primary IDE for developing the Android application, integrating Java and libraries such as Retrofit and MapBox SDK.
+\end{itemize}
+
+\subsubsubsection{Application Software}
+The application software consists of several key modules:
+\begin{itemize}
+    \item \textbf{Authentication and Authorization Module:} Implements JWT-based authentication and Role-Based Access Control (RBAC) to manage access permissions for ADMIN and USER roles.
+    \item \textbf{Google Calendar Integration Module:} Fetches event data from Google Calendar, detects changes, and delivers notifications to the user through the mobile application.
+    \item \textbf{MapBox Integration Module:} Stores and serves latitude and longitude coordinates of campus locations to dynamically render maps within the application.
+    \item \textbf{Moodle Resource Module:} Interacts with Moodle APIs to retrieve course-related resources such as slides, source code, and PDFs.
+    \item \textbf{StudyBuddy Matching Module:}
+    \begin{itemize}
+        \item Collects user profile data (e.g., interests, personality).
+        \item Utilizes a machine learning recommendation system to suggest suitable matches based on shared interests and compatibility.
+        \item Incorporates a chat feature for text-based communication between matched users.
+        \item Enables audio calls between users through the Linphone library, which provides SIP-based VoIP functionality for real-time communication.
+    \end{itemize}
+    \item \textbf{Notification System:} Facilitates real-time notifications for calendar event updates, and received call.
+\end{itemize}
+
+\subsubsubsection{Initial Testing}
+Initial testing was performed to verify the functionality and integration of all components:
+
+\begin{itemize}
+    \item \textbf{Hardware Testing:} Verified the correct installation and operation of servers, development machines, and networking equipment, utilizing a Tailscale VPN for secure connections.
+    \item \textbf{Software Testing:} Ensured proper configuration and performance of the operating system, PostgreSQL database, and Spring Boot services.
+    \item \textbf{Integration Testing:} Validated the seamless interaction between backend APIs and mobile app features, including:
+    \begin{itemize}
+        \item Google Calendar synchronization.
+        \item MapBox map rendering.
+        \item Moodle resource retrieval.
+        \item StudyBuddy matching functionality.
+        \item Linphone-based audio calling capabilities.
+    \end{itemize}
+\end{itemize}
+\subsubsection{Machine Learning Model Integration and Model Training}
+
+\subsection{Project Objectives}
 The primary objective of this project is to develop a mobile application designed to streamline the management of university systems. 
 This includes functionalities such as monitoring students' grades, organizing study schedules, and, most notably, introducing 
 a feature that leverages machine learning algorithms to connect students with shared academic interests or hobbies. 
 This advanced approach aims to foster meaningful communication and collaboration, enabling students to engage and study together beyond the classroom.
+
+\subsection{Desired Outcomes}
+
+\subsection{Structure of Thesis}
+The thesis will be structured as follows:
+\begin{itemize}
+    \item \textbf{Part I: Introduction }
+    \newline
+    Provide a general introduction to the thesis, including an overview of the project, its objectives, and the scope of the work.
+    \item \textbf{Part II: Requirement Analysis }
+    \newline
+    Lists all the tools, techniques, and system requirements used in the project. It includes
+    both functional and non-functional requirements, as well as desired functionalities.
+    \item \textbf{Part III: Methodologies }
+    \newline
+    System architecture, database design, and implementation details of various features, illustrated with sequence diagrams.
+    \item \textbf{Part IV: AI Model Analysis and Training }
+    \newline
+    Analysis and training of AI models for recommend system for study buddy matchmaking, including datasets and model development, with (Model Name) integration.
+    \item \textbf{Part V: Results and Discussions }
+    \newline 
+    Summarizes the implementations and achievements of the system. It reflects on how the
+    objectives were met and provides a summary of the project's outcomes.
+    \item \textbf{Part VI: Conclusion and Future Work }
+    \newline
+\end{itemize}
 
 
 \subsection{Related works}
@@ -46,64 +136,120 @@ In this part we will cite some related works/papers that we used mainly for this
 project. We also summarize the content of these resources.
 
 
-\section{Background}
-\subsubsection{Mobile Application Background}
-In this part we will introduce about the standard mobile application framework.
+% \section{Theoretical Background}
+\section{Requirement Analysis}
+\subsection{System requirements}
+\subsubsection{Functional Requirements}
+\subsubsection{Non-functional Requirements}
+\subsubsection{Desired Functionalities}
 
+\subsection{Use Case}
+\subsubsection{Use Cases Diagram}
+\subsubsection{Use Case Characteristics}
 
-\subsubsection{Machine Learning Background}
-In this part we will explain the theory and mathematical bases for
-the clustering algorithm that we used in this project.
-\begin{itemize} 
-    \item Machine Learning Workflow: describe a standard workflow for a clustering
-    algorithm.
-    \item Data encoding method: One Hot Encoding, Word Embedding TD-IDF
-    \item Dimensionality reduction
-    \item Clustering algorithm: K-mode (? can we use more algorithm for this part)
-    \item Evaluation Metrics: Silhouette score, Davies-Bouldin index
+\subsection{Use Case and Scenario Description}
+% \subsection{Mobile Application Background}
+% In this part we will introduce about the standard mobile application framework.
+% \subsubsection{Mobile Application Development}
+% \subsubsubsection{Android Development Frameworks}
+% For Android application development, Android Studio is considered as the primary Integrated Development Environment (IDE) for app development.
+% According to Google, it is recommended as an ideal IDE for Android development and have a variety of powerful features including:
+% \begin{itemize}
+%     \item \textbf{XML (Extensible Markup Language) Layout Desgin:} Android Studio offers a visual layout editor for designing user interface (UI). 
+%     XML seperates the UI design from business logic, enabling multiple designers and developers to work independently. XML layouts follow a tree structure where each elements will represent a UI component.
+%     Each elements will have multiple attributes (layout, styles, ID,...) and layout types (ConstraintLayout, LinearLayout,...) to help implement an eye-catching and simple UI.
+%     Moreover, by binding directly the layout components to corresponding properties in the code or transforming XML into runtime object using Layout Inflation.
+%     \item \textbf{Gradle Build System: } In Android Studio, Gradle will take responsibility for automatic project building and management. 
+%     It will handle requirement dependencies, compiled resources, and the most important is generating
+%     \item 
+% \end{itemize} 
+% \subsubsubsection{UI/UX Design Principles}
 
-\end{itemize}
+% \subsubsubsection{Google Calendar Display}
 
-\section{Material and Methodology}
-\subsection{Material}
-\subsubsection{Data Sources}
-In this part we will explain about the process of gathering data
-from scratch, by doing survey.
+% \subsubsubsection{MapBox Display}
 
-\subsubsection{Experimental Setup}
-Still consider what to write for this part. Maybe unecessary.
+% \subsubsubsection{Moodle Resource Display}
 
-\subsection{Methodology}
+% \subsubsubsection{Real-Time Notifications}
 
-This part should describe details the implementation process
-of both mobile development app and machine learning
+% \subsubsubsection{Student Matching System}
 
-Structure: Data describe $\rightarrow$ Mobile app framework $\leftarrow$ Machine Learning Workflow (integrated inside app) $\rightarrow$ Demo for each feature.
+% \subsubsection{Backend System}
+% \subsubsubsection{Spring Boot Framework}
 
-\subsubsection{Mobile App Framework}
+% \subsubsubsection{JWT and RBAC}
 
-\subsubsection{Machine Learning Workflow}
-In this part, we will describe more detail about:
-\subsubsubsection{Data Preprocessing}
+% \subsubsubsection{Database Management}
 
-\begin{itemize}
-    \item describe the data structure
-    \item how and why we using encoding method
-    \item how we split data for training and testing
-\end{itemize}
-\subsubsubsection{Model Configuration and Training}
-In this part we will descrbie detailed about 
-\begin{itemize}
-    \item Model configuration: describe models that we used and why we choose it.
-    \item Model training: process of training the model
-\end{itemize}
+% \subsubsubsection{Google Calendar Integration}
 
-\subsubsubsection{Model Evaluation}
-In this part, we will describe:
-\begin{itemize}
-    \item Attribute we choose to evaluate model performance
-    \item Evaluation metrics: Silhouette score, Davies-Bouldin index
-\end{itemize}
+% \subsubsubsection{MapBox Integration}
+
+% \subsubsubsection{Moodle Integration}
+
+% \subsubsubsection{Tailscale VPN}
+
+% \subsubsubsection{Spring Boot Framework}
+% \subsection{Machine Learning Background}
+% In this part we will explain the theory and mathematical bases for
+% the clustering algorithm that we used in this project.
+% \begin{itemize} 
+%     \item Machine Learning Workflow: describe a standard workflow for a clustering
+%     algorithm.
+%     \item Data encoding method: One Hot Encoding, Word Embedding TD-IDF
+%     \item Dimensionality reduction
+%     \item Clustering algorithm: K-mode (? can we use more algorithm for this part)
+%     \item Evaluation Metrics: Silhouette score, Davies-Bouldin index
+
+% \end{itemize}
+
+\section{Methodologies}
+\subsection{System Architecture}
+\subsection{Database Design}
+\subsection{Use Case Implementation}
+% \section{Material and Methodology}
+% \subsection{Material}
+% \subsubsection{Data Sources}
+% In this part we will explain about the process of gathering data
+% from scratch, by doing survey.
+
+% \subsubsection{Experimental Setup}
+% Still consider what to write for this part. Maybe unecessary.
+
+% \subsection{Methodology}
+
+% This part should describe details the implementation process
+% of both mobile development app and machine learning
+
+% Structure: Data describe $\rightarrow$ Mobile app framework $\leftarrow$ Machine Learning Workflow (integrated inside app) $\rightarrow$ Demo for each feature.
+
+% \subsubsection{Mobile App Framework}
+
+% \subsubsection{Machine Learning Workflow}
+% In this part, we will describe more detail about:
+% \subsubsubsection{Data Preprocessing}
+
+% \begin{itemize}
+%     \item describe the data structure
+%     \item how and why we using encoding method
+%     \item how we split data for training and testing
+% \end{itemize}
+% \subsubsubsection{Model Configuration and Training}
+% In this part we will descrbie detailed about 
+% \begin{itemize}
+%     \item Model configuration: describe models that we used and why we choose it.
+%     \item Model training: process of training the model
+% \end{itemize}
+
+% \subsubsubsection{Model Evaluation}
+% In this part, we will describe:
+% \begin{itemize}
+%     \item Attribute we choose to evaluate model performance
+%     \item Evaluation metrics: Silhouette score, Davies-Bouldin index
+% \end{itemize}
+
+\section{AI Model Analysis and Training}
 
 \section{Results and Discussion}
 \subsection{Results}
