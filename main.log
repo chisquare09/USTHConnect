@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.27)  28 DEC 2024 01:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.27)  29 DEC 2024 14:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -241,7 +241,7 @@ Package pdftex.def Info: image/logoUSTH.png  used on input line 7.
 [7]
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 128--130
+Underfull \hbox (badness 10000) in paragraph at lines 138--140
 
  []
 
@@ -264,9 +264,9 @@ Here is how much of TeX's memory you used:
  25824 multiletter control sequences out of 15000+600000
  564094 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,6n,65p,292b,263s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,6n,65p,471b,263s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\dangn\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><E:/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><E:/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><E:/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><E:/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on main.pdf (11 pages, 112109 bytes).
+Output written on main.pdf (11 pages, 113436 bytes).
 PDF statistics:
  70 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

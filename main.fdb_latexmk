@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1735325968.66632 "e:/USTH/Project/USTH_Connect/USTHConnect/main.tex" "main.pdf" "main" 1735325970.01484 0
+["pdflatex"] 1735458177.79944 "e:/USTH/Project/USTH_Connect/USTHConnect/main.tex" "main.pdf" "main" 1735458179.30258 0
   "C:/Users/dangn/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1735281732 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/dangn/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1735281742 11548 60f729dd868aab1dd3137689939ef103 ""
   "C:/Users/dangn/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1735281698 11972230 264c35857d4f22033882993301788922 ""
@@ -48,12 +48,12 @@
   "E:/MiKTeX/tex/latex/import/import.sty" 1585736816 6201 0ad8b5da8e12f60a88d546b2198a56f2 ""
   "E:/MiKTeX/tex/latex/l3backend/l3backend-pdftex.def" 1716480499 29785 9f93ab201fe5dd053afcc6c1bcf7d266 ""
   "E:/MiKTeX/tex/latex/setspace/setspace.sty" 1670403145 22490 8cac309b79a4c53a4ffce4b1b07aead0 ""
-  "e:/USTH/Project/USTH_Connect/USTHConnect/main.tex" 1735325965 13226 6eb2b413d7581c3ced146026fee28304 ""
+  "e:/USTH/Project/USTH_Connect/USTHConnect/main.tex" 1735458175 15024 606394ea46be6d828ab51908261a5c80 ""
   "image/logoUSTH.png" 1735285725 3519 47e1859f81ef2ac02227caec551d2ca5 ""
-  "main.aux" 1735325969 4050 7a15cf68748bc1763b5d46607d4f65c4 "pdflatex"
-  "main.tex" 1735325965 13226 6eb2b413d7581c3ced146026fee28304 ""
-  "main.toc" 1735325969 2559 e1e2985f0a6f56d995c268453b846014 "pdflatex"
-  "titlepage.aux" 1735325969 455 20515865821738b83bd564231a827cdf "pdflatex"
+  "main.aux" 1735458178 4050 d11a0c813afd543d7933ebff33a76a15 "pdflatex"
+  "main.tex" 1735458175 15024 606394ea46be6d828ab51908261a5c80 ""
+  "main.toc" 1735458178 2559 e195744b5f84d7ac0e8191f2a7f6466f "pdflatex"
+  "titlepage.aux" 1735458178 455 20515865821738b83bd564231a827cdf "pdflatex"
   "titlepage.tex" 1735285725 879 350205906f179ddbc03f9b7d8227255d ""
   (generated)
   "main.aux"

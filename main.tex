@@ -33,12 +33,19 @@
 \section{Introduction}
 
 \subsection{Context and Motivation}
-\noindent University life presents numerous challenges, 
-from navigating academic responsibilities to establishing meaningful connections. 
-This app is designed to serve as a supportive platform, 
-enabling students to better manage their university experience while 
-fostering a sense of community and enhancing overall engagement.
-\subsection{Process Flow}
+% \noindent University life presents numerous challenges, 
+% from navigating academic responsibilities to establishing meaningful connections. 
+% This app is designed to serve as a supportive platform, 
+% enabling students to better manage their university experience while 
+% fostering a sense of community and enhancing overall engagement.
+College life throws a lot of curveballs at students and those who run the show. At USTH, for example, juggling classes, making friends, and finding your way around campus can get pretty overwhelming. 
+Traditional systems often feel clunky, with a lot of manual work, things scattered everywhere, and outdated information. This makes it tough for students to stay on top of things, find the resources they need, and connect with other students.
+
+To overcome these challenges, we developed ULASNA – the University Life Assistant and Student Networking Application. ULASNA brings together some powerful tools like Spring Boot, Google Calendar, MapBox, and Moodle, along with a bit of machine learning magic.
+This platform makes academic life smoother by giving students easy access to their schedules, course materials, and all the important campus info. But ULASNA isn't just about academics – it helps students connect with each other too. The "StudyBuddy" feature, powered by machine learning, matches students with similar interests and goals, making it easier to find study partners and build friendships.
+We designed ULASNA with the user in mind, creating a user-friendly mobile app for Android devices. And we take data security seriously, using a robust PostgreSQL database and a secure VPN (Tailscale) to keep everything safe.
+
+This report dives deep into the design and development of ULASNA, highlighting the challenges we faced along the way and how we overcame them. Ultimately, we believe ULASNA has the potential to significantly improve the college experience for both students and faculty\subsection{Process Flow}
 This section outlines the comprehensive process flow of University Life Assistant and Student Networking Application,
 detailing the progress from system construction to feature integration,
 including authentication with Spring Boot, Google Calendar integration, MapBox integration, Moodle resource fetching, real-time notifications, and the StudyBuddy matching system with machine learning algorithms.
@@ -98,10 +105,13 @@ Initial testing was performed to verify the functionality and integration of all
 \subsubsection{Machine Learning Model Integration and Model Training}
 
 \subsection{Project Objectives}
-The primary objective of this project is to develop a mobile application designed to streamline the management of university systems. 
-This includes functionalities such as monitoring students' grades, organizing study schedules, and, most notably, introducing 
-a feature that leverages machine learning algorithms to connect students with shared academic interests or hobbies. 
-This advanced approach aims to foster meaningful communication and collaboration, enabling students to engage and study together beyond the classroom.
+The primary objective of this project is to design, develop and implement an integrated system that enhances
+university life and fosters student networking through advanced technological solutions.
+The goal is to create a platform that seamlessly intergrates personal academic data, event annoucements, and campus resources.
+By using advanced frameworks and APIs, together with recommendation system, we aim to simplify the administrative tasks, improve campus accessibility, 
+and encourage more interaction among students.
+This platform should be user-friendly and accessible through all devices, making it easier for students to experience campus life, 
+stay informed, and connect with their peers. 
 
 \subsection{Desired Outcomes}
 
