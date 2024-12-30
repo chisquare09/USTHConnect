@@ -24,12 +24,19 @@
 \contentsline {subsection}{\numberline {3.1}System Architecture}{10}{}%
 \contentsline {subsection}{\numberline {3.2}Database Design}{10}{}%
 \contentsline {subsection}{\numberline {3.3}Use Case Implementation}{10}{}%
-\contentsline {section}{\numberline {4}AI Model Analysis and Training}{10}{}%
-\contentsline {section}{\numberline {5}Results and Discussion}{10}{}%
-\contentsline {subsection}{\numberline {5.1}Results}{10}{}%
-\contentsline {subsubsection}{\numberline {5.1.1}Mobile App Results}{10}{}%
-\contentsline {subsubsection}{\numberline {5.1.2}Machine Learning Results}{10}{}%
-\contentsline {subsection}{\numberline {5.2}Discussion}{11}{}%
-\contentsline {section}{\numberline {6}Conclusion {\&} Future Work}{11}{}%
-\contentsline {subsection}{\numberline {6.1}Conclusion}{11}{}%
-\contentsline {subsection}{\numberline {6.2}Future Work}{11}{}%
+\contentsline {subsubsection}{\numberline {3.3.1}Analysis Call and Message Technologies}{11}{}%
+\contentsline {paragraph}{\numberline {3.3.1.1}Session Initiation Protocol}{11}{}%
+\contentsline {paragraph}{\numberline {3.3.1.2}Linphone}{12}{}%
+\contentsline {paragraph}{\numberline {3.3.1.3}Transport Layer Security Protocol (TLS)}{12}{}%
+\contentsline {paragraph}{\numberline {3.3.1.4}Communication Handling}{13}{}%
+\contentsline {subparagraph}{\numberline {3.3.1.4.1}Call Initialization}{13}{}%
+\contentsline {subparagraph}{\numberline {3.3.1.4.2}Locating the callee}{14}{}%
+\contentsline {section}{\numberline {4}AI Model Analysis and Training}{16}{}%
+\contentsline {section}{\numberline {5}Results and Discussion}{16}{}%
+\contentsline {subsection}{\numberline {5.1}Results}{16}{}%
+\contentsline {subsubsection}{\numberline {5.1.1}Mobile App Results}{16}{}%
+\contentsline {subsubsection}{\numberline {5.1.2}Machine Learning Results}{16}{}%
+\contentsline {subsection}{\numberline {5.2}Discussion}{16}{}%
+\contentsline {section}{\numberline {6}Conclusion {\&} Future Work}{16}{}%
+\contentsline {subsection}{\numberline {6.1}Conclusion}{16}{}%
+\contentsline {subsection}{\numberline {6.2}Future Work}{16}{}%
