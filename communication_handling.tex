@@ -1,6 +1,5 @@
 \subsubsubsection{Communication Handling}
 \subsubsubsubsection{Call Initialization}
-
     A session is initiated with an INVITE method which is the request from a UA client (caller). 
     INVITE has attributes containing source address, destination address, and information about the session from the caller. 
     The SIP client creates an INVITE message for callee, which is normally sent to a proxy server.
@@ -72,3 +71,11 @@
         \caption{SIP registration and locating callee}
         \label{fig:locating_callee}
     \end{figure}
+
+\subsubsubsubsection{One-on-One Instant Messaging}
+    Instant Messaging is the process of transfering of messages between users in near real-time.
+    The back and forth process to transfer messages have to be fast enough for participants to sustain an interactive dialogue.
+    MESSAGE method - an extension to SIP is used to deliver messages between users. 
+
+    \noindent The user must login using the correct right credentials (username and password), that informations will then be send to the Flexisip server of Linphone.
+    The Flexisip server will then create a temporary file which includes user contact list information 
