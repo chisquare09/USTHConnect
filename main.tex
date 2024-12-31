@@ -38,76 +38,22 @@
 \section{Introduction}
 
 \subsection{Context and Motivation}
-% \noindent University life presents numerous challenges, 
-% from navigating academic responsibilities to establishing meaningful connections. 
-% This app is designed to serve as a supportive platform, 
-% enabling students to better manage their university experience while 
-% fostering a sense of community and enhancing overall engagement.
-College life throws a lot of curveballs at students and those who run the show. At USTH, for example, juggling classes, making friends, and finding your way around campus can get pretty overwhelming. 
-Traditional systems often feel clunky, with a lot of manual work, things scattered everywhere, and outdated information. This makes it tough for students to stay on top of things, find the resources they need, and connect with other students.
+University life often presents a wide range of challenges for both students and administrators. At USTH, managing academic schedules, building social connections, and navigating campus resources can become an irritated tasks.
+The limitations of traditional systems, which are sometimes inconvenient, fragmented, and unable to kept track of, only add to the complexity.
+These systems find it hard to provide up-to-date information and lack of integration needed to offer a seamless experience for students, which leaves a feeling of overwhelmed and disconnected for student.
 
-To overcome these challenges, we developed ULASNA – the University Life Assistant and Student Networking Application. ULASNA brings together some powerful tools like Spring Boot, Google Calendar, MapBox, and Moodle, along with a bit of machine learning magic.
-This platform makes academic life smoother by giving students easy access to their schedules, course materials, and all the important campus info. But ULASNA isn't just about academics – it helps students connect with each other too. The "StudyBuddy" feature, powered by machine learning, matches students with similar interests and goals, making it easier to find study partners and build friendships.
-We designed ULASNA with the user in mind, creating a user-friendly mobile app for Android devices. And we take data security seriously, using a robust PostgreSQL database and a secure VPN (Tailscale) to keep everything safe.
+To overcome these challenges, we developed USTH Connect, an integrated University Life Assistant and Student Networking Application.
+USTH Connect combines advanced technologies like Spring Boot for backend services, Google Calendar for managing schedule, MapBox for campus navigation, and Moodle for accessing academic resources. Additionally, it employs Machine Learning to power its StudyBuddy feature, which allows students to connect with peers who share similar academic interests and goals.
 
-This report dives deep into the design and development of ULASNA, highlighting the challenges we faced along the way and how we overcame them. Ultimately, we believe ULASNA has the potential to significantly improve the college experience for both students and faculty\subsection{Process Flow}
-This section outlines the comprehensive process flow of University Life Assistant and Student Networking Application,
-detailing the progress from system construction to feature integration,
-including authentication with Spring Boot, Google Calendar integration, MapBox integration, Moodle resource fetching, real-time notifications, and the StudyBuddy matching system with machine learning algorithms.
-\subsubsection{System Construction}
-This section details the process of building the system.
-It covers the setup of hardware components, the configuration of software environment,
-the creation of the application's software components, and initial testing to make sure everything works smoothly.
-\subsubsubsection{Hardware Setup}
-The hardware components required for the system include:
-\begin{itemize}
-    \item \textbf{Development Machines: }Computers used for developing and hosting the backend services and databases (Spring Boot and PostgreSQL).
-    \item \textbf{User Devices: }Smartphones or Virtual Devices running the Android app to access features such as Google Calendar, MapBox maps, and Moodle resources.
-    \item \textbf{Networking Equipment: }Tailscale VPN for secure and reliable communication between user devices and the backend server.
-\end{itemize}
+USTH Connect is desgined to simplify academic and campus life. It combines all key resources into a user-friendly Android application, offering easy access to class schedules, course materials, and campus navigation tools.
+Apart from academic, the platform encourages more connections between students, especially the first year student, making it easier to build meaningful relationships and collaborate effectively. 
+With StudyBuddy, students can find compatible study partners, chat, and even make audio calls through secure VoIP functionality powered by Linphone.
 
-\subsubsubsection{Software Environment Configuration}
-The hardware components required for the system include:
-\begin{itemize}
-    \item \textbf{Operating System: }Window was used for hosting the backend services and database, while Android was the main platform for the app.
-    \item \textbf{Database: }PostgreSQL was installed and configured as the relational database management system to store user information, calendar events, location data, and StudyBuddy profiles.
-    \item \textbf{Backend Framework: }Spring Boot was deployed to manage REST API endpoints and handle authentication, authorization, and data synchronization.
-    \item \textbf{Mobile Development Tools: }Android Studio served as the primary IDE for developing the Android application, integrating Java and libraries such as Retrofit and MapBox SDK.
-\end{itemize}
+USTH Connect places a strong emphasis on data security and system reliability. It utilizes a secure PostgreSQL database to manage data centrally, ensuring both protection and efficiency.
+Additionally, communication between the backend and mobile devices is secured through the Tailscale VPN, providing strong protection for student privacy and uniterrupted access to the platform's features.
 
-\subsubsubsection{Application Software}
-The application software consists of several key modules:
-\begin{itemize}
-    \item \textbf{Authentication and Authorization Module:} Implements JWT-based authentication and Role-Based Access Control (RBAC) to manage access permissions for ADMIN and USER roles.
-    \item \textbf{Google Calendar Integration Module:} Fetches event data from Google Calendar, detects changes, and delivers notifications to the user through the mobile application.
-    \item \textbf{MapBox Integration Module:} Stores and serves latitude and longitude coordinates of campus locations to dynamically render maps within the application.
-    \item \textbf{Moodle Resource Module:} Interacts with Moodle APIs to retrieve course-related resources such as slides, source code, and PDFs.
-    \item \textbf{StudyBuddy Matching Module:}
-    \begin{itemize}
-        \item Collects user profile data (e.g., interests, personality).
-        \item Utilizes a machine learning recommendation system to suggest suitable matches based on shared interests and compatibility.
-        \item Incorporates a chat feature for text-based communication between matched users.
-        \item Enables audio calls between users through the Linphone library, which provides SIP-based VoIP functionality for real-time communication.
-    \end{itemize}
-    \item \textbf{Notification System:} Facilitates real-time notifications for calendar event updates, and received call.
-\end{itemize}
-
-\subsubsubsection{Initial Testing}
-Initial testing was performed to verify the functionality and integration of all components:
-
-\begin{itemize}
-    \item \textbf{Hardware Testing:} Verified the correct installation and operation of servers, development machines, and networking equipment, utilizing a Tailscale VPN for secure connections.
-    \item \textbf{Software Testing:} Ensured proper configuration and performance of the operating system, PostgreSQL database, and Spring Boot services.
-    \item \textbf{Integration Testing:} Validated the seamless interaction between backend APIs and mobile app features, including:
-    \begin{itemize}
-        \item Google Calendar synchronization.
-        \item MapBox map rendering.
-        \item Moodle resource retrieval.
-        \item StudyBuddy matching functionality.
-        \item Linphone-based audio calling capabilities.
-    \end{itemize}
-\end{itemize}
-\subsubsection{Machine Learning Model Integration and Model Training}
+This report explores the design and development of USTH Connect, detailing the project's workflow, main features, and the challenges faced during its implementation. 
+It also highlights the creative solutions used to address these challenges, demonstrating how USTH Connect enhances the university experience for students, faculty, and administrators.
 
 \subsection{Project Objectives}
 The primary objective of this project is to design, develop and implement an integrated system that enhances
@@ -469,6 +415,102 @@ The dissimilarity measure between two categorical objects X and Y (with m attrib
     
     \item Repeat Step 2 and 3 until every cluster has no changes after testing the whole dataset.
 \end{enumerate}
+\section{System Design and Implementation}  
+
+\subsection{Hardware and Software Setup}  
+This section describes the detailed process of setting up the system, covering hardware and software configurations, as well as initial testing to ensure all components work seamlessly.
+
+\subsubsection{Hardware Setup}  
+The essential hardware components for the system include:  
+\begin{itemize}  
+    \item \textbf{Development Machines: }Computers used for developing and hosting backend services and databases (Spring Boot and PostgreSQL).  
+    \item \textbf{User Devices: }Smartphones or virtual devices running the Android app to access features such as Google Calendar, MapBox maps, and Moodle resources.  
+    \item \textbf{Networking Equipment: }Tailscale VPN for secure and reliable communication between user devices and the backend server.  
+\end{itemize}
+
+\subsubsection{Software Environment Configuration}  
+The software setup involves configuring the necessary tools and platforms to support the development and operation of the system:  
+\begin{itemize}  
+    \item \textbf{Operating System: }Windows was used to host backend services and the database, while Android was the primary platform for the mobile application.  
+    \item \textbf{Database: }PostgreSQL was installed and configured as the relational database management system for managing user data, calendar events, location details, and StudyBuddy profiles.  
+    \item \textbf{Backend Framework: }Spring Boot was implemented to manage REST API endpoints, handle authentication and authorization, and synchronize data between components.  
+    \item \textbf{Mobile Development Tools: }Android Studio served as the primary integrated development environment (IDE) for creating the Android application, leveraging Java and libraries such as Retrofit and MapBox SDK.  
+\end{itemize}
+
+\subsection{Application Software}  
+The application software comprises several core modules, each designed to handle specific functionalities:  
+
+\begin{itemize}  
+    \item \textbf{Authentication and Authorization Module:}  
+    \begin{itemize}  
+        \item Implements JWT-based authentication.  
+        \item Manages Role-Based Access Control (RBAC) for ADMIN and USER roles.  
+    \end{itemize}  
+
+    \item \textbf{Google Calendar Integration Module:}  
+    \begin{itemize}  
+        \item Fetches event data from Google Calendar.  
+        \item Detects event updates and sends notifications to the user via the mobile application.  
+    \end{itemize}  
+
+    \item \textbf{MapBox Integration Module:}  
+    \begin{itemize}  
+        \item Stores campus location coordinates (latitude and longitude).  
+        \item Dynamically renders campus maps within the app.  
+    \end{itemize}  
+
+    \item \textbf{Moodle Resource Module:}  
+    \begin{itemize}  
+        \item Communicates with Moodle APIs to retrieve course resources, such as slides, source code, and PDFs.  
+    \end{itemize}  
+
+    \item \textbf{StudyBuddy Matching Module:}  
+    \begin{itemize}  
+        \item Collects user profile data (e.g., interests, personality).  
+        \item Uses a machine learning recommendation system to suggest matches based on shared interests.  
+        \item Features include:  
+        \begin{itemize}  
+            \item Chat functionality for text-based communication.  
+            \item Audio calling capabilities powered by the Linphone library, which provides SIP-based VoIP functionality.  
+        \end{itemize}  
+    \end{itemize}  
+
+    \item \textbf{Notification System:}  
+    \begin{itemize}  
+        \item Delivers real-time notifications for calendar updates and incoming calls.  
+    \end{itemize}  
+\end{itemize}
+
+\subsection{Initial Testing}  
+Extensive testing ensured all components functioned correctly and integrated seamlessly:  
+
+\begin{itemize}  
+    \item \textbf{Hardware Testing:}  
+    \begin{itemize}  
+        \item Verified the setup and operation of development machines, servers, and networking equipment using Tailscale VPN for secure communication.  
+    \end{itemize}  
+
+    \item \textbf{Software Testing:}  
+    \begin{itemize}  
+        \item Tested the configuration and performance of the operating system, PostgreSQL database, and Spring Boot services.  
+    \end{itemize}  
+
+    \item \textbf{Integration Testing:}  
+    \begin{itemize}  
+        \item Validated the interaction between backend APIs and mobile app features, ensuring functionality for:  
+        \begin{itemize}  
+            \item Google Calendar synchronization.  
+            \item MapBox map rendering.  
+            \item Moodle resource retrieval.  
+            \item StudyBuddy matching and chat capabilities.  
+            \item Linphone-based audio calling.  
+        \end{itemize}  
+    \end{itemize}  
+\end{itemize}
+
+\subsubsection{Machine Learning Model Integration and Model Training}
+
+This comprehensive setup and testing process ensured that the system was ready for deployment and met the project's objectives effectively.  
 
 \section{Results and Discussion}
 \subsection{Results}

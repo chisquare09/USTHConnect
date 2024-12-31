@@ -1,51 +1,51 @@
 \contentsline {section}{\numberline {1}Introduction}{6}{}%
 \contentsline {subsection}{\numberline {1.1}Context and Motivation}{6}{}%
-\contentsline {subsection}{\numberline {1.2}Process Flow}{6}{}%
-\contentsline {subsubsection}{\numberline {1.2.1}System Construction}{6}{}%
-\contentsline {paragraph}{\numberline {1.2.1.1}Hardware Setup}{6}{}%
-\contentsline {paragraph}{\numberline {1.2.1.2}Software Environment Configuration}{7}{}%
-\contentsline {paragraph}{\numberline {1.2.1.3}Application Software}{7}{}%
-\contentsline {paragraph}{\numberline {1.2.1.4}Initial Testing}{8}{}%
-\contentsline {subsubsection}{\numberline {1.2.2}Machine Learning Model Integration and Model Training}{8}{}%
-\contentsline {subsection}{\numberline {1.3}Project Objectives}{8}{}%
-\contentsline {subsection}{\numberline {1.4}Desired Outcomes}{8}{}%
-\contentsline {subsection}{\numberline {1.5}Structure of Thesis}{8}{}%
-\contentsline {subsection}{\numberline {1.6}Related works}{9}{}%
-\contentsline {section}{\numberline {2}Requirement Analysis}{9}{}%
-\contentsline {subsection}{\numberline {2.1}System requirements}{9}{}%
-\contentsline {subsubsection}{\numberline {2.1.1}Functional Requirements}{9}{}%
-\contentsline {subsubsection}{\numberline {2.1.2}Non-functional Requirements}{9}{}%
-\contentsline {subsubsection}{\numberline {2.1.3}Desired Functionalities}{9}{}%
-\contentsline {subsection}{\numberline {2.2}Use Case}{9}{}%
-\contentsline {subsubsection}{\numberline {2.2.1}Use Cases Diagram}{9}{}%
-\contentsline {subsubsection}{\numberline {2.2.2}Use Case Characteristics}{10}{}%
-\contentsline {subsection}{\numberline {2.3}Use Case and Scenario Description}{10}{}%
-\contentsline {subsubsection}{\numberline {2.3.1}Use case: Authenticate}{10}{}%
-\contentsline {subsubsection}{\numberline {2.3.2}Use case: Student Schedule}{11}{}%
-\contentsline {subsubsection}{\numberline {2.3.3}Use case: University Campus}{11}{}%
-\contentsline {subsubsection}{\numberline {2.3.4}Use case: University Resource}{12}{}%
-\contentsline {subsubsection}{\numberline {2.3.5}Use case: Student StudyBuddy}{13}{}%
-\contentsline {section}{\numberline {3}Methodologies}{13}{}%
-\contentsline {subsection}{\numberline {3.1}System Architecture}{13}{}%
-\contentsline {subsection}{\numberline {3.2}Database Design}{13}{}%
-\contentsline {subsection}{\numberline {3.3}Use Case Implementation}{13}{}%
-\contentsline {subsubsection}{\numberline {3.3.1}Analysis Call and Message Technologies}{14}{}%
-\contentsline {paragraph}{\numberline {3.3.1.1}Session Initiation Protocol}{14}{}%
-\contentsline {paragraph}{\numberline {3.3.1.2}Linphone}{15}{}%
-\contentsline {paragraph}{\numberline {3.3.1.3}Transport Layer Security Protocol (TLS)}{15}{}%
-\contentsline {paragraph}{\numberline {3.3.1.4}Communication Handling}{16}{}%
-\contentsline {subparagraph}{\numberline {3.3.1.4.1}Call Initialization}{16}{}%
-\contentsline {subparagraph}{\numberline {3.3.1.4.2}Locating the callee}{17}{}%
-\contentsline {subparagraph}{\numberline {3.3.1.4.3}One-on-One Instant Messaging}{19}{}%
-\contentsline {section}{\numberline {4}AI Model Analysis and Training}{20}{}%
-\contentsline {subsection}{\numberline {4.1}One-Hot Encode}{20}{}%
-\contentsline {subsection}{\numberline {4.2}Dissimilarity Measure}{20}{}%
-\contentsline {subsection}{\numberline {4.3}K-Mode Algorithm}{20}{}%
-\contentsline {section}{\numberline {5}Results and Discussion}{20}{}%
-\contentsline {subsection}{\numberline {5.1}Results}{20}{}%
-\contentsline {subsubsection}{\numberline {5.1.1}Mobile App Results}{20}{}%
-\contentsline {subsubsection}{\numberline {5.1.2}Machine Learning Results}{21}{}%
-\contentsline {subsection}{\numberline {5.2}Discussion}{21}{}%
-\contentsline {section}{\numberline {6}Conclusion {\&} Future Work}{21}{}%
-\contentsline {subsection}{\numberline {6.1}Conclusion}{21}{}%
-\contentsline {subsection}{\numberline {6.2}Future Work}{21}{}%
+\contentsline {subsection}{\numberline {1.2}Project Objectives}{6}{}%
+\contentsline {subsection}{\numberline {1.3}Desired Outcomes}{7}{}%
+\contentsline {subsection}{\numberline {1.4}Structure of Thesis}{7}{}%
+\contentsline {subsection}{\numberline {1.5}Related works}{7}{}%
+\contentsline {section}{\numberline {2}Requirement Analysis}{8}{}%
+\contentsline {subsection}{\numberline {2.1}System requirements}{8}{}%
+\contentsline {subsubsection}{\numberline {2.1.1}Functional Requirements}{8}{}%
+\contentsline {subsubsection}{\numberline {2.1.2}Non-functional Requirements}{8}{}%
+\contentsline {subsubsection}{\numberline {2.1.3}Desired Functionalities}{8}{}%
+\contentsline {subsection}{\numberline {2.2}Use Case}{8}{}%
+\contentsline {subsubsection}{\numberline {2.2.1}Use Cases Diagram}{8}{}%
+\contentsline {subsubsection}{\numberline {2.2.2}Use Case Characteristics}{8}{}%
+\contentsline {subsection}{\numberline {2.3}Use Case and Scenario Description}{8}{}%
+\contentsline {subsubsection}{\numberline {2.3.1}Use case: Authenticate}{8}{}%
+\contentsline {subsubsection}{\numberline {2.3.2}Use case: Student Schedule}{9}{}%
+\contentsline {subsubsection}{\numberline {2.3.3}Use case: University Campus}{10}{}%
+\contentsline {subsubsection}{\numberline {2.3.4}Use case: University Resource}{11}{}%
+\contentsline {subsubsection}{\numberline {2.3.5}Use case: Student StudyBuddy}{11}{}%
+\contentsline {section}{\numberline {3}Methodologies}{12}{}%
+\contentsline {subsection}{\numberline {3.1}System Architecture}{12}{}%
+\contentsline {subsection}{\numberline {3.2}Database Design}{12}{}%
+\contentsline {subsection}{\numberline {3.3}Use Case Implementation}{12}{}%
+\contentsline {subsubsection}{\numberline {3.3.1}Analysis Call and Message Technologies}{13}{}%
+\contentsline {paragraph}{\numberline {3.3.1.1}Session Initiation Protocol}{13}{}%
+\contentsline {paragraph}{\numberline {3.3.1.2}Linphone}{14}{}%
+\contentsline {paragraph}{\numberline {3.3.1.3}Transport Layer Security Protocol (TLS)}{14}{}%
+\contentsline {paragraph}{\numberline {3.3.1.4}Communication Handling}{15}{}%
+\contentsline {subparagraph}{\numberline {3.3.1.4.1}Call Initialization}{15}{}%
+\contentsline {subparagraph}{\numberline {3.3.1.4.2}Locating the callee}{16}{}%
+\contentsline {subparagraph}{\numberline {3.3.1.4.3}One-on-One Instant Messaging}{18}{}%
+\contentsline {section}{\numberline {4}AI Model Analysis and Training}{19}{}%
+\contentsline {subsection}{\numberline {4.1}One-Hot Encode}{19}{}%
+\contentsline {subsection}{\numberline {4.2}Dissimilarity Measure}{19}{}%
+\contentsline {subsection}{\numberline {4.3}K-Mode Algorithm}{19}{}%
+\contentsline {section}{\numberline {5}System Design and Implementation}{19}{}%
+\contentsline {subsection}{\numberline {5.1}Hardware and Software Setup}{19}{}%
+\contentsline {subsubsection}{\numberline {5.1.1}Hardware Setup}{20}{}%
+\contentsline {subsubsection}{\numberline {5.1.2}Software Environment Configuration}{20}{}%
+\contentsline {subsection}{\numberline {5.2}Application Software}{20}{}%
+\contentsline {subsection}{\numberline {5.3}Initial Testing}{21}{}%
+\contentsline {subsubsection}{\numberline {5.3.1}Machine Learning Model Integration and Model Training}{22}{}%
+\contentsline {section}{\numberline {6}Results and Discussion}{22}{}%
+\contentsline {subsection}{\numberline {6.1}Results}{22}{}%
+\contentsline {subsubsection}{\numberline {6.1.1}Mobile App Results}{22}{}%
+\contentsline {subsubsection}{\numberline {6.1.2}Machine Learning Results}{22}{}%
+\contentsline {subsection}{\numberline {6.2}Discussion}{22}{}%
+\contentsline {section}{\numberline {7}Conclusion {\&} Future Work}{22}{}%
+\contentsline {subsection}{\numberline {7.1}Conclusion}{22}{}%
+\contentsline {subsection}{\numberline {7.2}Future Work}{22}{}%
