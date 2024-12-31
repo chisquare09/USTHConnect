@@ -76,6 +76,26 @@
     Instant Messaging is the process of transfering of messages between users in near real-time.
     The back and forth process to transfer messages have to be fast enough for participants to sustain an interactive dialogue.
     MESSAGE method - an extension to SIP is used to deliver messages between users. 
+    The SIP MESSAGE method is ideal for asynchronous communication as it operates indepently from audio call session.
+    In order to send and receive messages, client - server architecture is used.  
 
-    \noindent The user must login using the correct right credentials (username and password), that informations will then be send to the Flexisip server of Linphone.
-    The Flexisip server will then create a temporary file which includes user contact list information 
+    \noindent One-to-one messaging is a direct exchange messages between two users. 
+    After users' credentials is being checked, that information will be sent to the Flexisip server of Linphone. The Flexisip server will then create a temporary file which includes user contact list information.  
+    Users can select one of the receiver among their contact lists to send a message. Message will then be sent to the receiver following these steps:
+
+    \begin{itemize}
+        \item \textbf {Initiating a message:} The sender types a message and then send it. The message will be formated into a SIP MESSAGE request. 
+        \item \textbf {Message Transmission:} SIP Server will process the received SIP MESSAGE request from the sender and then forward it to the receiver. 
+        \item \textbf {Receiving the message:} When the receiver get the request, Linphone will then parse the message and display it in the chat interface.
+        In the case that the receiver is offline, the Flexisip server will queue the message for later delivery. A 200 OK response will be deliver to the sender to confirm sucessful exchanging messages.
+    \end{itemize}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.5\textwidth]{image/Instant messaging.png} 
+        \caption{Simple instant messaging flow}
+        \label{fig:instant_messaging}
+    \end{figure}
+
+
+    

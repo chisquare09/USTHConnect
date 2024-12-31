@@ -11,33 +11,38 @@
 \contentsline {subsection}{\numberline {1.4}Desired Outcomes}{8}{}%
 \contentsline {subsection}{\numberline {1.5}Structure of Thesis}{8}{}%
 \contentsline {subsection}{\numberline {1.6}Related works}{9}{}%
-\contentsline {section}{\numberline {2}Requirement Analysis}{10}{}%
-\contentsline {subsection}{\numberline {2.1}System requirements}{10}{}%
-\contentsline {subsubsection}{\numberline {2.1.1}Functional Requirements}{10}{}%
-\contentsline {subsubsection}{\numberline {2.1.2}Non-functional Requirements}{10}{}%
-\contentsline {subsubsection}{\numberline {2.1.3}Desired Functionalities}{10}{}%
-\contentsline {subsection}{\numberline {2.2}Use Case}{10}{}%
-\contentsline {subsubsection}{\numberline {2.2.1}Use Cases Diagram}{10}{}%
+\contentsline {section}{\numberline {2}Requirement Analysis}{9}{}%
+\contentsline {subsection}{\numberline {2.1}System requirements}{9}{}%
+\contentsline {subsubsection}{\numberline {2.1.1}Functional Requirements}{9}{}%
+\contentsline {subsubsection}{\numberline {2.1.2}Non-functional Requirements}{9}{}%
+\contentsline {subsubsection}{\numberline {2.1.3}Desired Functionalities}{9}{}%
+\contentsline {subsection}{\numberline {2.2}Use Case}{9}{}%
+\contentsline {subsubsection}{\numberline {2.2.1}Use Cases Diagram}{9}{}%
 \contentsline {subsubsection}{\numberline {2.2.2}Use Case Characteristics}{10}{}%
 \contentsline {subsection}{\numberline {2.3}Use Case and Scenario Description}{10}{}%
-\contentsline {section}{\numberline {3}Methodologies}{10}{}%
-\contentsline {subsection}{\numberline {3.1}System Architecture}{10}{}%
-\contentsline {subsection}{\numberline {3.2}Database Design}{10}{}%
-\contentsline {subsection}{\numberline {3.3}Use Case Implementation}{10}{}%
-\contentsline {subsubsection}{\numberline {3.3.1}Analysis Call and Message Technologies}{11}{}%
-\contentsline {paragraph}{\numberline {3.3.1.1}Session Initiation Protocol}{11}{}%
-\contentsline {paragraph}{\numberline {3.3.1.2}Linphone}{12}{}%
-\contentsline {paragraph}{\numberline {3.3.1.3}Transport Layer Security Protocol (TLS)}{12}{}%
-\contentsline {paragraph}{\numberline {3.3.1.4}Communication Handling}{13}{}%
-\contentsline {subparagraph}{\numberline {3.3.1.4.1}Call Initialization}{13}{}%
-\contentsline {subparagraph}{\numberline {3.3.1.4.2}Locating the callee}{14}{}%
-\contentsline {subparagraph}{\numberline {3.3.1.4.3}One-on-One Instant Messaging}{16}{}%
-\contentsline {section}{\numberline {4}AI Model Analysis and Training}{17}{}%
-\contentsline {section}{\numberline {5}Results and Discussion}{17}{}%
-\contentsline {subsection}{\numberline {5.1}Results}{17}{}%
-\contentsline {subsubsection}{\numberline {5.1.1}Mobile App Results}{17}{}%
-\contentsline {subsubsection}{\numberline {5.1.2}Machine Learning Results}{17}{}%
-\contentsline {subsection}{\numberline {5.2}Discussion}{17}{}%
-\contentsline {section}{\numberline {6}Conclusion {\&} Future Work}{17}{}%
-\contentsline {subsection}{\numberline {6.1}Conclusion}{17}{}%
-\contentsline {subsection}{\numberline {6.2}Future Work}{17}{}%
+\contentsline {subsubsection}{\numberline {2.3.1}Use case: Authenticate}{10}{}%
+\contentsline {subsubsection}{\numberline {2.3.2}Use case: Student Schedule}{11}{}%
+\contentsline {subsubsection}{\numberline {2.3.3}Use case: University Campus}{11}{}%
+\contentsline {subsubsection}{\numberline {2.3.4}Use case: University Resource}{12}{}%
+\contentsline {subsubsection}{\numberline {2.3.5}Use case: Student StudyBuddy}{13}{}%
+\contentsline {section}{\numberline {3}Methodologies}{13}{}%
+\contentsline {subsection}{\numberline {3.1}System Architecture}{13}{}%
+\contentsline {subsection}{\numberline {3.2}Database Design}{13}{}%
+\contentsline {subsection}{\numberline {3.3}Use Case Implementation}{13}{}%
+\contentsline {subsubsection}{\numberline {3.3.1}Analysis Call and Message Technologies}{14}{}%
+\contentsline {paragraph}{\numberline {3.3.1.1}Session Initiation Protocol}{14}{}%
+\contentsline {paragraph}{\numberline {3.3.1.2}Linphone}{15}{}%
+\contentsline {paragraph}{\numberline {3.3.1.3}Transport Layer Security Protocol (TLS)}{15}{}%
+\contentsline {paragraph}{\numberline {3.3.1.4}Communication Handling}{16}{}%
+\contentsline {subparagraph}{\numberline {3.3.1.4.1}Call Initialization}{16}{}%
+\contentsline {subparagraph}{\numberline {3.3.1.4.2}Locating the callee}{17}{}%
+\contentsline {subparagraph}{\numberline {3.3.1.4.3}One-on-One Instant Messaging}{19}{}%
+\contentsline {section}{\numberline {4}AI Model Analysis and Training}{20}{}%
+\contentsline {section}{\numberline {5}Results and Discussion}{20}{}%
+\contentsline {subsection}{\numberline {5.1}Results}{20}{}%
+\contentsline {subsubsection}{\numberline {5.1.1}Mobile App Results}{20}{}%
+\contentsline {subsubsection}{\numberline {5.1.2}Machine Learning Results}{20}{}%
+\contentsline {subsection}{\numberline {5.2}Discussion}{20}{}%
+\contentsline {section}{\numberline {6}Conclusion {\&} Future Work}{20}{}%
+\contentsline {subsection}{\numberline {6.1}Conclusion}{20}{}%
+\contentsline {subsection}{\numberline {6.2}Future Work}{20}{}%

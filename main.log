@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.6)  30 DEC 2024 16:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.6)  31 DEC 2024 10:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -139,40 +139,73 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 \Gm@layouthoffset=\dimen159
 \Gm@layoutvoffset=\dimen160
 \Gm@dimlist=\toks27
- (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+ (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip54
+\enit@outerparindent=\dimen161
+\enit@toks=\toks28
+\enit@inbox=\box56
+\enit@count@id=\count286
+\enitdp@description=\count287
+) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
+Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
+\multirow@colwidth=\skip55
+\multirow@cntb=\count288
+\multirow@dima=\skip56
+\bigstrutjot=\dimen162
+) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+ (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
+\col@sep=\dimen163
+\ar@mcellbox=\box57
+\extrarowheight=\dimen164
+\NC@list=\toks29
+\extratabsurround=\skip57
+\backup@length=\skip58
+\ar@cellbox=\box58
+)
+\TX@col@width=\dimen165
+\TX@old@table=\dimen166
+\TX@old@col=\dimen167
+\TX@target=\dimen168
+\TX@delta=\dimen169
+\TX@cols=\count289
+\TX@ftn=\toks30
+) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count286
-\l__pdf_internal_box=\box56
+\l__color_backend_stack_int=\count290
+\l__pdf_internal_box=\box59
 ) (main.aux (titlepage.aux) (analysis_call_message.aux) (communication_handling.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
  (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count287
-\scratchdimen=\dimen161
-\scratchbox=\box57
-\nofMPsegments=\count288
-\nofMParguments=\count289
-\everyMPshowfont=\toks28
-\MPscratchCnt=\count290
-\MPscratchDim=\dimen162
-\MPnumerator=\count291
-\makeMPintoPDFobject=\count292
-\everyMPtoPDFconversion=\toks29
+\scratchcounter=\count291
+\scratchdimen=\dimen170
+\scratchbox=\box60
+\nofMPsegments=\count292
+\nofMParguments=\count293
+\everyMPshowfont=\toks31
+\MPscratchCnt=\count294
+\MPscratchDim=\dimen171
+\MPnumerator=\count295
+\makeMPintoPDFobject=\count296
+\everyMPtoPDFconversion=\toks32
 ) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -248,7 +281,7 @@ Package pdftex.def Info: image/logoUSTH.png  used on input line 7.
 [7]
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 139--141
+Underfull \hbox (badness 10000) in paragraph at lines 143--145
 
  []
 
@@ -257,44 +290,56 @@ Underfull \hbox (badness 10000) in paragraph at lines 139--141
 [9]
 
 [10]
+
+[11]
+
+[12]
+
+[13]
 \openout2 = `analysis_call_message.aux'.
 
  (analysis_call_message.tex
 
-[11
+[14
 
 ])
 
-[12]
+[15]
 \openout2 = `communication_handling.aux'.
 
  (communication_handling.tex
 
-[13
+[16
 
 
 
 ]
-<image/Call Initiation.png, id=51, 697.8873pt x 915.6609pt>
+<image/Call Initiation.png, id=60, 697.8873pt x 915.6609pt>
 File: image/Call Initiation.png Graphic file (type png)
 <use image/Call Initiation.png>
 Package pdftex.def Info: image/Call Initiation.png  used on input line 34.
 (pdftex.def)             Requested size: 298.75264pt x 391.98004pt.
 
 
-[14 <./image/Call Initiation.png>]
-<image/Locating_calllee.png, id=57, 684.5575pt x 371.3875pt>
+[17 <./image/Call Initiation.png>]
+<image/Locating_calllee.png, id=66, 684.5575pt x 371.3875pt>
 File: image/Locating_calllee.png Graphic file (type png)
 <use image/Locating_calllee.png>
 Package pdftex.def Info: image/Locating_calllee.png  used on input line 70.
 (pdftex.def)             Requested size: 298.75264pt x 162.08495pt.
 
 
-[15 <./image/Locating_calllee.png>])
+[18 <./image/Locating_calllee.png>]
+<image/Instant messaging.png, id=72, 366.36874pt x 326.21875pt>
+File: image/Instant messaging.png Graphic file (type png)
+<use image/Instant messaging.png>
+Package pdftex.def Info: image/Instant messaging.png  used on input line 95.
+(pdftex.def)             Requested size: 213.39568pt x 190.01338pt.
+)
 
-[16]
+[19 <./image/Instant messaging.png>]
 
-[17
+[20
 
 
 ] (main.aux (titlepage.aux) (analysis_call_message.aux) (communication_handling.aux))
@@ -304,17 +349,17 @@ L3 programming layer <2024-11-02>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 2875 strings out of 473682
- 47288 string characters out of 5720168
- 449608 words of memory out of 5000000
- 25924 multiletter control sequences out of 15000+600000
+ 3416 strings out of 473682
+ 56566 string characters out of 5720168
+ 460196 words of memory out of 5000000
+ 26450 multiletter control sequences out of 15000+600000
  564262 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,6n,65p,492b,263s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,15n,65p,492b,317s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\abc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (17 pages, 297051 bytes).
+Output written on main.pdf (20 pages, 312495 bytes).
 PDF statistics:
- 99 PDF objects out of 1000 (max. 8388607)
+ 111 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
