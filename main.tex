@@ -120,7 +120,12 @@ project. We also summarize the content of these resources.
     This section provides a detailed description of the various use cases and scenarios within the USTH Connect application. 
     Each use case outlines the interactions between students and the system, describing how the system responds to specific student actions.
 \subsubsection{Use case: Authenticate}
-
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.7\textwidth]{image/AuthenticationUseCase.png} 
+        \caption{Authentication use case diagram}
+        \label{fig:authenticate_use_case}
+    \end{figure}
     \textbf{Description:} Students can login and reset their passwords in case they forget them. Admin has to create accounts for students.
 
     \noindent \textbf{Pre-conditions:} Before this use case begins, students must ensure that all system packages are fully installed to avoid errors.
@@ -135,7 +140,7 @@ project. We also summarize the content of these resources.
     \begin{table}[H]
         \centering
         \renewcommand{\arraystretch}{1.5}
-        \begin{tabular}{|m{3.5cm}|p{10cm}|} % Fixed column width for consistent alignment
+        \begin{tabular}{|m{3.5cm}|p{10cm}|} 
             \hline
             \multicolumn{1}{|c|}{\textbf{Actor Action}} & \multicolumn{1}{c|}{\textbf{System Action}} \\ \hline
             \multirow{4}{*}{\centering \shortstack[c]{Login to the system \\ (User)}} 
@@ -155,7 +160,13 @@ project. We also summarize the content of these resources.
     
 
 \subsubsection{Use case: Student Schedule}
-    \textbf{Description:} This use case enables students to view their academic timetable. The system sync schedule every 10 mins to make sure no daily event is missing.
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.7\textwidth]{image/StudentScheduleUseCase.drawio.png} 
+        \caption{Schedule use case diagram}
+        \label{fig:schedule_use_case}
+    \end{figure}
+    \textbf{Description:} This use case enables students to view their academic timetable. The system sync schedule every 10 minutes to make sure no daily event is missing.
 
     \noindent \textbf{Pre-conditions:} 
         \begin{itemize}
@@ -175,7 +186,7 @@ project. We also summarize the content of these resources.
     \begin{table}[H]
         \centering
         \renewcommand{\arraystretch}{1.5}
-        \begin{tabular}{|m{3.5cm}|p{10cm}|} % Fixed column width for consistent alignment
+        \begin{tabular}{|m{3.5cm}|p{10cm}|} 
             \hline
             \multicolumn{1}{|c|}{\textbf{Actor Action}} & \multicolumn{1}{c|}{\textbf{System Action}} \\ \hline
             \multirow{3}{*}{\centering \shortstack[c]{User click button \\ "Timetable"}} 
@@ -194,6 +205,12 @@ project. We also summarize the content of these resources.
     \end{table}
 
 \subsubsection{Use case: University Campus}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.7\textwidth]{image/CampusUseCase.png} 
+        \caption{Campus use case diagram}
+        \label{fig:campus_use_case}
+    \end{figure}
     \textbf{Description:} The system displays a list of campus buildings and their details. The system can locate each building in a list on a map.
 
     \noindent \textbf{Pre-conditions:} 
@@ -214,7 +231,7 @@ project. We also summarize the content of these resources.
     \begin{table}[H]
         \centering
         \renewcommand{\arraystretch}{2.5}
-        \begin{tabular}{|m{3.5cm}|p{10cm}|} % Fixed column width for consistent alignment
+        \begin{tabular}{|m{3.5cm}|p{10cm}|} 
             \hline
             \multicolumn{1}{|c|}{\textbf{Actor Action}} & \multicolumn{1}{c|}{\textbf{System Action}} \\ \hline
             \multirow{2}{*}{\centering \shortstack[c]{User click button \\ "Building"}} 
@@ -242,7 +259,7 @@ project. We also summarize the content of these resources.
     \begin{table}[H]
         \centering
         \renewcommand{\arraystretch}{2.5}
-        \begin{tabular}{|m{3.5cm}|p{10cm}|} % Fixed column width for consistent alignment
+        \begin{tabular}{|m{3.5cm}|p{10cm}|} 
             \hline
             \multicolumn{1}{|c|}{\textbf{Actor Action}} & \multicolumn{1}{c|}{\textbf{System Action}} \\ \hline
             \multirow{2}{*}{\centering \shortstack[c]{User click button \\ "Show Resource"}} 
@@ -252,24 +269,38 @@ project. We also summarize the content of these resources.
     \end{table}
 
 \subsubsection{Use case: Student StudyBuddy}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.7\textwidth]{image/StudyBuddyUseCase.png} 
+        \caption{StudyBuddy use case diagram}
+        \label{fig:studyBuddy_use_case}
+    \end{figure}
     \textbf{Description:} The system allows students to connect and find each other students, who have the same things with the other. Students can view their profile, interest, ...
 
     \noindent \textbf{Pre-conditions:} 
         \begin{itemize}
-            \item Before this use case begins, students must be logged into the system.
+            \item Before this use case begins, students must do a small survey and be logged into the system.
             \item The system must fetch successfully with other students’ profiles.
         \end{itemize}
     \noindent \textbf{Post-conditions:}
     \begin{itemize}
-        \item The system fails to fetch student data.
-        \item System fails to displayprofile of match recommendation.
-        \item System display an error message.
+        \item \textbf{Success:}
+        \begin{itemize}
+            \item User can view a list of suggestion friends; send and receive text message, audio call; view and update profile.
+            \item Admins can refresh and reload the suggestion matching list.
+        \end{itemize}
+        \item \textbf{Failure:}
+        \begin{itemize}
+            \item The system fails to fetch student data.
+            \item System fails to displayprofile of match recommendation.
+            \item System display an error message. 
+        \end{itemize}
     \end{itemize}
 
     \begin{table}[H]
         \centering
         \renewcommand{\arraystretch}{1.5}
-        \begin{tabular}{|m{3.5cm}|p{10cm}|} % Fixed column width for consistent alignment
+        \begin{tabular}{|m{3.5cm}|p{10cm}|} 
             \hline
             \multicolumn{1}{|c|}{\textbf{Actor Action}} & \multicolumn{1}{c|}{\textbf{System Action}} \\ \hline
             \multirow{4}{*}{\centering \shortstack[c]{User click button \\ "StudyBuddy"}} 
@@ -350,6 +381,7 @@ project. We also summarize the content of these resources.
 \subsection{System Architecture}
 \subsection{Database Design}
 \subsection{Use Case Implementation}
+\include{usecase_implementation}
 \include{analysis_call_message}
 \include{communication_handling}
 % \section{Material and Methodology}
