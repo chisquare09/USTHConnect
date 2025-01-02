@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.6)  2 JAN 2025 14:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.6)  2 JAN 2025 17:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -172,39 +172,91 @@ Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
 \TX@delta=\dimen169
 \TX@cols=\count289
 \TX@ftn=\toks30
+) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/tocloft\tocloft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has section divisions on input line 51.
+\cftparskip=\skip59
+\cftbeforetoctitleskip=\skip60
+\cftaftertoctitleskip=\skip61
+\cftbeforepartskip=\skip62
+\cftpartnumwidth=\skip63
+\cftpartindent=\skip64
+\cftbeforesecskip=\skip65
+\cftsecindent=\skip66
+\cftsecnumwidth=\skip67
+\cftbeforesubsecskip=\skip68
+\cftsubsecindent=\skip69
+\cftsubsecnumwidth=\skip70
+\cftbeforesubsubsecskip=\skip71
+\cftsubsubsecindent=\skip72
+\cftsubsubsecnumwidth=\skip73
+\cftbeforeparaskip=\skip74
+\cftparaindent=\skip75
+\cftparanumwidth=\skip76
+\cftbeforesubparaskip=\skip77
+\cftsubparaindent=\skip78
+\cftsubparanumwidth=\skip79
+\cftbeforeloftitleskip=\skip80
+\cftafterloftitleskip=\skip81
+\cftbeforefigskip=\skip82
+\cftfigindent=\skip83
+\cftfignumwidth=\skip84
+\c@lofdepth=\count290
+\c@lotdepth=\count291
+\cftbeforelottitleskip=\skip85
+\cftafterlottitleskip=\skip86
+\cftbeforetabskip=\skip87
+\cfttabindent=\skip88
+\cfttabnumwidth=\skip89
+) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+ (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+ (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
 ) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count290
+\l__color_backend_stack_int=\count292
 \l__pdf_internal_box=\box59
 ) (main.aux (titlepage.aux) (usecase_implementation.aux) (analysis_call_message.aux) (communication_handling.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
  (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count291
+\scratchcounter=\count293
 \scratchdimen=\dimen170
 \scratchbox=\box60
-\nofMPsegments=\count292
-\nofMParguments=\count293
+\nofMPsegments=\count294
+\nofMParguments=\count295
 \everyMPshowfont=\toks31
-\MPscratchCnt=\count294
+\MPscratchCnt=\count296
 \MPscratchDim=\dimen171
-\MPnumerator=\count295
-\makeMPintoPDFobject=\count296
+\MPnumerator=\count297
+\makeMPintoPDFobject=\count298
 \everyMPtoPDFconversion=\toks32
 ) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -271,13 +323,22 @@ Package pdftex.def Info: image/logoUSTH.png  used on input line 7.
 
 
 [3]
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 42--42
+ [][][]
+ []
+
+(main.lof)
+\tf@lof=\write4
+\openout4 = `main.lof'.
+
+
 
 [4]
 
 [5]
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 89--91
+Underfull \hbox (badness 10000) in paragraph at lines 101--103
 
  []
 
@@ -287,7 +348,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 89--91
 <image/AuthenticationUseCase.png, id=32, 999.735pt x 564.1075pt>
 File: image/AuthenticationUseCase.png Graphic file (type png)
 <use image/AuthenticationUseCase.png>
-Package pdftex.def Info: image/AuthenticationUseCase.png  used on input line 125.
+Package pdftex.def Info: image/AuthenticationUseCase.png  used on input line 137.
 (pdftex.def)             Requested size: 298.75264pt x 168.57077pt.
 
 
@@ -295,7 +356,7 @@ Package pdftex.def Info: image/AuthenticationUseCase.png  used on input line 125
 <image/StudentScheduleUseCase.drawio.png, id=37, 1513.655pt x 825.0825pt>
 File: image/StudentScheduleUseCase.drawio.png Graphic file (type png)
 <use image/StudentScheduleUseCase.drawio.png>
-Package pdftex.def Info: image/StudentScheduleUseCase.drawio.png  used on input line 165.
+Package pdftex.def Info: image/StudentScheduleUseCase.drawio.png  used on input line 177.
 (pdftex.def)             Requested size: 298.75264pt x 162.84814pt.
 
 
@@ -305,7 +366,7 @@ Package pdftex.def Info: image/StudentScheduleUseCase.drawio.png  used on input 
 <image/CampusUseCase.png, id=46, 1320.935pt x 666.49pt>
 File: image/CampusUseCase.png Graphic file (type png)
 <use image/CampusUseCase.png>
-Package pdftex.def Info: image/CampusUseCase.png  used on input line 210.
+Package pdftex.def Info: image/CampusUseCase.png  used on input line 222.
 (pdftex.def)             Requested size: 298.75264pt x 150.73685pt.
 
 
@@ -313,7 +374,7 @@ Package pdftex.def Info: image/CampusUseCase.png  used on input line 210.
 <image/StudyBuddyUseCase.png, id=51, 1397.22pt x 1347.0325pt>
 File: image/StudyBuddyUseCase.png Graphic file (type png)
 <use image/StudyBuddyUseCase.png>
-Package pdftex.def Info: image/StudyBuddyUseCase.png  used on input line 274.
+Package pdftex.def Info: image/StudyBuddyUseCase.png  used on input line 286.
 (pdftex.def)             Requested size: 298.75264pt x 288.02368pt.
 
 
@@ -323,7 +384,7 @@ Package pdftex.def Info: image/StudyBuddyUseCase.png  used on input line 274.
 <image/Real-timeNotificationUseCase.png, id=60, 954.56625pt x 372.39125pt>
 File: image/Real-timeNotificationUseCase.png Graphic file (type png)
 <use image/Real-timeNotificationUseCase.png>
-Package pdftex.def Info: image/Real-timeNotificationUseCase.png  used on input line 326.
+Package pdftex.def Info: image/Real-timeNotificationUseCase.png  used on input line 338.
 (pdftex.def)             Requested size: 298.75264pt x 116.54813pt.
 
 
@@ -404,15 +465,15 @@ L3 programming layer <2024-11-02>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 3496 strings out of 473682
- 59546 string characters out of 5720168
- 460607 words of memory out of 5000000
- 26523 multiletter control sequences out of 15000+600000
+ 4275 strings out of 473682
+ 70986 string characters out of 5720168
+ 478568 words of memory out of 5000000
+ 27285 multiletter control sequences out of 15000+600000
  564262 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,15n,65p,464b,405s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,15n,65p,464b,406s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\abc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (26 pages, 714688 bytes).
+Output written on main.pdf (26 pages, 715764 bytes).
 PDF statistics:
  168 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

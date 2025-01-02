@@ -10,6 +10,8 @@
 \usepackage{multirow}
 \usepackage{tabularx}
 \usepackage{array}
+\usepackage{tocloft}
+\usepackage{xcolor}
 \geometry{a4paper, portrait, margin=30mm, bmargin=30mm, tmargin=30mm}
 \setcounter{secnumdepth}{5}
 \setcounter{tocdepth}{5}
@@ -24,10 +26,20 @@
 \setstretch{1.5}
 \include{titlepage.tex}
 
+\renewcommand{\listfigurename}{LIST OF FIGURES}
+\renewcommand{\cftloftitlefont}{\Large\bfseries} 
+\renewcommand{\cftafterloftitle}{
+    \par\noindent\vspace{-0.5em}
+    \textcolor{blue}{\rule{\textwidth}{0.7pt}}
+    \vspace{1em} 
+}
+\renewcommand{\cftfigpresnum}{Figure~}
+\renewcommand{\cftfigaftersnum}{:}
+\setlength{\cftfignumwidth}{5em}
 \tableofcontents
 \newpage
 
-\listfigurename
+\listoffigures
 \newpage
 
 \listtablename
