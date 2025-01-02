@@ -30,19 +30,30 @@
 \renewcommand{\cftloftitlefont}{\Large\bfseries} 
 \renewcommand{\cftafterloftitle}{
     \par\noindent\vspace{-0.5em}
-    \textcolor{blue}{\rule{\textwidth}{0.7pt}}
+    \textcolor{blue}{\rule{\textwidth}{0.5pt}}
     \vspace{1em} 
 }
 \renewcommand{\cftfigpresnum}{Figure~}
 \renewcommand{\cftfigaftersnum}{:}
 \setlength{\cftfignumwidth}{5em}
+
 \tableofcontents
 \newpage
 
 \listoffigures
+\renewcommand{\listtablename}{LIST OF TABLES}
+\renewcommand{\cftlottitlefont}{\Large\bfseries} 
+\renewcommand{\cftafterlottitle}{
+    \par\noindent\vspace{-0.5em}
+    \textcolor{blue}{\rule{\textwidth}{0.5pt}}
+    \vspace{1em} 
+}
+\renewcommand{\cfttabpresnum}{Table~}
+\renewcommand{\cfttabaftersnum}{:}
+\setlength{\cfttabnumwidth}{5em}
 \newpage
 
-\listtablename
+\listoftables
 \newpage
 
 
@@ -152,6 +163,8 @@ project. We also summarize the content of these resources.
     \begin{table}[H]
         \centering
         \renewcommand{\arraystretch}{1.5}
+        \caption{Actor Actions and System Actions for Authenticate}
+        \label{tab:authenticate_table}
         \begin{tabular}{|m{3.5cm}|p{10cm}|} 
             \hline
             \multicolumn{1}{|c|}{\textbf{Actor Action}} & \multicolumn{1}{c|}{\textbf{System Action}} \\ \hline
@@ -198,6 +211,8 @@ project. We also summarize the content of these resources.
     \begin{table}[H]
         \centering
         \renewcommand{\arraystretch}{1.5}
+        \caption{Actor Actions and System Actions for Schedule}
+        \label{tab:schedule_table}
         \begin{tabular}{|m{3.5cm}|p{10cm}|} 
             \hline
             \multicolumn{1}{|c|}{\textbf{Actor Action}} & \multicolumn{1}{c|}{\textbf{System Action}} \\ \hline
@@ -243,6 +258,8 @@ project. We also summarize the content of these resources.
     \begin{table}[H]
         \centering
         \renewcommand{\arraystretch}{2.5}
+        \caption{Actor Actions and System Actions for Campus}
+        \label{tab:campus_table}
         \begin{tabular}{|m{3.5cm}|p{10cm}|} 
             \hline
             \multicolumn{1}{|c|}{\textbf{Actor Action}} & \multicolumn{1}{c|}{\textbf{System Action}} \\ \hline
@@ -271,6 +288,8 @@ project. We also summarize the content of these resources.
     \begin{table}[H]
         \centering
         \renewcommand{\arraystretch}{2.5}
+        \caption{Actor Actions and System Actions for Resource}
+        \label{tab:resource_table}
         \begin{tabular}{|m{3.5cm}|p{10cm}|} 
             \hline
             \multicolumn{1}{|c|}{\textbf{Actor Action}} & \multicolumn{1}{c|}{\textbf{System Action}} \\ \hline
@@ -312,6 +331,8 @@ project. We also summarize the content of these resources.
     \begin{table}[H]
         \centering
         \renewcommand{\arraystretch}{1.5}
+        \caption{Actor Actions and System Actions for StudyBuddy}
+        \label{tab:studyBuddy_table}
         \begin{tabular}{|m{3.5cm}|p{10cm}|} 
             \hline
             \multicolumn{1}{|c|}{\textbf{Actor Action}} & \multicolumn{1}{c|}{\textbf{System Action}} \\ \hline
@@ -360,6 +381,8 @@ project. We also summarize the content of these resources.
     \begin{table}[H]
         \centering
         \renewcommand{\arraystretch}{1.5}
+        \caption{Actor Actions and System Actions for Real time Notification}
+        \label{tab:notification_table}
         \begin{tabular}{|m{3.5cm}|p{10cm}|} 
             \hline
             \multicolumn{1}{|c|}{\textbf{Actor Action}} & \multicolumn{1}{c|}{\textbf{System Action}} \\ \hline

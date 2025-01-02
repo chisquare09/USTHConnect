@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.6)  2 JAN 2025 17:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.6)  2 JAN 2025 23:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -323,7 +323,7 @@ Package pdftex.def Info: image/logoUSTH.png  used on input line 7.
 
 
 [3]
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 42--42
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 43--43
  [][][]
  []
 
@@ -334,11 +334,20 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 42--42
 
 
 [4]
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 56--56
+ [][][]
+ []
+
+(main.lot)
+\tf@lot=\write5
+\openout5 = `main.lot'.
+
+
 
 [5]
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 101--103
+Underfull \hbox (badness 10000) in paragraph at lines 112--114
 
  []
 
@@ -348,7 +357,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 101--103
 <image/AuthenticationUseCase.png, id=32, 999.735pt x 564.1075pt>
 File: image/AuthenticationUseCase.png Graphic file (type png)
 <use image/AuthenticationUseCase.png>
-Package pdftex.def Info: image/AuthenticationUseCase.png  used on input line 137.
+Package pdftex.def Info: image/AuthenticationUseCase.png  used on input line 148.
 (pdftex.def)             Requested size: 298.75264pt x 168.57077pt.
 
 
@@ -356,7 +365,7 @@ Package pdftex.def Info: image/AuthenticationUseCase.png  used on input line 137
 <image/StudentScheduleUseCase.drawio.png, id=37, 1513.655pt x 825.0825pt>
 File: image/StudentScheduleUseCase.drawio.png Graphic file (type png)
 <use image/StudentScheduleUseCase.drawio.png>
-Package pdftex.def Info: image/StudentScheduleUseCase.drawio.png  used on input line 177.
+Package pdftex.def Info: image/StudentScheduleUseCase.drawio.png  used on input line 190.
 (pdftex.def)             Requested size: 298.75264pt x 162.84814pt.
 
 
@@ -366,7 +375,7 @@ Package pdftex.def Info: image/StudentScheduleUseCase.drawio.png  used on input 
 <image/CampusUseCase.png, id=46, 1320.935pt x 666.49pt>
 File: image/CampusUseCase.png Graphic file (type png)
 <use image/CampusUseCase.png>
-Package pdftex.def Info: image/CampusUseCase.png  used on input line 222.
+Package pdftex.def Info: image/CampusUseCase.png  used on input line 237.
 (pdftex.def)             Requested size: 298.75264pt x 150.73685pt.
 
 
@@ -374,7 +383,7 @@ Package pdftex.def Info: image/CampusUseCase.png  used on input line 222.
 <image/StudyBuddyUseCase.png, id=51, 1397.22pt x 1347.0325pt>
 File: image/StudyBuddyUseCase.png Graphic file (type png)
 <use image/StudyBuddyUseCase.png>
-Package pdftex.def Info: image/StudyBuddyUseCase.png  used on input line 286.
+Package pdftex.def Info: image/StudyBuddyUseCase.png  used on input line 305.
 (pdftex.def)             Requested size: 298.75264pt x 288.02368pt.
 
 
@@ -384,7 +393,7 @@ Package pdftex.def Info: image/StudyBuddyUseCase.png  used on input line 286.
 <image/Real-timeNotificationUseCase.png, id=60, 954.56625pt x 372.39125pt>
 File: image/Real-timeNotificationUseCase.png Graphic file (type png)
 <use image/Real-timeNotificationUseCase.png>
-Package pdftex.def Info: image/Real-timeNotificationUseCase.png  used on input line 338.
+Package pdftex.def Info: image/Real-timeNotificationUseCase.png  used on input line 359.
 (pdftex.def)             Requested size: 298.75264pt x 116.54813pt.
 
 
@@ -465,15 +474,15 @@ L3 programming layer <2024-11-02>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4275 strings out of 473682
- 70986 string characters out of 5720168
- 478568 words of memory out of 5000000
- 27285 multiletter control sequences out of 15000+600000
+ 4289 strings out of 473682
+ 71263 string characters out of 5720168
+ 478699 words of memory out of 5000000
+ 27296 multiletter control sequences out of 15000+600000
  564262 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,15n,65p,464b,406s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\abc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (26 pages, 715764 bytes).
+Output written on main.pdf (26 pages, 716484 bytes).
 PDF statistics:
  168 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

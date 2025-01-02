@@ -134,6 +134,10 @@ INPUT .\main.lof
 INPUT .\main.lof
 INPUT main.lof
 OUTPUT main.lof
+INPUT .\main.lot
+INPUT .\main.lot
+INPUT main.lot
+OUTPUT main.lot
 INPUT C:\Users\abc\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1000.tfm
 INPUT .\image\AuthenticationUseCase.png
 INPUT .\image\AuthenticationUseCase.png
