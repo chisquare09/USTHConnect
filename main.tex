@@ -503,7 +503,7 @@ project. We also summarize the content of these resources.
 % \end{itemize}
 
 \section{AI Model Analysis and Training}
-\subsection{One-Hot Encode}
+\subsection{One-Hot Encoding}
 One-hot Encoding is a data preprocessing technique that transforms a single categorical variable with n distinct categories 
 into n separate columns. Each column is represented by one number 0 or 1, where the value 1 presents the presence of that category 
 and the value 0 indicates its absence. This method helps machine learning models, which typically require numerical input, 
@@ -515,15 +515,28 @@ The dissimilarity measure between two categorical objects X and Y (with m attrib
         1 & (x_i \neq y_i)\end{array}\right.$$
 
 \subsection{K-Mode Algorithm}
+% Cost function
+Let $\{Q_1,Q_2,...,Q_k\}$ be the modes of clusters $\{C_1,C_2,...,C_k\}$. The cost function can be defined by taking the total dissimilarities of each sample and its assigned cluster's mode: 
+$$E = \sum_{l=1}^{k}\sum_{i=1}^{n}y_{i,l}d(X_i,Q_l)$$ 
+where $y_{i,l}$ is a binary indicator variable (1 if $X_i$ refers to cluster l, 0 otherwise), k is the number of clusters, n is the total number of samples, $d(X_i,Q_l)$ is the dissimilarity between sample $X_i$ and the mode $Q_l$. The objective is to minimize the value of the cost function by following the following steps: 
+
 \begin{enumerate}
     \item Randomly select K initial modes as K clusters.
     
-    \item Assign objects to the cluster whose mode is closest to it (which has the smallest dissimilarity). Update the cluster’s mode by selecting the highest frequency of each category within the cluster. If there are more than 2 categories of an attribute that have the same highest frequency, we randomly select one of them to serve as mode.
+    \item Calculate the dissimilarity between data points and the mode of each cluster. Then assign objects to the cluster whose mode is closest to it (which has the smallest dissimilarity). Update the cluster’s mode by selecting the highest frequency of each category within the cluster. If there are more than 2 categories of an attribute that have the same highest frequency, we randomly select one of them to serve as mode.
     
     \item Recalculate the dissimilarity of objects with the current modes and reassign the object to the cluster with closest mode and update the new modes for clusters.
     
     \item Repeat Step 2 and 3 until every cluster has no changes after testing the whole dataset.
 \end{enumerate}
+
+\subsubsection{Evaluation Metrics}
+\paragraph{Silhouette Coefficient}
+
+\paragraph{Davies-Bouldin Index}
+
+\subsection{Model Implementation}
+
 \section{System Design and Implementation}  
 
 \subsection{Hardware and Software Setup}  
