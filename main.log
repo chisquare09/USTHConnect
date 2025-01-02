@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.6)  1 JAN 2025 22:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.6)  2 JAN 2025 14:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -310,103 +310,111 @@ Package pdftex.def Info: image/CampusUseCase.png  used on input line 210.
 
 
 [11 <./image/CampusUseCase.png>]
-<image/StudyBuddyUseCase.png, id=51, 1726.45pt x 1347.0325pt>
+<image/StudyBuddyUseCase.png, id=51, 1397.22pt x 1347.0325pt>
 File: image/StudyBuddyUseCase.png Graphic file (type png)
 <use image/StudyBuddyUseCase.png>
 Package pdftex.def Info: image/StudyBuddyUseCase.png  used on input line 274.
-(pdftex.def)             Requested size: 298.75264pt x 233.08275pt.
+(pdftex.def)             Requested size: 298.75264pt x 288.02368pt.
 
 
 [12]
 
 [13 <./image/StudyBuddyUseCase.png>]
+<image/Real-timeNotificationUseCase.png, id=60, 954.56625pt x 372.39125pt>
+File: image/Real-timeNotificationUseCase.png Graphic file (type png)
+<use image/Real-timeNotificationUseCase.png>
+Package pdftex.def Info: image/Real-timeNotificationUseCase.png  used on input line 326.
+(pdftex.def)             Requested size: 298.75264pt x 116.54813pt.
 
-[14]
+
+[14 <./image/Real-timeNotificationUseCase.png>]
+
+[15]
 \openout2 = `usecase_implementation.aux'.
 
  (usecase_implementation.tex
-<image/SyncCalendar.png, id=63, 2284.535pt x 1168.365pt>
+<image/SyncCalendar.png, id=68, 2284.535pt x 1168.365pt>
 File: image/SyncCalendar.png Graphic file (type png)
 <use image/SyncCalendar.png>
 Package pdftex.def Info: image/SyncCalendar.png  used on input line 4.
 (pdftex.def)             Requested size: 426.78061pt x 202.29195pt.
 )
 
-[15
+[16
 
  <./image/SyncCalendar.png>]
 \openout2 = `analysis_call_message.aux'.
 
  (analysis_call_message.tex
 
-[16
+[17
 
 
 
 ])
 
-[17]
+[18]
 \openout2 = `communication_handling.aux'.
 
  (communication_handling.tex
 
-[18
+[19
 
 
 
 ]
-<image/Call Initiation.png, id=77, 697.8873pt x 915.6609pt>
+<image/Call Initiation.png, id=83, 697.8873pt x 915.6609pt>
 File: image/Call Initiation.png Graphic file (type png)
 <use image/Call Initiation.png>
 Package pdftex.def Info: image/Call Initiation.png  used on input line 34.
 (pdftex.def)             Requested size: 298.75264pt x 391.98004pt.
 
 
-[19 <./image/Call Initiation.png>]
-<image/Locating_calllee.png, id=83, 684.5575pt x 371.3875pt>
+[20 <./image/Call Initiation.png>]
+<image/Locating_calllee.png, id=88, 684.5575pt x 371.3875pt>
 File: image/Locating_calllee.png Graphic file (type png)
 <use image/Locating_calllee.png>
 Package pdftex.def Info: image/Locating_calllee.png  used on input line 70.
 (pdftex.def)             Requested size: 298.75264pt x 162.08495pt.
 
 
-[20 <./image/Locating_calllee.png>]
-<image/Instant messaging.png, id=89, 366.36874pt x 326.21875pt>
+[21 <./image/Locating_calllee.png>]
+<image/Instant messaging.png, id=94, 366.36874pt x 326.21875pt>
 File: image/Instant messaging.png Graphic file (type png)
 <use image/Instant messaging.png>
 Package pdftex.def Info: image/Instant messaging.png  used on input line 95.
 (pdftex.def)             Requested size: 213.39568pt x 190.01338pt.
 )
 
-[21 <./image/Instant messaging.png>]
+[22 <./image/Instant messaging.png>]
 
-[22
+[23
 
 
 ]
 
-[23]
-
 [24]
 
-[25] (main.aux (titlepage.aux) (usecase_implementation.aux) (analysis_call_message.aux) (communication_handling.aux))
+[25]
+
+[26] (main.aux (titlepage.aux) (usecase_implementation.aux) (analysis_call_message.aux) (communication_handling.aux))
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 3488 strings out of 473682
- 59206 string characters out of 5720168
- 459584 words of memory out of 5000000
- 26515 multiletter control sequences out of 15000+600000
+ 3496 strings out of 473682
+ 59546 string characters out of 5720168
+ 460607 words of memory out of 5000000
+ 26523 multiletter control sequences out of 15000+600000
  564262 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,15n,65p,464b,405s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\abc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (25 pages, 697924 bytes).
+Output written on main.pdf (26 pages, 714688 bytes).
 PDF statistics:
- 163 PDF objects out of 1000 (max. 8388607)
+ 168 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -143,13 +143,13 @@ project. We also summarize the content of these resources.
         \begin{tabular}{|m{3.5cm}|p{10cm}|} 
             \hline
             \multicolumn{1}{|c|}{\textbf{Actor Action}} & \multicolumn{1}{c|}{\textbf{System Action}} \\ \hline
-            \multirow{4}{*}{\centering \shortstack[c]{Login to the system \\ (User)}} 
             & 1. Students enter studentID and password given by Admin \\ \cline{2-2} 
+            \multirow{4}{=}{\centering \shortstack[c]{Login to the system \\ (User)}} 
             & 2. System verifies studentID and password against the stored database \\ \cline{2-2}
             & 3. If both studentID and password are correct, the system grants access to the student and displays the main screen \\ \cline{2-2}
             & 4. If it is incorrect, the system displays an error message and asks students to re-enter \\ \hline
-            \multirow{5}{*}{\centering \shortstack[c]{Change Password \\ (User)}} 
             & 1. Student enters studentID and old password \\ \cline{2-2}
+            \multirow{5}{=}{\centering \shortstack[c]{Change Password \\ (User)}} 
             & 2. System verifies studentID and password against the stored database \\ \cline{2-2}
             & 3. If the information entered is correct, students can change their password \\ \cline{2-2}
             & 4. System updates the new password in the database \\ \cline{2-2}
@@ -189,15 +189,15 @@ project. We also summarize the content of these resources.
         \begin{tabular}{|m{3.5cm}|p{10cm}|} 
             \hline
             \multicolumn{1}{|c|}{\textbf{Actor Action}} & \multicolumn{1}{c|}{\textbf{System Action}} \\ \hline
-            \multirow{3}{*}{\centering \shortstack[c]{User click button \\ "Timetable"}} 
+            \multirow{3}{=}{\centering \shortstack[c]{User click button \\ "Timetable"}} 
             & 1. The system shows a calendar \\ \cline{2-2} 
             & 2. Students can change the day, week, month format in the calendar \\ \cline{2-2}
             & 3. After choosing a day, students can see daily events \\ \hline
-            \multirow{3}{*}{\centering \shortstack[c]{User click button \\ "Favorite Course"}} 
+            \multirow{3}{=}{\centering \shortstack[c]{User click button \\ "Favorite Course"}} 
             & 1. The system shows a list of favorite courses which are added by Students \\ \cline{2-2}
             & 2. Students can see the timetable of their favorite course after clicking it \\ \cline{2-2}
             & 3. Un-click the favorite icon, the system will delete that course out of the list of favorite courses \\ \hline
-            \multirow{3}{*}{\centering \shortstack[c]{User click button \\ "Course"}} 
+            \multirow{3}{=}{\centering \shortstack[c]{User click button \\ "Course"}} 
             & 1. The system shows all the courses which match with the student’s major and year \\ \cline{2-2}
             & 2. Students can see the course class timetable after clicking the course \\ \cline{2-2}
             & 3. Click the favorite icon, the system will add that course to the list of favorite courses and show them in Favorite Course \\ \hline
@@ -234,10 +234,10 @@ project. We also summarize the content of these resources.
         \begin{tabular}{|m{3.5cm}|p{10cm}|} 
             \hline
             \multicolumn{1}{|c|}{\textbf{Actor Action}} & \multicolumn{1}{c|}{\textbf{System Action}} \\ \hline
-            \multirow{2}{*}{\centering \shortstack[c]{User click button \\ "Building"}} 
+            \multirow{2}{=}{\centering \shortstack[c]{User click button \\ "Building"}} 
             & 1. The system shows a list of buildings which students study in \\ \cline{2-2} 
             & 2. After clicking a building, the system returns its details \\ \hline
-            \multirow{1}{*}{\shortstack[c]{User click button \\ "Map"}} 
+            \multirow{1}{=}{\centering \shortstack[c]{User click button \\ "Map"}} 
             & 1. System loads a map to locate your location and each building \\ \hline
         \end{tabular}
     \end{table}
@@ -262,7 +262,7 @@ project. We also summarize the content of these resources.
         \begin{tabular}{|m{3.5cm}|p{10cm}|} 
             \hline
             \multicolumn{1}{|c|}{\textbf{Actor Action}} & \multicolumn{1}{c|}{\textbf{System Action}} \\ \hline
-            \multirow{2}{*}{\centering \shortstack[c]{User click button \\ "Show Resource"}} 
+            \multirow{2}{=}{\centering \shortstack[c]{User click button \\ "Show Resource"}} 
             & 1. The system displays a list of bachelor’s programs \\ \cline{2-2} 
             & 2. After choosing bachelor’s programs, the screen shows majors, then, the system shows the subject of the major and lectures, slides, … of a subject of major \\ \hline
         \end{tabular}
@@ -303,20 +303,62 @@ project. We also summarize the content of these resources.
         \begin{tabular}{|m{3.5cm}|p{10cm}|} 
             \hline
             \multicolumn{1}{|c|}{\textbf{Actor Action}} & \multicolumn{1}{c|}{\textbf{System Action}} \\ \hline
-            \multirow{4}{*}{\centering \shortstack[c]{User click button \\ "StudyBuddy"}} 
+            \multirow{4}{=}{\centering \shortstack[c]{User click button \\ "StudyBuddy"}} 
             & 1. The system displays a list of Students who are in the list of recommendations \\ \cline{2-2} 
             & 2. After clicking the “Yes” button, add that Student to Chat and Contact \\ \cline{2-2}
             & 3. After clicking the “No” button, remove that Student from the list \\ \cline{2-2}
             & 4. After clicking the “Refresh” button, the system will refresh the list of recommended students \\ \hline
-            \multirow{2}{*}{\centering \shortstack[c]{User click button \\ "Message"}} 
+            \multirow{2}{=}{\centering \shortstack[c]{User click button \\ "Message"}} 
             & 1. The system displays students who Students have matched with \\ \cline{2-2}
             & 2. After clicking the box chat, start a chat with another student \\ \hline
-            \multirow{2}{*}{\centering \shortstack[c]{User click button \\ "Contact"}} 
+            \multirow{2}{=}{\centering \shortstack[c]{User click button \\ "Contact"}} 
             & 1. The system displays students who Students have matched with \\ \cline{2-2}
             & 2. After clicking the contact, start an audio call with another student \\ \hline
-            \multirow{2}{*}{\centering \shortstack[c]{User click button \\ "Profile"}} 
+            \multirow{2}{=}{\centering \shortstack[c]{User click button \\ "Profile"}} 
             & 1. The system fetches the StudyBuddy profile of Student from the database \\ \cline{2-2}
             & 2. After clicking “Edit Profile”, Students can change information about their StudyBuddy profile after the system is verified \\ \hline
+        \end{tabular}
+    \end{table}
+
+\subsubsection{Use case: Real Time Notification}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.7\textwidth]{image/Real-timeNotificationUseCase.png} 
+        \caption{Real Time Notification use case diagram}
+        \label{fig:notification_usecase}
+    \end{figure}
+    \textbf{Description:} The push notification system alerts the user whenever there is a change in their calendar (a new event or modification of an existing one) or when they receive a call. Notifications are delivered in real-time, ensuring that the user stays updated on any important events or incoming calls. 
+    
+    \noindent \textbf{Pre-conditions:} 
+        \begin{itemize}
+            \item The user’s device must be connected to the internet.
+            \item The user must have granted the application permission to access the calendar and incoming notifications.
+        \end{itemize}
+    \noindent \textbf{Post-conditions:}
+    \begin{itemize}
+        \item The real time notification will pop up on the user's device to attract the user's attention.
+        \item The notifications will contain:
+        \begin{itemize}
+            \item A bolded title with context about the notification’s content.
+            \item The application icon to show where the notification is coming from.
+            \item A subtext for describing more information about the notification.
+        \end{itemize}
+    \end{itemize}
+
+    \begin{table}[H]
+        \centering
+        \renewcommand{\arraystretch}{1.5}
+        \begin{tabular}{|m{3.5cm}|p{10cm}|} 
+            \hline
+            \multicolumn{1}{|c|}{\textbf{Actor Action}} & \multicolumn{1}{c|}{\textbf{System Action}} \\ \hline
+            \multirow{2}{=}{\centering \shortstack[c]{Admin update or \\ add event to \\ the user’s calendar}} 
+            & 1. The system detects the calendar changes and triggers the notification \\
+            & \\ \hline 
+            \multirow{2}{=}{\centering \shortstack[c]{User receives \\ an incoming call}} 
+            & 1. The system identifies incoming calls and sends a push notification to inform users in real time \\ \hline
+            \multirow{2}{=}{\centering \shortstack[c]{User click on \\ the notification}} 
+            & 1. \textbf{Calendar notification:} The system will open the application and display the updated event on the calendar \\ \cline{2-2}
+            & 2. \textbf{Incoming call notification:} The system will open the application and allow the user to handle the incoming call (accept or decline) \\ \hline
         \end{tabular}
     \end{table}
 
