@@ -3,55 +3,55 @@
 \contentsline {subsection}{\numberline {1.2}Project Objectives}{6}{}%
 \contentsline {subsection}{\numberline {1.3}Desired Outcomes}{7}{}%
 \contentsline {subsection}{\numberline {1.4}Structure of Thesis}{7}{}%
-\contentsline {subsection}{\numberline {1.5}Related works}{7}{}%
+\contentsline {subsection}{\numberline {1.5}Related works}{8}{}%
 \contentsline {section}{\numberline {2}Requirement Analysis}{8}{}%
 \contentsline {subsection}{\numberline {2.1}System requirements}{8}{}%
 \contentsline {subsubsection}{\numberline {2.1.1}Functional Requirements}{8}{}%
-\contentsline {subsubsection}{\numberline {2.1.2}Non-functional Requirements}{8}{}%
-\contentsline {subsubsection}{\numberline {2.1.3}Desired Functionalities}{8}{}%
-\contentsline {subsection}{\numberline {2.2}Use Case}{8}{}%
-\contentsline {subsubsection}{\numberline {2.2.1}Use Cases Diagram}{8}{}%
-\contentsline {subsubsection}{\numberline {2.2.2}Use Case Characteristics}{8}{}%
-\contentsline {subsection}{\numberline {2.3}Use Case and Scenario Description}{8}{}%
-\contentsline {subsubsection}{\numberline {2.3.1}Use case: Authenticate}{9}{}%
-\contentsline {subsubsection}{\numberline {2.3.2}Use case: Student Schedule}{10}{}%
-\contentsline {subsubsection}{\numberline {2.3.3}Use case: University Campus}{11}{}%
-\contentsline {subsubsection}{\numberline {2.3.4}Use case: University Resource}{12}{}%
-\contentsline {subsubsection}{\numberline {2.3.5}Use case: Student StudyBuddy}{13}{}%
-\contentsline {subsubsection}{\numberline {2.3.6}Use case: Real Time Notification}{14}{}%
-\contentsline {section}{\numberline {3}Methodologies}{15}{}%
-\contentsline {subsection}{\numberline {3.1}System Architecture}{15}{}%
-\contentsline {subsection}{\numberline {3.2}Database Design}{15}{}%
-\contentsline {subsection}{\numberline {3.3}Use Case Implementation}{15}{}%
-\contentsline {subsubsection}{\numberline {3.3.1}Sync Calendar Sequence Diagram}{16}{}%
-\contentsline {subsubsection}{\numberline {3.3.2}Analysis Call and Message Technologies}{17}{}%
-\contentsline {paragraph}{\numberline {3.3.2.1}Session Initiation Protocol}{17}{}%
-\contentsline {paragraph}{\numberline {3.3.2.2}Linphone}{18}{}%
-\contentsline {paragraph}{\numberline {3.3.2.3}Transport Layer Security Protocol (TLS)}{18}{}%
-\contentsline {paragraph}{\numberline {3.3.2.4}Communication Handling}{19}{}%
-\contentsline {subparagraph}{\numberline {3.3.2.4.1}Call Initialization}{19}{}%
-\contentsline {subparagraph}{\numberline {3.3.2.4.2}Locating the callee}{20}{}%
-\contentsline {subparagraph}{\numberline {3.3.2.4.3}One-on-One Instant Messaging}{22}{}%
-\contentsline {section}{\numberline {4}AI Model Analysis and Training}{23}{}%
-\contentsline {subsection}{\numberline {4.1}One-Hot Encoding}{23}{}%
-\contentsline {subsection}{\numberline {4.2}Dissimilarity Measure}{23}{}%
-\contentsline {subsection}{\numberline {4.3}K-Mode Algorithm}{23}{}%
-\contentsline {subsubsection}{\numberline {4.3.1}Evaluation Metrics}{24}{}%
-\contentsline {paragraph}{\numberline {4.3.1.1}Silhouette Coefficient}{24}{}%
-\contentsline {paragraph}{\numberline {4.3.1.2}Davies-Bouldin Index}{24}{}%
-\contentsline {subsection}{\numberline {4.4}Model Implementation}{24}{}%
-\contentsline {section}{\numberline {5}System Design and Implementation}{24}{}%
-\contentsline {subsection}{\numberline {5.1}Hardware and Software Setup}{24}{}%
-\contentsline {subsubsection}{\numberline {5.1.1}Hardware Setup}{24}{}%
-\contentsline {subsubsection}{\numberline {5.1.2}Software Environment Configuration}{24}{}%
-\contentsline {subsection}{\numberline {5.2}Application Software}{25}{}%
-\contentsline {subsection}{\numberline {5.3}Initial Testing}{26}{}%
-\contentsline {subsubsection}{\numberline {5.3.1}Machine Learning Model Integration and Model Training}{26}{}%
-\contentsline {section}{\numberline {6}Results and Discussion}{26}{}%
-\contentsline {subsection}{\numberline {6.1}Results}{26}{}%
-\contentsline {subsubsection}{\numberline {6.1.1}Mobile App Results}{26}{}%
-\contentsline {subsubsection}{\numberline {6.1.2}Machine Learning Results}{26}{}%
-\contentsline {subsection}{\numberline {6.2}Discussion}{27}{}%
-\contentsline {section}{\numberline {7}Conclusion {\&} Future Work}{27}{}%
-\contentsline {subsection}{\numberline {7.1}Conclusion}{27}{}%
-\contentsline {subsection}{\numberline {7.2}Future Work}{27}{}%
+\contentsline {subsubsection}{\numberline {2.1.2}Non-functional Requirements}{9}{}%
+\contentsline {subsubsection}{\numberline {2.1.3}Desired Functionalities}{9}{}%
+\contentsline {subsection}{\numberline {2.2}Use Case}{10}{}%
+\contentsline {subsubsection}{\numberline {2.2.1}Use Cases Diagram}{10}{}%
+\contentsline {subsubsection}{\numberline {2.2.2}Use Case Characteristics}{10}{}%
+\contentsline {subsection}{\numberline {2.3}Use Case and Scenario Description}{10}{}%
+\contentsline {subsubsection}{\numberline {2.3.1}Use case: Authenticate}{11}{}%
+\contentsline {subsubsection}{\numberline {2.3.2}Use case: Student Schedule}{12}{}%
+\contentsline {subsubsection}{\numberline {2.3.3}Use case: University Campus}{13}{}%
+\contentsline {subsubsection}{\numberline {2.3.4}Use case: University Resource}{14}{}%
+\contentsline {subsubsection}{\numberline {2.3.5}Use case: Student StudyBuddy}{15}{}%
+\contentsline {subsubsection}{\numberline {2.3.6}Use case: Real Time Notification}{16}{}%
+\contentsline {section}{\numberline {3}Methodologies}{17}{}%
+\contentsline {subsection}{\numberline {3.1}System Architecture}{17}{}%
+\contentsline {subsection}{\numberline {3.2}Database Design}{17}{}%
+\contentsline {subsection}{\numberline {3.3}Use Case Implementation}{17}{}%
+\contentsline {subsubsection}{\numberline {3.3.1}Sync Calendar Sequence Diagram}{18}{}%
+\contentsline {subsubsection}{\numberline {3.3.2}Analysis Call and Message Technologies}{19}{}%
+\contentsline {paragraph}{\numberline {3.3.2.1}Session Initiation Protocol}{19}{}%
+\contentsline {paragraph}{\numberline {3.3.2.2}Linphone}{20}{}%
+\contentsline {paragraph}{\numberline {3.3.2.3}Transport Layer Security Protocol (TLS)}{20}{}%
+\contentsline {paragraph}{\numberline {3.3.2.4}Communication Handling}{21}{}%
+\contentsline {subparagraph}{\numberline {3.3.2.4.1}Call Initialization}{21}{}%
+\contentsline {subparagraph}{\numberline {3.3.2.4.2}Locating the callee}{22}{}%
+\contentsline {subparagraph}{\numberline {3.3.2.4.3}One-on-One Instant Messaging}{24}{}%
+\contentsline {section}{\numberline {4}AI Model Analysis and Training}{25}{}%
+\contentsline {subsection}{\numberline {4.1}One-Hot Encoding}{25}{}%
+\contentsline {subsection}{\numberline {4.2}Dissimilarity Measure}{25}{}%
+\contentsline {subsection}{\numberline {4.3}K-Mode Algorithm}{25}{}%
+\contentsline {subsubsection}{\numberline {4.3.1}Evaluation Metrics}{26}{}%
+\contentsline {paragraph}{\numberline {4.3.1.1}Silhouette Coefficient}{26}{}%
+\contentsline {paragraph}{\numberline {4.3.1.2}Davies-Bouldin Index}{26}{}%
+\contentsline {subsection}{\numberline {4.4}Model Implementation}{26}{}%
+\contentsline {section}{\numberline {5}System Design and Implementation}{26}{}%
+\contentsline {subsection}{\numberline {5.1}Hardware and Software Setup}{26}{}%
+\contentsline {subsubsection}{\numberline {5.1.1}Hardware Setup}{26}{}%
+\contentsline {subsubsection}{\numberline {5.1.2}Software Environment Configuration}{26}{}%
+\contentsline {subsection}{\numberline {5.2}Application Software}{27}{}%
+\contentsline {subsection}{\numberline {5.3}Initial Testing}{28}{}%
+\contentsline {subsubsection}{\numberline {5.3.1}Machine Learning Model Integration and Model Training}{28}{}%
+\contentsline {section}{\numberline {6}Results and Discussion}{28}{}%
+\contentsline {subsection}{\numberline {6.1}Results}{28}{}%
+\contentsline {subsubsection}{\numberline {6.1.1}Mobile App Results}{28}{}%
+\contentsline {subsubsection}{\numberline {6.1.2}Machine Learning Results}{28}{}%
+\contentsline {subsection}{\numberline {6.2}Discussion}{29}{}%
+\contentsline {section}{\numberline {7}Conclusion {\&} Future Work}{29}{}%
+\contentsline {subsection}{\numberline {7.1}Conclusion}{29}{}%
+\contentsline {subsection}{\numberline {7.2}Future Work}{29}{}%
