@@ -12,6 +12,9 @@
 \usepackage{array}
 \usepackage{tocloft}
 \usepackage{xcolor}
+\usepackage{natbib}
+\bibliographystyle{unsrt}
+
 \geometry{a4paper, portrait, margin=30mm, bmargin=30mm, tmargin=30mm}
 \setcounter{secnumdepth}{5}
 \setcounter{tocdepth}{5}
@@ -577,9 +580,61 @@ where $y_{i,l}$ is a binary indicator variable (1 if $X_i$ refers to cluster l, 
 \end{enumerate}
 
 \subsubsection{Evaluation Metrics}
-\paragraph{Silhouette Coefficient}
+\subsubsubsection{Silhouette Coefficient}
+\\
+\noindent Choosing the optimal number of k value is crucial for the 
+K-mode algorithm. To study the optimal value of k for a clustering algorithm, 
+various methods have been proposed. While the ground truth is not available
+in a data set, intrinsic methods should be used to evaluate the 
+clustering quality. These methods will examining how well the clusters
+are separated or compacted together \citep{2012vi}. Silhouette Coefficient is one of the most
+commonly used intrinsic methods, which measures the quality of a cluster. The highest
+silhouette score calculated by the mean silhouette coefficient of all samples
+is considered the optimal number of clusters \citep{9260048}. 
 
-\paragraph{Davies-Bouldin Index}
+\noindent With a data set D of n objects, in which D is partitioned into 
+k clusters, $\{C_1,C_2,...,C_k\}$. For each object $o \in D$, 
+let $a(o)$ be the average distance of o to all other objects in the same cluster.
+Similarly, let $b(o)$ be the minimum average distance of o to other clusters.
+Suppose $o \in C_i(1 \leq i \leq k )$, then \citep{2012vi}: 
+
+$$a(o) = \frac{\sum_{o' \in C_i , o \neq o'} dist(o,o')}{|C_i| - 1}$$
+and
+$$b(o) = \min_{C_j: 1 \leq j \leq k, j \neq i} \frac{\sum_{o' \in C_j} dist(o,o')}{|C_j|}$$
+
+The silhouette coefficient of object o is defined as:
+$$s(o) = \frac{b(o) - a(o)}{\max\{a(o),b(o)\}}$$
+
+\noindent The silhouette coefficient is in $[-1,1]$. The $a(o)$ value illustrated
+the compactness of the cluster which o belongs. Smaller $a(o)$ means the
+cluster is more compact. The $b(o)$ value shows how well-separated the 
+cluster o is from other clusters. Larger $b(o)$ means the cluster is
+more separated. When the silhouette coefficient is close to 1, it indicates
+that the object $o$ is compact and distance to others. On the other hand, 
+if the silhouette coefficient is close to -1 (i.e., $a(o) > b(o)$), means
+the object $o$ is far from its cluster and close to other clusters. This is
+the reason why a larger silhouette coefficient is considered better in terms of
+clustering quality. 
+
+
+\subsubsubsection{Davies-Bouldin Index}
+\\
+\noindent Another evaluation metric that can be used to evaluate
+the clustering quality is the Davies-Bouldin Index (DBI). The DBI
+is calculated by the average similarity between each cluster and its
+most similar cluster. The lower the DBI value, the better the clustering
+quality. The DBI is defined as follows \citep{HOSEN2023688}:
+
+$ DBI = \frac{1}{n} \sum_{i=1}^{n} max_{j \neq i} \frac{s_i + s_j}{d(c_i,c_j)}$
+
+and 
+
+$s_i = \frac{1}{n_i} \sum_{j=1}^{n_i} d(x_j,c_i)$
+
+\noindent In which $n$ is the number of clusters, $s_i$ is the average distance between
+each data point belonging to cluster $i$ and the centroid of cluster $i$, 
+$d(c_i,c_j)$ indicated the distance between the centroids of cluster $i$ and
+$j$.
 
 \subsection{Model Implementation}
 
