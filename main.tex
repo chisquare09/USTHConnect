@@ -12,20 +12,30 @@
 \usepackage{array}
 \usepackage{tocloft}
 \usepackage{xcolor}
+\usepackage{titlesec}
 \geometry{a4paper, portrait, margin=30mm, bmargin=30mm, tmargin=30mm}
 \setcounter{secnumdepth}{5}
 \setcounter{tocdepth}{5}
 
 \makeatletter
 \newcommand\subsubsubsection{\@startsection{paragraph}{4}{\z@}{-2.5ex\@plus -1ex \@minus -.25ex}{1.25ex \@plus .25ex}{\normalfont\normalsize\bfseries}}
+\titleformat{\subsubsubsection}{\normalfont\bfseries}{\arabic{subsubsubsection}.}{0.5em}{}  
 \newcommand\subsubsubsubsection{\@startsection{subparagraph}{5}{\z@}{-2.5ex\@plus -1ex \@minus -.25ex}{1.25ex \@plus .25ex}{\normalfont\normalsize\bfseries}}
+\titleformat{\subsubsubsubsection}[hang]{\normalfont\bfseries}{\thesubsubsubsection\arabic{subsubsubsubsection}.}{0.5em}{}  
 \makeatother
-
-
+\renewcommand{\thesection}{\Roman{section}/}
+\titleformat{\section}[hang]{\normalfont\Large\bfseries}{\thesection}{0.5em}{}
+\setlength{\cftsecnumwidth}{2.5em} 
+\setlength{\cftsecindent}{1.5em}
+\renewcommand{\thesubsection}{\arabic{subsection}.}
+\setlength{\cftsubsecindent}{3em}
+\titleformat{\subsection}{\normalfont\bfseries}{\thesubsection}{0.5em}{}
+\renewcommand{\thesubsubsection}{\thesubsection\arabic{subsubsection}}
+\titleformat{\subsubsection}{\normalfont\bfseries}{\thesubsubsection}{0.5em}{}
+\setlength{\cftsubsubsecindent}{5em}
 \begin{document}
 \setstretch{1.5}
 \include{titlepage.tex}
-
 \renewcommand{\listfigurename}{LIST OF FIGURES}
 \renewcommand{\cftloftitlefont}{\Large\bfseries} 
 \renewcommand{\cftafterloftitle}{
@@ -37,7 +47,11 @@
 \renewcommand{\cftfigaftersnum}{:}
 \setlength{\cftfignumwidth}{5em}
 
-\tableofcontents
+
+\renewcommand{\contentsname}{\centering TABLE OF CONTENTS}
+\begin{center}
+    \tableofcontents
+\end{center}
 \newpage
 
 \listoffigures
@@ -145,7 +159,7 @@ project. We also summarize the content of these resources.
 \subsubsection{Use case: Authenticate}
     \begin{figure}[H]
         \centering
-        \includegraphics[width=0.7\textwidth]{image/AuthenticationUseCase.png} 
+        \includegraphics[width=0.7\textwidth, height=0.3\textheight]{image/AuthenticationUseCase.png} 
         \caption{Authentication use case diagram}
         \label{fig:authenticate_use_case}
     \end{figure}
@@ -160,11 +174,9 @@ project. We also summarize the content of these resources.
     \end{itemize}
 
     
-    \begin{table}[H]
+    \begin{table}[H] 
         \centering
         \renewcommand{\arraystretch}{1.5}
-        \caption{Actor Actions and System Actions for Authenticate}
-        \label{tab:authenticate_table}
         \begin{tabular}{|m{3.5cm}|p{10cm}|} 
             \hline
             \multicolumn{1}{|c|}{\textbf{Actor Action}} & \multicolumn{1}{c|}{\textbf{System Action}} \\ \hline
@@ -180,6 +192,8 @@ project. We also summarize the content of these resources.
             & 4. System updates the new password in the database \\ \cline{2-2}
             & 5. Students enter the new password to login \\ \hline
         \end{tabular}
+        \caption{Actor Actions and System Actions for Authenticate}
+        \label{tab:authenticate_table}
     \end{table}
     
     
@@ -187,7 +201,7 @@ project. We also summarize the content of these resources.
 \subsubsection{Use case: Student Schedule}
     \begin{figure}[H]
         \centering
-        \includegraphics[width=0.7\textwidth]{image/StudentScheduleUseCase.drawio.png} 
+        \includegraphics[width=0.75\textwidth, height=0.3\textheight]{image/StudentScheduleUseCase.png} 
         \caption{Schedule use case diagram}
         \label{fig:schedule_use_case}
     \end{figure}
@@ -211,8 +225,6 @@ project. We also summarize the content of these resources.
     \begin{table}[H]
         \centering
         \renewcommand{\arraystretch}{1.5}
-        \caption{Actor Actions and System Actions for Schedule}
-        \label{tab:schedule_table}
         \begin{tabular}{|m{3.5cm}|p{10cm}|} 
             \hline
             \multicolumn{1}{|c|}{\textbf{Actor Action}} & \multicolumn{1}{c|}{\textbf{System Action}} \\ \hline
@@ -229,6 +241,8 @@ project. We also summarize the content of these resources.
             & 2. Students can see the course class timetable after clicking the course \\ \cline{2-2}
             & 3. Click the favorite icon, the system will add that course to the list of favorite courses and show them in Favorite Course \\ \hline
         \end{tabular}
+        \caption{Actor Actions and System Actions for Schedule}
+        \label{tab:schedule_table}
     \end{table}
 
 \subsubsection{Use case: University Campus}
@@ -258,8 +272,6 @@ project. We also summarize the content of these resources.
     \begin{table}[H]
         \centering
         \renewcommand{\arraystretch}{2.5}
-        \caption{Actor Actions and System Actions for Campus}
-        \label{tab:campus_table}
         \begin{tabular}{|m{3.5cm}|p{10cm}|} 
             \hline
             \multicolumn{1}{|c|}{\textbf{Actor Action}} & \multicolumn{1}{c|}{\textbf{System Action}} \\ \hline
@@ -269,6 +281,8 @@ project. We also summarize the content of these resources.
             \multirow{1}{=}{\centering \shortstack[c]{User click button \\ "Map"}} 
             & 1. System loads a map to locate your location and each building \\ \hline
         \end{tabular}
+        \caption{Actor Actions and System Actions for Campus}
+        \label{tab:campus_table}
     \end{table}
 
 \subsubsection{Use case: University Resource}
@@ -288,8 +302,6 @@ project. We also summarize the content of these resources.
     \begin{table}[H]
         \centering
         \renewcommand{\arraystretch}{2.5}
-        \caption{Actor Actions and System Actions for Resource}
-        \label{tab:resource_table}
         \begin{tabular}{|m{3.5cm}|p{10cm}|} 
             \hline
             \multicolumn{1}{|c|}{\textbf{Actor Action}} & \multicolumn{1}{c|}{\textbf{System Action}} \\ \hline
@@ -297,6 +309,8 @@ project. We also summarize the content of these resources.
             & 1. The system displays a list of bachelor’s programs \\ \cline{2-2} 
             & 2. After choosing bachelor’s programs, the screen shows majors, then, the system shows the subject of the major and lectures, slides, … of a subject of major \\ \hline
         \end{tabular}
+        \caption{Actor Actions and System Actions for Resource}
+        \label{tab:resource_table}
     \end{table}
 
 \subsubsection{Use case: Student StudyBuddy}
@@ -331,8 +345,6 @@ project. We also summarize the content of these resources.
     \begin{table}[H]
         \centering
         \renewcommand{\arraystretch}{1.5}
-        \caption{Actor Actions and System Actions for StudyBuddy}
-        \label{tab:studyBuddy_table}
         \begin{tabular}{|m{3.5cm}|p{10cm}|} 
             \hline
             \multicolumn{1}{|c|}{\textbf{Actor Action}} & \multicolumn{1}{c|}{\textbf{System Action}} \\ \hline
@@ -351,6 +363,8 @@ project. We also summarize the content of these resources.
             & 1. The system fetches the StudyBuddy profile of Student from the database \\ \cline{2-2}
             & 2. After clicking “Edit Profile”, Students can change information about their StudyBuddy profile after the system is verified \\ \hline
         \end{tabular}
+        \caption{Actor Actions and System Actions for StudyBuddy}
+        \label{tab:studyBuddy_table}
     \end{table}
 
 \subsubsection{Use case: Real Time Notification}
@@ -381,8 +395,6 @@ project. We also summarize the content of these resources.
     \begin{table}[H]
         \centering
         \renewcommand{\arraystretch}{1.5}
-        \caption{Actor Actions and System Actions for Real time Notification}
-        \label{tab:notification_table}
         \begin{tabular}{|m{3.5cm}|p{10cm}|} 
             \hline
             \multicolumn{1}{|c|}{\textbf{Actor Action}} & \multicolumn{1}{c|}{\textbf{System Action}} \\ \hline
@@ -395,6 +407,8 @@ project. We also summarize the content of these resources.
             & 1. \textbf{Calendar notification:} The system will open the application and display the updated event on the calendar \\ \cline{2-2}
             & 2. \textbf{Incoming call notification:} The system will open the application and allow the user to handle the incoming call (accept or decline) \\ \hline
         \end{tabular}
+        \caption{Actor Actions and System Actions for Real time Notification}
+        \label{tab:notification_table}
     \end{table}
 
 
@@ -458,9 +472,9 @@ project. We also summarize the content of these resources.
 \subsection{System Architecture}
 \subsection{Database Design}
 \subsection{Use Case Implementation}
-\include{usecase_implementation}
-\include{analysis_call_message}
-\include{communication_handling}
+    \include{usecase_implementation}
+    \include{analysis_call_message}
+    \include{communication_handling}
 % \section{Material and Methodology}
 % \subsection{Material}
 % \subsubsection{Data Sources}

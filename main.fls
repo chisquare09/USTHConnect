@@ -66,6 +66,8 @@ INPUT C:\Users\abc\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\color.cf
 INPUT C:\Users\abc\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.ltx
 INPUT C:\Users\abc\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.ltx
 INPUT C:\Users\abc\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.ltx
+INPUT C:\Users\abc\AppData\Local\Programs\MiKTeX\tex\latex\titlesec\titlesec.sty
+INPUT C:\Users\abc\AppData\Local\Programs\MiKTeX\tex\latex\titlesec\titlesec.sty
 INPUT C:\Users\abc\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\abc\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT .\main.aux
@@ -146,13 +148,13 @@ INPUT .\image\AuthenticationUseCase.png
 INPUT .\image\AuthenticationUseCase.png
 INPUT .\image\AuthenticationUseCase.png
 INPUT .\image\AuthenticationUseCase.png
-INPUT .\image\StudentScheduleUseCase.drawio.png
-INPUT .\image\StudentScheduleUseCase.drawio.png
-INPUT .\image\StudentScheduleUseCase.drawio.png
-INPUT .\image\StudentScheduleUseCase.drawio.png
-INPUT .\image\StudentScheduleUseCase.drawio.png
-INPUT .\image\StudentScheduleUseCase.drawio.png
-INPUT .\image\StudentScheduleUseCase.drawio.png
+INPUT .\image\StudentScheduleUseCase.png
+INPUT .\image\StudentScheduleUseCase.png
+INPUT .\image\StudentScheduleUseCase.png
+INPUT .\image\StudentScheduleUseCase.png
+INPUT .\image\StudentScheduleUseCase.png
+INPUT .\image\StudentScheduleUseCase.png
+INPUT .\image\StudentScheduleUseCase.png
 INPUT .\image\CampusUseCase.png
 INPUT .\image\CampusUseCase.png
 INPUT .\image\CampusUseCase.png
@@ -187,6 +189,20 @@ INPUT .\image\SyncCalendar.png
 INPUT .\image\SyncCalendar.png
 INPUT .\image\SyncCalendar.png
 INPUT .\image\SyncCalendar.png
+INPUT .\image\StudentStudyBuddySequence.png
+INPUT .\image\StudentStudyBuddySequence.png
+INPUT .\image\StudentStudyBuddySequence.png
+INPUT .\image\StudentStudyBuddySequence.png
+INPUT .\image\StudentStudyBuddySequence.png
+INPUT .\image\StudentStudyBuddySequence.png
+INPUT .\image\StudentStudyBuddySequence.png
+INPUT .\image\Real-timeNotificationSequence.png
+INPUT .\image\Real-timeNotificationSequence.png
+INPUT .\image\Real-timeNotificationSequence.png
+INPUT .\image\Real-timeNotificationSequence.png
+INPUT .\image\Real-timeNotificationSequence.png
+INPUT .\image\Real-timeNotificationSequence.png
+INPUT .\image\Real-timeNotificationSequence.png
 INPUT .\analysis_call_message.tex
 INPUT .\analysis_call_message.tex
 OUTPUT analysis_call_message.aux
@@ -207,13 +223,13 @@ INPUT .\image\Call Initiation.png
 INPUT .\image\Call Initiation.png
 INPUT .\image\Call Initiation.png
 INPUT C:\Users\abc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt10.tfm
-INPUT .\image\Locating_calllee.png
-INPUT .\image\Locating_calllee.png
-INPUT .\image\Locating_calllee.png
-INPUT .\image\Locating_calllee.png
-INPUT .\image\Locating_calllee.png
-INPUT .\image\Locating_calllee.png
-INPUT .\image\Locating_calllee.png
+INPUT .\image\Locating_callee.png
+INPUT .\image\Locating_callee.png
+INPUT .\image\Locating_callee.png
+INPUT .\image\Locating_callee.png
+INPUT .\image\Locating_callee.png
+INPUT .\image\Locating_callee.png
+INPUT .\image\Locating_callee.png
 INPUT .\image\Instant messaging.png
 INPUT .\image\Instant messaging.png
 INPUT .\image\Instant messaging.png
