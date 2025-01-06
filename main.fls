@@ -143,68 +143,76 @@ INPUT .\main.lot
 INPUT main.lot
 OUTPUT main.lot
 INPUT C:\Users\abc\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1000.tfm
-INPUT .\image\AuthenticationUseCase.png
-INPUT .\image\AuthenticationUseCase.png
-INPUT .\image\AuthenticationUseCase.png
-INPUT .\image\AuthenticationUseCase.png
-INPUT .\image\AuthenticationUseCase.png
-INPUT .\image\AuthenticationUseCase.png
-INPUT .\image\AuthenticationUseCase.png
-INPUT .\image\StudentScheduleUseCase.png
-INPUT .\image\StudentScheduleUseCase.png
-INPUT .\image\StudentScheduleUseCase.png
-INPUT .\image\StudentScheduleUseCase.png
-INPUT .\image\StudentScheduleUseCase.png
-INPUT .\image\StudentScheduleUseCase.png
-INPUT .\image\StudentScheduleUseCase.png
-INPUT .\image\CampusUseCase.png
-INPUT .\image\CampusUseCase.png
-INPUT .\image\CampusUseCase.png
-INPUT .\image\CampusUseCase.png
-INPUT .\image\CampusUseCase.png
-INPUT .\image\CampusUseCase.png
-INPUT .\image\CampusUseCase.png
-INPUT .\image\StudyBuddyUseCase.png
-INPUT .\image\StudyBuddyUseCase.png
-INPUT .\image\StudyBuddyUseCase.png
-INPUT .\image\StudyBuddyUseCase.png
-INPUT .\image\StudyBuddyUseCase.png
-INPUT .\image\StudyBuddyUseCase.png
-INPUT .\image\StudyBuddyUseCase.png
-INPUT .\image\Real-timeNotificationUseCase.png
-INPUT .\image\Real-timeNotificationUseCase.png
-INPUT .\image\Real-timeNotificationUseCase.png
-INPUT .\image\Real-timeNotificationUseCase.png
-INPUT .\image\Real-timeNotificationUseCase.png
-INPUT .\image\Real-timeNotificationUseCase.png
-INPUT .\image\Real-timeNotificationUseCase.png
+INPUT .\image\AuthenticationUseCase.pdf
+INPUT .\image\AuthenticationUseCase.pdf
+INPUT .\image\AuthenticationUseCase.pdf
+INPUT .\image\AuthenticationUseCase.pdf
+INPUT .\image\AuthenticationUseCase.pdf
+INPUT .\image\AuthenticationUseCase.pdf
+INPUT .\image\StudentScheduleUseCase.pdf
+INPUT .\image\StudentScheduleUseCase.pdf
+INPUT .\image\StudentScheduleUseCase.pdf
+INPUT .\image\StudentScheduleUseCase.pdf
+INPUT .\image\StudentScheduleUseCase.pdf
+INPUT .\image\StudentScheduleUseCase.pdf
+INPUT .\image\CampusUseCase.pdf
+INPUT .\image\CampusUseCase.pdf
+INPUT .\image\CampusUseCase.pdf
+INPUT .\image\CampusUseCase.pdf
+INPUT .\image\CampusUseCase.pdf
+INPUT .\image\CampusUseCase.pdf
+INPUT .\image\StudyBuddyUseCase.pdf
+INPUT .\image\StudyBuddyUseCase.pdf
+INPUT .\image\StudyBuddyUseCase.pdf
+INPUT .\image\StudyBuddyUseCase.pdf
+INPUT .\image\StudyBuddyUseCase.pdf
+INPUT .\image\StudyBuddyUseCase.pdf
+INPUT .\image\Real-timeNotification.pdf
+INPUT .\image\Real-timeNotification.pdf
+INPUT .\image\Real-timeNotification.pdf
+INPUT .\image\Real-timeNotification.pdf
+INPUT .\image\Real-timeNotification.pdf
+INPUT .\image\Real-timeNotification.pdf
 INPUT .\usecase_implementation.tex
 INPUT .\usecase_implementation.tex
 OUTPUT usecase_implementation.aux
 INPUT .\usecase_implementation.tex
 INPUT .\usecase_implementation.tex
 INPUT usecase_implementation.tex
-INPUT .\image\SyncCalendar.png
-INPUT .\image\SyncCalendar.png
-INPUT .\image\SyncCalendar.png
-INPUT .\image\SyncCalendar.png
-INPUT .\image\SyncCalendar.png
-INPUT .\image\SyncCalendar.png
-INPUT .\image\SyncCalendar.png
-INPUT .\image\StudentStudyBuddySequence.png
-INPUT .\image\StudentStudyBuddySequence.png
-INPUT .\image\StudentStudyBuddySequence.png
-INPUT .\image\StudentStudyBuddySequence.png
-INPUT .\image\StudentStudyBuddySequence.png
-INPUT .\image\StudentStudyBuddySequence.png
-INPUT .\image\StudentStudyBuddySequence.png
-INPUT .\image\Real-timeNotificationSequence.png
-INPUT .\image\Real-timeNotificationSequence.png
-INPUT .\image\Real-timeNotificationSequence.png
-INPUT .\image\Real-timeNotificationSequence.png
-INPUT .\image\Real-timeNotificationSequence.png
-INPUT .\image\Real-timeNotificationSequence.png
-INPUT .\image\Real-timeNotificationSequence.png
+INPUT .\image\SyncCalendar.pdf
+INPUT .\image\SyncCalendar.pdf
+INPUT .\image\SyncCalendar.pdf
+INPUT .\image\SyncCalendar.pdf
+INPUT .\image\SyncCalendar.pdf
+INPUT .\image\SyncCalendar.pdf
+INPUT .\image\StudyBuddySequenceDiagram-SB.pdf
+INPUT .\image\StudyBuddySequenceDiagram-SB.pdf
+INPUT .\image\StudyBuddySequenceDiagram-SB.pdf
+INPUT .\image\StudyBuddySequenceDiagram-SB.pdf
+INPUT .\image\StudyBuddySequenceDiagram-SB.pdf
+INPUT .\image\StudyBuddySequenceDiagram-SB.pdf
+INPUT .\image\StudyBuddySequenceDiagram-Message.pdf
+INPUT .\image\StudyBuddySequenceDiagram-Message.pdf
+INPUT .\image\StudyBuddySequenceDiagram-Message.pdf
+INPUT .\image\StudyBuddySequenceDiagram-Message.pdf
+INPUT .\image\StudyBuddySequenceDiagram-Message.pdf
+INPUT .\image\StudyBuddySequenceDiagram-Message.pdf
+INPUT .\image\StudyBuddySequenceDiagram-Contact.pdf
+INPUT .\image\StudyBuddySequenceDiagram-Contact.pdf
+INPUT .\image\StudyBuddySequenceDiagram-Contact.pdf
+INPUT .\image\StudyBuddySequenceDiagram-Contact.pdf
+INPUT .\image\StudyBuddySequenceDiagram-Contact.pdf
+INPUT .\image\StudyBuddySequenceDiagram-Contact.pdf
+INPUT .\image\StudyBuddySequenceDiagram-Profile.pdf
+INPUT .\image\StudyBuddySequenceDiagram-Profile.pdf
+INPUT .\image\StudyBuddySequenceDiagram-Profile.pdf
+INPUT .\image\StudyBuddySequenceDiagram-Profile.pdf
+INPUT .\image\StudyBuddySequenceDiagram-Profile.pdf
+INPUT .\image\StudyBuddySequenceDiagram-Profile.pdf
+INPUT .\image\Real-timeNotification.pdf
+INPUT .\image\Real-timeNotification.pdf
+INPUT .\image\Real-timeNotification.pdf
+INPUT .\image\Real-timeNotification.pdf
 INPUT .\analysis_call_message.tex
 INPUT .\analysis_call_message.tex
 OUTPUT analysis_call_message.aux
@@ -217,28 +225,25 @@ OUTPUT communication_handling.aux
 INPUT .\communication_handling.tex
 INPUT .\communication_handling.tex
 INPUT communication_handling.tex
-INPUT .\image\Call Initiation.png
-INPUT .\image\Call Initiation.png
-INPUT .\image\Call Initiation.png
-INPUT .\image\Call Initiation.png
-INPUT .\image\Call Initiation.png
-INPUT .\image\Call Initiation.png
-INPUT .\image\Call Initiation.png
+INPUT .\image\Call Initiation.pdf
+INPUT .\image\Call Initiation.pdf
+INPUT .\image\Call Initiation.pdf
+INPUT .\image\Call Initiation.pdf
+INPUT .\image\Call Initiation.pdf
+INPUT .\image\Call Initiation.pdf
 INPUT C:\Users\abc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt10.tfm
-INPUT .\image\Locating_callee.png
-INPUT .\image\Locating_callee.png
-INPUT .\image\Locating_callee.png
-INPUT .\image\Locating_callee.png
-INPUT .\image\Locating_callee.png
-INPUT .\image\Locating_callee.png
-INPUT .\image\Locating_callee.png
-INPUT .\image\Instant messaging.png
-INPUT .\image\Instant messaging.png
-INPUT .\image\Instant messaging.png
-INPUT .\image\Instant messaging.png
-INPUT .\image\Instant messaging.png
-INPUT .\image\Instant messaging.png
-INPUT .\image\Instant messaging.png
+INPUT .\image\Locating_callee.pdf
+INPUT .\image\Locating_callee.pdf
+INPUT .\image\Locating_callee.pdf
+INPUT .\image\Locating_callee.pdf
+INPUT .\image\Locating_callee.pdf
+INPUT .\image\Locating_callee.pdf
+INPUT .\image\Instant messaging.pdf
+INPUT .\image\Instant messaging.pdf
+INPUT .\image\Instant messaging.pdf
+INPUT .\image\Instant messaging.pdf
+INPUT .\image\Instant messaging.pdf
+INPUT .\image\Instant messaging.pdf
 INPUT main.aux
 INPUT .\titlepage.aux
 INPUT .\titlepage.aux
