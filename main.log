@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.6)  4 JAN 2025 14:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.6)  6 JAN 2025 10:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -235,39 +235,45 @@ Package: titlesec 2023/10/27 v2.16 Sectioning titles
 \titlewidth=\dimen172
 \titlewidthlast=\dimen173
 \titlewidthfirst=\dimen174
+) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip92
+\bibsep=\skip93
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count292
 ) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count292
+\l__color_backend_stack_int=\count293
 \l__pdf_internal_box=\box60
 ) (main.aux (titlepage.aux) (usecase_implementation.aux) (analysis_call_message.aux) (communication_handling.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
  (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count293
+\scratchcounter=\count294
 \scratchdimen=\dimen175
 \scratchbox=\box61
-\nofMPsegments=\count294
-\nofMParguments=\count295
+\nofMPsegments=\count295
+\nofMParguments=\count296
 \everyMPshowfont=\toks32
-\MPscratchCnt=\count296
+\MPscratchCnt=\count297
 \MPscratchDim=\dimen176
-\MPnumerator=\count297
-\makeMPintoPDFobject=\count298
+\MPnumerator=\count298
+\makeMPintoPDFobject=\count299
 \everyMPtoPDFconversion=\toks33
 ) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -334,7 +340,7 @@ Package pdftex.def Info: image/logoUSTH.png  used on input line 7.
 
 
 [3]
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 57--57
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 60--60
  [][][]
  []
 
@@ -345,7 +351,7 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 57--57
 
 
 [4]
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 70--70
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 73--73
  [][][]
  []
 
@@ -358,163 +364,190 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 70--70
 [5]
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 126--128
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 143--145
 
  []
 
 
 
-[7]
-<image/AuthenticationUseCase.png, id=32, 999.735pt x 564.1075pt>
+[8]
+
+[9]
+<image/AuthenticationUseCase.png, id=38, 999.735pt x 564.1075pt>
 File: image/AuthenticationUseCase.png Graphic file (type png)
 <use image/AuthenticationUseCase.png>
-Package pdftex.def Info: image/AuthenticationUseCase.png  used on input line 162.
+Package pdftex.def Info: image/AuthenticationUseCase.png  used on input line 211.
 (pdftex.def)             Requested size: 298.7482pt x 202.30385pt.
 
 
-[8]
+[10]
 
-[9 <./image/AuthenticationUseCase.png>]
-<image/StudentScheduleUseCase.png, id=41, 1513.655pt x 825.0825pt>
+[11 <./image/AuthenticationUseCase.png>]
+<image/StudentScheduleUseCase.png, id=47, 1513.655pt x 825.0825pt>
 File: image/StudentScheduleUseCase.png Graphic file (type png)
 <use image/StudentScheduleUseCase.png>
-Package pdftex.def Info: image/StudentScheduleUseCase.png  used on input line 204.
+Package pdftex.def Info: image/StudentScheduleUseCase.png  used on input line 253.
 (pdftex.def)             Requested size: 320.0942pt x 202.29176pt.
 
 
-[10 <./image/StudentScheduleUseCase.png>]
-<image/CampusUseCase.png, id=46, 1320.935pt x 666.49pt>
+[12 <./image/StudentScheduleUseCase.png>]
+<image/CampusUseCase.png, id=52, 1320.935pt x 666.49pt>
 File: image/CampusUseCase.png Graphic file (type png)
 <use image/CampusUseCase.png>
-Package pdftex.def Info: image/CampusUseCase.png  used on input line 251.
+Package pdftex.def Info: image/CampusUseCase.png  used on input line 300.
 (pdftex.def)             Requested size: 298.75264pt x 150.73685pt.
 
 
-[11 <./image/CampusUseCase.png>]
+[13 <./image/CampusUseCase.png>]
 
-[12]
-<image/StudyBuddyUseCase.png, id=54, 1397.22pt x 1347.0325pt>
+[14]
+<image/StudyBuddyUseCase.png, id=61, 1397.22pt x 1347.0325pt>
 File: image/StudyBuddyUseCase.png Graphic file (type png)
 <use image/StudyBuddyUseCase.png>
-Package pdftex.def Info: image/StudyBuddyUseCase.png  used on input line 319.
+Package pdftex.def Info: image/StudyBuddyUseCase.png  used on input line 368.
 (pdftex.def)             Requested size: 298.75264pt x 288.02368pt.
 
 
-[13 <./image/StudyBuddyUseCase.png>]
-<image/Real-timeNotificationUseCase.png, id=60, 954.56625pt x 372.39125pt>
+[15 <./image/StudyBuddyUseCase.png>]
+<image/Real-timeNotificationUseCase.png, id=66, 954.56625pt x 372.39125pt>
 File: image/Real-timeNotificationUseCase.png Graphic file (type png)
 <use image/Real-timeNotificationUseCase.png>
-Package pdftex.def Info: image/Real-timeNotificationUseCase.png  used on input line 373.
+Package pdftex.def Info: image/Real-timeNotificationUseCase.png  used on input line 422.
 (pdftex.def)             Requested size: 298.75264pt x 116.54813pt.
 
 
-[14 <./image/Real-timeNotificationUseCase.png>]
+[16 <./image/Real-timeNotificationUseCase.png>]
 
-[15]
+[17]
 \openout2 = `usecase_implementation.aux'.
 
  (usecase_implementation.tex
-<image/SyncCalendar.png, id=68, 2284.535pt x 1168.365pt>
+<image/SyncCalendar.png, id=74, 2284.535pt x 1168.365pt>
 File: image/SyncCalendar.png Graphic file (type png)
 <use image/SyncCalendar.png>
 Package pdftex.def Info: image/SyncCalendar.png  used on input line 4.
 (pdftex.def)             Requested size: 426.78061pt x 202.29195pt.
-<image/StudentStudyBuddySequence.png, id=69, 2613.765pt x 5986.365pt>
+<image/StudentStudyBuddySequence.png, id=75, 2613.765pt x 5986.365pt>
 File: image/StudentStudyBuddySequence.png Graphic file (type png)
 <use image/StudentStudyBuddySequence.png>
-Package pdftex.def Info: image/StudentStudyBuddySequence.png  used on input line 12.
+Package pdftex.def Info: image/StudentStudyBuddySequence.png  used on input line 29.
 (pdftex.def)             Requested size: 384.07127pt x 606.89258pt.
 
 
-[16
+[18
 
  <./image/SyncCalendar.png>]
-<image/Real-timeNotificationSequence.png, id=74, 1381.16pt x 1547.7825pt>
+
+[19 <./image/StudentStudyBuddySequence.png>]
+<image/Real-timeNotificationSequence.png, id=85, 1381.16pt x 1547.7825pt>
 File: image/Real-timeNotificationSequence.png Graphic file (type png)
 <use image/Real-timeNotificationSequence.png>
-Package pdftex.def Info: image/Real-timeNotificationSequence.png  used on input line 20.
+Package pdftex.def Info: image/Real-timeNotificationSequence.png  used on input line 55.
 (pdftex.def)             Requested size: 298.73497pt x 404.58675pt.
-)
 
-[17 <./image/StudentStudyBuddySequence.png>]
 
-[18 <./image/Real-timeNotificationSequence.png>]
+[20]
+
+[21 <./image/Real-timeNotificationSequence.png>])
+
+[22]
 \openout2 = `analysis_call_message.aux'.
 
  (analysis_call_message.tex
 
-[19
+[23
 
 
 
 ])
 
-[20]
+[24]
 \openout2 = `communication_handling.aux'.
 
  (communication_handling.tex
 
-[21
+[25
 
 
 
 ]
-<image/Call Initiation.png, id=93, 697.8873pt x 915.6609pt>
+<image/Call Initiation.png, id=106, 697.8873pt x 915.6609pt>
 File: image/Call Initiation.png Graphic file (type png)
 <use image/Call Initiation.png>
 Package pdftex.def Info: image/Call Initiation.png  used on input line 34.
 (pdftex.def)             Requested size: 298.75458pt x 472.02472pt.
 
 
-[22 <./image/Call Initiation.png>]
-<image/Locating_callee.png, id=98, 1409.265pt x 782.925pt>
+[26 <./image/Call Initiation.png>]
+<image/Locating_callee.png, id=111, 1409.265pt x 782.925pt>
 File: image/Locating_callee.png Graphic file (type png)
 <use image/Locating_callee.png>
 Package pdftex.def Info: image/Locating_callee.png  used on input line 70.
 (pdftex.def)             Requested size: 384.09775pt x 269.72713pt.
 
 
-[23]
+[27]
 
-[24 <./image/Locating_callee.png>]
-<image/Instant messaging.png, id=107, 366.36874pt x 326.21875pt>
+[28 <./image/Locating_callee.png>]
+<image/Instant messaging.png, id=120, 366.36874pt x 326.21875pt>
 File: image/Instant messaging.png Graphic file (type png)
 <use image/Instant messaging.png>
 Package pdftex.def Info: image/Instant messaging.png  used on input line 95.
 (pdftex.def)             Requested size: 298.76958pt x 269.751pt.
 )
 
-[25 <./image/Instant messaging.png>]
+[29 <./image/Instant messaging.png>]
 
-[26
+[30
 
 
 ]
 
-[27]
+Package natbib Warning: Citation `2012vi' on page 31 undefined on input line 604.
 
-[28]
 
-[29]
+Package natbib Warning: Citation `9260048' on page 31 undefined on input line 607.
 
-[30] (main.aux (titlepage.aux) (usecase_implementation.aux) (analysis_call_message.aux) (communication_handling.aux))
+
+Package natbib Warning: Citation `2012vi' on page 31 undefined on input line 613.
+
+
+Package natbib Warning: Citation `HOSEN2023688' on page 31 undefined on input line 640.
+
+
+
+[31]
+
+[32]
+
+[33]
+
+Package natbib Warning: There were undefined citations.
+
+
+
+[34]
+
+[35] (main.aux (titlepage.aux) (usecase_implementation.aux) (analysis_call_message.aux) (communication_handling.aux))
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4618 strings out of 473682
- 76165 string characters out of 5720168
- 487319 words of memory out of 5000000
- 27621 multiletter control sequences out of 15000+600000
+ 4963 strings out of 473682
+ 80480 string characters out of 5720168
+ 493413 words of memory out of 5000000
+ 27962 multiletter control sequences out of 15000+600000
  564262 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,15n,65p,547b,337s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\abc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (30 pages, 1189938 bytes).
+ <C:\Users\abc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on main.pdf (35 pages, 1235779 bytes).
 PDF statistics:
- 184 PDF objects out of 1000 (max. 8388607)
+ 215 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

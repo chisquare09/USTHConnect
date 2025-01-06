@@ -13,6 +13,9 @@
 \usepackage{tocloft}
 \usepackage{xcolor}
 \usepackage{titlesec}
+\usepackage{natbib}
+\bibliographystyle{unsrt}
+
 \geometry{a4paper, portrait, margin=30mm, bmargin=30mm, tmargin=30mm}
 \setcounter{secnumdepth}{5}
 \setcounter{tocdepth}{5}
@@ -101,7 +104,18 @@ and encourage more interaction among students.
 This platform should be user-friendly and accessible through all devices, making it easier for students to experience campus life, 
 stay informed, and connect with their peers. 
 
-\subsection{Desired Outcomes}
+\subsection{Desired Outcomes}  
+The University Life Assistant and Student Networking Application (USTH Connect) is expected to significantly enhance the university experience by simplifying academic and social interactions for students, faculty, and administrators.
+By seamlessly integrating essential tools like schedules, course materials, and campus navigation, USTH Connect aims to boost student productivity and reduce administrative burdens.
+The StudyBuddy feature, powered by advanced machine learning, is expected to effectively connect students with compatible study partners, encouraging collaboration and enhancing user experience.
+Real-time notifications for calendar updates and events together with calling and messaging will keep users informed, organized and connected.
+The integration of Google Calendar, MapBox, and Moodle promise a user-friendly experience across Android devices.
+Linphone-powered chat and audio calls will facilitate seamless communication and strengthen social bonding among students.
+Regarding robust security measures, including PostgreSQL and Tailscale VPN, will ensure data integrity and reliability. 
+Administrators will gain valuable insights through centralized reporting, enabling them to effectively monitor student engagement and make informed decisions. 
+The scalable and flexible design of USTH Connect allows for future expansion and adaptation within the USTH community.
+In summary, USTH Connect is expected to significantly improve the university experience for students, faculty, and administrators by encouraging a more efficient, connected, and secure academic environment.
+
 
 \subsection{Structure of Thesis}
 The thesis will be structured as follows:
@@ -119,11 +133,14 @@ The thesis will be structured as follows:
     \item \textbf{Part IV: AI Model Analysis and Training }
     \newline
     Analysis and training of AI models for recommend system for study buddy matchmaking, including datasets and model development, with (Model Name) integration.
-    \item \textbf{Part V: Results and Discussions }
+    \item \textbf{Part V: System Design and Implementation }
+    \newline
+    Overview of the system's design and implementation process, detailing the hardware and software setups, core application modules, and the initial testing phases to ensure seamless integration and functionality.
+    \item \textbf{Part VI: Results and Discussions }
     \newline 
     Summarizes the implementations and achievements of the system. It reflects on how the
     objectives were met and provides a summary of the project's outcomes.
-    \item \textbf{Part VI: Conclusion and Future Work }
+    \item \textbf{Part VII: Conclusion and Future Work }
     \newline
 \end{itemize}
 
@@ -137,9 +154,41 @@ project. We also summarize the content of these resources.
 % \section{Theoretical Background}
 \section{Requirement Analysis}
 \subsection{System requirements}
+This section outlines the essential requirements for the development and successful operation of USTH Connect, classified into functional, non-functional, and desired functionalities.  
+
 \subsubsection{Functional Requirements}
+The functional requirements specify the primary operations and features of USTH Connect to meet user and system objectives:  
+\begin{itemize}  
+    \item \textbf{Authentication and Authorization:} Implement secure user authentication using JWT-based tokens and role-based access control (RBAC) for managing access permissions.  
+    \item \textbf{Google Calendar Integration:} Enable users to sync, view, and manage academic schedules in real-time within the application.  
+    \item \textbf{StudyBuddy Matching:} Allow students to find study partners based on shared academic interests, goals, and compatibility through machine learning algorithms.  
+    \item \textbf{Moodle Resource Access:} Provide seamless access to course materials, including slides, assignments, and reference documents, fetched directly from Moodle.  
+    \item \textbf{Real-time Notifications:} Notify users promptly about calendar updates, study partner incoming communication, and scheduled events.  
+    \item \textbf{Map and Navigation:} Integrate MapBox to display campus maps, building locations, and navigation features for easy campus exploration.  
+    \item \textbf{Communication Features:} Facilitate text-based chatting and VoIP audio calls using Linphone for seamless interaction between users.  
+    \item \textbf{Administrative Tools:} Offer reporting tools for administrators to monitor user engagement, system usage, and academic performance.  
+\end{itemize}  
+
 \subsubsection{Non-functional Requirements}
+The non-functional requirements outline the system's essential performance, reliability, and usability standards:  
+\begin{itemize}  
+    \item \textbf{Scalability:} The system should support a moderate increase in user numbers and data while maintaining acceptable performance levels.  
+    \item \textbf{Security:} User data must be protected with basic encryption protocols, secure database practices (PostgreSQL), and VPN communication (Tailscale) for backend interactions.  
+    \item \textbf{Availability:} Aim for a system uptime of at least 90\%, ensuring minimal disruption to user access.  
+    \item \textbf{Performance:} Key functionalities, such as schedule retrieval and StudyBuddy matching, should respond within 5 seconds under normal conditions.  
+    \item \textbf{Usability:} The interface should be straightforward and functional, providing a smooth experience on most Android devices.  
+    \item \textbf{Maintainability:} Updates and feature additions should be feasible without causing significant downtime or compatibility issues.  
+\end{itemize}  
+
 \subsubsection{Desired Functionalities}
+These functionalities are not critical but aim to enhance the overall user experience and system capabilities:  
+\begin{itemize}  
+    \item \textbf{Personalized Dashboard:} Provide a customizable home screen with quick access to frequently used features, such as schedules, notifications, and StudyBuddy matches.  
+    \item \textbf{Event Reminders:} Enable automated reminders for upcoming deadlines, meetings, and academic events.  
+    \item \textbf{Offline Mode:} Allow limited functionality, such as viewing previously synced schedules and notes, when the user is offline.  
+    \item \textbf{User Feedback System:} Incorporate feedback and rating mechanisms for StudyBuddy matches and overall app experience.  
+    \item \textbf{Cross-platform Compatibility:} Develop future support for IOS devices and web browsers to expand user accessibility.  
+\end{itemize}  
 
 \subsection{Use Case}
 \subsubsection{Use Cases Diagram}
@@ -545,9 +594,61 @@ where $y_{i,l}$ is a binary indicator variable (1 if $X_i$ refers to cluster l, 
 \end{enumerate}
 
 \subsubsection{Evaluation Metrics}
-\paragraph{Silhouette Coefficient}
+\subsubsubsection{Silhouette Coefficient}
 
-\paragraph{Davies-Bouldin Index}
+\noindent Choosing the optimal number of k value is crucial for the 
+    K-mode algorithm. To study the optimal value of k for a clustering algorithm, 
+    various methods have been proposed. While the ground truth is not available
+    in a data set, intrinsic methods should be used to evaluate the 
+    clustering quality. These methods will examining how well the clusters
+    are separated or compacted together \citep{2012vi}. Silhouette Coefficient is one of the most
+    commonly used intrinsic methods, which measures the quality of a cluster. The highest
+    silhouette score calculated by the mean silhouette coefficient of all samples
+    is considered the optimal number of clusters \citep{9260048}. 
+
+\noindent With a data set D of n objects, in which D is partitioned into 
+k clusters, $\{C_1,C_2,...,C_k\}$. For each object $o \in D$, 
+let $a(o)$ be the average distance of o to all other objects in the same cluster.
+Similarly, let $b(o)$ be the minimum average distance of o to other clusters.
+Suppose $o \in C_i(1 \leq i \leq k )$, then \citep{2012vi}: 
+
+$$a(o) = \frac{\sum_{o' \in C_i , o \neq o'} dist(o,o')}{|C_i| - 1}$$
+and
+$$b(o) = \min_{C_j: 1 \leq j \leq k, j \neq i} \frac{\sum_{o' \in C_j} dist(o,o')}{|C_j|}$$
+
+The silhouette coefficient of object o is defined as:
+$$s(o) = \frac{b(o) - a(o)}{\max\{a(o),b(o)\}}$$
+
+\noindent The silhouette coefficient is in $[-1,1]$. The $a(o)$ value illustrated
+the compactness of the cluster which o belongs. Smaller $a(o)$ means the
+cluster is more compact. The $b(o)$ value shows how well-separated the 
+cluster o is from other clusters. Larger $b(o)$ means the cluster is
+more separated. When the silhouette coefficient is close to 1, it indicates
+that the object $o$ is compact and distance to others. On the other hand, 
+if the silhouette coefficient is close to -1 (i.e., $a(o) > b(o)$), means
+the object $o$ is far from its cluster and close to other clusters. This is
+the reason why a larger silhouette coefficient is considered better in terms of
+clustering quality. 
+
+
+\subsubsubsection{Davies-Bouldin Index}
+
+    \noindent Another evaluation metric that can be used to evaluate 
+    the clustering quality is the Davies-Bouldin Index (DBI). The DBI
+    is calculated by the average similarity between each cluster and its
+    most similar cluster. The lower the DBI value, the better the clustering
+    quality. The DBI is defined as follows \citep{HOSEN2023688}:
+
+$ DBI = \frac{1}{n} \sum_{i=1}^{n} max_{j \neq i} \frac{s_i + s_j}{d(c_i,c_j)}$
+
+and 
+
+$s_i = \frac{1}{n_i} \sum_{j=1}^{n_i} d(x_j,c_i)$
+
+\noindent In which $n$ is the number of clusters, $s_i$ is the average distance between
+each data point belonging to cluster $i$ and the centroid of cluster $i$, 
+$d(c_i,c_j)$ indicated the distance between the centroids of cluster $i$ and
+$j$.
 
 \subsection{Model Implementation}
 
