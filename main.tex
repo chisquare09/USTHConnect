@@ -565,7 +565,7 @@ These functionalities are not critical but aim to enhance the overall user exper
 %     \item Evaluation metrics: Silhouette score, Davies-Bouldin index
 % \end{itemize}
 
-\section{AI Model Analysis and Training}
+\section{Machine Learning Model Analysis and Training}
 \subsection{One-Hot Encoding}
 One-hot Encoding is a data preprocessing technique that transforms a single categorical variable with n distinct categories 
 into n separate columns. Each column is represented by one number 0 or 1, where the value 1 presents the presence of that category 
@@ -577,34 +577,18 @@ The dissimilarity measure between two categorical objects X and Y (with m attrib
         $$d(X,Y) = \sum_{i=1}^{m}\delta{(x_i,y_i)}$$ where $$\delta{(x_i,y_i)} = \left\{\begin{array}{ll} 0 & (x_i = y_i) \\
         1 & (x_i \neq y_i)\end{array}\right.$$
 
-\subsection{K-Mode Algorithm}
-% Cost function
-Let $\{Q_1,Q_2,...,Q_k\}$ be the modes of clusters $\{C_1,C_2,...,C_k\}$. The cost function can be defined by taking the total dissimilarities of each sample and its assigned cluster's mode: 
-$$E = \sum_{l=1}^{k}\sum_{i=1}^{n}y_{i,l}d(X_i,Q_l)$$ 
-where $y_{i,l}$ is a binary indicator variable (1 if $X_i$ refers to cluster l, 0 otherwise), k is the number of clusters, n is the total number of samples, $d(X_i,Q_l)$ is the dissimilarity between sample $X_i$ and the mode $Q_l$. The objective is to minimize the value of the cost function by following the following steps: 
-
-\begin{enumerate}
-    \item Randomly select K initial modes as K clusters.
-    
-    \item Calculate the dissimilarity between data points and the mode of each cluster. Then assign objects to the cluster whose mode is closest to it (which has the smallest dissimilarity). Update the cluster’s mode by selecting the highest frequency of each category within the cluster. If there are more than 2 categories of an attribute that have the same highest frequency, we randomly select one of them to serve as mode.
-    
-    \item Recalculate the dissimilarity of objects with the current modes and reassign the object to the cluster with closest mode and update the new modes for clusters.
-    
-    \item Repeat Step 2 and 3 until every cluster has no changes after testing the whole dataset.
-\end{enumerate}
-
-\subsubsection{Evaluation Metrics}
-\subsubsubsection{Silhouette Coefficient}
-
+\subsection{Evaluation Metrics}
+\subsubsection{Silhouette Coefficient}
+\\
 \noindent Choosing the optimal number of k value is crucial for the 
-    K-mode algorithm. To study the optimal value of k for a clustering algorithm, 
-    various methods have been proposed. While the ground truth is not available
-    in a data set, intrinsic methods should be used to evaluate the 
-    clustering quality. These methods will examining how well the clusters
-    are separated or compacted together \citep{2012vi}. Silhouette Coefficient is one of the most
-    commonly used intrinsic methods, which measures the quality of a cluster. The highest
-    silhouette score calculated by the mean silhouette coefficient of all samples
-    is considered the optimal number of clusters \citep{9260048}. 
+K-mode algorithm. To study the optimal value of k for a clustering algorithm, 
+various methods have been proposed. While the ground truth is not available
+in a data set, intrinsic methods should be used to evaluate the 
+clustering quality. These methods will examining how well the clusters
+are separated or compacted together \citep{2012vi}. Silhouette Coefficient is one of the most
+commonly used intrinsic methods, which measures the quality of a cluster. The highest
+silhouette score calculated by the mean silhouette coefficient of all samples
+is considered the optimal number of clusters \citep{9260048}. 
 
 \noindent With a data set D of n objects, in which D is partitioned into 
 k clusters, $\{C_1,C_2,...,C_k\}$. For each object $o \in D$, 
@@ -631,13 +615,13 @@ the reason why a larger silhouette coefficient is considered better in terms of
 clustering quality. 
 
 
-\subsubsubsection{Davies-Bouldin Index}
-
-    \noindent Another evaluation metric that can be used to evaluate 
-    the clustering quality is the Davies-Bouldin Index (DBI). The DBI
-    is calculated by the average similarity between each cluster and its
-    most similar cluster. The lower the DBI value, the better the clustering
-    quality. The DBI is defined as follows \citep{HOSEN2023688}:
+\subsubsection{Davies-Bouldin Index}
+\\
+\noindent Another evaluation metric that can be used to evaluate
+the clustering quality is the Davies-Bouldin Index (DBI). The DBI
+is calculated by the average similarity between each cluster and its
+most similar cluster. The lower the DBI value, the better the clustering
+quality. The DBI is defined as follows \citep{HOSEN2023688}:
 
 $ DBI = \frac{1}{n} \sum_{i=1}^{n} max_{j \neq i} \frac{s_i + s_j}{d(c_i,c_j)}$
 
@@ -650,7 +634,56 @@ each data point belonging to cluster $i$ and the centroid of cluster $i$,
 $d(c_i,c_j)$ indicated the distance between the centroids of cluster $i$ and
 $j$.
 
+\subsection{K-Mode Algorithm}
+% Cost function
+Let $\{Q_1,Q_2,...,Q_k\}$ be the modes of clusters $\{C_1,C_2,...,C_k\}$. The cost function can be defined by taking the total dissimilarities of each sample and its assigned cluster's mode: 
+$$E = \sum_{l=1}^{k}\sum_{i=1}^{n}y_{i,l}d(X_i,Q_l)$$ 
+where $y_{i,l}$ is a binary indicator variable (1 if $X_i$ refers to cluster l, 0 otherwise), k is the number of clusters, n is the total number of samples, $d(X_i,Q_l)$ is the dissimilarity between sample $X_i$ and the mode $Q_l$. The objective is to minimize the value of the cost function by following the following steps: 
+
+\begin{enumerate}
+    \item Randomly select K initial modes as K clusters.
+    
+    \item Calculate the dissimilarity between data points and the mode of each cluster. Then assign objects to the cluster whose mode is closest to it (which has the smallest dissimilarity). Update the cluster’s mode by selecting the highest frequency of each category within the cluster. If there are more than 2 categories of an attribute that have the same highest frequency, we randomly select one of them to serve as mode.
+    
+    \item Recalculate the dissimilarity of objects with the current modes and reassign the object to the cluster with closest mode and update the new modes for clusters.
+    
+    \item Repeat Step 2 and 3 until every cluster has no changes after testing the whole dataset.
+\end{enumerate}
+
 \subsection{Model Implementation}
+\subsubsection{Data Preprocessing}
+The student's data has been converted into a dense binary array before being used as input for the machine learning model. Moreover, since each student has to provide their information before having permission to use this application and can choose at least one category for each attribute \emph{(Interests, Favorite Subject,...)} and some of them have at most 5 categories, there are no missing data in our dataset. These tables below show the example for data preprocessing part,
+
+\begin{table}[H]
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{Major} & \textbf{Interests} & ... & \textbf{Favorite Subject} \\ \hline
+DS & V-pop, Volleyball, Board games & ... & Calculus, Linear Algebra, Artificial Intelligence \\ \hline
+ICT & EDM, Board games, DIY, Movie, Netflix & ... & Calculus, Chemistry, Programming \\ \hline
+ICT & Football, Cooking, Food tour, Travel, Rap & ... & Programming \\ \hline
+\end{tabular}%
+}
+\caption{Data before preprocessing}
+\label{data preprocessing}
+\end{table}
+
+\begin{table}[H]
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+\textbf{DS} & \textbf{ICT} & \textbf{V-pop} & \textbf{Volleyball} & \textbf{Board games} & \textbf{EDM} & \textbf{...} & \textbf{Programming} \\ \hline
+1 & 0 & 1 & 1 & 1 & 0 & ... & 0 \\ \hline
+0 & 1 & 0 & 0 & 1 & 1 & ... & 1 \\ \hline
+0 & 1 & 0 & 0 & 0 & 0 & ... & 1 \\ \hline
+\end{tabular}%
+}
+\caption{Data after preprocessing}
+\label{data preprocessing}
+\end{table}
+
+\subsubsection{Model Configuration and Training}
+
 
 \section{System Design and Implementation}  
 
