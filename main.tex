@@ -569,11 +569,11 @@ These functionalities are not critical but aim to enhance the overall user exper
 \subsection{One-Hot Encoding}
 One-hot Encoding is a data preprocessing technique that transforms a single categorical variable with n distinct categories 
 into n separate columns. Each column is represented by one number 0 or 1, where the value 1 presents the presence of that category 
-and the value 0 indicates its absence. This method helps machine learning models, which typically require numerical input, 
+and the value 0 indicates its absence.\cite{thuy2020optimize} This method helps machine learning models, which typically require numerical input, 
 better understand and handle the data.
 
 \subsection{Dissimilarity Measure}
-The dissimilarity measure between two categorical objects X and Y (with m attributes) can be defined by the total mismatches of their corresponding categorical attributes. The two objects X and Y are considered to be more similar when the value of a mismatched number gets smaller.
+The dissimilarity measure between two categorical objects X and Y (with m attributes) can be defined by the total mismatches of their corresponding categorical attributes. The two objects X and Y are considered to be more similar when the value of a mismatched number gets smaller.\cite{huang1998extensions}
         $$d(X,Y) = \sum_{i=1}^{m}\delta{(x_i,y_i)}$$ where $$\delta{(x_i,y_i)} = \left\{\begin{array}{ll} 0 & (x_i = y_i) \\
         1 & (x_i \neq y_i)\end{array}\right.$$
 
@@ -634,7 +634,7 @@ each data point belonging to cluster $i$ and the centroid of cluster $i$,
 $d(c_i,c_j)$ indicated the distance between the centroids of cluster $i$ and
 $j$.
 
-\subsection{K-Mode Algorithm}
+\subsection{K-Mode Algorithm}\cite{huang1998extensions}
 % Cost function
 Let $\{Q_1,Q_2,...,Q_k\}$ be the modes of clusters $\{C_1,C_2,...,C_k\}$. The cost function can be defined by taking the total dissimilarities of each sample and its assigned cluster's mode: 
 $$E = \sum_{l=1}^{k}\sum_{i=1}^{n}y_{i,l}d(X_i,Q_l)$$ 
@@ -682,8 +682,9 @@ ICT & Football, Cooking, Food tour, Travel, Rap & ... & Programming \\ \hline
 \label{data preprocessing}
 \end{table}
 
-\subsubsection{Model Configuration and Training}
+\subsubsection{Model Training}
 
+To determine the optimal number of clusters $K$, the K-Modes clustering model is trained with different values of K varying from 2 to 9 and select the best model according to the cost function. For each training iteration, the K-Modes algorithm is executed multiple times with different initial centroids seeds. The final result is the best output initialized centroids in terms of cost function.\cite{devos2015}
 
 \section{System Design and Implementation}  
 
