@@ -485,7 +485,7 @@ It focuses on the roles and interactions of various systems and services that wo
 \end{figure}
 
 \subsubsection{Backend - Spring Boot}
-The backend of the application is built using Spring Boot, a robust Java framework which is known to support simplifying the backend development.
+The backend of the application is configured using Spring Boot, a well-known and powerful Java framework for its ability to simplify the backend development.
 Spring Boot handles the core logic of the application, which includes student authentication, processing data from third-party services, and providing APIs for the mobile frontend.
 It configures a seemless integration with various services such as Google Calendar, Mapbox, and Moodle, ensuring that schedule events, campus locations, and lecture resouces are always up-to-date and easy to access.
 The backend is responsible for processing and storing student data, managing roles with JWT for secure access, and applying RBAC to differentiate between ADMIN and USER roles.
@@ -511,7 +511,7 @@ The StudyBuddy feature of the system using a Python-based machine learning model
 When students enter details about their personality traits, hobbies, learning style and academic goals, this data is sent to the backend, which processes it using the K-modes algorithm.
 After receiving data, the algorithm groups students with similar characteristics, enabling the system to send back the proper recommendation to the students.
 Then, the potential study partners will be displayed in the mobile app, allowing students to connect to each others who have compatible interests.
-This feature is powered by Python's machine learning libraries, which provide the necessary tools for clustering and pattern recognition.
+This feature is implemented using Python's machine learning libraries, which provide the necessary methods for clustering and pattern recognition in student matching.
 
 \subsubsection{Communication - Linphone VoIP}
 To integrate real-time communication between matched students, the system implements Linphone, an open-source VoIP library.
