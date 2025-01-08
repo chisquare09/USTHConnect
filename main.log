@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.6)  6 JAN 2025 23:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.6)  8 JAN 2025 10:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -245,7 +245,11 @@ LaTeX Info: Redefining \cite on input line 694.
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count293
 \l__pdf_internal_box=\box60
-) (main.aux (titlepage.aux) (usecase_implementation.aux) (analysis_call_message.aux) (communication_handling.aux))
+) (main.aux (titlepage.aux) (usecase_implementation.aux) (analysis_call_message.aux) (communication_handling.aux)
+
+LaTeX Warning: Label `data preprocessing' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
@@ -318,19 +322,63 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 \openout2 = `titlepage.aux'.
 
 (titlepage.tex
-<image/logoUSTH.png, id=1, 343.2825pt x 147.55125pt>
-File: image/logoUSTH.png Graphic file (type png)
-<use image/logoUSTH.png>
-Package pdftex.def Info: image/logoUSTH.png  used on input line 7.
-(pdftex.def)             Requested size: 199.16928pt x 85.60678pt.
-)
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(43.36243pt, 510.78302pt, 43.36243pt)
+* v-part:(T,H,B)=(43.36243pt, 758.32199pt, 43.36243pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=510.78302pt
+* \textheight=758.32199pt
+* \oddsidemargin=-28.90756pt
+* \evensidemargin=-28.90756pt
+* \topmargin=-65.90756pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+<image/usth.png, id=1, 424.58624pt x 228.10219pt>
+File: image/usth.png Graphic file (type png)
+<use image/usth.png>
+Package pdftex.def Info: image/usth.png  used on input line 49.
+(pdftex.def)             Requested size: 250.28258pt x 134.46077pt.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <19> not available
+(Font)              size <17.28> substituted on input line 49.
+
+
+Overfull \hbox (2.4488pt too wide) in paragraph at lines 49--50
+ [] 
+ []
+
+
 
 [1
 
 
-{C:/Users/abc/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./image/logoUSTH.png>] (main.toc
 
-[2
+{C:/Users/abc/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./image/usth.png>]) (main.toc
+
+[1
+
 
 
 ])
@@ -339,7 +387,7 @@ Package pdftex.def Info: image/logoUSTH.png  used on input line 7.
 
 
 
-[3]
+[2]
 Overfull \hbox (2.22221pt too wide) in paragraph at lines 60--60
  [][][]
  []
@@ -350,7 +398,7 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 60--60
 
 
 
-[4]
+[3]
 Overfull \hbox (2.22221pt too wide) in paragraph at lines 73--73
  [][][]
  []
@@ -361,82 +409,80 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 73--73
 
 
 
-[5]
+[4]
 
-[6]
+[5]
 Underfull \hbox (badness 10000) in paragraph at lines 143--145
 
  []
 
 
 
+[6]
+
 [7]
 
-[8]
-
 pdfTeX warning: pdflatex (file ./image/AuthenticationUseCase.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<image/AuthenticationUseCase.pdf, id=35, 484.69078pt x 264.99pt>
+<image/AuthenticationUseCase.pdf, id=34, 484.69078pt x 264.99pt>
 File: image/AuthenticationUseCase.pdf Graphic file (type pdf)
 <use image/AuthenticationUseCase.pdf>
 Package pdftex.def Info: image/AuthenticationUseCase.pdf  used on input line 211.
 (pdftex.def)             Requested size: 298.75264pt x 163.3338pt.
 
 
-[9]
+[8 <./image/AuthenticationUseCase.pdf>]
 
 pdfTeX warning: pdflatex (file ./image/StudentScheduleUseCase.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<image/StudentScheduleUseCase.pdf, id=39, 743.8992pt x 397.485pt>
+<image/StudentScheduleUseCase.pdf, id=52, 743.8992pt x 397.485pt>
 File: image/StudentScheduleUseCase.pdf Graphic file (type pdf)
 <use image/StudentScheduleUseCase.pdf>
 Package pdftex.def Info: image/StudentScheduleUseCase.pdf  used on input line 253.
 (pdftex.def)             Requested size: 298.75264pt x 159.63408pt.
 
 
-[10 <./image/AuthenticationUseCase.pdf>]
-
-[11 <./image/StudentScheduleUseCase.pdf>]
+[9 <./image/StudentScheduleUseCase.pdf>]
 
 pdfTeX warning: pdflatex (file ./image/CampusUseCase.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<image/CampusUseCase.pdf, id=74, 644.4075pt x 316.3017pt>
+<image/CampusUseCase.pdf, id=70, 644.4075pt x 316.3017pt>
 File: image/CampusUseCase.pdf Graphic file (type pdf)
 <use image/CampusUseCase.pdf>
 Package pdftex.def Info: image/CampusUseCase.pdf  used on input line 300.
 (pdftex.def)             Requested size: 298.75264pt x 146.6444pt.
 
 
-[12 <./image/CampusUseCase.pdf>]
+[10 <./image/CampusUseCase.pdf>]
 
 pdfTeX warning: pdflatex (file ./image/StudyBuddyUseCase.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<image/StudyBuddyUseCase.pdf, id=92, 685.60138pt x 659.5842pt>
+<image/StudyBuddyUseCase.pdf, id=88, 685.60138pt x 659.5842pt>
 File: image/StudyBuddyUseCase.pdf Graphic file (type pdf)
 <use image/StudyBuddyUseCase.pdf>
 Package pdftex.def Info: image/StudyBuddyUseCase.pdf  used on input line 368.
 (pdftex.def)             Requested size: 298.75264pt x 287.40996pt.
 
 
-[13]
+[11]
 
-[14 <./image/StudyBuddyUseCase.pdf>]
+[12 <./image/StudyBuddyUseCase.pdf>]
 
 pdfTeX warning: pdflatex (file ./image/Real-timeNotification.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<image/Real-timeNotification.pdf, id=114, 677.65169pt x 760.76218pt>
+<image/Real-timeNotification.pdf, id=110, 677.65169pt x 760.76218pt>
 File: image/Real-timeNotification.pdf Graphic file (type pdf)
 <use image/Real-timeNotification.pdf>
 Package pdftex.def Info: image/Real-timeNotification.pdf  used on input line 422.
 (pdftex.def)             Requested size: 426.79135pt x 479.1434pt.
 
 
+[13]
+
+[14 <./image/Real-timeNotification.pdf>]
+
 [15]
-
-[16 <./image/Real-timeNotification.pdf>]
-
-[17]
 \openout2 = `usecase_implementation.aux'.
 
  (usecase_implementation.tex
 
 pdfTeX warning: pdflatex (file ./image/SyncCalendar.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<image/SyncCalendar.pdf, id=133, 1132.23pt x 569.24669pt>
+<image/SyncCalendar.pdf, id=129, 1132.23pt x 569.24669pt>
 File: image/SyncCalendar.pdf Graphic file (type pdf)
 <use image/SyncCalendar.pdf>
 Package pdftex.def Info: image/SyncCalendar.pdf  used on input line 4.
@@ -444,153 +490,174 @@ Package pdftex.def Info: image/SyncCalendar.pdf  used on input line 4.
 
 
 pdfTeX warning: pdflatex (file ./image/StudyBuddySequenceDiagram-SB.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<image/StudyBuddySequenceDiagram-SB.pdf, id=134, 889.40276pt x 579.12357pt>
+<image/StudyBuddySequenceDiagram-SB.pdf, id=130, 889.40276pt x 579.12357pt>
 File: image/StudyBuddySequenceDiagram-SB.pdf Graphic file (type pdf)
 <use image/StudyBuddySequenceDiagram-SB.pdf>
 Package pdftex.def Info: image/StudyBuddySequenceDiagram-SB.pdf  used on input line 29.
 (pdftex.def)             Requested size: 426.79135pt x 277.90546pt.
 
 
-[18
+[16
 
  <./image/SyncCalendar.pdf>]
 
 pdfTeX warning: pdflatex (file ./image/StudyBuddySequenceDiagram-Message.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<image/StudyBuddySequenceDiagram-Message.pdf, id=147, 1296.76462pt x 984.5583pt>
+<image/StudyBuddySequenceDiagram-Message.pdf, id=143, 1296.76462pt x 984.5583pt>
 File: image/StudyBuddySequenceDiagram-Message.pdf Graphic file (type pdf)
 <use image/StudyBuddySequenceDiagram-Message.pdf>
 Package pdftex.def Info: image/StudyBuddySequenceDiagram-Message.pdf  used on input line 36.
 (pdftex.def)             Requested size: 426.79135pt x 324.0339pt.
 
 
-[19 <./image/StudyBuddySequenceDiagram-SB.pdf>]
+[17 <./image/StudyBuddySequenceDiagram-SB.pdf>]
 
 pdfTeX warning: pdflatex (file ./image/StudyBuddySequenceDiagram-Contact.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<image/StudyBuddySequenceDiagram-Contact.pdf, id=161, 1296.76462pt x 973.71776pt>
+<image/StudyBuddySequenceDiagram-Contact.pdf, id=156, 1296.76462pt x 973.71776pt>
 File: image/StudyBuddySequenceDiagram-Contact.pdf Graphic file (type pdf)
 <use image/StudyBuddySequenceDiagram-Contact.pdf>
 Package pdftex.def Info: image/StudyBuddySequenceDiagram-Contact.pdf  used on input line 43.
 (pdftex.def)             Requested size: 426.79135pt x 320.46611pt.
 
 
-[20 <./image/StudyBuddySequenceDiagram-Message.pdf>]
+[18 <./image/StudyBuddySequenceDiagram-Message.pdf>]
 
 pdfTeX warning: pdflatex (file ./image/StudyBuddySequenceDiagram-Profile.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<image/StudyBuddySequenceDiagram-Profile.pdf, id=174, 922.40607pt x 680.5425pt>
+<image/StudyBuddySequenceDiagram-Profile.pdf, id=170, 922.40607pt x 680.5425pt>
 File: image/StudyBuddySequenceDiagram-Profile.pdf Graphic file (type pdf)
 <use image/StudyBuddySequenceDiagram-Profile.pdf>
 Package pdftex.def Info: image/StudyBuddySequenceDiagram-Profile.pdf  used on input line 50.
 (pdftex.def)             Requested size: 426.79135pt x 314.89136pt.
 
 
-[21 <./image/StudyBuddySequenceDiagram-Contact.pdf>]
+[19 <./image/StudyBuddySequenceDiagram-Contact.pdf>]
 File: image/Real-timeNotification.pdf Graphic file (type pdf)
 <use image/Real-timeNotification.pdf>
 Package pdftex.def Info: image/Real-timeNotification.pdf  used on input line 76.
 (pdftex.def)             Requested size: 298.75264pt x 335.39806pt.
 
 
-[22 <./image/StudyBuddySequenceDiagram-Profile.pdf>])
+[20 <./image/StudyBuddySequenceDiagram-Profile.pdf>])
 
-[23]
+[21]
 \openout2 = `analysis_call_message.aux'.
 
  (analysis_call_message.tex
 
-[24
+[22
 
 
 
 ])
 
-[25]
+[23]
 \openout2 = `communication_handling.aux'.
 
  (communication_handling.tex
 
 pdfTeX warning: pdflatex (file ./image/Call Initiation.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<image/Call Initiation.pdf, id=209, 695.59875pt x 915.11888pt>
+<image/Call Initiation.pdf, id=204, 695.59875pt x 915.11888pt>
 File: image/Call Initiation.pdf Graphic file (type pdf)
 <use image/Call Initiation.pdf>
 Package pdftex.def Info: image/Call Initiation.pdf  used on input line 34.
 (pdftex.def)             Requested size: 298.75264pt x 393.03265pt.
 
 
-[26
+[24
 
 
 
 ]
 
-[27 <./image/Call Initiation.pdf>]
+[25 <./image/Call Initiation.pdf>]
 
 pdfTeX warning: pdflatex (file ./image/Locating_callee.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<image/Locating_callee.pdf, id=264, 691.62387pt x 375.32219pt>
+<image/Locating_callee.pdf, id=260, 691.62387pt x 375.32219pt>
 File: image/Locating_callee.pdf Graphic file (type pdf)
 <use image/Locating_callee.pdf>
 Package pdftex.def Info: image/Locating_callee.pdf  used on input line 70.
 (pdftex.def)             Requested size: 384.11963pt x 269.73352pt.
 
 
-[28 <./image/Locating_callee.pdf>]
+[26 <./image/Locating_callee.pdf>]
 
 pdfTeX warning: pdflatex (file ./image/Instant messaging.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<image/Instant messaging.pdf, id=282, 370.5042pt x 329.31029pt>
+<image/Instant messaging.pdf, id=278, 370.5042pt x 329.31029pt>
 File: image/Instant messaging.pdf Graphic file (type pdf)
 <use image/Instant messaging.pdf>
 Package pdftex.def Info: image/Instant messaging.pdf  used on input line 95.
 (pdftex.def)             Requested size: 298.75264pt x 265.53389pt.
 )
 
-[29 <./image/Instant messaging.pdf>]
+[27 <./image/Instant messaging.pdf>]
 
-Package natbib Warning: Citation `2012vi' on page 30 undefined on input line 604.
-
-
-Package natbib Warning: Citation `9260048' on page 30 undefined on input line 607.
+Package natbib Warning: Citation `thuy2020optimize' on page 28 undefined on input line 572.
 
 
+Package natbib Warning: Citation `huang1998extensions' on page 28 undefined on input line 576.
 
-[30
+
+Package natbib Warning: Citation `2012vi' on page 28 undefined on input line 587.
+
+
+Package natbib Warning: Citation `9260048' on page 28 undefined on input line 590.
+
+
+Package natbib Warning: Citation `2012vi' on page 28 undefined on input line 596.
+
+
+
+[28
 
 
 ]
 
-Package natbib Warning: Citation `2012vi' on page 31 undefined on input line 613.
+Package natbib Warning: Citation `HOSEN2023688' on page 29 undefined on input line 622.
 
 
-Package natbib Warning: Citation `HOSEN2023688' on page 31 undefined on input line 640.
+Package natbib Warning: Citation `huang1998extensions' on page 29 undefined on input line 635.
 
 
+
+[29]
+
+Package natbib Warning: Citation `devos2015' on page 30 undefined on input line 685.
+
+
+
+[30]
 
 [31]
-
-[32]
-
-[33]
 
 Package natbib Warning: There were undefined citations.
 
 
 
-[34] (main.aux (titlepage.aux) (usecase_implementation.aux) (analysis_call_message.aux) (communication_handling.aux))
+[32] (main.aux (titlepage.aux) (usecase_implementation.aux) (analysis_call_message.aux) (communication_handling.aux))
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
  ***********
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 1.72pt have occurred.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 4980 strings out of 473682
- 81609 string characters out of 5720168
- 496571 words of memory out of 5000000
- 27979 multiletter control sequences out of 15000+600000
- 564262 words of font info for 58 fonts, out of 8000000 for 9000
+ 4966 strings out of 473682
+ 81529 string characters out of 5720168
+ 498647 words of memory out of 5000000
+ 27973 multiletter control sequences out of 15000+600000
+ 560899 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,15n,65p,547b,337s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\abc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (34 pages, 2174886 bytes).
+ 57i,15n,65p,573b,337s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\abc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on main.pdf (33 pages, 2193270 bytes).
 PDF statistics:
- 390 PDF objects out of 1000 (max. 8388607)
+ 383 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  71 words of extra memory for PDF output out of 10000 (max. 10000000)
 

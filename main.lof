@@ -1,14 +1,14 @@
-\contentsline {figure}{\numberline {1}{\ignorespaces Authentication use case diagram}}{10}{}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Schedule use case diagram}}{11}{}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Campus use case diagram}}{12}{}%
-\contentsline {figure}{\numberline {4}{\ignorespaces StudyBuddy use case diagram}}{14}{}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Real Time Notification use case diagram}}{16}{}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Synchronize Calendar sequence diagram}}{18}{}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Study Buddy recommend list sequence diagram}}{19}{}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Study Buddy chat message sequence diagram}}{20}{}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Study Buddy audio call sequence diagram}}{21}{}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Study Buddy profile sequence diagram}}{22}{}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Real Time Notification sequence diagram}}{23}{}%
-\contentsline {figure}{\numberline {12}{\ignorespaces SIP signaling and key components}}{27}{}%
-\contentsline {figure}{\numberline {13}{\ignorespaces SIP registration and locating callee}}{28}{}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Simple instant messaging flow}}{29}{}%
+\contentsline {figure}{\numberline {1}{\ignorespaces Authentication use case diagram}}{8}{}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Schedule use case diagram}}{9}{}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Campus use case diagram}}{10}{}%
+\contentsline {figure}{\numberline {4}{\ignorespaces StudyBuddy use case diagram}}{12}{}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Real Time Notification use case diagram}}{14}{}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Synchronize Calendar sequence diagram}}{16}{}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Study Buddy recommend list sequence diagram}}{17}{}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Study Buddy chat message sequence diagram}}{18}{}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Study Buddy audio call sequence diagram}}{19}{}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Study Buddy profile sequence diagram}}{20}{}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Real Time Notification sequence diagram}}{21}{}%
+\contentsline {figure}{\numberline {12}{\ignorespaces SIP signaling and key components}}{25}{}%
+\contentsline {figure}{\numberline {13}{\ignorespaces SIP registration and locating callee}}{26}{}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Simple instant messaging flow}}{27}{}%
