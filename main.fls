@@ -56,8 +56,6 @@ INPUT C:\Users\OS\AppData\Local\Programs\MiKTeX\tex\latex\tools\tabularx.sty
 INPUT C:\Users\OS\AppData\Local\Programs\MiKTeX\tex\latex\tools\tabularx.sty
 INPUT C:\Users\OS\AppData\Local\Programs\MiKTeX\tex\latex\tools\array.sty
 INPUT C:\Users\OS\AppData\Local\Programs\MiKTeX\tex\latex\tools\array.sty
-INPUT C:\Users\OS\AppData\Local\Programs\MiKTeX\tex\latex\tocloft\tocloft.sty
-INPUT C:\Users\OS\AppData\Local\Programs\MiKTeX\tex\latex\tocloft\tocloft.sty
 INPUT C:\Users\OS\AppData\Local\Programs\MiKTeX\tex\latex\xcolor\xcolor.sty
 INPUT C:\Users\OS\AppData\Local\Programs\MiKTeX\tex\latex\xcolor\xcolor.sty
 INPUT C:\Users\OS\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\color.cfg
@@ -66,6 +64,11 @@ INPUT C:\Users\OS\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\color.cfg
 INPUT C:\Users\OS\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.ltx
 INPUT C:\Users\OS\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.ltx
 INPUT C:\Users\OS\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.ltx
+INPUT C:\Users\OS\AppData\Local\Programs\MiKTeX\tex\latex\colortbl\colortbl.sty
+INPUT C:\Users\OS\AppData\Local\Programs\MiKTeX\tex\latex\colortbl\colortbl.sty
+INPUT C:\Users\OS\AppData\Local\Programs\MiKTeX\tex\latex\graphics\color.sty
+INPUT C:\Users\OS\AppData\Local\Programs\MiKTeX\tex\latex\tocloft\tocloft.sty
+INPUT C:\Users\OS\AppData\Local\Programs\MiKTeX\tex\latex\tocloft\tocloft.sty
 INPUT C:\Users\OS\AppData\Local\Programs\MiKTeX\tex\latex\titlesec\titlesec.sty
 INPUT C:\Users\OS\AppData\Local\Programs\MiKTeX\tex\latex\titlesec\titlesec.sty
 INPUT C:\Users\OS\AppData\Local\Programs\MiKTeX\tex\latex\natbib\natbib.sty
@@ -128,14 +131,9 @@ OUTPUT main.lof
 INPUT .\main.lot
 INPUT .\main.lot
 INPUT main.lot
+INPUT C:\Users\OS\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt10.tfm
 OUTPUT main.lot
 INPUT C:\Users\OS\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1000.tfm
-INPUT .\image\USTHConnect_usecase.pdf
-INPUT .\image\USTHConnect_usecase.pdf
-INPUT .\image\USTHConnect_usecase.pdf
-INPUT .\image\USTHConnect_usecase.pdf
-INPUT .\image\USTHConnect_usecase.pdf
-INPUT .\image\USTHConnect_usecase.pdf
 INPUT .\image\AuthenticationUseCase.pdf
 INPUT .\image\AuthenticationUseCase.pdf
 INPUT .\image\AuthenticationUseCase.pdf
@@ -160,12 +158,24 @@ INPUT .\image\StudyBuddyUseCase.pdf
 INPUT .\image\StudyBuddyUseCase.pdf
 INPUT .\image\StudyBuddyUseCase.pdf
 INPUT .\image\StudyBuddyUseCase.pdf
-INPUT .\image\Real-timeNotification.pdf
-INPUT .\image\Real-timeNotification.pdf
-INPUT .\image\Real-timeNotification.pdf
-INPUT .\image\Real-timeNotification.pdf
-INPUT .\image\Real-timeNotification.pdf
-INPUT .\image\Real-timeNotification.pdf
+INPUT .\image\Real-timeNotificationUseCase.pdf
+INPUT .\image\Real-timeNotificationUseCase.pdf
+INPUT .\image\Real-timeNotificationUseCase.pdf
+INPUT .\image\Real-timeNotificationUseCase.pdf
+INPUT .\image\Real-timeNotificationUseCase.pdf
+INPUT .\image\Real-timeNotificationUseCase.pdf
+INPUT .\image\USTH-Connect-System-Architecture.pdf
+INPUT .\image\USTH-Connect-System-Architecture.pdf
+INPUT .\image\USTH-Connect-System-Architecture.pdf
+INPUT .\image\USTH-Connect-System-Architecture.pdf
+INPUT .\image\USTH-Connect-System-Architecture.pdf
+INPUT .\image\USTH-Connect-System-Architecture.pdf
+INPUT .\image\USTH-Connect-Database-Schema-Light.pdf
+INPUT .\image\USTH-Connect-Database-Schema-Light.pdf
+INPUT .\image\USTH-Connect-Database-Schema-Light.pdf
+INPUT .\image\USTH-Connect-Database-Schema-Light.pdf
+INPUT .\image\USTH-Connect-Database-Schema-Light.pdf
+INPUT .\image\USTH-Connect-Database-Schema-Light.pdf
 INPUT .\usecase_implementation.tex
 INPUT .\usecase_implementation.tex
 OUTPUT usecase_implementation.aux
@@ -206,6 +216,8 @@ INPUT .\image\Real-timeNotification.pdf
 INPUT .\image\Real-timeNotification.pdf
 INPUT .\image\Real-timeNotification.pdf
 INPUT .\image\Real-timeNotification.pdf
+INPUT .\image\Real-timeNotification.pdf
+INPUT .\image\Real-timeNotification.pdf
 INPUT .\analysis_call_message.tex
 INPUT .\analysis_call_message.tex
 OUTPUT analysis_call_message.aux
@@ -224,7 +236,6 @@ INPUT .\image\Call Initiation.pdf
 INPUT .\image\Call Initiation.pdf
 INPUT .\image\Call Initiation.pdf
 INPUT .\image\Call Initiation.pdf
-INPUT C:\Users\OS\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt10.tfm
 INPUT .\image\Locating_callee.pdf
 INPUT .\image\Locating_callee.pdf
 INPUT .\image\Locating_callee.pdf
