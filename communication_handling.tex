@@ -51,8 +51,6 @@
         \item \textbf{Communication Establishment:}  Once the proxy servers successfully exchange SIP signaling messages, the callee's user agent receives the call request, and the session is established.
     \end{itemize}
     
-    \pagebreak
-
     \noindent The figure below shows the SIP registration process and how to detect the location of the callee. 
     \sloppy
     \begin{itemize}
@@ -87,7 +85,9 @@
 
     \begin{itemize}
         \item \textbf {Initiating a message:} The sender types a message and then send it. The message will be formated into a SIP MESSAGE request. 
-        \item \textbf {Message Transmission:} SIP Server will process the received SIP MESSAGE request from the sender and then forward it to the receiver. 
+        \item \textbf {Message Transmission:} SIP Server will process the received SIP MESSAGE request from the sender and then forward it to the receiver.
+        
+        \pagebreak
         \item \textbf {Receiving the message:} When the receiver get the request, Linphone will then parse the message and display it in the chat interface.
         In the case that the receiver is offline, the Flexisip server will queue the message for later delivery. A 200 OK response will be deliver to the sender to confirm sucessful exchanging messages.
     \end{itemize}
