@@ -1,255 +1,255 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.12.24)  9 JAN 2025 08:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.6)  9 JAN 2025 10:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/OS/Downloads/Git/Report_github/USTHConnect/main.tex
-(c:/Users/OS/Downloads/Git/Report_github/USTHConnect/main.tex
-LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-01-04>
-(C:\Users\OS\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
-Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
-(C:\Users\OS\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
-File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+**"d:/Do Minh Quang/Project/USHConnect/USTHConnect/USTHConnect/main.tex"
+(d:/Do Minh Quang/Project/USHConnect/USTHConnect/USTHConnect/main.tex
+LaTeX2e <2024-11-01>
+L3 programming layer <2024-11-02>
+(C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
+(C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+File: size10.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count187
-\c@section=\count188
-\c@subsection=\count189
-\c@subsubsection=\count190
-\c@paragraph=\count191
-\c@subparagraph=\count192
-\c@figure=\count193
-\c@table=\count194
-\abovecaptionskip=\skip48
-\belowcaptionskip=\skip49
-\bibindent=\dimen140
-) (C:\Users\OS\AppData\Local\Programs\MiKTeX\tex/latex/import\import.sty
+\c@part=\count196
+\c@section=\count197
+\c@subsection=\count198
+\c@subsubsection=\count199
+\c@paragraph=\count266
+\c@subparagraph=\count267
+\c@figure=\count268
+\c@table=\count269
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen141
+) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/import\import.sty
 Package: import 2020/04/01  v 6.2
-) (C:\Users\OS\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
-Package: amsmath 2023/05/13 v2.17o AMS math features
-\@mathmargin=\skip50
+) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2024/11/05 v2.17t AMS math features
+\@mathmargin=\skip51
 
 For additional information on amsmath, use the `?' option.
-(C:\Users\OS\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+(C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
- (C:\Users\OS\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+ (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks17
-\ex@=\dimen141
-)) (C:\Users\OS\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+\ex@=\dimen142
+)) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen142
-) (C:\Users\OS\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+\pmbraise@=\dimen143
+) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count195
-LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count196
-\leftroot@=\count197
-LaTeX Info: Redefining \overline on input line 399.
-LaTeX Info: Redefining \colon on input line 410.
-\classnum@=\count198
-\DOTSCASE@=\count199
-LaTeX Info: Redefining \ldots on input line 496.
-LaTeX Info: Redefining \dots on input line 499.
-LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box51
-\strutbox@=\box52
-LaTeX Info: Redefining \big on input line 722.
-LaTeX Info: Redefining \Big on input line 723.
-LaTeX Info: Redefining \bigg on input line 724.
-LaTeX Info: Redefining \Bigg on input line 725.
-\big@size=\dimen143
-LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count266
-LaTeX Info: Redefining \bmod on input line 905.
-LaTeX Info: Redefining \pmod on input line 910.
-LaTeX Info: Redefining \smash on input line 940.
-LaTeX Info: Redefining \relbar on input line 970.
-LaTeX Info: Redefining \Relbar on input line 971.
-\c@MaxMatrixCols=\count267
-\dotsspace@=\muskip16
-\c@parentequation=\count268
-\dspbrk@lvl=\count269
+\inf@bad=\count270
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count271
+\leftroot@=\count272
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count273
+\DOTSCASE@=\count274
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box52
+\strutbox@=\box53
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen144
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count275
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count276
+\dotsspace@=\muskip17
+\c@parentequation=\count277
+\dspbrk@lvl=\count278
 \tag@help=\toks18
-\row@=\count270
-\column@=\count271
-\maxfields@=\count272
+\row@=\count279
+\column@=\count280
+\maxfields@=\count281
 \andhelp@=\toks19
-\eqnshift@=\dimen144
-\alignsep@=\dimen145
-\tagshift@=\dimen146
-\tagwidth@=\dimen147
-\totwidth@=\dimen148
-\lineht@=\dimen149
+\eqnshift@=\dimen145
+\alignsep@=\dimen146
+\tagshift@=\dimen147
+\tagwidth@=\dimen148
+\totwidth@=\dimen149
+\lineht@=\dimen150
 \@envbody=\toks20
-\multlinegap=\skip51
-\multlinetaggap=\skip52
+\multlinegap=\skip52
+\multlinetaggap=\skip53
 \mathdisplay@stack=\toks21
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
-) (C:\Users\OS\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count273
+\c@float@type=\count282
 \float@exts=\toks22
-\float@box=\box53
+\float@box=\box54
 \@float@everytoks=\toks23
-\@floatcapt=\box54
-) (C:\Users\OS\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
-Package: inputenc 2021/02/14 v1.3d Input encoding file
+\@floatcapt=\box55
+) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks24
 \inpenc@posthook=\toks25
-) (C:\Users\OS\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
- (C:\Users\OS\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+ (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks26
-) (C:\Users\OS\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
-Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
- (C:\Users\OS\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
-Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
-) (C:\Users\OS\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+ (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 107.
- (C:\Users\OS\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
-File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+Package graphics Info: Driver file: pdftex.def on input line 106.
+ (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen150
-\Gin@req@width=\dimen151
-) (C:\Users\OS\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
+\Gin@req@height=\dimen151
+\Gin@req@width=\dimen152
+) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
-) (C:\Users\OS\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
- (C:\Users\OS\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+ (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
- (C:\Users\OS\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+ (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 ))
-\Gm@cnth=\count274
-\Gm@cntv=\count275
-\c@Gm@tempcnt=\count276
-\Gm@bindingoffset=\dimen152
-\Gm@wd@mp=\dimen153
-\Gm@odd@mp=\dimen154
-\Gm@even@mp=\dimen155
-\Gm@layoutwidth=\dimen156
-\Gm@layoutheight=\dimen157
-\Gm@layouthoffset=\dimen158
-\Gm@layoutvoffset=\dimen159
+\Gm@cnth=\count283
+\Gm@cntv=\count284
+\c@Gm@tempcnt=\count285
+\Gm@bindingoffset=\dimen153
+\Gm@wd@mp=\dimen154
+\Gm@odd@mp=\dimen155
+\Gm@even@mp=\dimen156
+\Gm@layoutwidth=\dimen157
+\Gm@layoutheight=\dimen158
+\Gm@layouthoffset=\dimen159
+\Gm@layoutvoffset=\dimen160
 \Gm@dimlist=\toks27
- (C:\Users\OS\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\OS\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
+ (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
-\labelindent=\skip53
-\enit@outerparindent=\dimen160
+\labelindent=\skip54
+\enit@outerparindent=\dimen161
 \enit@toks=\toks28
-\enit@inbox=\box55
-\enit@count@id=\count277
-\enitdp@description=\count278
-) (C:\Users\OS\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
+\enit@inbox=\box56
+\enit@count@id=\count286
+\enitdp@description=\count287
+) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
 Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
-\multirow@colwidth=\skip54
-\multirow@cntb=\count279
-\multirow@dima=\skip55
-\bigstrutjot=\dimen161
-) (C:\Users\OS\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
-Package: tabularx 2023/07/08 v2.11c `tabularx' package (DPC)
- (C:\Users\OS\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
-Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
-\col@sep=\dimen162
-\ar@mcellbox=\box56
-\extrarowheight=\dimen163
+\multirow@colwidth=\skip55
+\multirow@cntb=\count288
+\multirow@dima=\skip56
+\bigstrutjot=\dimen162
+) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+ (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
+\col@sep=\dimen163
+\ar@mcellbox=\box57
+\extrarowheight=\dimen164
 \NC@list=\toks29
-\extratabsurround=\skip56
-\backup@length=\skip57
-\ar@cellbox=\box57
+\extratabsurround=\skip57
+\backup@length=\skip58
+\ar@cellbox=\box58
 )
-\TX@col@width=\dimen164
-\TX@old@table=\dimen165
-\TX@old@col=\dimen166
-\TX@target=\dimen167
-\TX@delta=\dimen168
-\TX@cols=\count280
+\TX@col@width=\dimen165
+\TX@old@table=\dimen166
+\TX@old@col=\dimen167
+\TX@target=\dimen168
+\TX@delta=\dimen169
+\TX@cols=\count289
 \TX@ftn=\toks30
-) (C:\Users\OS\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
-Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
- (C:\Users\OS\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+ (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 274.
- (C:\Users\OS\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
-Package xcolor Info: Model `RGB' extended on input line 1366.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
-) (C:\Users\OS\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.sty
+ (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.sty
 Package: colortbl 2024/07/06 v1.0i Color table columns (DPC)
 \everycr=\toks31
-\minrowclearance=\skip58
-\rownum=\count281
-) (C:\Users\OS\AppData\Local\Programs\MiKTeX\tex/latex/tocloft\tocloft.sty
+\minrowclearance=\skip59
+\rownum=\count290
+) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/tocloft\tocloft.sty
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
 Package tocloft Info: The document has section divisions on input line 51.
-\cftparskip=\skip59
-\cftbeforetoctitleskip=\skip60
-\cftaftertoctitleskip=\skip61
-\cftbeforepartskip=\skip62
-\cftpartnumwidth=\skip63
-\cftpartindent=\skip64
-\cftbeforesecskip=\skip65
-\cftsecindent=\skip66
-\cftsecnumwidth=\skip67
-\cftbeforesubsecskip=\skip68
-\cftsubsecindent=\skip69
-\cftsubsecnumwidth=\skip70
-\cftbeforesubsubsecskip=\skip71
-\cftsubsubsecindent=\skip72
-\cftsubsubsecnumwidth=\skip73
-\cftbeforeparaskip=\skip74
-\cftparaindent=\skip75
-\cftparanumwidth=\skip76
-\cftbeforesubparaskip=\skip77
-\cftsubparaindent=\skip78
-\cftsubparanumwidth=\skip79
-\cftbeforeloftitleskip=\skip80
-\cftafterloftitleskip=\skip81
-\cftbeforefigskip=\skip82
-\cftfigindent=\skip83
-\cftfignumwidth=\skip84
-\c@lofdepth=\count282
-\c@lotdepth=\count283
-\cftbeforelottitleskip=\skip85
-\cftafterlottitleskip=\skip86
-\cftbeforetabskip=\skip87
-\cfttabindent=\skip88
-\cfttabnumwidth=\skip89
-) (C:\Users\OS\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
+\cftparskip=\skip60
+\cftbeforetoctitleskip=\skip61
+\cftaftertoctitleskip=\skip62
+\cftbeforepartskip=\skip63
+\cftpartnumwidth=\skip64
+\cftpartindent=\skip65
+\cftbeforesecskip=\skip66
+\cftsecindent=\skip67
+\cftsecnumwidth=\skip68
+\cftbeforesubsecskip=\skip69
+\cftsubsecindent=\skip70
+\cftsubsecnumwidth=\skip71
+\cftbeforesubsubsecskip=\skip72
+\cftsubsubsecindent=\skip73
+\cftsubsubsecnumwidth=\skip74
+\cftbeforeparaskip=\skip75
+\cftparaindent=\skip76
+\cftparanumwidth=\skip77
+\cftbeforesubparaskip=\skip78
+\cftsubparaindent=\skip79
+\cftsubparanumwidth=\skip80
+\cftbeforeloftitleskip=\skip81
+\cftafterloftitleskip=\skip82
+\cftbeforefigskip=\skip83
+\cftfigindent=\skip84
+\cftfignumwidth=\skip85
+\c@lofdepth=\count291
+\c@lotdepth=\count292
+\cftbeforelottitleskip=\skip86
+\cftafterlottitleskip=\skip87
+\cftbeforetabskip=\skip88
+\cfttabindent=\skip89
+\cfttabnumwidth=\skip90
+) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
 Package: titlesec 2023/10/27 v2.16 Sectioning titles
-\ttl@box=\box58
-\beforetitleunit=\skip90
-\aftertitleunit=\skip91
-\ttl@plus=\dimen169
-\ttl@minus=\dimen170
+\ttl@box=\box59
+\beforetitleunit=\skip91
+\aftertitleunit=\skip92
+\ttl@plus=\dimen170
+\ttl@minus=\dimen171
 \ttl@toksa=\toks32
-\titlewidth=\dimen171
-\titlewidthlast=\dimen172
-\titlewidthfirst=\dimen173
-) (C:\Users\OS\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
+\titlewidth=\dimen172
+\titlewidthlast=\dimen173
+\titlewidthfirst=\dimen174
+) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip92
-\bibsep=\skip93
+\bibhang=\skip93
+\bibsep=\skip94
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count284
-) (C:\Users\OS\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
-File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count285
-\l__pdf_internal_box=\box59
+\c@NAT@ctr=\count293
+) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count294
+\l__pdf_internal_box=\box60
 ) (main.aux (titlepage.aux) (usecase_implementation.aux) (analysis_call_message.aux) (communication_handling.aux)
 
 LaTeX Warning: Label `data preprocessing' multiply defined.
@@ -271,23 +271,23 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
 LaTeX Font Info:    ... okay on input line 40.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
 LaTeX Font Info:    ... okay on input line 40.
- (C:\Users\OS\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+ (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count286
-\scratchdimen=\dimen174
-\scratchbox=\box60
-\nofMPsegments=\count287
-\nofMParguments=\count288
+\scratchcounter=\count295
+\scratchdimen=\dimen175
+\scratchbox=\box61
+\nofMPsegments=\count296
+\nofMParguments=\count297
 \everyMPshowfont=\toks33
-\MPscratchCnt=\count289
-\MPscratchDim=\dimen175
-\MPnumerator=\count290
-\makeMPintoPDFobject=\count291
+\MPscratchCnt=\count298
+\MPscratchDim=\dimen176
+\MPnumerator=\count299
+\makeMPintoPDFobject=\count300
 \everyMPtoPDFconversion=\toks34
-) (C:\Users\OS\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (C:\Users\OS\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+ (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 *geometry* driver: auto-detecting
@@ -374,11 +374,15 @@ Overfull \hbox (2.4488pt too wide) in paragraph at lines 49--50
  [] 
  []
 
+
+
 [1
 
 
 
-{C:/Users/OS/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./image/usth.png>]) (main.toc [1
+{C:/Users/abc/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./image/usth.png>]) (main.toc
+
+[1
 
 
 
@@ -386,7 +390,13 @@ Overfull \hbox (2.4488pt too wide) in paragraph at lines 49--50
 \tf@toc=\write3
 \openout3 = `main.toc'.
 
- [2] [3] [4]
+
+
+[2]
+
+[3]
+
+[4]
 Overfull \hbox (2.22221pt too wide) in paragraph at lines 81--81
  [][][]
  []
@@ -395,7 +405,9 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 81--81
 \tf@lof=\write4
 \openout4 = `main.lof'.
 
- [5]
+
+
+[5]
 Overfull \hbox (2.22221pt too wide) in paragraph at lines 95--95
  [][][]
  []
@@ -404,66 +416,98 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 95--95
 \tf@lot=\write5
 \openout5 = `main.lot'.
 
- [6] [7] [8] [9] [10]
 
-pdfTeX warning: pdflatex.exe (file ./image/AuthenticationUseCase.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+
+[6]
+
+[7]
+
+[8]
+
+[9]
+
+[10]
+
+pdfTeX warning: pdflatex (file ./image/AuthenticationUseCase.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 <image/AuthenticationUseCase.pdf, id=44, 484.69078pt x 264.99pt>
 File: image/AuthenticationUseCase.pdf Graphic file (type pdf)
 <use image/AuthenticationUseCase.pdf>
 Package pdftex.def Info: image/AuthenticationUseCase.pdf  used on input line 230.
 (pdftex.def)             Requested size: 298.75264pt x 163.3338pt.
+
+
 [11 <./image/AuthenticationUseCase.pdf>]
 
-pdfTeX warning: pdflatex.exe (file ./image/StudentScheduleUseCase.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: pdflatex (file ./image/StudentScheduleUseCase.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 <image/StudentScheduleUseCase.pdf, id=62, 743.8992pt x 397.485pt>
 File: image/StudentScheduleUseCase.pdf Graphic file (type pdf)
 <use image/StudentScheduleUseCase.pdf>
 Package pdftex.def Info: image/StudentScheduleUseCase.pdf  used on input line 272.
 (pdftex.def)             Requested size: 298.75264pt x 159.63408pt.
+
+
 [12 <./image/StudentScheduleUseCase.pdf>]
 
-pdfTeX warning: pdflatex.exe (file ./image/CampusUseCase.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: pdflatex (file ./image/CampusUseCase.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 <image/CampusUseCase.pdf, id=81, 644.4075pt x 316.3017pt>
 File: image/CampusUseCase.pdf Graphic file (type pdf)
 <use image/CampusUseCase.pdf>
 Package pdftex.def Info: image/CampusUseCase.pdf  used on input line 319.
 (pdftex.def)             Requested size: 298.75264pt x 146.6444pt.
+
+
 [13 <./image/CampusUseCase.pdf>]
 
-pdfTeX warning: pdflatex.exe (file ./image/StudyBuddyUseCase.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: pdflatex (file ./image/StudyBuddyUseCase.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 <image/StudyBuddyUseCase.pdf, id=99, 685.60138pt x 659.5842pt>
 File: image/StudyBuddyUseCase.pdf Graphic file (type pdf)
 <use image/StudyBuddyUseCase.pdf>
 Package pdftex.def Info: image/StudyBuddyUseCase.pdf  used on input line 387.
 (pdftex.def)             Requested size: 298.75264pt x 287.40996pt.
-[14] [15 <./image/StudyBuddyUseCase.pdf>]
 
-pdfTeX warning: pdflatex.exe (file ./image/Real-timeNotificationUseCase.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+
+[14]
+
+[15 <./image/StudyBuddyUseCase.pdf>]
+
+pdfTeX warning: pdflatex (file ./image/Real-timeNotificationUseCase.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 <image/Real-timeNotificationUseCase.pdf, id=120, 943.60526pt x 356.29109pt>
 File: image/Real-timeNotificationUseCase.pdf Graphic file (type pdf)
 <use image/Real-timeNotificationUseCase.pdf>
 Package pdftex.def Info: image/Real-timeNotificationUseCase.pdf  used on input line 441.
 (pdftex.def)             Requested size: 426.79135pt x 161.15042pt.
+
+
 [16 <./image/Real-timeNotificationUseCase.pdf>]
 
-pdfTeX warning: pdflatex.exe (file ./image/USTH-Connect-System-Architecture.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: pdflatex (file ./image/USTH-Connect-System-Architecture.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 <image/USTH-Connect-System-Architecture.pdf, id=138, 711.62634pt x 595.6447pt>
 File: image/USTH-Connect-System-Architecture.pdf Graphic file (type pdf)
 <use image/USTH-Connect-System-Architecture.pdf>
 Package pdftex.def Info: image/USTH-Connect-System-Architecture.pdf  used on input line 494.
 (pdftex.def)             Requested size: 426.79135pt x 357.24416pt.
-[17] [18 <./image/USTH-Connect-System-Architecture.pdf>] [19]
 
-pdfTeX warning: pdflatex.exe (file ./image/USTH-Connect-Database-Schema-Light.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+
+[17]
+
+[18 <./image/USTH-Connect-System-Architecture.pdf>]
+
+[19]
+
+pdfTeX warning: pdflatex (file ./image/USTH-Connect-Database-Schema-Light.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 <image/USTH-Connect-Database-Schema-Light.pdf, id=151, 1308.57082pt x 1067.63712pt>
 File: image/USTH-Connect-Database-Schema-Light.pdf Graphic file (type pdf)
 <use image/USTH-Connect-Database-Schema-Light.pdf>
 Package pdftex.def Info: image/USTH-Connect-Database-Schema-Light.pdf  used on input line 564.
 (pdftex.def)             Requested size: 426.79135pt x 348.19975pt.
+
+
 [20]
 Overfull \hbox (55.50621pt too wide) in paragraph at lines 576--588
  [][] 
  []
+
+
 
 [21 <./image/USTH-Connect-Database-Schema-Light.pdf>]
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
@@ -483,6 +527,8 @@ Overfull \hbox (52.42284pt too wide) in paragraph at lines 642--655
  [][] 
  []
 
+
+
 [22]
 Overfull \hbox (74.91708pt too wide) in paragraph at lines 679--689
  [][] 
@@ -492,6 +538,8 @@ Overfull \hbox (74.91708pt too wide) in paragraph at lines 679--689
 Overfull \hbox (60.59981pt too wide) in paragraph at lines 710--722
  [][] 
  []
+
+
 
 [23]
 Overfull \hbox (0.23662pt too wide) in paragraph at lines 731--732
@@ -508,6 +556,8 @@ Overfull \hbox (65.22375pt too wide) in paragraph at lines 758--770
  [][] 
  []
 
+
+
 [24]
 Overfull \hbox (50.79453pt too wide) in paragraph at lines 798--806
  [][] 
@@ -517,6 +567,8 @@ Overfull \hbox (50.79453pt too wide) in paragraph at lines 798--806
 Overfull \hbox (50.79453pt too wide) in paragraph at lines 827--839
  [][] 
  []
+
+
 
 [25]
 Overfull \hbox (4.01657pt too wide) in paragraph at lines 848--849
@@ -528,10 +580,14 @@ Overfull \hbox (54.68343pt too wide) in paragraph at lines 864--882
  [][] 
  []
 
+
+
 [26]
 Overfull \hbox (62.49384pt too wide) in paragraph at lines 903--915
  [][] 
  []
+
+
 
 [27]
 Overfull \hbox (50.79453pt too wide) in paragraph at lines 939--946
@@ -563,6 +619,8 @@ Overfull \hbox (50.79453pt too wide) in paragraph at lines 1000--1007
  [][] 
  []
 
+
+
 [28]
 Overfull \hbox (16.82643pt too wide) in paragraph at lines 1014--1015
 []\OT1/cmtt/m/n/10 study[]buddy[]id \OT1/cmr/m/n/10 ref-er-ences \OT1/cmtt/m/n/10 student[]id \OT1/cmr/m/n/10 in the \OT1/cmtt/m/n/10 study[]buddy \OT1/cmr/m/n/10 ta-ble, with \OT1/cmtt/m/n/10 ON DELETE CASCADE\OT1/cmr/m/n/10 . 
@@ -588,17 +646,21 @@ Overfull \hbox (16.82643pt too wide) in paragraph at lines 1072--1073
 []\OT1/cmtt/m/n/10 study[]buddy[]id \OT1/cmr/m/n/10 ref-er-ences \OT1/cmtt/m/n/10 student[]id \OT1/cmr/m/n/10 in the \OT1/cmtt/m/n/10 study[]buddy \OT1/cmr/m/n/10 ta-ble, with \OT1/cmtt/m/n/10 ON DELETE CASCADE\OT1/cmr/m/n/10 . 
  []
 
+
+
 [29]
 Overfull \hbox (53.76181pt too wide) in paragraph at lines 1087--1098
  [][] 
  []
+
+
 
 [30]
 \openout2 = `usecase_implementation.aux'.
 
  (usecase_implementation.tex
 
-pdfTeX warning: pdflatex.exe (file ./image/SyncCalendar.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: pdflatex (file ./image/SyncCalendar.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 <image/SyncCalendar.pdf, id=188, 1132.23pt x 569.24669pt>
 File: image/SyncCalendar.pdf Graphic file (type pdf)
 <use image/SyncCalendar.pdf>
@@ -606,85 +668,109 @@ Package pdftex.def Info: image/SyncCalendar.pdf  used on input line 4.
 (pdftex.def)             Requested size: 426.79135pt x 214.5701pt.
 
 
-pdfTeX warning: pdflatex.exe (file ./image/StudyBuddySequenceDiagram-SB.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: pdflatex (file ./image/StudyBuddySequenceDiagram-SB.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 <image/StudyBuddySequenceDiagram-SB.pdf, id=189, 889.40276pt x 579.12357pt>
 File: image/StudyBuddySequenceDiagram-SB.pdf Graphic file (type pdf)
 <use image/StudyBuddySequenceDiagram-SB.pdf>
 Package pdftex.def Info: image/StudyBuddySequenceDiagram-SB.pdf  used on input line 29.
 (pdftex.def)             Requested size: 426.79135pt x 277.90546pt.
+
+
 [31
 
  <./image/SyncCalendar.pdf>]
 
-pdfTeX warning: pdflatex.exe (file ./image/StudyBuddySequenceDiagram-Message.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: pdflatex (file ./image/StudyBuddySequenceDiagram-Message.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 <image/StudyBuddySequenceDiagram-Message.pdf, id=202, 1296.76462pt x 984.5583pt>
 File: image/StudyBuddySequenceDiagram-Message.pdf Graphic file (type pdf)
 <use image/StudyBuddySequenceDiagram-Message.pdf>
 Package pdftex.def Info: image/StudyBuddySequenceDiagram-Message.pdf  used on input line 36.
 (pdftex.def)             Requested size: 426.79135pt x 324.0339pt.
+
+
 [32 <./image/StudyBuddySequenceDiagram-SB.pdf>]
 
-pdfTeX warning: pdflatex.exe (file ./image/StudyBuddySequenceDiagram-Contact.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: pdflatex (file ./image/StudyBuddySequenceDiagram-Contact.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 <image/StudyBuddySequenceDiagram-Contact.pdf, id=215, 1296.76462pt x 973.71776pt>
 File: image/StudyBuddySequenceDiagram-Contact.pdf Graphic file (type pdf)
 <use image/StudyBuddySequenceDiagram-Contact.pdf>
 Package pdftex.def Info: image/StudyBuddySequenceDiagram-Contact.pdf  used on input line 43.
 (pdftex.def)             Requested size: 426.79135pt x 320.46611pt.
+
+
 [33 <./image/StudyBuddySequenceDiagram-Message.pdf>]
 
-pdfTeX warning: pdflatex.exe (file ./image/StudyBuddySequenceDiagram-Profile.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: pdflatex (file ./image/StudyBuddySequenceDiagram-Profile.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 <image/StudyBuddySequenceDiagram-Profile.pdf, id=228, 922.40607pt x 680.5425pt>
 File: image/StudyBuddySequenceDiagram-Profile.pdf Graphic file (type pdf)
 <use image/StudyBuddySequenceDiagram-Profile.pdf>
 Package pdftex.def Info: image/StudyBuddySequenceDiagram-Profile.pdf  used on input line 50.
 (pdftex.def)             Requested size: 426.79135pt x 314.89136pt.
+
+
 [34 <./image/StudyBuddySequenceDiagram-Contact.pdf>]
 
-pdfTeX warning: pdflatex.exe (file ./image/Real-timeNotification.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: pdflatex (file ./image/Real-timeNotification.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 <image/Real-timeNotification.pdf, id=241, 677.65169pt x 760.76218pt>
 File: image/Real-timeNotification.pdf Graphic file (type pdf)
 <use image/Real-timeNotification.pdf>
 Package pdftex.def Info: image/Real-timeNotification.pdf  used on input line 76.
 (pdftex.def)             Requested size: 298.75264pt x 335.39806pt.
-[35 <./image/StudyBuddySequenceDiagram-Profile.pdf>]) [36 <./image/Real-timeNotification.pdf>]
+
+
+[35 <./image/StudyBuddySequenceDiagram-Profile.pdf>])
+
+[36 <./image/Real-timeNotification.pdf>]
 \openout2 = `analysis_call_message.aux'.
 
- (analysis_call_message.tex [37
+ (analysis_call_message.tex
+
+[37
 
 
 
-]) [38]
+])
+
+[38]
 \openout2 = `communication_handling.aux'.
 
  (communication_handling.tex
 
-pdfTeX warning: pdflatex.exe (file ./image/Call Initiation.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: pdflatex (file ./image/Call Initiation.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 <image/Call Initiation.pdf, id=273, 695.59875pt x 915.11888pt>
 File: image/Call Initiation.pdf Graphic file (type pdf)
 <use image/Call Initiation.pdf>
 Package pdftex.def Info: image/Call Initiation.pdf  used on input line 34.
 (pdftex.def)             Requested size: 298.75264pt x 393.03265pt.
+
+
 [39
 
 
 
-] [40 <./image/Call Initiation.pdf>]
+]
 
-pdfTeX warning: pdflatex.exe (file ./image/Locating_callee.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+[40 <./image/Call Initiation.pdf>]
+
+pdfTeX warning: pdflatex (file ./image/Locating_callee.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 <image/Locating_callee.pdf, id=328, 691.62387pt x 375.32219pt>
 File: image/Locating_callee.pdf Graphic file (type pdf)
 <use image/Locating_callee.pdf>
 Package pdftex.def Info: image/Locating_callee.pdf  used on input line 70.
 (pdftex.def)             Requested size: 384.11963pt x 269.73352pt.
+
+
 [41 <./image/Locating_callee.pdf>]
 
-pdfTeX warning: pdflatex.exe (file ./image/Instant messaging.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: pdflatex (file ./image/Instant messaging.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 <image/Instant messaging.pdf, id=345, 370.5042pt x 329.31029pt>
 File: image/Instant messaging.pdf Graphic file (type pdf)
 <use image/Instant messaging.pdf>
 Package pdftex.def Info: image/Instant messaging.pdf  used on input line 95.
 (pdftex.def)             Requested size: 298.75264pt x 265.53389pt.
-) [42 <./image/Instant messaging.pdf>]
+)
+
+[42 <./image/Instant messaging.pdf>]
 
 Package natbib Warning: Citation `thuy2020optimize' on page 43 undefined on input line 1168.
 
@@ -700,6 +786,8 @@ Package natbib Warning: Citation `9260048' on page 43 undefined on input line 11
 
 Package natbib Warning: Citation `2012vi' on page 43 undefined on input line 1193.
 
+
+
 [43
 
 
@@ -710,18 +798,26 @@ Package natbib Warning: Citation `HOSEN2023688' on page 44 undefined on input li
 
 Package natbib Warning: Citation `huang1998extensions' on page 44 undefined on input line 1233.
 
+
+
 [44]
 
 Package natbib Warning: Citation `devos2015' on page 45 undefined on input line 1283.
 
-[45] [46]
+
+
+[45]
+
+[46]
 
 Package natbib Warning: There were undefined citations.
 
+
+
 [47] (main.aux (titlepage.aux) (usecase_implementation.aux) (analysis_call_message.aux) (communication_handling.aux))
  ***********
-LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-01-04>
+LaTeX2e <2024-11-01>
+L3 programming layer <2024-11-02>
  ***********
 
 
@@ -733,15 +829,15 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5084 strings out of 474485
- 84144 string characters out of 5745149
- 1943542 words of memory out of 5000000
- 27290 multiletter control sequences out of 15000+600000
+ 5090 strings out of 473682
+ 84283 string characters out of 5720168
+ 501926 words of memory out of 5000000
+ 28093 multiletter control sequences out of 15000+600000
  560899 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,16n,70p,563b,335s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\OS\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/OS/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/OS/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/OS/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/OS/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/OS/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/OS/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/OS/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/OS/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/OS/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/OS/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/OS/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/OS/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/OS/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (48 pages, 2625685 bytes).
+ 57i,16n,79p,573b,337s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\abc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on main.pdf (48 pages, 2625697 bytes).
 PDF statistics:
  452 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
