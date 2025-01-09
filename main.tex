@@ -9,6 +9,7 @@
 \usepackage{enumitem}
 \usepackage{multirow}
 \usepackage{tabularx}
+\usepackage[table,xcdraw]{xcolor}
 \usepackage{array}
 \usepackage{tocloft}
 \usepackage{xcolor}
@@ -19,6 +20,7 @@
 \geometry{a4paper, portrait, margin=30mm, bmargin=30mm, tmargin=30mm}
 \setcounter{secnumdepth}{5}
 \setcounter{tocdepth}{5}
+\setlength\parindent{0pt}
 
 \makeatletter
 \newcommand\subsubsubsection{\@startsection{paragraph}{4}{\z@}{-2.5ex\@plus -1ex \@minus -.25ex}{1.25ex \@plus .25ex}{\normalfont\normalsize\bfseries}}
@@ -38,6 +40,7 @@
 \setlength{\cftsubsubsecindent}{5em}
 \begin{document}
 \setstretch{1.15}
+
 \include{titlepage.tex}
 \renewcommand{\listfigurename}{LIST OF FIGURES}
 \renewcommand{\cftloftitlefont}{\Large\bfseries} 
@@ -57,7 +60,32 @@
 \end{center}
 \newpage
 
+\section*{Acknowledgement}
+\addcontentsline{toc}{section}{Acknowledgement}
+
+\newpage
+\vspace{2em}
+\section*{List of Abbreviations}
+\addcontentsline{toc}{section}{List of Abbreviations}
+
+\begin{tabbing}
+    \hspace{4cm} \= \hspace{10cm} \kill
+    \textbf{API} \> Application Programming Interface \\
+    \textbf{RBAC} \> Role-Based Access Control \\
+    \textbf{JWT} \> JSON Web Token \\
+    \textbf{VoIP} \> Voice over Internet Protocol \\
+    \textbf{VPN} \> Virtual Private Network \\
+    \textbf{K-modes} \> K-modes Clustering Algorithm \\
+    \textbf{SIP} \> Session Initiation Protocol \\
+    \textbf{TLS} \> Transport Layer Protocol \\
+    \textbf{UAC} \> User Agent Client \\
+    \textbf{UAS} \> User Agent Server \\
+    \textbf{URI} \> Uniform Resource Identifier \\
+\end{tabbing}
+
+\newpage
 \listoffigures
+\addcontentsline{toc}{section}{List of Figures}
 \renewcommand{\listtablename}{LIST OF TABLES}
 \renewcommand{\cftlottitlefont}{\Large\bfseries} 
 \renewcommand{\cftafterlottitle}{
@@ -71,27 +99,29 @@
 \newpage
 
 \listoftables
+\addcontentsline{toc}{section}{List of Tables}
 \newpage
+\section*{Abstract}
+\addcontentsline{toc}{section}{Abstract}
 
-
+\newpage
 
 \section{Introduction}
 
 \subsection{Context and Motivation}
-University life often presents a wide range of challenges for both students and administrators. At USTH, managing academic schedules, building social connections, and navigating campus resources can become an irritated tasks.
-The limitations of traditional systems, which are sometimes inconvenient, fragmented, and unable to kept track of, only add to the complexity.
-These systems find it hard to provide up-to-date information and lack of integration needed to offer a seamless experience for students, which leaves a feeling of overwhelmed and disconnected for student.
+During the university life, especially first year students, they will find it difficult to manage academic schedules, navigate the location of study areas, find lecture resources, and build social connections to other students.
+As for our current traditional systems, they can serve their purposes well but they are fragmented and hard to maintain.
+Moreover, there are not many platforms for students to expand their social network and probably find suitable friends. \\
 
 To overcome these challenges, we developed USTH Connect, an integrated University Life Assistant and Student Networking Application.
-USTH Connect combines advanced technologies like Spring Boot for backend services, Google Calendar for managing schedule, MapBox for campus navigation, and Moodle for accessing academic resources. Additionally, it employs Machine Learning to power its StudyBuddy feature, which allows students to connect with peers who share similar academic interests and goals.
+USTH Connect is implemented with the aim of supporting students' university life. \\
 
-USTH Connect is desgined to simplify academic and campus life. It combines all key resources into a user-friendly Android application, offering easy access to class schedules, course materials, and campus navigation tools.
-Apart from academic, the platform encourages more connections between students, especially the first year student, making it easier to build meaningful relationships and collaborate effectively. 
+It combines modern yet simple technologies into an Android application, providing students with effortless access to the schedules, study materials and study location addresses.
+Not only does it support their studies, it also encourages more connections between students, supporting them in their social life. That helps them to create more quality and meaningful relationships in the future.
 With StudyBuddy, students can find compatible study partners, chat, and even make audio calls through secure VoIP functionality powered by Linphone.
-
-USTH Connect places a strong emphasis on data security and system reliability. It utilizes a secure PostgreSQL database to manage data centrally, ensuring both protection and efficiency.
-Additionally, communication between the backend and mobile devices is secured through the Tailscale VPN, providing strong protection for student privacy and uniterrupted access to the platform's features.
-
+To support the StudyBuddy features, we apply the K-modes model to help students find compatible people in the university.
+USTH Connect uses a secure PostgreSQL database to manage data centrally, ensuring both protection and efficiency.
+In addition, communication between the backend and mobile devices is secured through Tailscale VPN, providing strong protection for student privacy and seamless access to the platform's feature.
 This report explores the design and development of USTH Connect, detailing the project's workflow, main features, and the challenges faced during its implementation. 
 It also highlights the creative solutions used to address these challenges, demonstrating how USTH Connect enhances the university experience for students, faculty, and administrators.
 
@@ -101,21 +131,18 @@ university life and fosters student networking through advanced technological so
 The goal is to create a platform that seamlessly intergrates personal academic data, event annoucements, and campus resources.
 By using advanced frameworks and APIs, together with recommendation system, we aim to simplify the administrative tasks, improve campus accessibility, 
 and encourage more interaction among students.
-This platform should be user-friendly and accessible through all devices, making it easier for students to experience campus life, 
-stay informed, and connect with their peers. 
+The platform will be accessible to students, making it easy for them to experience campus life, stay informed, and connect with friends.
 
 \subsection{Desired Outcomes}  
-The University Life Assistant and Student Networking Application (USTH Connect) is expected to significantly enhance the university experience by simplifying academic and social interactions for students, faculty, and administrators.
-By seamlessly integrating essential tools like schedules, course materials, and campus navigation, USTH Connect aims to boost student productivity and reduce administrative burdens.
-The StudyBuddy feature, powered by advanced machine learning, is expected to effectively connect students with compatible study partners, encouraging collaboration and enhancing user experience.
-Real-time notifications for calendar updates and events together with calling and messaging will keep users informed, organized and connected.
-The integration of Google Calendar, MapBox, and Moodle promise a user-friendly experience across Android devices.
+The USTH Connect is expected to enhance the university experience by streamlining academic and social interactions for students and administrators.
+To achieve that outcomes, we seamlessly integrate essential tools like schedules, course materials, and campus navigation.
+The StudyBuddy feature, supported by machine learning, is aimed to effectively connect students with compatible learning partners, encourage coopeartion between students, and enhance the student social life.
 Linphone-powered chat and audio calls will facilitate seamless communication and strengthen social bonding among students.
-Regarding robust security measures, including PostgreSQL and Tailscale VPN, will ensure data integrity and reliability. 
-Administrators will gain valuable insights through centralized reporting, enabling them to effectively monitor student engagement and make informed decisions. 
-The scalable and flexible design of USTH Connect allows for future expansion and adaptation within the USTH community.
-In summary, USTH Connect is expected to significantly improve the university experience for students, faculty, and administrators by encouraging a more efficient, connected, and secure academic environment.
+Real-time notifications for calendar updates and events together with calling and messaging will keep users informed, organized and connected.
+The integration of Google Calendar, MapBox, and Moodle promise a student-friendly experience across Android devices.
+In summary, USTH Connect is supposed to significantly improve the university experience for students and administrators by encouraging a more efficient and connected academic environment.
 
+\pagebreak
 
 \subsection{Structure of Thesis}
 The thesis will be structured as follows:
@@ -142,58 +169,69 @@ The thesis will be structured as follows:
     objectives were met and provides a summary of the project's outcomes.
     \item \textbf{Part VII: Conclusion and Future Work }
     \newline
+    Reviews the project's successes in improving student life and fostering connections within the university.
+    It also acknowledges the challenges encountered during development and identifies areas where the system could be further improved.
 \end{itemize}
-
-
-\subsection{Related works}
-
-In this part we will cite some related works/papers that we used mainly for this 
-project. We also summarize the content of these resources.
-
 
 % \section{Theoretical Background}
 \section{Requirement Analysis}
+Ensuring and following the initial targets set for the project, we must be carefully analyzed the system
+architecture and developed a detailed work deployment plan. Below is a detailed description of
+the methodologies and procedures we implemented.
+
 \subsection{System requirements}
 This section outlines the essential requirements for the development and successful operation of USTH Connect, classified into functional, non-functional, and desired functionalities.  
 
 \subsubsection{Functional Requirements}
-The functional requirements specify the primary operations and features of USTH Connect to meet user and system objectives:  
+The functional requirements specify the primary operations and features of USTH Connect to meet student and system objectives:  
 \begin{itemize}  
-    \item \textbf{Authentication and Authorization:} Implement secure user authentication using JWT-based tokens and role-based access control (RBAC) for managing access permissions.  
+    \item \textbf{Authentication and Authorization:} Implement secure student authentication using JWT-based tokens and role-based access control (RBAC) for managing access permissions.  
     \item \textbf{Google Calendar Integration:} Enable users to sync, view, and manage academic schedules in real-time within the application.  
     \item \textbf{StudyBuddy Matching:} Allow students to find study partners based on shared academic interests, goals, and compatibility through machine learning algorithms.  
     \item \textbf{Moodle Resource Access:} Provide seamless access to course materials, including slides, assignments, and reference documents, fetched directly from Moodle.  
     \item \textbf{Real-time Notifications:} Notify users promptly about calendar updates, study partner incoming communication, and scheduled events.  
     \item \textbf{Map and Navigation:} Integrate MapBox to display campus maps, building locations, and navigation features for easy campus exploration.  
     \item \textbf{Communication Features:} Facilitate text-based chatting and VoIP audio calls using Linphone for seamless interaction between users.  
-    \item \textbf{Administrative Tools:} Offer reporting tools for administrators to monitor user engagement, system usage, and academic performance.  
+    \item \textbf{Administrative Tools:} Offer reporting tools for administrators to monitor student engagement, system usage, and academic performance.  
 \end{itemize}  
 
 \subsubsection{Non-functional Requirements}
 The non-functional requirements outline the system's essential performance, reliability, and usability standards:  
 \begin{itemize}  
-    \item \textbf{Scalability:} The system should support a moderate increase in user numbers and data while maintaining acceptable performance levels.  
+    \item \textbf{Scalability:} The system should support a moderate increase in student numbers and data while maintaining acceptable performance levels.  
     \item \textbf{Security:} User data must be protected with basic encryption protocols, secure database practices (PostgreSQL), and VPN communication (Tailscale) for backend interactions.  
-    \item \textbf{Availability:} Aim for a system uptime of at least 90\%, ensuring minimal disruption to user access.  
+    \item \textbf{Availability:} Aim for a system uptime of at least 90\%, ensuring minimal disruption to student access.  
     \item \textbf{Performance:} Key functionalities, such as schedule retrieval and StudyBuddy matching, should respond within 5 seconds under normal conditions.  
     \item \textbf{Usability:} The interface should be straightforward and functional, providing a smooth experience on most Android devices.  
     \item \textbf{Maintainability:} Updates and feature additions should be feasible without causing significant downtime or compatibility issues.  
 \end{itemize}  
 
 \subsubsection{Desired Functionalities}
-These functionalities are not critical but aim to enhance the overall user experience and system capabilities:  
+These functionalities are not critical but aim to enhance the overall student experience and system capabilities:  
 \begin{itemize}  
     \item \textbf{Personalized Dashboard:} Provide a customizable home screen with quick access to frequently used features, such as schedules, notifications, and StudyBuddy matches.  
     \item \textbf{Event Reminders:} Enable automated reminders for upcoming deadlines, meetings, and academic events.  
-    \item \textbf{Offline Mode:} Allow limited functionality, such as viewing previously synced schedules and notes, when the user is offline.  
+    \item \textbf{Offline Mode:} Allow limited functionality, such as viewing previously synced schedules and notes, when the student is offline.  
     \item \textbf{User Feedback System:} Incorporate feedback and rating mechanisms for StudyBuddy matches and overall app experience.  
-    \item \textbf{Cross-platform Compatibility:} Develop future support for IOS devices and web browsers to expand user accessibility.  
+    \item \textbf{Cross-platform Compatibility:} Develop future support for IOS devices and web browsers to expand student accessibility.  
 \end{itemize}  
 
 \subsection{Use Case}
+Based on the use case diagram, this section will offer a general explanation of the system's
+features.
+
 \subsubsection{Use Cases Diagram}
     The below diagram is to demonstrate the interaction between users and system:
     % Figure
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\textwidth]{image/USTHConnect_usecase.pdf} 
+        \caption{Use case diagram}
+        \label{fig:usthconnect_use_case}
+    \end{figure}
+
+    \pagebreak
+
 \subsubsection{Use Case Characteristics}
     The system in Figure above has two roles: \textbf{Admin} and \textbf{Student}:
     \begin{itemize}
@@ -212,9 +250,9 @@ These functionalities are not critical but aim to enhance the overall user exper
         \caption{Authentication use case diagram}
         \label{fig:authenticate_use_case}
     \end{figure}
-    \textbf{Description:} Students can login and reset their passwords in case they forget them. Admin has to create accounts for students.
+    \textbf{Description:} Students can login and reset their passwords in case they forget them. Admin has to create accounts for students. \\
 
-    \noindent \textbf{Pre-conditions:} Before this use case begins, students must ensure that all system packages are fully installed to avoid errors.
+    \noindent \textbf{Pre-conditions:} Before this use case begins, students must ensure that all system packages are fully installed to avoid errors. \\
 
     \noindent \textbf{Post-conditions:}
     \begin{itemize}
@@ -254,13 +292,16 @@ These functionalities are not critical but aim to enhance the overall user exper
         \caption{Schedule use case diagram}
         \label{fig:schedule_use_case}
     \end{figure}
-    \textbf{Description:} This use case enables students to view their academic timetable. The system sync schedule every 10 minutes to make sure no daily event is missing.
+    \textbf{Description:} This use case enables students to view their academic timetable. The system sync schedule every 10 minutes to make sure no daily event is missing. \\
 
     \noindent \textbf{Pre-conditions:} 
         \begin{itemize}
             \item Before this use case begins, students must be logged into the system.
             \item The system up-to-date course details: time, locations, lecturer.
         \end{itemize}
+    
+    \pagebreak
+
     \noindent \textbf{Post-conditions:}
     \begin{itemize}
         \item \textbf{Success:} 
@@ -301,13 +342,16 @@ These functionalities are not critical but aim to enhance the overall user exper
         \caption{Campus use case diagram}
         \label{fig:campus_use_case}
     \end{figure}
-    \textbf{Description:} The system displays a list of campus buildings and their details. The system can locate each building in a list on a map.
+    \textbf{Description:} The system displays a list of campus buildings and their details. The system can locate each building in a list on a map. \\
+
+    \pagebreak
 
     \noindent \textbf{Pre-conditions:} 
         \begin{itemize}
             \item Before this use case begins, students must be logged into the system.
             \item Building data must be fetched from the database.
         \end{itemize}
+
     \noindent \textbf{Post-conditions:}
     \begin{itemize}
         \item \textbf{Success:} 
@@ -335,7 +379,7 @@ These functionalities are not critical but aim to enhance the overall user exper
     \end{table}
 
 \subsubsection{Use case: University Resource}
-    \textbf{Description:} Students can access lectures, slides, exercises and homework from all bachelor’s programs, which the system displays.
+    \textbf{Description:} Students can access lectures, slides, exercises and homework from all bachelor’s programs, which the system displays. \\
 
     \noindent \textbf{Pre-conditions:} 
         \begin{itemize}
@@ -369,7 +413,7 @@ These functionalities are not critical but aim to enhance the overall user exper
         \caption{StudyBuddy use case diagram}
         \label{fig:studyBuddy_use_case}
     \end{figure}
-    \textbf{Description:} The system allows students to connect and find each other students, who have the same things with the other. Students can view their profile, interest, ...
+    \textbf{Description:} The system allows students to connect and find each other students, who have the same things with the other. Students can view their profile, interest, ... \\
 
     \noindent \textbf{Pre-conditions:} 
         \begin{itemize}
@@ -419,20 +463,20 @@ These functionalities are not critical but aim to enhance the overall user exper
 \subsubsection{Use case: Real Time Notification}
     \begin{figure}[H]
         \centering
-        \includegraphics[width=1\textwidth]{image/Real-timeNotification.pdf} 
+        \includegraphics[width=1\textwidth]{image/Real-timeNotificationUseCase.pdf} 
         \caption{Real Time Notification use case diagram}
         \label{fig:notification_usecase}
     \end{figure}
-    \textbf{Description:} The push notification system alerts the user whenever there is a change in their calendar (a new event or modification of an existing one) or when they receive a call. Notifications are delivered in real-time, ensuring that the user stays updated on any important events or incoming calls. 
+    \textbf{Description:} The push notification system alerts the student whenever there is a change in their calendar (a new event or modification of an existing one) or when they receive a call. Notifications are delivered in real-time, ensuring that the student stays updated on any important events or incoming calls. \\
     
     \noindent \textbf{Pre-conditions:} 
         \begin{itemize}
             \item The user’s device must be connected to the internet.
-            \item The user must have granted the application permission to access the calendar and incoming notifications.
+            \item The student must have granted the application permission to access the calendar and incoming notifications.
         \end{itemize}
     \noindent \textbf{Post-conditions:}
     \begin{itemize}
-        \item The real time notification will pop up on the user's device to attract the user's attention.
+        \item The real time notification will pop up on the student's device to attract the student's attention.
         \item The notifications will contain:
         \begin{itemize}
             \item A bolded title with context about the notification’s content.
@@ -454,73 +498,650 @@ These functionalities are not critical but aim to enhance the overall user exper
             & 1. The system identifies incoming calls and sends a push notification to inform users in real time \\ \hline
             \multirow{2}{=}{\centering \shortstack[c]{User click on \\ the notification}} 
             & 1. \textbf{Calendar notification:} The system will open the application and display the updated event on the calendar \\ \cline{2-2}
-            & 2. \textbf{Incoming call notification:} The system will open the application and allow the user to handle the incoming call (accept or decline) \\ \hline
+            & 2. \textbf{Incoming call notification:} The system will open the application and allow the student to handle the incoming call (accept or decline) \\ \hline
         \end{tabular}
         \caption{Actor Actions and System Actions for Real time Notification}
         \label{tab:notification_table}
     \end{table}
 
-
-% \subsection{Mobile Application Background}
-% In this part we will introduce about the standard mobile application framework.
-% \subsubsection{Mobile Application Development}
-% \subsubsubsection{Android Development Frameworks}
-% For Android application development, Android Studio is considered as the primary Integrated Development Environment (IDE) for app development.
-% According to Google, it is recommended as an ideal IDE for Android development and have a variety of powerful features including:
-% \begin{itemize}
-%     \item \textbf{XML (Extensible Markup Language) Layout Desgin:} Android Studio offers a visual layout editor for designing user interface (UI). 
-%     XML seperates the UI design from business logic, enabling multiple designers and developers to work independently. XML layouts follow a tree structure where each elements will represent a UI component.
-%     Each elements will have multiple attributes (layout, styles, ID,...) and layout types (ConstraintLayout, LinearLayout,...) to help implement an eye-catching and simple UI.
-%     Moreover, by binding directly the layout components to corresponding properties in the code or transforming XML into runtime object using Layout Inflation.
-%     \item \textbf{Gradle Build System: } In Android Studio, Gradle will take responsibility for automatic project building and management. 
-%     It will handle requirement dependencies, compiled resources, and the most important is generating
-%     \item 
-% \end{itemize} 
-% \subsubsubsection{UI/UX Design Principles}
-
-% \subsubsubsection{Google Calendar Display}
-
-% \subsubsubsection{MapBox Display}
-
-% \subsubsubsection{Moodle Resource Display}
-
-% \subsubsubsection{Real-Time Notifications}
-
-% \subsubsubsection{Student Matching System}
-
-% \subsubsection{Backend System}
-% \subsubsubsection{Spring Boot Framework}
-
-% \subsubsubsection{JWT and RBAC}
-
-% \subsubsubsection{Database Management}
-
-% \subsubsubsection{Google Calendar Integration}
-
-% \subsubsubsection{MapBox Integration}
-
-% \subsubsubsection{Moodle Integration}
-
-% \subsubsubsection{Tailscale VPN}
-
-% \subsubsubsection{Spring Boot Framework}
-% \subsection{Machine Learning Background}
-% In this part we will explain the theory and mathematical bases for
-% the clustering algorithm that we used in this project.
-% \begin{itemize} 
-%     \item Machine Learning Workflow: describe a standard workflow for a clustering
-%     algorithm.
-%     \item Data encoding method: One Hot Encoding, Word Embedding TD-IDF
-%     \item Dimensionality reduction
-%     \item Clustering algorithm: K-mode (? can we use more algorithm for this part)
-%     \item Evaluation Metrics: Silhouette score, Davies-Bouldin index
-
-% \end{itemize}
-
 \section{Methodologies}
+This section offers an overview of the methodologies used throughout the system development
+after examining the objectives of the USTH Connect. It ensures that
+essential actions are executed in a systematic and well-planned manner
+
 \subsection{System Architecture}
+This section provides an overview of the technologies and components used in the system.
+It focuses on the roles and interactions of various systems and services that work together in a layered architecture with a client-server relation, creating a seamless, integrated solution for university life assistance and student networking.
+
+\subsubsection{System Architecture Diagram}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{image/USTH-Connect-System-Architecture.pdf} 
+    \caption{USTH Connect System Architecture Diagram}
+\end{figure}
+
+\subsubsection{Backend - Spring Boot}
+The backend of the application is configured using Spring Boot, a well-known and powerful Java framework for its ability to simplify the backend development.
+Spring Boot handles the core logic of the application, which includes student authentication, processing data from third-party services, and providing APIs for the mobile frontend.
+It configures a seemless integration with various services such as Google Calendar, Mapbox, and Moodle, ensuring that schedule events, campus locations, and lecture resouces are always up-to-date and easy to access.
+The backend is responsible for processing and storing student data, managing roles with JWT for secure access, and applying RBAC to differentiate between ADMIN and USER roles.
+This security configuration ensures that students can only access the data and features which are allowed according to their given roles, enhancing the security and functionality of the system.
+
+\subsubsection{Mobile Frontend - Java (Android)}
+The mobile app is developed using Java for Android, which acts as the UI for the system.
+This frontend enables students to interact with various features, such as viewing events from Google Calendar, accessing campus location through Mapbox, and browsing academic resources coming from Moodle.
+The app fetches data from the backend through APIs, ensuring that it always displays the latest information that the backend system can provide.
+For the Google Calendar implementation, the app periodically retrieves and displays these followings events, which makes it easier for students to stay updated on their study schedules.
+Mapbox provides an overview map of a campus, allowing students to locate buildings and study halls using their latitude and longitude data.
+Additionally, the app integrates the StudyBuddy feature, where students can find potential study partners based on their personal description, interests and habits. 
+Moreover, it supports real-time audio and message communication through the Linphone VoIP library.
+
+\subsubsection{VPN Hosting - Tailscale}
+Tailscale is used to create a secure VPN that provides private and safe communication between the backend server and students' devices.
+In the system, Tailscale pushes the public IP address of the backend system, enabling devices to securely connect to it without exposing sensitive information about the server's location and configuration.
+Therefore, all communication between the mobile application and the backend is secured and encrypted, reducing the risk of unauthorized access.
+By using Tailscale's VPN service, the system ensures secure and private access to the system's backend for all students, regardless of their network location.
+
+\subsubsection{Machine Learning - K-modes Clustering}
+The StudyBuddy feature of the system using a Python-based machine learning model that uses the K-modes clusteting algorithm to match students based on their personal interests and study preferences.
+When students enter details about their personality traits, hobbies, learning style and academic goals, this data is sent to the backend, which processes it using the K-modes algorithm.
+After receiving data, the algorithm groups students with similar characteristics, enabling the system to send back the proper recommendation to the students.
+Then, the potential study partners will be displayed in the mobile app, allowing students to connect to each others who have compatible interests.
+This feature is implemented using Python's machine learning libraries, which provide the necessary methods for clustering and pattern recognition in student matching.
+
+\subsubsection{Communication - Linphone VoIP}
+To integrate real-time communication between matched students, the system implements Linphone, an open-source VoIP library.
+Linphone allows students to initiate audio calls, enabling seamless communication for students who wish a collaboration on projects or study-together session.
+After the StudyBuddy algorithm matches two studens, they can contact and communicate each other through the app through the app using the Linphone VoIP integration.
+Therefore, that students can interact with their matches without relying on external messaging or calling services.
+Linphone provides a reliable and efficient platform for voice communication, contributing to the goal of encouraging more interaction and collaboration between students in the university.
+
+\subsubsection{How does it work together ?}
+This system works by seamlessly integrating various components. 
+The Spring Boot backend serves as the brain of the operation, managing user accounts, data storage, and communication with external services like Google Calendar, Mapbox, Moodle, and Linphone VoIP library.
+The mobile app, built with Java, communicates with the backend to access real-time information.
+Tailscale's VPN keeps the communication secure by encrypting all data, ensuring user privacy. To connect students with similar interests, the system employs a smart matching algorithm (using Python). 
+Once matched, students can easily make voice calls within the app thanks to Linphone's built-in calling feature.
+Each part of this system depends on the others. 
+The app relies on the backend for accurate information, while the backend utilizes external services and the database to operate smoothly. 
+The backend also processes the matching results and ensures secure data delivery to the app.
+In summary, this integrated system creates a comprehensive platform that enhances the university experience for students by supporting their academic and encouraging more communication between them.
+
 \subsection{Database Design}
+This section provides a detailed description of the database design for the USTH Connect application.
+It highlights the key requirements, objectives, and the structure that support the system's functionality.
+Each table and its relationships are thoroughly designed to handle different types of data, such as student profiles, schedule events, course resources, campus naviation, and StudyBuddy connections.
+This section also includes an Entity-Relationship diagram that visually represents the relationships between various entities.
+
+\subsubsection{Database Requirements and Objectives}  
+The database for USTH Connect is designed to manage a wide range of information, including student profiles, schedules, study buddy connections, and course resources. The main objectives of the database design are:  
+\begin{itemize}  
+    \item To provide a reliable and centralized system for storing academic and social data.  
+    \item To ensure data integrity and maintain relationships between tables for accurate reporting and queries.  
+    \item To support seamless integration with external services, such as Google Calendar and Moodle.  
+    \item To enable efficient data retrieval for features like StudyBuddy matching, schedule updates, and resource access.  
+    \item To maintain scalability and adaptability for increasing student data as the system grows.  
+\end{itemize} 
+
+\subsubsection{Entity-Relationship Diagram}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{image/USTH-Connect-Database-Schema-Light.pdf} 
+    \caption{USTH Connect Entity-Relationship Diagram}
+\end{figure}
+
+\subsubsection{Table and Relationships}
+This section provides a detailed description of the tables within the USTH Connect database and their relationship.
+\subsubsubsection{Table: Activity}
+
+\textbf{Attributes and Data Types}
+\begin{table}[H]
+    \centering
+    \renewcommand{\arraystretch}{1.5}
+    \begin{tabular}{|l|l|p{7cm}|l|}
+    \hline
+    \rowcolor[HTML]{96FFFB} 
+    \textbf{Column Name} & \textbf{Data type}      & \textbf{Description}                          & \textbf{Constraints}  \\ \hline
+    activity\_id         & bigserial               & Unique identifier for the activity            & Primary Key, Not Null \\ \hline
+    activity\_name       & varchar(255)            & Name of the activity                          &                       \\ \hline
+    activity\_type       & varchar(255)            & Type of activity                              &                       \\ \hline
+    due\_date            & timestamp               & Deadline for the activity                     &                       \\ \hline
+    completion\_status   & varchar(255)            & Status of the activity                        &                       \\ \hline
+    course\_id           & bigint                  & ID of the course associated with the activity & Foreign Key           \\ \hline
+    resource\_id         & bigint                  & ID of a resource associated with the activity & Foreign Key           \\ \hline
+    \end{tabular}
+    \caption{Attributes and data types for the \texttt{Activity} table}
+\end{table}
+
+\noindent
+\textbf{Constraints}
+\begin{itemize}
+    \item \textbf{Primary Key}: \texttt{activity\_id}
+    \item \textbf{Foreign Key (\texttt{course\_id})}: References \texttt{course(course\_id)}.
+    \item \textbf{Foreign Key (\texttt{resource\_id})}: References \texttt{resources(id)}.
+\end{itemize}
+
+\noindent
+\textbf{Relationships}
+\begin{itemize}
+    \item Each \texttt{activity} belongs to one \texttt{course}.
+    \item Each \texttt{activity} may have one associated \texttt{resource}.
+\end{itemize}
+
+\subsubsubsection{Table: Course}
+\textbf{Attributes and Data Types}
+\begin{table}[H]
+    \centering
+    \renewcommand{\arraystretch}{1.5}
+    \begin{tabular}{|l|l|p{7cm}|l|}
+    \hline
+    \rowcolor[HTML]{96FFFB} 
+    \textbf{Column Name} & \textbf{Data type} & \textbf{Description}                        & \textbf{Constraints}  \\ \hline
+    course\_id           & bigserial          & Unique identifier for the course            & Primary Key, Not Null \\ \hline
+    short\_name          & varchar(255)       & Short Name of the course                    & Not Null              \\ \hline
+    full\_name           & varchar(255)       & Full Name of the course                     & Not Null              \\ \hline
+    description          & varchar(255)       & Description of the course                   &                       \\ \hline
+    visibility           & boolean            & The current visibility status of the course &                       \\ \hline
+    \end{tabular}
+    \caption{Attributes and data types for the \texttt{Course} table}
+\end{table}
+
+\noindent
+\textbf{Constraints}
+\begin{itemize}
+    \item \textbf{Primary Key}: \texttt{course\_id}
+    \item \textbf{Foreign Key (\texttt{course\_id})}: In the \texttt{student\_course} table, \texttt{course\_id} references \texttt{course(course\_id)}.
+\end{itemize}
+
+\noindent
+\textbf{Relationships} 
+\begin{itemize}
+    \item Each \texttt{course} can be associated with multiple \texttt{students} through the \texttt{student\_course} table.
+\end{itemize}
+
+\subsubsubsection{Table: Events}
+\textbf{Attributes and Data Types}
+\begin{table}[H]
+    \centering
+    \renewcommand{\arraystretch}{1.5}
+    \begin{tabular}{|l|l|p{7cm}|l|}
+    \hline
+    \rowcolor[HTML]{96FFFB} 
+    \textbf{Column Name} & \textbf{Data type} & \textbf{Description}                      & \textbf{Constraints}  \\ \hline
+    event\_id            & serial             & Unique identifier for the events          & Primary Key, Not Null \\ \hline
+    event\_name          & text               & Name of the event                         &                       \\ \hline
+    event\_description   & text               & Description of the event                  &                       \\ \hline
+    event\_start         & timestamp          & Starting time of the event                &                       \\ \hline
+    event\_end           & timestamp          & Ending time of the event                  &                       \\ \hline
+    location             & varchar(255)       & Location of the Event                     &                       \\ \hline
+    organizer\_id        & int                & Unique identifier for the organizer       &                       \\ \hline
+    google\_event\_id    & varchar(255)       & Unique identifier generated by the google &                       \\ \hline
+    \end{tabular}
+    \caption{Attributes and data types for the \texttt{Events} table}
+\end{table}
+
+\noindent
+\textbf{Constraints}
+\begin{itemize}
+    \item \textbf{Primary Key}: \texttt{event\_id}.
+    \item \textbf{Foreign Key (\texttt{organizer\_id})}: References \texttt{organizer(id)}.
+    \item \textbf{Unique Key (\texttt{google\_event\_id})}: Ensures uniqueness of the Google Event ID.
+\end{itemize}
+
+
+\noindent
+\textbf{Relationships} 
+\begin{itemize}
+    \item Each \texttt{event} is organized by one \texttt{organizer}.
+    \item Each \texttt{event} is associated with one \texttt{location} from \texttt{maps}.
+\end{itemize}
+
+\subsubsubsection{Table: Maps}
+\textbf{Attributes and Data Types}
+\begin{table}[H]
+    \centering
+    \renewcommand{\arraystretch}{1.5}
+    \begin{tabular}{|l|l|p{5.7cm}|l|}
+    \hline
+    \rowcolor[HTML]{96FFFB} 
+    \textbf{Column Name} & \textbf{Data type} & \textbf{Description}                   & \textbf{Constraints}            \\ \hline
+    id                   & serial             & Unique identifier for the map location & Primary Key, Not Null           \\ \hline
+    location             & varchar(255)       & The name of the location               & Default: "No Location Provided" \\ \hline
+    location\_value      & varchar(255)       & Value the location                     &                                 \\ \hline
+    Latitude             & double precision   & Latitude of the location               &                                 \\ \hline
+    Longitude            & double precision   & Longitude of the location              &                                 \\ \hline
+    \end{tabular}
+    \caption{Attributes and data types for the \texttt{Maps} table}
+\end{table}
+
+\noindent
+\textbf{Constraints}
+\begin{itemize}
+    \item \textbf{Primary Key}: \texttt{id}.
+    \item \textbf{Unique Key}: \texttt{location}.
+\end{itemize}
+
+\noindent
+\textbf{Relationships} 
+\begin{itemize}
+    \item Each \texttt{location} in \texttt{maps} can be referenced in \texttt{events}.
+\end{itemize}
+
+\subsubsubsection{Table: Message}
+\textbf{Attributes and Data Types}
+\begin{table}[H]
+    \centering
+    \renewcommand{\arraystretch}{1.5}
+    \begin{tabular}{|l|l|p{7cm}|l|}
+    \hline
+    \rowcolor[HTML]{96FFFB} 
+    \textbf{Column Name} & \textbf{Data type}        & \textbf{Description}                                   & \textbf{Constraints}             \\ \hline
+    id                   & bigserial               & Unique identifier for the message                     & Primary Key, Not Null            \\ \hline
+    connection\_id       & bigint                  & Reference to the connection in the \texttt{Study Connection} table & Foreign Key, Not Null           \\ \hline
+    sender\_id           & varchar(255)            & Identifier of the sender                              & Foreign Key, Not Null            \\ \hline
+    receiver\_id         & varchar(255)            & Identifier of the receiver                            & Foreign Key, Not Null            \\ \hline
+    content              & varchar(255)            & Text content of the message                           & Not Null                         \\ \hline
+    created\_at          & timestamp               & Timestamp when the message was created                & Not Null, Default: \texttt{now()} \\ \hline
+    is\_read             & boolean                 & Indicates if the message has been read                & Not Null, Default: \texttt{false} \\ \hline
+    \end{tabular}
+    \caption{Attributes and data types for the \texttt{Message} table}
+\end{table}
+
+\noindent
+\textbf{Constraints}
+\begin{itemize}
+    \item \textbf{Primary Key}: \texttt{id}.
+    \item \textbf{Foreign Key}: 
+    \begin{itemize}
+        \item \texttt{connection\_id} references \texttt{id} in the \texttt{Study Connection} table, with \texttt{ON DELETE CASCADE}.
+        \item \texttt{receiver\_id} references \texttt{student\_id} in the \texttt{Study Buddy} table, with \texttt{ON DELETE CASCADE}.
+        \item \texttt{sender\_id} references \texttt{student\_id} in the \texttt{Study Buddy} table, with \texttt{ON DELETE CASCADE}.
+    \end{itemize}
+\end{itemize}
+
+\noindent
+\textbf{Indices}
+\begin{itemize}
+    \item \texttt{idx\_connection\_id}: Index on \texttt{connection\_id} for optimized query performance.
+    \item \texttt{idx\_receiver\_id}: Index on \texttt{receiver\_id} for optimized query performance.
+    \item \texttt{idx\_sender\_id}: Index on \texttt{sender\_id} for optimized query performance.
+\end{itemize}
+
+\noindent
+\textbf{Relationships} 
+\begin{itemize}
+    \item Each \texttt{Message} is associated with a specific \texttt{Connection}.
+    \item \texttt{sender\_id} and \texttt{receiver\_id} reference students in the \texttt{Study Buddy} table.
+\end{itemize}
+
+
+\subsubsubsection{Table: Notifications}
+\textbf{Attributes and Data Types}
+\begin{table}[H]
+    \centering
+    \renewcommand{\arraystretch}{1.5}
+    \begin{tabular}{|l|l|p{5cm}|l|}
+    \hline
+    \rowcolor[HTML]{96FFFB} 
+    \textbf{Column Name} & \textbf{Data type}        & \textbf{Description}                                   & \textbf{Constraints}             \\ \hline
+    notification\_id     & serial                  & Unique identifier for the notification                & Primary Key, Not Null            \\ \hline
+    student\_id          & varchar(255)            & Identifier of the student receiving the notification   & Foreign Key, Not Null            \\ \hline
+    message              & text                    & The content of the notification                       & Not Null                         \\ \hline
+    created\_at          & timestamp               & Timestamp when the notification was created            & Not Null, Default: \texttt{CURRENT\_TIMESTAMP} \\ \hline
+    is\_read             & boolean                 & Indicates if the notification has been read            & Not Null, Default: \texttt{false} \\ \hline
+    event\_id            & integer                 & Reference to the event related to the notification    & Foreign Key                      \\ \hline
+    organizer\_id        & integer                 & Reference to the organizer of the event               & Foreign Key                      \\ \hline
+    \end{tabular}
+    \caption{Attributes and data types for the \texttt{Notifications} table}
+\end{table}
+
+\noindent
+\textbf{Constraints}
+\begin{itemize}
+    \item \textbf{Primary Key}: \texttt{notification\_id}.
+    \item \textbf{Foreign Key}: 
+    \begin{itemize}
+        \item \texttt{student\_id} references \texttt{id} in the \texttt{Student} table, with \texttt{ON DELETE NO ACTION}.
+        \item \texttt{event\_id} references \texttt{event\_id} in the \texttt{Events} table, with \texttt{ON DELETE NO ACTION}.
+        \item \texttt{organizer\_id} references \texttt{id} in the \texttt{Organizers} table, with \texttt{ON DELETE NO ACTION}.
+    \end{itemize}
+\end{itemize}
+
+\noindent
+\textbf{Relationships} 
+\begin{itemize}
+    \item Each \texttt{Notification} is associated with a specific \texttt{Student}.
+    \item \texttt{event\_id} references the \texttt{Events} table, linking notifications to events.
+    \item \texttt{organizer\_id} references the \texttt{Organizers} table, linking notifications to the organizer of the event.
+\end{itemize}
+
+\subsubsubsection{Table: Organizers}
+\textbf{Attributes and Data Types}
+\begin{table}[H]
+    \centering
+    \renewcommand{\arraystretch}{1.5}
+    \begin{tabular}{|l|l|p{7cm}|l|}
+    \hline
+    \rowcolor[HTML]{96FFFB} 
+    \textbf{Column Name} & \textbf{Data type}        & \textbf{Description}                                   & \textbf{Constraints}             \\ \hline
+    id                   & serial                  & Unique identifier for the organizer                    & Primary Key, Not Null            \\ \hline
+    email                & varchar(255)            & Email of the organizer                                 & Not Null, Unique                 \\ \hline
+    name                 & varchar(255)            & Name of the organizer                                  &                                 \\ \hline
+    \end{tabular}
+    \caption{Attributes and data types for the \texttt{Organizers} table}
+\end{table}
+
+\noindent
+\textbf{Constraints}
+\begin{itemize}
+    \item \textbf{Primary Key}: \texttt{id}.
+    \item \textbf{Unique Key}: \texttt{email}.
+\end{itemize}
+
+\noindent
+\textbf{Relationships}
+\begin{itemize}
+    \item \texttt{Organizers} table contains information about the organizers who manage events or resources.
+\end{itemize}
+
+\subsubsubsection{Table: Resources}
+\textbf{Attributes and Data Types}
+\begin{table}[H]
+    \centering
+    \renewcommand{\arraystretch}{1.5}
+    \begin{tabular}{|l|l|p{7cm}|l|}
+    \hline
+    \rowcolor[HTML]{96FFFB} 
+    \textbf{Column Name} & \textbf{Data type}        & \textbf{Description}                                   & \textbf{Constraints}             \\ \hline
+    id                   & bigserial               & Unique identifier for the resource                     & Primary Key, Not Null            \\ \hline
+    resource\_type       & varchar(255)            & Type of the resource (e.g., video, document, etc.)     &                                 \\ \hline
+    resource\_name       & varchar(255)            & Name of the resource                                   &                                 \\ \hline
+    course\_id           & bigint                  & Reference to the course related to the resource        & Foreign Key                      \\ \hline
+    activity\_id         & bigint                  & Reference to the activity related to the resource      & Foreign Key                      \\ \hline
+    file\_url            & varchar(255)            & URL of the resource file                               &                                 \\ \hline
+    resource\_id         & bigint                  & Auto-generated identifier for the resource             & Not Null                         \\ \hline
+    \end{tabular}
+    \caption{Attributes and data types for the \texttt{Resources} table}
+\end{table}
+
+\noindent
+\textbf{Constraints}
+\begin{itemize}
+    \item \textbf{Primary Key}: \texttt{id}.
+    \item \textbf{Foreign Key}: 
+    \begin{itemize}
+        \item \texttt{activity\_id} references \texttt{activity\_id} in the \texttt{Activity} table, with \texttt{ON DELETE NO ACTION}.
+        \item \texttt{course\_id} references \texttt{course\_id} in the \texttt{Course} table, with \texttt{ON DELETE NO ACTION}.
+    \end{itemize}
+\end{itemize}
+
+\noindent
+\textbf{Relationships}
+\begin{itemize}
+    \item Each \texttt{Resource} is associated with a specific \texttt{Activity} and a \texttt{Course}.
+\end{itemize}
+
+\subsubsubsection{Table: Student}
+\textbf{Attributes and Data Types}
+\begin{table}[H]
+    \centering
+    \renewcommand{\arraystretch}{1.5}
+    \begin{tabular}{|l|l|p{7cm}|l|}
+    \hline
+    \rowcolor[HTML]{96FFFB} 
+    \textbf{Column Name} & \textbf{Data type}        & \textbf{Description}                                   & \textbf{Constraints}             \\ \hline
+    id                   & varchar(255)             & Unique identifier for the student                      & Primary Key, Not Null            \\ \hline
+    fullname             & varchar(255)             & Full name of the student                               &                                 \\ \hline
+    gender               & smallint                 & Gender of the student (e.g., Male, Female)             &                                 \\ \hline
+    major                & varchar(255)             & Major field of study                                  &                                 \\ \hline
+    dob                  & timestamp(6)             & Date of birth of the student                           &                                 \\ \hline
+    study\_year          & smallint                 & The academic year of study                             &                                 \\ \hline
+    full\_name           & varchar(255)             & Full name of the student                               & Not Null                        \\ \hline
+    password             & varchar(255)             & Password for student account                           &                                 \\ \hline
+    role                 & varchar(255)             & Role of the student (e.g., student, admin)             &                                 \\ \hline
+    phone                & varchar(255)             & Contact phone number                                   &                                 \\ \hline
+    email                & varchar(255)             & Email address of the student                           &                                 \\ \hline
+    sip\_username        & varchar(255)             & SIP username for communication                         &                                 \\ \hline
+    sip\_password        & varchar(255)             & SIP password for communication                         &                                 \\ \hline
+    \end{tabular}
+    \caption{Attributes and data types for the \texttt{Student} table}
+\end{table}
+
+\noindent
+\textbf{Constraints}
+\begin{itemize}
+    \item \textbf{Primary Key}: \texttt{id}.
+\end{itemize}
+
+\noindent
+\textbf{Relationships}
+\begin{itemize}
+    \item The \texttt{Student} table contains information about individual students.
+    \item Each student can be enrolled in one or more courses, as represented in the \texttt{Student Course} table. This is a many-to-many relationship between the \texttt{Student} table and the \texttt{Course} table.
+\end{itemize}
+
+\subsubsubsection{Table: Study Buddy}
+\textbf{Attributes and Data Types}
+\begin{table}[H] 
+    \centering 
+    \renewcommand{\arraystretch}{1.5} 
+    \begin{tabular}{|l|l|p{5.5cm}|l|} 
+    \hline 
+    \rowcolor[HTML]{96FFFB} 
+    \textbf{Column Name} & \textbf{Data type} & \textbf{Description} & \textbf{Constraints} \\ \hline 
+    student\_id & varchar(255) & Unique identifier for the student & Primary Key, Not Null, Unique \\ \hline 
+    gender & varchar(255) & Gender of the student & \\ \hline 
+    personality & varchar(255) & Personality description of the student & \\ \hline 
+    communication\_style & varchar(255) & Preferred communication style & \\ \hline 
+    looking\_for & varchar(255) & What the student is looking for in a study buddy & \\ \hline 
+    name & varchar(255) & Full name of the student & \\ \hline 
+    major & varchar(255) & Major field of study of the student & \\ \hline 
+    \end{tabular} 
+    \caption{Attributes and data types for the \texttt{study\_buddy} table} 
+\end{table}
+
+\noindent 
+\textbf{Constraints} 
+\begin{itemize} 
+    \item \textbf{Primary Key}: \texttt{student\_id}. 
+    \item \textbf{Unique}: \texttt{student\_id} must be unique. 
+    \item \textbf{Foreign Key}: \begin{itemize} 
+        \item \texttt{student\_id} references \texttt{id} in the \texttt{student} table, with \texttt{ON DELETE CASCADE}. 
+    \end{itemize} 
+\end{itemize}
+
+\noindent 
+\textbf{Relationships} 
+\begin{itemize} 
+    \item Each \texttt{Study Buddy} is associated with a student through the \texttt{student\_id}. 
+\end{itemize}
+
+\subsubsubsection{Table: Study Buddy Connections}
+\textbf{Attributes and Data Types}
+\begin{table}[H] 
+    \centering 
+    \renewcommand{\arraystretch}{1.5} 
+    \begin{tabular}{|l|l|p{7cm}|l|} 
+    \hline 
+    \rowcolor[HTML]{96FFFB} 
+    \textbf{Column Name} & \textbf{Data type} & \textbf{Description} & \textbf{Constraints} \\ \hline 
+    study\_buddy\_id & varchar(255) & ID of the first study buddy & Primary Key, Not Null \\ \hline 
+    opponent\_id & varchar(255) & ID of the second study buddy (opponent) & Primary Key, Not Null \\ \hline 
+    \end{tabular} 
+    \caption{Attributes and data types for the \texttt{study\_buddy\_connections} table} 
+\end{table}
+
+\noindent 
+\textbf{Constraints} 
+\begin{itemize} 
+    \item \textbf{Primary Key}: \texttt{study\_buddy\_id}, \texttt{opponent\_id}. 
+    \item \textbf{Foreign Key}: \begin{itemize} 
+        \item \texttt{study\_buddy\_id} references \texttt{student\_id} in the \texttt{study\_buddy} table, with \texttt{ON DELETE CASCADE}. 
+        \item \texttt{opponent\_id} references \texttt{student\_id} in the \texttt{study\_buddy} table, with \texttt{ON DELETE CASCADE}. 
+    \end{itemize} 
+\end{itemize}
+
+\noindent 
+\textbf{Relationships} 
+\begin{itemize} 
+    \item Each \texttt{Study Buddy Connection} is associated with two \texttt{Study Buddy} entities (study\_buddy\_id and opponent\_id). 
+\end{itemize}
+
+\subsubsubsection{Table: Study Buddy Favorite Subjects}
+\textbf{Attributes and Data Types}
+\begin{table}[H] 
+    \centering 
+    \renewcommand{\arraystretch}{1.5} 
+    \begin{tabular}{|l|l|p{7cm}|l|} 
+    \hline 
+    \rowcolor[HTML]{96FFFB} 
+    \textbf{Column Name} & \textbf{Data type} & \textbf{Description} & \textbf{Constraints} \\ \hline 
+    study\_buddy\_id & varchar(255) & ID of the study buddy & Primary Key, Not Null \\ \hline 
+    subject & varchar(255) & Name of the favorite subject & Primary Key, Not Null \\ \hline 
+    \end{tabular} 
+    \caption{Attributes and data types for the \texttt{study\_buddy\_favorite\_subjects} table} 
+\end{table}
+
+\noindent 
+\textbf{Constraints} 
+\begin{itemize} 
+    \item \textbf{Primary Key}: \texttt{study\_buddy\_id}, \texttt{subject}. 
+    \item \textbf{Foreign Key}: \begin{itemize} \item \texttt{study\_buddy\_id} references \texttt{student\_id} in the \texttt{study\_buddy} table, with \texttt{ON DELETE CASCADE}. 
+    \end{itemize} 
+\end{itemize}
+
+\noindent 
+\textbf{Relationships} 
+\begin{itemize} 
+    \item Each \texttt{Study Buddy Favorite Subject} is associated with a specific \texttt{Study Buddy}.
+\end{itemize}
+
+
+\subsubsubsection{Table: Study Buddy Interests}
+\textbf{Attributes and Data Types}
+\begin{table}[H] 
+    \centering 
+    \renewcommand{\arraystretch}{1.5} 
+    \begin{tabular}{|l|l|p{7cm}|l|} 
+    \hline 
+    \rowcolor[HTML]{96FFFB} 
+    \textbf{Column Name} & \textbf{Data type} & \textbf{Description} & \textbf{Constraints} \\ \hline 
+    study\_buddy\_id & varchar(255) & ID of the study buddy & Primary Key, Not Null \\ \hline 
+    interest & varchar(255) & Interest of the study buddy & Primary Key, Not Null \\ \hline 
+    \end{tabular} 
+    \caption{Attributes and data types for the \texttt{study\_buddy\_interests} table} 
+\end{table}
+
+\noindent 
+\textbf{Constraints} 
+\begin{itemize} 
+    \item \textbf{Primary Key}: \texttt{study\_buddy\_id}, \texttt{interest}. 
+    \item \textbf{Foreign Key}: \begin{itemize} \item \texttt{study\_buddy\_id} references \texttt{student\_id} in the \texttt{study\_buddy} table, with \texttt{ON DELETE CASCADE}. 
+    \end{itemize} 
+\end{itemize}
+
+\noindent 
+\textbf{Relationships} 
+\begin{itemize} 
+    \item Each \texttt{Study Buddy Interest} is associated with a specific \texttt{Study Buddy}. 
+\end{itemize}
+
+\subsubsubsection{Table: Study Buddy Preferred Places}
+\textbf{Attributes and Data Types}
+\begin{table}[H] 
+    \centering 
+    \renewcommand{\arraystretch}{1.5} 
+    \begin{tabular}{|l|l|p{7cm}|l|} 
+    \hline 
+    \rowcolor[HTML]{96FFFB} 
+    \textbf{Column Name} & \textbf{Data type} & \textbf{Description} & \textbf{Constraints} \\ \hline 
+    study\_buddy\_id & varchar(255) & ID of the study buddy & Primary Key, Not Null \\ \hline 
+    place & varchar(255) & Name of the preferred place & Primary Key, Not Null \\ \hline 
+    \end{tabular} 
+    \caption{Attributes and data types for the \texttt{study\_buddy\_preferred\_places} table} 
+\end{table}
+
+\noindent 
+\textbf{Constraints} 
+\begin{itemize} 
+    \item \textbf{Primary Key}: \texttt{study\_buddy\_id}, \texttt{place}. 
+    \item \textbf{Foreign Key}: \begin{itemize} \item \texttt{study\_buddy\_id} references \texttt{student\_id} in the \texttt{study\_buddy} table, with \texttt{ON DELETE CASCADE}. 
+    \end{itemize} 
+\end{itemize}
+
+\noindent 
+\textbf{Relationships} 
+\begin{itemize} 
+    \item Each \texttt{Study Buddy Preferred Place} is associated with a specific \texttt{Study Buddy}.
+\end{itemize}
+
+\subsubsubsection{Table: Study Buddy Preferred Times}
+\textbf{Attributes and Data Types}
+\begin{table}[H] 
+    \centering 
+    \renewcommand{\arraystretch}{1.5} 
+    \begin{tabular}{|l|l|p{7cm}|l|} 
+    \hline 
+    \rowcolor[HTML]{96FFFB} 
+    \textbf{Column Name} & \textbf{Data type} & \textbf{Description} & \textbf{Constraints} \\ \hline 
+    study\_buddy\_id & varchar(255) & ID of the study buddy & Primary Key, Not Null \\ \hline 
+    time & varchar(255) & Preferred time of the study buddy & Primary Key, Not Null \\ \hline 
+    \end{tabular} 
+    \caption{Attributes and data types for the \texttt{study\_buddy\_preferred\_times} table} 
+\end{table}
+
+\noindent 
+\textbf{Constraints} 
+\begin{itemize} 
+    \item \textbf{Primary Key}: \texttt{study\_buddy\_id}, \texttt{time}. 
+    \item \textbf{Foreign Key}: \begin{itemize} \item \texttt{study\_buddy\_id} references \texttt{student\_id} in the \texttt{study\_buddy} table, with \texttt{ON DELETE CASCADE}. 
+    \end{itemize} 
+\end{itemize}
+
+\noindent 
+\textbf{Relationships} 
+\begin{itemize} 
+    \item Each \texttt{Study Buddy Preferred Time} is associated with a specific \texttt{Study Buddy}. 
+\end{itemize}
+
+\subsubsubsection{Table: Study Connection}
+\textbf{Attributes and Data Types}
+\begin{table}[H] 
+    \centering 
+    \renewcommand{\arraystretch}{1.5} 
+    \begin{tabular}{|l|l|p{7cm}|l|} 
+    \hline 
+    \rowcolor[HTML]{96FFFB} 
+    \textbf{Column Name} & \textbf{Data type} & \textbf{Description} & \textbf{Constraints} \\ \hline 
+    id & bigint & Unique identifier for the connection & Primary Key, Not Null \\ \hline 
+    study\_buddy\_1\_id & varchar(255) & ID of the first study buddy & Foreign Key, Not Null \\ \hline 
+    study\_buddy\_2\_id & varchar(255) & ID of the second study buddy & Foreign Key, Not Null \\ \hline 
+    status & varchar(255) & Status of the connection & Not NullI \\ \hline 
+    created\_at & timestamp & Timestamp when the connection was created & Not Null \\ \hline 
+    updated\_at & timestamp & Timestamp when the connection was last updated & Not Null \\ \hline 
+    \end{tabular} 
+    \caption{Attributes and data types for the \texttt{study\_connection} table} 
+\end{table}
+
+\noindent 
+\textbf{Constraints}
+\begin{itemize} 
+    \item \textbf{Primary Key}: \texttt{id}. 
+    \item \textbf{Foreign Key}: \begin{itemize} \item \texttt{study\_buddy\_1\_id} references \texttt{student\_id} in the \texttt{study\_buddy} table, with \texttt{ON DELETE CASCADE}. 
+    \item \texttt{study\_buddy\_2\_id} references \texttt{student\_id} in the \texttt{study\_buddy} table, with \texttt{ON DELETE CASCADE}. 
+    \end{itemize} 
+\end{itemize}
+
+\noindent 
+\textbf{Relationships} 
+\begin{itemize} 
+    \item Each \texttt{Study Connection} is associated with two \texttt{Study Buddy} entities (study\_buddy\_1\_id and study\_buddy\_2\_id). 
+\end{itemize}
+
 \subsection{Use Case Implementation}
+This section provides an overview of the implementation of use cases in the system, ensuring that
+all critical steps are carried out and described in detail.
+
     \include{usecase_implementation}
     \include{analysis_call_message}
     \include{communication_handling}
@@ -569,15 +1190,17 @@ These functionalities are not critical but aim to enhance the overall user exper
 \subsection{One-Hot Encoding}
 One-hot Encoding is a data preprocessing technique that transforms a single categorical variable with n distinct categories 
 into n separate columns. Each column is represented by one number 0 or 1, where the value 1 presents the presence of that category 
-and the value 0 indicates its absence.\cite{thuy2020optimize} This method helps machine learning models, which typically require numerical input, 
+and the value 0 indicates its absence.\citep{thuy2020optimize} This method helps machine learning models, which typically require numerical input, 
 better understand and handle the data.
 
 \subsection{Dissimilarity Measure}
-The dissimilarity measure between two categorical objects X and Y (with m attributes) can be defined by the total mismatches of their corresponding categorical attributes. The two objects X and Y are considered to be more similar when the value of a mismatched number gets smaller.\cite{huang1998extensions}
+The dissimilarity measure between two categorical objects X and Y (with m attributes) can be defined by the total mismatches of their corresponding categorical attributes. The two objects X and Y are considered to be more similar when the value of a mismatched number gets smaller.\citep{huang1998extensions}
         $$d(X,Y) = \sum_{i=1}^{m}\delta{(x_i,y_i)}$$ where $$\delta{(x_i,y_i)} = \left\{\begin{array}{ll} 0 & (x_i = y_i) \\
         1 & (x_i \neq y_i)\end{array}\right.$$
 
-\subsection{Evaluation Metrics}
+\subsection{Evaluation Metrics} \label{evaluation metrics}
+This part covers the intrinsic evaluation metrics that be used to evaluate model performance.
+
 \subsubsection{Silhouette Coefficient}
 \\
 \noindent Choosing the optimal number of k value is crucial for the 
@@ -623,18 +1246,18 @@ is calculated by the average similarity between each cluster and its
 most similar cluster. The lower the DBI value, the better the clustering
 quality. The DBI is defined as follows \citep{HOSEN2023688}:
 
-$ DBI = \frac{1}{n} \sum_{i=1}^{n} max_{j \neq i} \frac{s_i + s_j}{d(c_i,c_j)}$
+$$ DBI = \frac{1}{n} \sum_{i=1}^{n} max_{j \neq i} \frac{s_i + s_j}{d(c_i,c_j)}$$
 
 and 
 
-$s_i = \frac{1}{n_i} \sum_{j=1}^{n_i} d(x_j,c_i)$
+$$s_i = \frac{1}{n_i} \sum_{j=1}^{n_i} d(x_j,c_i)$$
 
 \noindent In which $n$ is the number of clusters, $s_i$ is the average distance between
 each data point belonging to cluster $i$ and the centroid of cluster $i$, 
 $d(c_i,c_j)$ indicated the distance between the centroids of cluster $i$ and
 $j$.
 
-\subsection{K-Mode Algorithm}\cite{huang1998extensions}
+\subsection{K-Mode Algorithm\citep{huang1998extensions}}
 % Cost function
 Let $\{Q_1,Q_2,...,Q_k\}$ be the modes of clusters $\{C_1,C_2,...,C_k\}$. The cost function can be defined by taking the total dissimilarities of each sample and its assigned cluster's mode: 
 $$E = \sum_{l=1}^{k}\sum_{i=1}^{n}y_{i,l}d(X_i,Q_l)$$ 
@@ -669,7 +1292,8 @@ ICT & Football, Cooking, Food tour, Travel, Rap & ... & Programming \\ \hline
 \end{table}
 
 \begin{table}[H]
-\resizebox{\columnwidth}{!}{%
+\centering
+\resizebox{0.8\textwidth}{!}{%
 \begin{tabular}{|c|c|c|c|c|c|c|c|}
 \hline
 \textbf{DS} & \textbf{ICT} & \textbf{V-pop} & \textbf{Volleyball} & \textbf{Board games} & \textbf{EDM} & \textbf{...} & \textbf{Programming} \\ \hline
@@ -683,8 +1307,19 @@ ICT & Football, Cooking, Food tour, Travel, Rap & ... & Programming \\ \hline
 \end{table}
 
 \subsubsection{Model Training}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{image/choosing_K.png}
+    \caption{Optimal clusters K}
+    \label{fig:choosing_K}
+\end{figure}
 
-To determine the optimal number of clusters $K$, the K-Modes clustering model is trained with different values of K varying from 2 to 9 and select the best model according to the cost function. For each training iteration, the K-Modes algorithm is executed multiple times with different initial centroids seeds. The final result is the best output initialized centroids in terms of cost function.\cite{devos2015}
+To determine the optimal number of clusters $K$, the K-Modes clustering model is trained with different K values varying from 2 to 9 and select the best model according to the cost function. For each training iteration, the K-Modes algorithm is executed multiple times (15 in our problem) with different initial centroids seeds. The final result is the best initialized centroids in terms of cost function.\citep{devos2015}
+
+After the training is completed, each student is assigned to their predicted cluster, which will be used for the recommendation part.
+
+\subsubsection{Student Recommendation}
+Firstly, the information of new student is encoded by one-hot encoding and fed into the model. The output returned is the predicted cluster to which the new student belongs. Depending on this prediction, students within the same cluster are chosen to recommend.
 
 \section{System Design and Implementation}  
 
@@ -696,14 +1331,16 @@ The essential hardware components for the system include:
 \begin{itemize}  
     \item \textbf{Development Machines: }Computers used for developing and hosting backend services and databases (Spring Boot and PostgreSQL).  
     \item \textbf{User Devices: }Smartphones or virtual devices running the Android app to access features such as Google Calendar, MapBox maps, and Moodle resources.  
-    \item \textbf{Networking Equipment: }Tailscale VPN for secure and reliable communication between user devices and the backend server.  
+    \item \textbf{Networking Equipment: }Tailscale VPN for secure and reliable communication between student devices and the backend server.  
 \end{itemize}
+
+\pagebreak
 
 \subsubsection{Software Environment Configuration}  
 The software setup involves configuring the necessary tools and platforms to support the development and operation of the system:  
 \begin{itemize}  
     \item \textbf{Operating System: }Windows was used to host backend services and the database, while Android was the primary platform for the mobile application.  
-    \item \textbf{Database: }PostgreSQL was installed and configured as the relational database management system for managing user data, calendar events, location details, and StudyBuddy profiles.  
+    \item \textbf{Database: }PostgreSQL was installed and configured as the relational database management system for managing student data, calendar events, location details, and StudyBuddy profiles.  
     \item \textbf{Backend Framework: }Spring Boot was implemented to manage REST API endpoints, handle authentication and authorization, and synchronize data between components.  
     \item \textbf{Mobile Development Tools: }Android Studio served as the primary integrated development environment (IDE) for creating the Android application, leveraging Java and libraries such as Retrofit and MapBox SDK.  
 \end{itemize}
@@ -721,7 +1358,7 @@ The application software comprises several core modules, each designed to handle
     \item \textbf{Google Calendar Integration Module:}  
     \begin{itemize}  
         \item Fetches event data from Google Calendar.  
-        \item Detects event updates and sends notifications to the user via the mobile application.  
+        \item Detects event updates and sends notifications to the student via the mobile application.  
     \end{itemize}  
 
     \item \textbf{MapBox Integration Module:}  
@@ -737,7 +1374,7 @@ The application software comprises several core modules, each designed to handle
 
     \item \textbf{StudyBuddy Matching Module:}  
     \begin{itemize}  
-        \item Collects user profile data (e.g., interests, personality).  
+        \item Collects student profile data (e.g., interests, personality).  
         \item Uses a machine learning recommendation system to suggest matches based on shared interests.  
         \item Features include:  
         \begin{itemize}  
@@ -793,6 +1430,26 @@ In this part we can have the demo for each feature of the app.
 In this part we will show the result of the clustering algorithm, using the evaluation 
 metrics that we mentioned in the previous section.
 
+\subsubsubsection{Model Performance}
+
+\begin{table}[H]
+\centering
+\resizebox{0.7\textwidth}{!}{%
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Model} & \textbf{Silhouette Score} & \textbf{Davies-Bouldin Score} \\ \hline
+K-Modes & 0.1389 & 3.4489 \\ \hline
+\end{tabular}%
+}
+\caption{Model Performance}
+\label{Model_Performance}
+\end{table}
+
+Table \ref{Model_Performance} presents the values of the Silhouette and Davies-Bouldin score, which is clearly explained in section \ref{evaluation metrics} The silhouette score indicates how close the data point is to its cluster compared to the others, while the Davies-Bouldin score shows how high the overall quality of clustering model. With a Silhouette score of 0.1389 and a Davies-Bouldin score of 3.4489, the centroids of each cluster are relatively close to each other, and the boundaries between clusters may not be ideal.
+
+\subsubsubsection{Comparison}
+The same pre-preocessing method and K-Modes model is applied to the Zoo dataset (with true label) and gives the result: 0.5362 of Silhouette Score and 1.21 of Davies-Bouldin Score. The Kuhn-Munkres\citep{zhu2011efficient} algorithm is used to match the predicted clusters with the true types of animals to maximize accuracy.
+
 \subsection{Discussion}
 
 \section{Conclusion {\&} Future Work}
@@ -803,4 +1460,3 @@ metrics that we mentioned in the previous section.
 
 
 \end{document}
-
