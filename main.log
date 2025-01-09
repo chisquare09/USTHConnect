@@ -1,0 +1,1333 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.6)  9 JAN 2025 22:02
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**"d:/Do Minh Quang/Project/USHConnect/USTHConnect/USTHConnect/main.tex"
+(d:/Do Minh Quang/Project/USHConnect/USTHConnect/USTHConnect/main.tex
+LaTeX2e <2024-11-01>
+L3 programming layer <2024-11-02>
+(C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
+(C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
+File: size12.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count196
+\c@section=\count197
+\c@subsection=\count198
+\c@subsubsection=\count199
+\c@paragraph=\count266
+\c@subparagraph=\count267
+\c@figure=\count268
+\c@table=\count269
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen141
+) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/import\import.sty
+Package: import 2020/04/01  v 6.2
+) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2024/11/05 v2.17t AMS math features
+\@mathmargin=\skip51
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+ (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks17
+\ex@=\dimen142
+)) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen143
+) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count270
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count271
+\leftroot@=\count272
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count273
+\DOTSCASE@=\count274
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box52
+\strutbox@=\box53
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen144
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count275
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count276
+\dotsspace@=\muskip17
+\c@parentequation=\count277
+\dspbrk@lvl=\count278
+\tag@help=\toks18
+\row@=\count279
+\column@=\count280
+\maxfields@=\count281
+\andhelp@=\toks19
+\eqnshift@=\dimen145
+\alignsep@=\dimen146
+\tagshift@=\dimen147
+\tagwidth@=\dimen148
+\totwidth@=\dimen149
+\lineht@=\dimen150
+\@envbody=\toks20
+\multlinegap=\skip52
+\multlinetaggap=\skip53
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count282
+\float@exts=\toks22
+\float@box=\box54
+\@float@everytoks=\toks23
+\@floatcapt=\box55
+) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks24
+\inpenc@posthook=\toks25
+) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks26
+) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+ (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+ (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen151
+\Gin@req@width=\dimen152
+) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count283
+\Gm@cntv=\count284
+\c@Gm@tempcnt=\count285
+\Gm@bindingoffset=\dimen153
+\Gm@wd@mp=\dimen154
+\Gm@odd@mp=\dimen155
+\Gm@even@mp=\dimen156
+\Gm@layoutwidth=\dimen157
+\Gm@layoutheight=\dimen158
+\Gm@layouthoffset=\dimen159
+\Gm@layoutvoffset=\dimen160
+\Gm@dimlist=\toks27
+ (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip54
+\enit@outerparindent=\dimen161
+\enit@toks=\toks28
+\enit@inbox=\box56
+\enit@count@id=\count286
+\enitdp@description=\count287
+) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
+Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
+\multirow@colwidth=\skip55
+\multirow@cntb=\count288
+\multirow@dima=\skip56
+\bigstrutjot=\dimen162
+) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+ (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
+\col@sep=\dimen163
+\ar@mcellbox=\box57
+\extrarowheight=\dimen164
+\NC@list=\toks29
+\extratabsurround=\skip57
+\backup@length=\skip58
+\ar@cellbox=\box58
+)
+\TX@col@width=\dimen165
+\TX@old@table=\dimen166
+\TX@old@col=\dimen167
+\TX@target=\dimen168
+\TX@delta=\dimen169
+\TX@cols=\count289
+\TX@ftn=\toks30
+) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+ (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+ (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.sty
+Package: colortbl 2024/07/06 v1.0i Color table columns (DPC)
+\everycr=\toks31
+\minrowclearance=\skip59
+\rownum=\count290
+) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/tocloft\tocloft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has section divisions on input line 51.
+\cftparskip=\skip60
+\cftbeforetoctitleskip=\skip61
+\cftaftertoctitleskip=\skip62
+\cftbeforepartskip=\skip63
+\cftpartnumwidth=\skip64
+\cftpartindent=\skip65
+\cftbeforesecskip=\skip66
+\cftsecindent=\skip67
+\cftsecnumwidth=\skip68
+\cftbeforesubsecskip=\skip69
+\cftsubsecindent=\skip70
+\cftsubsecnumwidth=\skip71
+\cftbeforesubsubsecskip=\skip72
+\cftsubsubsecindent=\skip73
+\cftsubsubsecnumwidth=\skip74
+\cftbeforeparaskip=\skip75
+\cftparaindent=\skip76
+\cftparanumwidth=\skip77
+\cftbeforesubparaskip=\skip78
+\cftsubparaindent=\skip79
+\cftsubparanumwidth=\skip80
+\cftbeforeloftitleskip=\skip81
+\cftafterloftitleskip=\skip82
+\cftbeforefigskip=\skip83
+\cftfigindent=\skip84
+\cftfignumwidth=\skip85
+\c@lofdepth=\count291
+\c@lotdepth=\count292
+\cftbeforelottitleskip=\skip86
+\cftafterlottitleskip=\skip87
+\cftbeforetabskip=\skip88
+\cfttabindent=\skip89
+\cfttabnumwidth=\skip90
+) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
+Package: titlesec 2023/10/27 v2.16 Sectioning titles
+\ttl@box=\box59
+\beforetitleunit=\skip91
+\aftertitleunit=\skip92
+\ttl@plus=\dimen170
+\ttl@minus=\dimen171
+\ttl@toksa=\toks32
+\titlewidth=\dimen172
+\titlewidthlast=\dimen173
+\titlewidthfirst=\dimen174
+) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip93
+\bibsep=\skip94
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count293
+) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count294
+\l__pdf_internal_box=\box60
+)
+No file main.aux.
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+(C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count295
+\scratchdimen=\dimen175
+\scratchbox=\box61
+\nofMPsegments=\count296
+\nofMParguments=\count297
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count298
+\MPscratchDim=\dimen176
+\MPnumerator=\count299
+\makeMPintoPDFobject=\count300
+\everyMPtoPDFconversion=\toks34
+) (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (C:\Users\abc\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(85.35826pt, 426.79135pt, 85.35826pt)
+* v-part:(T,H,B)=(85.35826pt, 674.33032pt, 85.35826pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=426.79135pt
+* \textheight=674.33032pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-23.91173pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\openout2 = `titlepage.aux'.
+
+(titlepage.tex
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(43.36243pt, 510.78302pt, 43.36243pt)
+* v-part:(T,H,B)=(43.36243pt, 758.32199pt, 43.36243pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=510.78302pt
+* \textheight=758.32199pt
+* \oddsidemargin=-28.90756pt
+* \evensidemargin=-28.90756pt
+* \topmargin=-65.90756pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+<image/usth.png, id=1, 424.58624pt x 228.10219pt>
+File: image/usth.png Graphic file (type png)
+<use image/usth.png>
+Package pdftex.def Info: image/usth.png  used on input line 49.
+(pdftex.def)             Requested size: 250.28258pt x 134.46077pt.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <19> not available
+(Font)              size <17.28> substituted on input line 49.
+
+
+Overfull \hbox (3.6154pt too wide) in paragraph at lines 49--50
+ [] 
+ []
+
+
+
+[1
+
+
+
+{C:/Users/abc/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./image/usth.png>])
+No file main.toc.
+\tf@toc=\write3
+\openout3 = `main.toc'.
+
+
+
+[1
+
+
+
+] (acknowledgement.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--6
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--6
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--13
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--13
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--18
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--18
+
+ []
+
+)
+
+[2]
+
+[3]
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 90--90
+ [][][]
+ []
+
+No file main.lof.
+\tf@lof=\write4
+\openout4 = `main.lof'.
+
+
+
+[4]
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 104--104
+ [][][]
+ []
+
+No file main.lot.
+\tf@lot=\write5
+\openout5 = `main.lot'.
+
+
+
+[5] (abstract.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--32
+
+ []
+
+)
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 116--119
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--122
+
+ []
+
+
+
+[7]
+
+[8]
+
+[9]
+
+[10]
+
+pdfTeX warning: pdflatex (file ./image/USTHConnect_usecase.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<image/USTHConnect_usecase.pdf, id=42, 980.70387pt x 1287.85132pt>
+File: image/USTHConnect_usecase.pdf Graphic file (type pdf)
+<use image/USTHConnect_usecase.pdf>
+Package pdftex.def Info: image/USTHConnect_usecase.pdf  used on input line 232.
+(pdftex.def)             Requested size: 426.79135pt x 560.46628pt.
+
+
+[11]
+
+[12 <./image/USTHConnect_usecase.pdf>]
+
+pdfTeX warning: pdflatex (file ./image/AuthenticationUseCase.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<image/AuthenticationUseCase.pdf, id=64, 484.69078pt x 264.99pt>
+File: image/AuthenticationUseCase.pdf Graphic file (type pdf)
+<use image/AuthenticationUseCase.pdf>
+Package pdftex.def Info: image/AuthenticationUseCase.pdf  used on input line 253.
+(pdftex.def)             Requested size: 298.75264pt x 163.3338pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 257--258
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 259--260
+
+ []
+
+
+Overfull \hbox (2.86569pt too wide) in paragraph at lines 275--275
+ []|[]| 
+ []
+
+
+
+[13 <./image/AuthenticationUseCase.pdf>]
+
+pdfTeX warning: pdflatex (file ./image/StudentScheduleUseCase.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<image/StudentScheduleUseCase.pdf, id=82, 743.8992pt x 397.485pt>
+File: image/StudentScheduleUseCase.pdf Graphic file (type pdf)
+<use image/StudentScheduleUseCase.pdf>
+Package pdftex.def Info: image/StudentScheduleUseCase.pdf  used on input line 295.
+(pdftex.def)             Requested size: 298.75264pt x 159.63408pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 299--300
+
+ []
+
+
+
+[14 <./image/StudentScheduleUseCase.pdf>]
+
+[15]
+
+pdfTeX warning: pdflatex (file ./image/CampusUseCase.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<image/CampusUseCase.pdf, id=103, 644.4075pt x 316.3017pt>
+File: image/CampusUseCase.pdf Graphic file (type pdf)
+<use image/CampusUseCase.pdf>
+Package pdftex.def Info: image/CampusUseCase.pdf  used on input line 345.
+(pdftex.def)             Requested size: 298.75264pt x 146.6444pt.
+
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 349--350
+
+ []
+
+
+
+[17 <./image/CampusUseCase.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 386--387
+
+ []
+
+
+
+[18]
+
+pdfTeX warning: pdflatex (file ./image/StudyBuddyUseCase.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<image/StudyBuddyUseCase.pdf, id=128, 685.60138pt x 659.5842pt>
+File: image/StudyBuddyUseCase.pdf Graphic file (type pdf)
+<use image/StudyBuddyUseCase.pdf>
+Package pdftex.def Info: image/StudyBuddyUseCase.pdf  used on input line 416.
+(pdftex.def)             Requested size: 298.75264pt x 287.40996pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--421
+
+ []
+
+
+
+[19 <./image/StudyBuddyUseCase.pdf>]
+
+pdfTeX warning: pdflatex (file ./image/Real-timeNotificationUseCase.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<image/Real-timeNotificationUseCase.pdf, id=146, 943.60526pt x 356.29109pt>
+File: image/Real-timeNotificationUseCase.pdf Graphic file (type pdf)
+<use image/Real-timeNotificationUseCase.pdf>
+Package pdftex.def Info: image/Real-timeNotificationUseCase.pdf  used on input line 470.
+(pdftex.def)             Requested size: 426.79135pt x 161.15042pt.
+
+
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 474--475
+
+ []
+
+
+
+[21 <./image/Real-timeNotificationUseCase.pdf>]
+
+pdfTeX warning: pdflatex (file ./image/USTH-Connect-System-Architecture.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<image/USTH-Connect-System-Architecture.pdf, id=167, 711.62634pt x 595.6447pt>
+File: image/USTH-Connect-System-Architecture.pdf Graphic file (type pdf)
+<use image/USTH-Connect-System-Architecture.pdf>
+Package pdftex.def Info: image/USTH-Connect-System-Architecture.pdf  used on input line 523.
+(pdftex.def)             Requested size: 426.79135pt x 357.24416pt.
+
+
+[22]
+
+[23 <./image/USTH-Connect-System-Architecture.pdf>]
+
+[24]
+
+[25]
+
+pdfTeX warning: pdflatex (file ./image/USTH-Connect-Database-Schema-Light.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<image/USTH-Connect-Database-Schema-Light.pdf, id=183, 1308.57082pt x 1067.63712pt>
+File: image/USTH-Connect-Database-Schema-Light.pdf Graphic file (type pdf)
+<use image/USTH-Connect-Database-Schema-Light.pdf>
+Package pdftex.def Info: image/USTH-Connect-Database-Schema-Light.pdf  used on input line 593.
+(pdftex.def)             Requested size: 426.79135pt x 348.19975pt.
+
+Overfull \hbox (25.02318pt too wide) in paragraph at lines 605--617
+ [][] 
+ []
+
+
+
+[26 <./image/USTH-Connect-Database-Schema-Light.pdf>]
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 624.
+
+Underfull \hbox (badness 10000) in paragraph at lines 648--648
+[]|\OT1/cmr/m/n/12 The cur-rent vis-i-bil-ity
+ []
+
+
+Overfull \hbox (19.37192pt too wide) in paragraph at lines 640--650
+ [][] 
+ []
+
+
+
+[27]
+Overfull \hbox (28.62679pt too wide) in paragraph at lines 663--664
+[]\OT1/cmr/m/n/12 Each \OT1/cmtt/m/n/12 course \OT1/cmr/m/n/12 can be as-so-ci-ated with mul-ti-ple \OT1/cmtt/m/n/12 students \OT1/cmr/m/n/12 through the \OT1/cmtt/m/n/12 student[]course
+ []
+
+
+Overfull \hbox (21.36766pt too wide) in paragraph at lines 671--684
+ [][] 
+ []
+
+
+Overfull \hbox (2.40443pt too wide) in paragraph at lines 711--711
+[]|\OT1/cmr/bx/n/12 Description| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 712--712
+\OT1/cmr/m/n/12 ti-fier for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 712--712
+\OT1/cmr/m/n/12 the map
+ []
+
+
+Underfull \hbox (badness 7221) in paragraph at lines 715--715
+[]|\OT1/cmr/m/n/12 Latitude of
+ []
+
+
+Overfull \hbox (28.6502pt too wide) in paragraph at lines 708--718
+ [][] 
+ []
+
+
+
+[28]
+Underfull \hbox (badness 3138) in paragraph at lines 744--744
+[]|\OT1/cmr/m/n/12 Reference to the con-
+ []
+
+
+Underfull \hbox (badness 5302) in paragraph at lines 744--744
+\OT1/cmr/m/n/12 nec-tion in the \OT1/cmtt/m/n/12 Study
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 748--748
+[]|\OT1/cmr/m/n/12 Timestamp when the
+ []
+
+
+Overfull \hbox (30.99435pt too wide) in paragraph at lines 739--751
+ [][] 
+ []
+
+
+
+[29]
+Overfull \hbox (8.09491pt too wide) in paragraph at lines 790--790
+[]|\OT1/cmr/bx/n/12 Description| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 791--791
+[]|\OT1/cmr/m/n/12 Unique
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 791--791
+\OT1/cmr/m/n/12 iden-ti-fier
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 791--791
+\OT1/cmr/m/n/12 for the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 792--792
+\OT1/cmr/m/n/12 re-ceiv-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 792--792
+\OT1/cmr/m/n/12 the no-ti-fi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 793--793
+[]|\OT1/cmr/m/n/12 The con-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 794--794
+[]|\OT1/cmr/m/n/12 Timestamp
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 794--794
+\OT1/cmr/m/n/12 when the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 794--794
+\OT1/cmr/m/n/12 no-ti-fi-ca-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 795--795
+\OT1/cmr/m/n/12 the no-ti-fi-
+ []
+
+
+Underfull \hbox (badness 5519) in paragraph at lines 795--795
+\OT1/cmr/m/n/12 ca-tion has
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 796--796
+[]|\OT1/cmr/m/n/12 Reference
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 796--796
+\OT1/cmr/m/n/12 re-lated to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 796--796
+\OT1/cmr/m/n/12 the no-ti-fi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 797--797
+[]|\OT1/cmr/m/n/12 Reference
+ []
+
+
+Underfull \hbox (badness 2088) in paragraph at lines 797--797
+\OT1/cmr/m/n/12 to the or-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 797--797
+\OT1/cmr/m/n/12 ga-nizer of
+ []
+
+
+Overfull \hbox (35.07893pt too wide) in paragraph at lines 787--799
+ [][] 
+ []
+
+
+
+[30]
+Overfull \hbox (13.44978pt too wide) in paragraph at lines 808--809
+[]\OT1/cmtt/m/n/12 student[]id \OT1/cmr/m/n/12 ref-er-ences \OT1/cmtt/m/n/12 id \OT1/cmr/m/n/12 in the \OT1/cmtt/m/n/12 Student \OT1/cmr/m/n/12 ta-ble, with \OT1/cmtt/m/n/12 ON DELETE NO ACTION\OT1/cmr/m/n/12 . 
+ []
+
+
+
+[31]
+Overfull \hbox (19.37192pt too wide) in paragraph at lines 827--835
+ [][] 
+ []
+
+
+Underfull \hbox (badness 5403) in paragraph at lines 861--861
+[]|\OT1/cmr/m/n/12 Type of the re-source
+ []
+
+
+Underfull \hbox (badness 1092) in paragraph at lines 861--861
+\OT1/cmr/m/n/12 (e.g., video, doc-u-ment,
+ []
+
+
+Overfull \hbox (19.37192pt too wide) in paragraph at lines 856--868
+ [][] 
+ []
+
+
+
+[32]
+Underfull \hbox (badness 1648) in paragraph at lines 899--899
+[]|\OT1/cmr/m/n/12 Gender of the stu-dent
+ []
+
+
+Underfull \hbox (badness 2894) in paragraph at lines 902--902
+[]|\OT1/cmr/m/n/12 The aca-demic year of
+ []
+
+
+Overfull \hbox (24.00659pt too wide) in paragraph at lines 893--911
+ [][] 
+ []
+
+
+
+[33]
+Overfull \hbox (2.40443pt too wide) in paragraph at lines 935--935
+[]|\OT1/cmr/bx/n/12 Description| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 937--937
+[]|\OT1/cmr/m/n/12 Gender of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 938--938
+[]|\OT1/cmr/m/n/12 Personality
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 938--938
+\OT1/cmr/m/n/12 de-scrip-tion
+ []
+
+
+Underfull \hbox (badness 3000) in paragraph at lines 938--938
+\OT1/cmr/m/n/12 of the stu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 939--939
+[]|\OT1/cmr/m/n/12 Preferred
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 939--939
+\OT1/cmr/m/n/12 com-mu-ni-ca-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 940--940
+[]|\OT1/cmr/m/n/12 What the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 940--940
+\OT1/cmr/m/n/12 stu-dent is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 940--940
+\OT1/cmr/m/n/12 look-ing for
+ []
+
+
+Underfull \hbox (badness 4072) in paragraph at lines 940--940
+\OT1/cmr/m/n/12 in a study
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 942--942
+[]|\OT1/cmr/m/n/12 Major field
+ []
+
+
+Underfull \hbox (badness 1769) in paragraph at lines 942--942
+\OT1/cmr/m/n/12 of study of
+ []
+
+
+Overfull \hbox (20.78076pt too wide) in paragraph at lines 932--944
+ [][] 
+ []
+
+
+
+[34]
+Overfull \hbox (1.09978pt too wide) in paragraph at lines 953--954
+[]\OT1/cmtt/m/n/12 student[]id \OT1/cmr/m/n/12 ref-er-ences \OT1/cmtt/m/n/12 id \OT1/cmr/m/n/12 in the \OT1/cmtt/m/n/12 student \OT1/cmr/m/n/12 ta-ble, with \OT1/cmtt/m/n/12 ON DELETE CASCADE\OT1/cmr/m/n/12 . 
+ []
+
+
+Underfull \hbox (badness 3098) in paragraph at lines 972--972
+[]|\OT1/cmr/m/n/12 ID of the first study
+ []
+
+
+Overfull \hbox (19.37192pt too wide) in paragraph at lines 968--975
+ [][] 
+ []
+
+
+
+[35]
+Overfull \hbox (19.37192pt too wide) in paragraph at lines 999--1006
+ [][] 
+ []
+
+
+Underfull \hbox (badness 5847) in paragraph at lines 1034--1034
+[]|\OT1/cmr/m/n/12 Interest of the study
+ []
+
+
+Overfull \hbox (19.37192pt too wide) in paragraph at lines 1029--1036
+ [][] 
+ []
+
+
+
+[36]
+Underfull \hbox (badness 1590) in paragraph at lines 1063--1063
+[]|\OT1/cmr/m/n/12 Name of the pre-ferred
+ []
+
+
+Overfull \hbox (19.37192pt too wide) in paragraph at lines 1058--1065
+ [][] 
+ []
+
+
+Overfull \hbox (9.66084pt too wide) in paragraph at lines 1079--1080
+[]\OT1/cmr/m/n/12 Each \OT1/cmtt/m/n/12 Study Buddy Preferred Place \OT1/cmr/m/n/12 is as-so-ci-ated with a spe-cific \OT1/cmtt/m/n/12 Study Buddy\OT1/cmr/m/n/12 . 
+ []
+
+
+Underfull \hbox (badness 4036) in paragraph at lines 1092--1092
+[]|\OT1/cmr/m/n/12 Preferred time of the
+ []
+
+
+Overfull \hbox (19.37192pt too wide) in paragraph at lines 1087--1094
+ [][] 
+ []
+
+
+
+[37]
+Overfull \hbox (3.48584pt too wide) in paragraph at lines 1108--1109
+[]\OT1/cmr/m/n/12 Each \OT1/cmtt/m/n/12 Study Buddy Preferred Time \OT1/cmr/m/n/12 is as-so-ci-ated with a spe-cific \OT1/cmtt/m/n/12 Study Buddy\OT1/cmr/m/n/12 . 
+ []
+
+
+Underfull \hbox (badness 3098) in paragraph at lines 1121--1121
+[]|\OT1/cmr/m/n/12 ID of the first study
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1124--1124
+[]|\OT1/cmr/m/n/12 Timestamp when the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1125--1125
+[]|\OT1/cmr/m/n/12 Timestamp when the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1125--1125
+\OT1/cmr/m/n/12 con-nec-tion was last
+ []
+
+
+Overfull \hbox (22.97346pt too wide) in paragraph at lines 1116--1127
+ [][] 
+ []
+
+
+
+[38]
+Overfull \hbox (47.18442pt too wide) in paragraph at lines 1142--1143
+[]\OT1/cmr/m/n/12 Each \OT1/cmtt/m/n/12 Study Connection \OT1/cmr/m/n/12 is as-so-ci-ated with two \OT1/cmtt/m/n/12 Study Buddy \OT1/cmr/m/n/12 en-ti-ties (study[]buddy[]1[]id
+ []
+
+
+
+[39]
+\openout2 = `usecase_implementation.aux'.
+
+ (usecase_implementation.tex
+
+pdfTeX warning: pdflatex (file ./image/SyncCalendar.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<image/SyncCalendar.pdf, id=230, 1132.23pt x 569.24669pt>
+File: image/SyncCalendar.pdf Graphic file (type pdf)
+<use image/SyncCalendar.pdf>
+Package pdftex.def Info: image/SyncCalendar.pdf  used on input line 4.
+(pdftex.def)             Requested size: 426.79135pt x 214.5701pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--12
+
+ []
+
+
+
+pdfTeX warning: pdflatex (file ./image/StudyBuddySequenceDiagram-SB.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<image/StudyBuddySequenceDiagram-SB.pdf, id=231, 889.40276pt x 579.12357pt>
+File: image/StudyBuddySequenceDiagram-SB.pdf Graphic file (type pdf)
+<use image/StudyBuddySequenceDiagram-SB.pdf>
+Package pdftex.def Info: image/StudyBuddySequenceDiagram-SB.pdf  used on input line 30.
+(pdftex.def)             Requested size: 426.79135pt x 277.90546pt.
+
+
+[40
+
+ <./image/SyncCalendar.pdf>]
+
+pdfTeX warning: pdflatex (file ./image/StudyBuddySequenceDiagram-Message.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<image/StudyBuddySequenceDiagram-Message.pdf, id=244, 1296.76462pt x 984.5583pt>
+File: image/StudyBuddySequenceDiagram-Message.pdf Graphic file (type pdf)
+<use image/StudyBuddySequenceDiagram-Message.pdf>
+Package pdftex.def Info: image/StudyBuddySequenceDiagram-Message.pdf  used on input line 37.
+(pdftex.def)             Requested size: 426.79135pt x 324.0339pt.
+
+
+[41 <./image/StudyBuddySequenceDiagram-SB.pdf>]
+
+pdfTeX warning: pdflatex (file ./image/StudyBuddySequenceDiagram-Contact.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<image/StudyBuddySequenceDiagram-Contact.pdf, id=257, 1296.76462pt x 973.71776pt>
+File: image/StudyBuddySequenceDiagram-Contact.pdf Graphic file (type pdf)
+<use image/StudyBuddySequenceDiagram-Contact.pdf>
+Package pdftex.def Info: image/StudyBuddySequenceDiagram-Contact.pdf  used on input line 44.
+(pdftex.def)             Requested size: 426.79135pt x 320.46611pt.
+
+
+[42 <./image/StudyBuddySequenceDiagram-Message.pdf>]
+
+pdfTeX warning: pdflatex (file ./image/StudyBuddySequenceDiagram-Profile.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<image/StudyBuddySequenceDiagram-Profile.pdf, id=271, 922.40607pt x 680.5425pt>
+File: image/StudyBuddySequenceDiagram-Profile.pdf Graphic file (type pdf)
+<use image/StudyBuddySequenceDiagram-Profile.pdf>
+Package pdftex.def Info: image/StudyBuddySequenceDiagram-Profile.pdf  used on input line 51.
+(pdftex.def)             Requested size: 426.79135pt x 314.89136pt.
+
+
+[43 <./image/StudyBuddySequenceDiagram-Contact.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 56--59
+
+ []
+
+
+
+pdfTeX warning: pdflatex (file ./image/Real-timeNotification.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<image/Real-timeNotification.pdf, id=284, 677.65169pt x 760.76218pt>
+File: image/Real-timeNotification.pdf Graphic file (type pdf)
+<use image/Real-timeNotification.pdf>
+Package pdftex.def Info: image/Real-timeNotification.pdf  used on input line 77.
+(pdftex.def)             Requested size: 298.75264pt x 335.39806pt.
+
+
+[44 <./image/StudyBuddySequenceDiagram-Profile.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 82--86
+
+ []
+
+)
+
+[45 <./image/Real-timeNotification.pdf>]
+\openout2 = `analysis_call_message.aux'.
+
+ (analysis_call_message.tex
+Underfull \hbox (badness 10000) in paragraph at lines 5--9
+
+ []
+
+
+Package natbib Warning: Citation `sip' on page 46 undefined on input line 10.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--23
+
+ []
+
+
+
+[46
+
+
+
+]
+
+[47]
+Underfull \hbox (badness 10000) in paragraph at lines 45--49
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--58
+
+ []
+
+)
+
+[48]
+\openout2 = `communication_handling.aux'.
+
+ (communication_handling.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--6
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--10
+
+ []
+
+
+
+[49
+
+
+
+]
+
+pdfTeX warning: pdflatex (file ./image/Call Initiation.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<image/Call Initiation.pdf, id=322, 695.59875pt x 915.11888pt>
+File: image/Call Initiation.pdf Graphic file (type pdf)
+<use image/Call Initiation.pdf>
+Package pdftex.def Info: image/Call Initiation.pdf  used on input line 34.
+(pdftex.def)             Requested size: 298.75264pt x 393.03265pt.
+
+
+[50 <./image/Call Initiation.pdf>]
+
+[51]
+Underfull \hbox (badness 10000) in paragraph at lines 59--62
+[]\OT1/cmr/bx/n/12 Step 1: \OT1/cmr/m/n/12 One user agent with SIP URI
+ []
+
+
+Underfull \hbox (badness 3525) in paragraph at lines 59--62
+\OT1/cmtt/m/n/12 sip:callee[]username@sip.linphone.org \OT1/cmr/m/n/12 reg-is-ter to lin-phone free sip
+ []
+
+
+Underfull \hbox (badness 4913) in paragraph at lines 63--66
+[]\OT1/cmr/bx/n/12 Step 3: \OT1/cmr/m/n/12 An-other user agent (the caller), with the SIP URI 
+ []
+
+
+Underfull \hbox (badness 1270) in paragraph at lines 63--66
+\OT1/cmr/m/n/12 their lo-cal proxy server. The des-ti-na-tion ad-dress in the IN-VITE is
+ []
+
+
+
+pdfTeX warning: pdflatex (file ./image/Locating_callee.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<image/Locating_callee.pdf, id=377, 691.62387pt x 375.32219pt>
+File: image/Locating_callee.pdf Graphic file (type pdf)
+<use image/Locating_callee.pdf>
+Package pdftex.def Info: image/Locating_callee.pdf  used on input line 72.
+(pdftex.def)             Requested size: 384.11963pt x 269.73352pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--83
+
+ []
+
+
+
+[52 <./image/Locating_callee.pdf>]
+
+pdfTeX warning: pdflatex (file ./image/Instant messaging.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<image/Instant messaging.pdf, id=394, 370.5042pt x 329.31029pt>
+File: image/Instant messaging.pdf Graphic file (type pdf)
+<use image/Instant messaging.pdf>
+Package pdftex.def Info: image/Instant messaging.pdf  used on input line 97.
+(pdftex.def)             Requested size: 298.75264pt x 265.53389pt.
+)
+
+[53 <./image/Instant messaging.pdf>]
+
+Package natbib Warning: Citation `thuy2020optimize' on page 54 undefined on input line 1197.
+
+
+Package natbib Warning: Citation `huang1998extensions' on page 54 undefined on input line 1201.
+
+
+Package natbib Warning: Citation `2012vi' on page 54 undefined on input line 1215.
+
+
+Package natbib Warning: Citation `9260048' on page 54 undefined on input line 1218.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1210--1219
+
+ []
+
+
+Package natbib Warning: Citation `2012vi' on page 54 undefined on input line 1224.
+
+
+
+[54
+
+
+]
+
+[55]
+
+Package natbib Warning: Citation `HOSEN2023688' on page 56 undefined on input line 1253.
+
+
+Package natbib Warning: Citation `huang1998extensions' on page 56 undefined on input line 1268.
+
+
+
+[56]
+
+[57]
+<image/choosing_K.png, id=436, 615.0177pt x 383.031pt>
+File: image/choosing_K.png Graphic file (type png)
+<use image/choosing_K.png>
+Package pdftex.def Info: image/choosing_K.png  used on input line 1322.
+(pdftex.def)             Requested size: 298.75264pt x 186.06203pt.
+
+
+Package natbib Warning: Citation `devos2015' on page 58 undefined on input line 1327.
+
+
+
+[58 <./image/choosing_K.png>]
+
+[59]
+
+[60]
+
+[61]
+
+LaTeX Warning: Reference `Model_Performance' on page 62 undefined on input line 1458.
+
+
+LaTeX Warning: Reference `evaluation metrics' on page 62 undefined on input line 1458.
+
+
+Package natbib Warning: Citation `zhu2011efficient' on page 62 undefined on input line 1461.
+
+(main.bbl
+
+[62]
+Underfull \hbox (badness 10000) in paragraph at lines 64--66
+[]\OT1/cmr/m/n/12 N. J. de Vos, ``kmodes cat-e-gor-i-cal clus-ter-ing li-brary,''
+ []
+
+)
+
+Package natbib Warning: There were undefined citations.
+
+
+
+[63] (main.aux (titlepage.aux) (usecase_implementation.aux) (analysis_call_message.aux) (communication_handling.aux)
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+
+main.aux:160: Package natbib Error: Bibliography not compatible with author-year citations.
+(natbib)                Press <return> to continue in numerical citation style.
+
+See the natbib package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.160 ...and\NAT@force@numbers{}\NAT@force@numbers
+                                                  
+Check the bibliography entries for non-compliant syntax,
+or select author-year BibTeX style, e.g. plainnat
+
+)
+ ***********
+LaTeX2e <2024-11-01>
+L3 programming layer <2024-11-02>
+ ***********
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 1.72pt have occurred.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 5155 strings out of 473682
+ 85334 string characters out of 5720168
+ 496630 words of memory out of 5000000
+ 28158 multiletter control sequences out of 15000+600000
+ 563859 words of font info for 56 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 57i,16n,79p,634b,404s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\abc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on main.pdf (64 pages, 2885240 bytes).
+PDF statistics:
+ 515 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 96 words of extra memory for PDF output out of 10000 (max. 10000000)
+
