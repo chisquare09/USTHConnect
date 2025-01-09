@@ -5,7 +5,7 @@
     In order to facilitate data exchange between two parties, 
     establishing a session is essential. However, identifying and connecting with 
     the second participant can be challenging. To address this, specialized protocols 
-    have been designed specifically for such scenarios.
+    have been designed specifically for such scenarios. \\
 
     \noindent The Session Initiation Protocol, 
     commonly known as SIP, is a signaling protocol operating at the 
@@ -13,13 +13,13 @@
     as well as mobile phone calling over LTE. SIP’s primary purpose is in VoIP systems, where it serves 
     as a support protocol for registering and locating users, and for call set up and management. It can initiate, maintain, 
     and terminate communication sessions that include voice, video and messaging applications. SIP supports five facets of establishing and terminating multimedia communications: 
-    user location, user availability, user capabilities, session setup, and session management. 
+    user location, user availability, user capabilities, session setup, and session management. \\
 
     \noindent SIP functions as a standalone application but relies on other protocols 
     to ensure the overall architecture operates effectively. At the transport layer, 
     it is transported by using the Transmission Control Protocol (TCP), the User Datagram Protocol (UDP), 
     or the Transport Layer Security (TLS) depending on specific circumstances. In this project, 
-    TLS is used (more on TLS in Section 1.3).
+    TLS is used (more on TLS in Section 1.3). \\
 
     \noindent SIP architecture consists of:
     \begin{itemize}
@@ -39,10 +39,13 @@
 \subsubsubsection{Linphone}
     Linphone is an open-source VoIP (Voice over Internet Protocol) application that utilizes SIP-based user agent. VoIP messages and calls are made over an IP network rather than over traditional public switched telephone networks (PSTN). 
     Linphone features all basic SIP-related services, such as audio and video calls, call management, call transfer, audio conferencing, and instant messages. 
+    
+    \pagebreak
+
     The free Linphone SIP service is released with an open-source license; and the SIP server software powering this service is called Flexisip. 
     Linphone uses its open-source library as its core, called liblinphone. 
     The library is a SIP-based SDK5 for video and audio over IP and is written in C/C++. 
-    The application is available on Linux, Windows, MacOS, iOS, and Android.
+    The application is available on Linux, Windows, MacOS, iOS, and Android. \\
 
     \noindent The combination of Linphone and Flexisip SIP proxy provides secure end-user registration and call setup.
     More precisely, Linphone client establishes and maintains a SIP TLS connection to the Flexisip server. 
@@ -51,7 +54,7 @@
 \subsubsubsection{Transport Layer Security Protocol (TLS)}
     Transport Layer Security, or TLS, is a widely adopted security protocol designed to facilitate privacy and data security for communications over the Internet. 
     TLS was derived from a security protocol called Secure Socket Layer (SSL). A primary use case of TLS is encrypting the communication between applications and servers. 
-    TLS is based on symmetric encryption and is a client - server model, where the client is able to authenticate the server and, optionally, the server is also able to authenticate the client. 
+    TLS is based on symmetric encryption and is a client - server model, where the client is able to authenticate the server and, optionally, the server is also able to authenticate the client. \\
 
     \noindent When using SIP over TLS, the whole SIP signalling is encrypted. However it holds only on the segments of the communication which actually use TLS. 
     Therefore, TLS will be automatically set to each end of the user by default in this project. 

@@ -134,6 +134,12 @@ INPUT main.lot
 INPUT C:\Users\abc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt10.tfm
 OUTPUT main.lot
 INPUT C:\Users\abc\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1000.tfm
+INPUT .\image\USTHConnect_usecase.pdf
+INPUT .\image\USTHConnect_usecase.pdf
+INPUT .\image\USTHConnect_usecase.pdf
+INPUT .\image\USTHConnect_usecase.pdf
+INPUT .\image\USTHConnect_usecase.pdf
+INPUT .\image\USTHConnect_usecase.pdf
 INPUT .\image\AuthenticationUseCase.pdf
 INPUT .\image\AuthenticationUseCase.pdf
 INPUT .\image\AuthenticationUseCase.pdf

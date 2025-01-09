@@ -2,11 +2,11 @@
 \subsubsubsubsection{Call Initialization}
     A session is initiated with an INVITE method which is the request from a UA client (caller). 
     INVITE has attributes containing source address, destination address, and information about the session from the caller. 
-    The SIP client creates an INVITE message for callee, which is normally sent to a proxy server.
+    The SIP client creates an INVITE message for callee, which is normally sent to a proxy server. \\
 
     \noindent If the OK message takes over 200ms to deliver, the progress and status (TRYING) are sent to the caller. 
     The three-way handshake occurs when the OK message confirms the connection to the caller and the ACK message confirms the existence of connection to the callee. 
-    Then the media transport, which is logically separated from session initiation will be established. When there is a BYE message being sent, the session will be terminated. 
+    Then the media transport, which is logically separated from session initiation will be established. When there is a BYE message being sent, the session will be terminated. \\
 
     \noindent The most common SIP messages explain for the above figure:
     \begin{itemize}
@@ -50,6 +50,8 @@
         This process ensures that the caller's proxy server can locate the appropriate next-hop server to route the call.
         \item \textbf{Communication Establishment:}  Once the proxy servers successfully exchange SIP signaling messages, the callee's user agent receives the call request, and the session is established.
     \end{itemize}
+    
+    \pagebreak
 
     \noindent The figure below shows the SIP registration process and how to detect the location of the callee. 
     \sloppy
@@ -77,7 +79,7 @@
     The back and forth process to transfer messages have to be fast enough for participants to sustain an interactive dialogue.
     MESSAGE method - an extension to SIP is used to deliver messages between users. 
     The SIP MESSAGE method is ideal for asynchronous communication as it operates indepently from audio call session.
-    In order to send and receive messages, client - server architecture is used.  
+    In order to send and receive messages, client - server architecture is used.  \\
 
     \noindent One-to-one messaging is a direct exchange messages between two users. 
     After users' credentials is being checked, that information will be sent to the Flexisip server of Linphone. The Flexisip server will then create a temporary file which includes user contact list information.  

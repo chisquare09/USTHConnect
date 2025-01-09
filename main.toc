@@ -7,85 +7,85 @@
 \contentsline {subsection}{\numberline {1.}Context and Motivation}{8}{}%
 \contentsline {subsection}{\numberline {2.}Project Objectives}{8}{}%
 \contentsline {subsection}{\numberline {3.}Desired Outcomes}{8}{}%
-\contentsline {subsection}{\numberline {4.}Structure of Thesis}{8}{}%
+\contentsline {subsection}{\numberline {4.}Structure of Thesis}{9}{}%
 \contentsline {section}{\numberline {II/}Requirement Analysis}{9}{}%
 \contentsline {subsection}{\numberline {1.}System requirements}{9}{}%
 \contentsline {subsubsection}{\numberline {1.1}Functional Requirements}{9}{}%
 \contentsline {subsubsection}{\numberline {1.2}Non-functional Requirements}{10}{}%
 \contentsline {subsubsection}{\numberline {1.3}Desired Functionalities}{10}{}%
 \contentsline {subsection}{\numberline {2.}Use Case}{10}{}%
-\contentsline {subsubsection}{\numberline {2.1}Use Cases Diagram}{10}{}%
+\contentsline {subsubsection}{\numberline {2.1}Use Cases Diagram}{11}{}%
 \contentsline {subsubsection}{\numberline {2.2}Use Case Characteristics}{11}{}%
-\contentsline {subsection}{\numberline {3.}Use Case and Scenario Description}{11}{}%
-\contentsline {subsubsection}{\numberline {3.1}Use case: Authenticate}{11}{}%
-\contentsline {subsubsection}{\numberline {3.2}Use case: Student Schedule}{12}{}%
-\contentsline {subsubsection}{\numberline {3.3}Use case: University Campus}{13}{}%
-\contentsline {subsubsection}{\numberline {3.4}Use case: University Resource}{14}{}%
-\contentsline {subsubsection}{\numberline {3.5}Use case: Student StudyBuddy}{15}{}%
-\contentsline {subsubsection}{\numberline {3.6}Use case: Real Time Notification}{16}{}%
-\contentsline {section}{\numberline {III/}Methodologies}{17}{}%
-\contentsline {subsection}{\numberline {1.}System Architecture}{17}{}%
-\contentsline {subsubsection}{\numberline {1.1}System Architecture Diagram}{18}{}%
-\contentsline {subsubsection}{\numberline {1.2}Backend - Spring Boot}{18}{}%
-\contentsline {subsubsection}{\numberline {1.3}Mobile Frontend - Java (Android)}{18}{}%
-\contentsline {subsubsection}{\numberline {1.4}VPN Hosting - Tailscale}{19}{}%
-\contentsline {subsubsection}{\numberline {1.5}Machine Learning - K-modes Clustering}{19}{}%
-\contentsline {subsubsection}{\numberline {1.6}Communication - Linphone VoIP}{19}{}%
-\contentsline {subsubsection}{\numberline {1.7}How does it work together ?}{19}{}%
-\contentsline {subsection}{\numberline {2.}Database Design}{20}{}%
-\contentsline {subsubsection}{\numberline {2.1}Database Requirements and Objectives}{20}{}%
-\contentsline {subsubsection}{\numberline {2.2}Entity-Relationship Diagram}{21}{}%
-\contentsline {subsubsection}{\numberline {2.3}Table and Relationships}{21}{}%
-\contentsline {paragraph}{\numberline {2.3.1}Table: Activity}{21}{}%
-\contentsline {paragraph}{\numberline {2.3.2}Table: Course}{22}{}%
-\contentsline {paragraph}{\numberline {2.3.3}Table: Events}{23}{}%
-\contentsline {paragraph}{\numberline {2.3.4}Table: Maps}{23}{}%
-\contentsline {paragraph}{\numberline {2.3.5}Table: Message}{24}{}%
-\contentsline {paragraph}{\numberline {2.3.6}Table: Notifications}{24}{}%
-\contentsline {paragraph}{\numberline {2.3.7}Table: Organizers}{25}{}%
-\contentsline {paragraph}{\numberline {2.3.8}Table: Resources}{26}{}%
-\contentsline {paragraph}{\numberline {2.3.9}Table: Student}{26}{}%
-\contentsline {paragraph}{\numberline {2.3.10}Table: Study Buddy}{27}{}%
-\contentsline {paragraph}{\numberline {2.3.11}Table: Study Buddy Connections}{28}{}%
-\contentsline {paragraph}{\numberline {2.3.12}Table: Study Buddy Favorite Subjects}{28}{}%
-\contentsline {paragraph}{\numberline {2.3.13}Table: Study Buddy Interests}{29}{}%
-\contentsline {paragraph}{\numberline {2.3.14}Table: Study Buddy Preferred Places}{29}{}%
-\contentsline {paragraph}{\numberline {2.3.15}Table: Study Buddy Preferred Times}{29}{}%
-\contentsline {paragraph}{\numberline {2.3.16}Table: Study Connection}{30}{}%
-\contentsline {subsection}{\numberline {3.}Use Case Implementation}{30}{}%
-\contentsline {subsubsection}{\numberline {3.1}Sync Calendar Sequence Diagram}{31}{}%
-\contentsline {subsubsection}{\numberline {3.2}StudyBuddy Sequence Diagram}{32}{}%
-\contentsline {subsubsection}{\numberline {3.3}Real-Time Notification Sequence Diagram}{36}{}%
-\contentsline {subsubsection}{\numberline {3.4}Analysis Call and Message Technologies}{37}{}%
-\contentsline {paragraph}{\numberline {3.4.1}Session Initiation Protocol}{37}{}%
-\contentsline {paragraph}{\numberline {3.4.2}Linphone}{37}{}%
-\contentsline {paragraph}{\numberline {3.4.3}Transport Layer Security Protocol (TLS)}{38}{}%
-\contentsline {paragraph}{\numberline {3.4.4}Communication Handling}{39}{}%
-\contentsline {subparagraph}{\numberline {3.4.4.1}Call Initialization}{39}{}%
-\contentsline {subparagraph}{\numberline {3.4.4.2}Locating the callee}{40}{}%
-\contentsline {subparagraph}{\numberline {3.4.4.3}One-on-One Instant Messaging}{41}{}%
-\contentsline {section}{\numberline {IV/}Machine Learning Model Analysis and Training}{43}{}%
-\contentsline {subsection}{\numberline {1.}One-Hot Encoding}{43}{}%
-\contentsline {subsection}{\numberline {2.}Dissimilarity Measure}{43}{}%
-\contentsline {subsection}{\numberline {3.}Evaluation Metrics}{43}{}%
-\contentsline {subsubsection}{\numberline {3.1}Silhouette Coefficient}{43}{}%
-\contentsline {subsubsection}{\numberline {3.2}Davies-Bouldin Index}{44}{}%
-\contentsline {subsection}{\numberline {4.}K-Mode Algorithm}{44}{}%
-\contentsline {subsection}{\numberline {5.}Model Implementation}{44}{}%
-\contentsline {subsubsection}{\numberline {5.1}Data Preprocessing}{44}{}%
-\contentsline {subsubsection}{\numberline {5.2}Model Training}{45}{}%
-\contentsline {section}{\numberline {V/}System Design and Implementation}{45}{}%
-\contentsline {subsection}{\numberline {1.}Hardware and Software Setup}{45}{}%
-\contentsline {subsubsection}{\numberline {1.1}Hardware Setup}{45}{}%
-\contentsline {subsubsection}{\numberline {1.2}Software Environment Configuration}{45}{}%
-\contentsline {subsection}{\numberline {2.}Application Software}{45}{}%
-\contentsline {subsection}{\numberline {3.}Initial Testing}{46}{}%
-\contentsline {subsubsection}{\numberline {3.1}Machine Learning Model Integration and Model Training}{46}{}%
-\contentsline {section}{\numberline {VI/}Results and Discussion}{47}{}%
-\contentsline {subsection}{\numberline {1.}Results}{47}{}%
-\contentsline {subsubsection}{\numberline {1.1}Mobile App Results}{47}{}%
-\contentsline {subsubsection}{\numberline {1.2}Machine Learning Results}{47}{}%
-\contentsline {subsection}{\numberline {2.}Discussion}{47}{}%
-\contentsline {section}{\numberline {VII/}Conclusion {\&} Future Work}{47}{}%
-\contentsline {subsection}{\numberline {1.}Conclusion}{47}{}%
-\contentsline {subsection}{\numberline {2.}Future Work}{47}{}%
+\contentsline {subsection}{\numberline {3.}Use Case and Scenario Description}{12}{}%
+\contentsline {subsubsection}{\numberline {3.1}Use case: Authenticate}{12}{}%
+\contentsline {subsubsection}{\numberline {3.2}Use case: Student Schedule}{13}{}%
+\contentsline {subsubsection}{\numberline {3.3}Use case: University Campus}{14}{}%
+\contentsline {subsubsection}{\numberline {3.4}Use case: University Resource}{15}{}%
+\contentsline {subsubsection}{\numberline {3.5}Use case: Student StudyBuddy}{16}{}%
+\contentsline {subsubsection}{\numberline {3.6}Use case: Real Time Notification}{17}{}%
+\contentsline {section}{\numberline {III/}Methodologies}{18}{}%
+\contentsline {subsection}{\numberline {1.}System Architecture}{18}{}%
+\contentsline {subsubsection}{\numberline {1.1}System Architecture Diagram}{19}{}%
+\contentsline {subsubsection}{\numberline {1.2}Backend - Spring Boot}{19}{}%
+\contentsline {subsubsection}{\numberline {1.3}Mobile Frontend - Java (Android)}{19}{}%
+\contentsline {subsubsection}{\numberline {1.4}VPN Hosting - Tailscale}{20}{}%
+\contentsline {subsubsection}{\numberline {1.5}Machine Learning - K-modes Clustering}{20}{}%
+\contentsline {subsubsection}{\numberline {1.6}Communication - Linphone VoIP}{20}{}%
+\contentsline {subsubsection}{\numberline {1.7}How does it work together ?}{20}{}%
+\contentsline {subsection}{\numberline {2.}Database Design}{21}{}%
+\contentsline {subsubsection}{\numberline {2.1}Database Requirements and Objectives}{21}{}%
+\contentsline {subsubsection}{\numberline {2.2}Entity-Relationship Diagram}{22}{}%
+\contentsline {subsubsection}{\numberline {2.3}Table and Relationships}{22}{}%
+\contentsline {paragraph}{\numberline {2.3.1}Table: Activity}{22}{}%
+\contentsline {paragraph}{\numberline {2.3.2}Table: Course}{23}{}%
+\contentsline {paragraph}{\numberline {2.3.3}Table: Events}{24}{}%
+\contentsline {paragraph}{\numberline {2.3.4}Table: Maps}{24}{}%
+\contentsline {paragraph}{\numberline {2.3.5}Table: Message}{25}{}%
+\contentsline {paragraph}{\numberline {2.3.6}Table: Notifications}{25}{}%
+\contentsline {paragraph}{\numberline {2.3.7}Table: Organizers}{26}{}%
+\contentsline {paragraph}{\numberline {2.3.8}Table: Resources}{27}{}%
+\contentsline {paragraph}{\numberline {2.3.9}Table: Student}{27}{}%
+\contentsline {paragraph}{\numberline {2.3.10}Table: Study Buddy}{28}{}%
+\contentsline {paragraph}{\numberline {2.3.11}Table: Study Buddy Connections}{29}{}%
+\contentsline {paragraph}{\numberline {2.3.12}Table: Study Buddy Favorite Subjects}{29}{}%
+\contentsline {paragraph}{\numberline {2.3.13}Table: Study Buddy Interests}{30}{}%
+\contentsline {paragraph}{\numberline {2.3.14}Table: Study Buddy Preferred Places}{30}{}%
+\contentsline {paragraph}{\numberline {2.3.15}Table: Study Buddy Preferred Times}{30}{}%
+\contentsline {paragraph}{\numberline {2.3.16}Table: Study Connection}{31}{}%
+\contentsline {subsection}{\numberline {3.}Use Case Implementation}{31}{}%
+\contentsline {subsubsection}{\numberline {3.1}Sync Calendar Sequence Diagram}{32}{}%
+\contentsline {subsubsection}{\numberline {3.2}StudyBuddy Sequence Diagram}{33}{}%
+\contentsline {subsubsection}{\numberline {3.3}Real-Time Notification Sequence Diagram}{37}{}%
+\contentsline {subsubsection}{\numberline {3.4}Analysis Call and Message Technologies}{38}{}%
+\contentsline {paragraph}{\numberline {3.4.1}Session Initiation Protocol}{38}{}%
+\contentsline {paragraph}{\numberline {3.4.2}Linphone}{38}{}%
+\contentsline {paragraph}{\numberline {3.4.3}Transport Layer Security Protocol (TLS)}{39}{}%
+\contentsline {paragraph}{\numberline {3.4.4}Communication Handling}{40}{}%
+\contentsline {subparagraph}{\numberline {3.4.4.1}Call Initialization}{40}{}%
+\contentsline {subparagraph}{\numberline {3.4.4.2}Locating the callee}{41}{}%
+\contentsline {subparagraph}{\numberline {3.4.4.3}One-on-One Instant Messaging}{42}{}%
+\contentsline {section}{\numberline {IV/}Machine Learning Model Analysis and Training}{44}{}%
+\contentsline {subsection}{\numberline {1.}One-Hot Encoding}{44}{}%
+\contentsline {subsection}{\numberline {2.}Dissimilarity Measure}{44}{}%
+\contentsline {subsection}{\numberline {3.}Evaluation Metrics}{44}{}%
+\contentsline {subsubsection}{\numberline {3.1}Silhouette Coefficient}{44}{}%
+\contentsline {subsubsection}{\numberline {3.2}Davies-Bouldin Index}{45}{}%
+\contentsline {subsection}{\numberline {4.}K-Mode Algorithm}{45}{}%
+\contentsline {subsection}{\numberline {5.}Model Implementation}{46}{}%
+\contentsline {subsubsection}{\numberline {5.1}Data Preprocessing}{46}{}%
+\contentsline {subsubsection}{\numberline {5.2}Model Training}{46}{}%
+\contentsline {section}{\numberline {V/}System Design and Implementation}{46}{}%
+\contentsline {subsection}{\numberline {1.}Hardware and Software Setup}{46}{}%
+\contentsline {subsubsection}{\numberline {1.1}Hardware Setup}{46}{}%
+\contentsline {subsubsection}{\numberline {1.2}Software Environment Configuration}{47}{}%
+\contentsline {subsection}{\numberline {2.}Application Software}{47}{}%
+\contentsline {subsection}{\numberline {3.}Initial Testing}{48}{}%
+\contentsline {subsubsection}{\numberline {3.1}Machine Learning Model Integration and Model Training}{48}{}%
+\contentsline {section}{\numberline {VI/}Results and Discussion}{48}{}%
+\contentsline {subsection}{\numberline {1.}Results}{48}{}%
+\contentsline {subsubsection}{\numberline {1.1}Mobile App Results}{48}{}%
+\contentsline {subsubsection}{\numberline {1.2}Machine Learning Results}{48}{}%
+\contentsline {subsection}{\numberline {2.}Discussion}{48}{}%
+\contentsline {section}{\numberline {VII/}Conclusion {\&} Future Work}{48}{}%
+\contentsline {subsection}{\numberline {1.}Conclusion}{48}{}%
+\contentsline {subsection}{\numberline {2.}Future Work}{48}{}%
