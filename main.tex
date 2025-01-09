@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass[12pt]{article}
 \usepackage{import}
 \usepackage{amsmath}
 \usepackage{float}
@@ -65,9 +65,11 @@
 
 \newpage
 \vspace{2em}
-\section*{List of Abbreviations}
+\section*{LIST OF ABBREVIATIONS}
 \addcontentsline{toc}{section}{List of Abbreviations}
-
+\vspace{-0.9em}
+\textcolor{blue}{\rule{\textwidth}{0.5pt}} 
+\vspace{1em}
 \begin{tabbing}
     \hspace{4cm} \= \hspace{10cm} \kill
     \textbf{API} \> Application Programming Interface \\
@@ -143,8 +145,6 @@ Real-time notifications for calendar updates and events together with calling an
 The integration of Google Calendar, MapBox, and Moodle promise a student-friendly experience across Android devices.
 In summary, USTH Connect is supposed to significantly improve the university experience for students and administrators by encouraging a more efficient and connected academic environment.
 
-\pagebreak
-
 \subsection{Structure of Thesis}
 The thesis will be structured as follows:
 \begin{itemize}
@@ -217,6 +217,8 @@ These functionalities are not critical but aim to enhance the overall student ex
     \item \textbf{Cross-platform Compatibility:} Develop future support for IOS devices and web browsers to expand student accessibility.  
 \end{itemize}  
 
+\pagebreak
+
 \subsection{Use Case}
 Based on the use case diagram, this section will offer a general explanation of the system's
 features.
@@ -226,7 +228,7 @@ features.
     % Figure
     \begin{figure}[H]
         \centering
-        \includegraphics[width=1\textwidth]{image/USTHConnect_usecase.pdf} 
+        \includegraphics[width=0.9\textwidth]{image/USTHConnect_usecase.pdf} 
         \caption{Use case diagram}
         \label{fig:usthconnect_use_case}
     \end{figure}
@@ -295,13 +297,13 @@ features.
     \end{figure}
     \textbf{Description:} This use case enables students to view their academic timetable. The system sync schedule every 10 minutes to make sure no daily event is missing. \\
 
+    \pagebreak
+
     \noindent \textbf{Pre-conditions:} 
         \begin{itemize}
             \item Before this use case begins, students must be logged into the system.
             \item The system up-to-date course details: time, locations, lecturer.
         \end{itemize}
-    
-    \pagebreak
 
     \noindent \textbf{Post-conditions:}
     \begin{itemize}
@@ -344,8 +346,6 @@ features.
         \label{fig:campus_use_case}
     \end{figure}
     \textbf{Description:} The system displays a list of campus buildings and their details. The system can locate each building in a list on a map. \\
-
-    \pagebreak
 
     \noindent \textbf{Pre-conditions:} 
         \begin{itemize}
@@ -593,13 +593,15 @@ The database for USTH Connect is designed to manage a wide range of information,
 
 \subsubsection{Table and Relationships}
 This section provides a detailed description of the tables within the USTH Connect database and their relationship.
+
+\pagebreak
 \subsubsubsection{Table: Activity}
 
 \textbf{Attributes and Data Types}
 \begin{table}[H]
     \centering
     \renewcommand{\arraystretch}{1.5}
-    \begin{tabular}{|l|l|p{7cm}|l|}
+    \begin{tabular}{|l|l|p{4.5cm}|l|}
     \hline
     \rowcolor[HTML]{96FFFB} 
     \textbf{Column Name} & \textbf{Data type}      & \textbf{Description}                          & \textbf{Constraints}  \\ \hline
@@ -629,12 +631,14 @@ This section provides a detailed description of the tables within the USTH Conne
     \item Each \texttt{activity} may have one associated \texttt{resource}.
 \end{itemize}
 
+\pagebreak
+
 \subsubsubsection{Table: Course}
 \textbf{Attributes and Data Types}
 \begin{table}[H]
     \centering
     \renewcommand{\arraystretch}{1.5}
-    \begin{tabular}{|l|l|p{7cm}|l|}
+    \begin{tabular}{|l|l|p{4.5cm}|l|}
     \hline
     \rowcolor[HTML]{96FFFB} 
     \textbf{Column Name} & \textbf{Data type} & \textbf{Description}                        & \textbf{Constraints}  \\ \hline
@@ -660,12 +664,14 @@ This section provides a detailed description of the tables within the USTH Conne
     \item Each \texttt{course} can be associated with multiple \texttt{students} through the \texttt{student\_course} table.
 \end{itemize}
 
+\pagebreak
+
 \subsubsubsection{Table: Events}
 \textbf{Attributes and Data Types}
 \begin{table}[H]
     \centering
     \renewcommand{\arraystretch}{1.5}
-    \begin{tabular}{|l|l|p{7cm}|l|}
+    \begin{tabular}{|l|l|p{4.5cm}|l|}
     \hline
     \rowcolor[HTML]{96FFFB} 
     \textbf{Column Name} & \textbf{Data type} & \textbf{Description}                      & \textbf{Constraints}  \\ \hline
@@ -697,12 +703,13 @@ This section provides a detailed description of the tables within the USTH Conne
     \item Each \texttt{event} is associated with one \texttt{location} from \texttt{maps}.
 \end{itemize}
 
+\pagebreak
 \subsubsubsection{Table: Maps}
 \textbf{Attributes and Data Types}
 \begin{table}[H]
     \centering
     \renewcommand{\arraystretch}{1.5}
-    \begin{tabular}{|l|l|p{5.7cm}|l|}
+    \begin{tabular}{|l|l|p{2.1cm}|l|}
     \hline
     \rowcolor[HTML]{96FFFB} 
     \textbf{Column Name} & \textbf{Data type} & \textbf{Description}                   & \textbf{Constraints}            \\ \hline
@@ -728,12 +735,14 @@ This section provides a detailed description of the tables within the USTH Conne
     \item Each \texttt{location} in \texttt{maps} can be referenced in \texttt{events}.
 \end{itemize}
 
+\pagebreak
+
 \subsubsubsection{Table: Message}
 \textbf{Attributes and Data Types}
 \begin{table}[H]
     \centering
     \renewcommand{\arraystretch}{1.5}
-    \begin{tabular}{|l|l|p{7cm}|l|}
+    \begin{tabular}{|l|l|p{4.5cm}|l|}
     \hline
     \rowcolor[HTML]{96FFFB} 
     \textbf{Column Name} & \textbf{Data type}        & \textbf{Description}                                   & \textbf{Constraints}             \\ \hline
@@ -781,7 +790,7 @@ This section provides a detailed description of the tables within the USTH Conne
 \begin{table}[H]
     \centering
     \renewcommand{\arraystretch}{1.5}
-    \begin{tabular}{|l|l|p{5cm}|l|}
+    \begin{tabular}{|l|l|p{2.1cm}|l|}
     \hline
     \rowcolor[HTML]{96FFFB} 
     \textbf{Column Name} & \textbf{Data type}        & \textbf{Description}                                   & \textbf{Constraints}             \\ \hline
@@ -800,6 +809,8 @@ This section provides a detailed description of the tables within the USTH Conne
 \textbf{Constraints}
 \begin{itemize}
     \item \textbf{Primary Key}: \texttt{notification\_id}.
+    
+    \pagebreak
     \item \textbf{Foreign Key}: 
     \begin{itemize}
         \item \texttt{student\_id} references \texttt{id} in the \texttt{Student} table, with \texttt{ON DELETE NO ACTION}.
@@ -821,7 +832,7 @@ This section provides a detailed description of the tables within the USTH Conne
 \begin{table}[H]
     \centering
     \renewcommand{\arraystretch}{1.5}
-    \begin{tabular}{|l|l|p{7cm}|l|}
+    \begin{tabular}{|l|l|p{4.5cm}|l|}
     \hline
     \rowcolor[HTML]{96FFFB} 
     \textbf{Column Name} & \textbf{Data type}        & \textbf{Description}                                   & \textbf{Constraints}             \\ \hline
@@ -845,12 +856,14 @@ This section provides a detailed description of the tables within the USTH Conne
     \item \texttt{Organizers} table contains information about the organizers who manage events or resources.
 \end{itemize}
 
+\pagebreak
+
 \subsubsubsection{Table: Resources}
 \textbf{Attributes and Data Types}
 \begin{table}[H]
     \centering
     \renewcommand{\arraystretch}{1.5}
-    \begin{tabular}{|l|l|p{7cm}|l|}
+    \begin{tabular}{|l|l|p{4.5cm}|l|}
     \hline
     \rowcolor[HTML]{96FFFB} 
     \textbf{Column Name} & \textbf{Data type}        & \textbf{Description}                                   & \textbf{Constraints}             \\ \hline
@@ -882,12 +895,14 @@ This section provides a detailed description of the tables within the USTH Conne
     \item Each \texttt{Resource} is associated with a specific \texttt{Activity} and a \texttt{Course}.
 \end{itemize}
 
+\pagebreak
+
 \subsubsubsection{Table: Student}
 \textbf{Attributes and Data Types}
 \begin{table}[H]
     \centering
     \renewcommand{\arraystretch}{1.5}
-    \begin{tabular}{|l|l|p{7cm}|l|}
+    \begin{tabular}{|l|l|p{4.5cm}|l|}
     \hline
     \rowcolor[HTML]{96FFFB} 
     \textbf{Column Name} & \textbf{Data type}        & \textbf{Description}                                   & \textbf{Constraints}             \\ \hline
@@ -926,7 +941,7 @@ This section provides a detailed description of the tables within the USTH Conne
 \begin{table}[H] 
     \centering 
     \renewcommand{\arraystretch}{1.5} 
-    \begin{tabular}{|l|l|p{5.5cm}|l|} 
+    \begin{tabular}{|l|l|p{2.1cm}|l|} 
     \hline 
     \rowcolor[HTML]{96FFFB} 
     \textbf{Column Name} & \textbf{Data type} & \textbf{Description} & \textbf{Constraints} \\ \hline 
@@ -962,7 +977,7 @@ This section provides a detailed description of the tables within the USTH Conne
 \begin{table}[H] 
     \centering 
     \renewcommand{\arraystretch}{1.5} 
-    \begin{tabular}{|l|l|p{7cm}|l|} 
+    \begin{tabular}{|l|l|p{4.5cm}|l|} 
     \hline 
     \rowcolor[HTML]{96FFFB} 
     \textbf{Column Name} & \textbf{Data type} & \textbf{Description} & \textbf{Constraints} \\ \hline 
@@ -993,7 +1008,7 @@ This section provides a detailed description of the tables within the USTH Conne
 \begin{table}[H] 
     \centering 
     \renewcommand{\arraystretch}{1.5} 
-    \begin{tabular}{|l|l|p{7cm}|l|} 
+    \begin{tabular}{|l|l|p{4.5cm}|l|} 
     \hline 
     \rowcolor[HTML]{96FFFB} 
     \textbf{Column Name} & \textbf{Data type} & \textbf{Description} & \textbf{Constraints} \\ \hline 
@@ -1023,7 +1038,7 @@ This section provides a detailed description of the tables within the USTH Conne
 \begin{table}[H] 
     \centering 
     \renewcommand{\arraystretch}{1.5} 
-    \begin{tabular}{|l|l|p{7cm}|l|} 
+    \begin{tabular}{|l|l|p{4.5cm}|l|} 
     \hline 
     \rowcolor[HTML]{96FFFB} 
     \textbf{Column Name} & \textbf{Data type} & \textbf{Description} & \textbf{Constraints} \\ \hline 
@@ -1052,7 +1067,7 @@ This section provides a detailed description of the tables within the USTH Conne
 \begin{table}[H] 
     \centering 
     \renewcommand{\arraystretch}{1.5} 
-    \begin{tabular}{|l|l|p{7cm}|l|} 
+    \begin{tabular}{|l|l|p{4.5cm}|l|} 
     \hline 
     \rowcolor[HTML]{96FFFB} 
     \textbf{Column Name} & \textbf{Data type} & \textbf{Description} & \textbf{Constraints} \\ \hline 
@@ -1081,7 +1096,7 @@ This section provides a detailed description of the tables within the USTH Conne
 \begin{table}[H] 
     \centering 
     \renewcommand{\arraystretch}{1.5} 
-    \begin{tabular}{|l|l|p{7cm}|l|} 
+    \begin{tabular}{|l|l|p{4.5cm}|l|} 
     \hline 
     \rowcolor[HTML]{96FFFB} 
     \textbf{Column Name} & \textbf{Data type} & \textbf{Description} & \textbf{Constraints} \\ \hline 
@@ -1110,7 +1125,7 @@ This section provides a detailed description of the tables within the USTH Conne
 \begin{table}[H] 
     \centering 
     \renewcommand{\arraystretch}{1.5} 
-    \begin{tabular}{|l|l|p{7cm}|l|} 
+    \begin{tabular}{|l|l|p{4.5cm}|l|} 
     \hline 
     \rowcolor[HTML]{96FFFB} 
     \textbf{Column Name} & \textbf{Data type} & \textbf{Description} & \textbf{Constraints} \\ \hline 
@@ -1124,6 +1139,7 @@ This section provides a detailed description of the tables within the USTH Conne
     \caption{Attributes and data types for the \texttt{study\_connection} table} 
 \end{table}
 
+\pagebreak
 \noindent 
 \textbf{Constraints}
 \begin{itemize} 
@@ -1142,7 +1158,6 @@ This section provides a detailed description of the tables within the USTH Conne
 \subsection{Use Case Implementation}
 This section provides an overview of the implementation of use cases in the system, ensuring that
 all critical steps are carried out and described in detail.
-
     \include{usecase_implementation}
     \include{analysis_call_message}
     \include{communication_handling}
@@ -1186,8 +1201,6 @@ $$b(o) = \min_{C_j: 1 \leq j \leq k, j \neq i} \frac{\sum_{o' \in C_j} dist(o,o'
 
 The silhouette coefficient of object o is defined as:
 $$s(o) = \frac{b(o) - a(o)}{\max\{a(o),b(o)\}}$$
-
-\pagebreak
 
 \noindent The silhouette coefficient is in $[-1,1]$. The $a(o)$ value illustrated
 the compactness of the cluster which o belongs. Smaller $a(o)$ means the
@@ -1237,8 +1250,6 @@ where $y_{i,l}$ is a binary indicator variable (1 if $X_i$ refers to cluster l, 
     
     \item Repeat Step 2 and 3 until every cluster has no changes after testing the whole dataset.
 \end{enumerate}
-
-\pagebreak
 
 \subsection{Model Implementation}
 \subsubsection{Data Preprocessing}
@@ -1301,7 +1312,6 @@ The essential hardware components for the system include:
     \item \textbf{Networking Equipment: }Tailscale VPN for secure and reliable communication between student devices and the backend server.  
 \end{itemize}
 
-\pagebreak
 
 \subsubsection{Software Environment Configuration}  
 The software setup involves configuring the necessary tools and platforms to support the development and operation of the system:  
@@ -1334,6 +1344,7 @@ The application software comprises several core modules, each designed to handle
         \item Dynamically renders campus maps within the app.  
     \end{itemize}  
 
+    \pagebreak
     \item \textbf{Moodle Resource Module:}  
     \begin{itemize}  
         \item Communicates with Moodle APIs to retrieve course resources, such as slides, source code, and PDFs.  
@@ -1440,10 +1451,12 @@ The development of USTH Connect has show significant progress in creating a comp
 The app efficiently combines various features, including Google Calendar synchronization, campus naviation, access to Moodle resources, and the StudyBuddy recommendation system.
 
 Although the clustering algorithm provides valuable insights into study partner compatibility, evaluation metrics indicates that the need of improvement in cluster separation and cohesion.
-The low Silhouette score and high Davies-Bouldin score show the need for better feature selection or model tuning to enhance clustering performance.
+The low Silhouette score and high Davies-Bouldin score show the need for better feature selection or model tuning to enhance clustering performance. \\
 
 Regarding the mobile application, fetching and caching data like schedules and course materials has dramatically enhanced usability, enabling partial offline access.
 However, the lack of chat message notifications and a more optimized image storage system reduce the overall user experience.
+
+\pagebreak
 
 \subsubsubsection{Comparison to Similar System}
 Unlike traditional university assistance apps that mostly focus on course and student management or navigation, USTH Connect combines multiple features into a single application, implementing academic tools with a social networking developed by machine learning.
@@ -1466,7 +1479,8 @@ Despite the progress made, the project faced serveral challenges and limitations
 \subsection{Conclusion}
 The USTH Connect mobile application has achieved significant progress in implementing essential university functions into a single platform. Features like calendar synchronization, campus naviation, Moodle integration, and the StudyBuddy recommendation system help simplify and improve student life.
 Along with obtained successes, some challenges are still there, especially in improving chat features, refining StudyBuddy features, and optimizing the clustering algorithm.
-The StudyBuddy feature's machine learning model indicates the need of improvement, especially the clustering algorithm's performance. The Silhouette and Davies-Bouldin scores suggest that the current model's cluster separation is not efficient as expected, which requires the further improving of the feature.
+The StudyBuddy feature's machine learning model indicates the need of improvement, especially the clustering algorithm's performance. The Silhouette and Davies-Bouldin scores suggest that the current model's cluster separation is not efficient as expected, which requires the further improving of the feature. \\
+
 On the other hand, the app's ability to fetch, manage and cache data for offline access, combined with real-time communication features such as audio calling and notifications, which improves the overall user experience.
 
 In summary, USTH connect has shown potential in becoming a vital tools for students at the University of Science and Technology of Hanoi, enhancing their academic and social experiences. 
@@ -1478,16 +1492,18 @@ To contribute to the successes of the current USTH Connect and address its limit
     \item \textbf{Enhancing the StudyBuddy feature: } The current machine learning model for recommending study partners can be improved by exploring different clustering algorithms or refining the feature selection process. Additionally, the image storage system for user profiles needs opimization to enhance visual interface and adapt with the larger user base.
     \item \textbf{Improving UI/UX: } Upgrading the UI/UX, especially in sections like the chat interface, StudyBuddy profile views, and other sections, will significantly enhances the user experience. Deploying the app and gathering user feedback on design will be essential to make the app more intuitive and appealing.
     \item \textbf{Optimizing Notifications Systems: } The notification system for the chat features needs improvement to ensure students have a better experience when using the chat features. Beside, notifications for new StudyBuddy matches and important calendar events should also be optimized to improve user interaction.
-    \item \textbf{Optimizing the Clustering Model: } The model performance could be further improved by reducing the dimensionality of the input data and integrating deep learning for features extraction. With this integration, the model can reduce noise features while still retain characteristics of user. After the application is oprated, user behaviours such as the number of likes, time spent on recommending part, and the number of connected friends will be collected for further analysis and better user experience understanding. 
+    \item \textbf{Refining the Clustering Algorithm: } The existing clustering model can be optimized by fine-tuning its parameters, testing alternative clustering techniques, and introducing additional features to improve the prediction accuracy.
     \item \textbf{Platform Compatibility and Cross-Device Testing: } To ensure broad compatibility, the app needs to be thoroughly tested across different screen sizes and operating systems beyond Android devices and emulators. This will help deliver a consistent user experience across all platforms.
     \item \textbf{Integration with Moodle: } Having full integration with the university's Moodle system will be vital for providing students with up-to-date course materials and academic resources.
     \item \textbf{Expanding Additional Features} After deploying the app, using user feedback and needs, future versions of USTH Connect could introduce additional features to further enhance its value.
 \end{itemize}
 By addressing these key areas, USTH Connect can evolve to meet the growing needs of students, providing even greater benefits to both users and the university community. The continuous development of the app will ensures the valuable and vital tools for students.
 Through future improvements, USTH Connect has the potential to become a necessary platform that supports both academic and social activities, as well as encourage a more connected and engaged academic environment.
-\subsection{References}
+
+\pagebreak
+% \subsection{References}
+\renewcommand{\bibname}{REFERENCES} 
 \begingroup
-\renewcommand{\bibname}{} 
 \bibliographystyle{IEEEtran} 
 \bibliography{bibliography} 
 \endgroup
