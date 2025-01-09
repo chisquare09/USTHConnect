@@ -78,18 +78,6 @@ INPUT C:\Users\abc\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-p
 INPUT .\main.aux
 INPUT .\main.aux
 INPUT main.aux
-INPUT .\titlepage.aux
-INPUT .\titlepage.aux
-INPUT titlepage.aux
-INPUT .\usecase_implementation.aux
-INPUT .\usecase_implementation.aux
-INPUT usecase_implementation.aux
-INPUT .\analysis_call_message.aux
-INPUT .\analysis_call_message.aux
-INPUT analysis_call_message.aux
-INPUT .\communication_handling.aux
-INPUT .\communication_handling.aux
-INPUT communication_handling.aux
 OUTPUT main.aux
 INPUT C:\Users\abc\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\abc\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -120,18 +108,8 @@ INPUT C:\Users\abc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmext
 INPUT C:\Users\abc\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\abc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Users\abc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT .\main.toc
-INPUT .\main.toc
-INPUT main.toc
 OUTPUT main.toc
-INPUT .\main.lof
-INPUT .\main.lof
-INPUT main.lof
 OUTPUT main.lof
-INPUT .\main.lot
-INPUT .\main.lot
-INPUT main.lot
-INPUT C:\Users\abc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt10.tfm
 OUTPUT main.lot
 INPUT C:\Users\abc\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1000.tfm
 INPUT .\image\USTHConnect_usecase.pdf
@@ -182,6 +160,7 @@ INPUT .\image\USTH-Connect-Database-Schema-Light.pdf
 INPUT .\image\USTH-Connect-Database-Schema-Light.pdf
 INPUT .\image\USTH-Connect-Database-Schema-Light.pdf
 INPUT .\image\USTH-Connect-Database-Schema-Light.pdf
+INPUT C:\Users\abc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt10.tfm
 INPUT .\usecase_implementation.tex
 INPUT .\usecase_implementation.tex
 OUTPUT usecase_implementation.aux
@@ -255,6 +234,16 @@ INPUT .\image\Instant messaging.pdf
 INPUT .\image\Instant messaging.pdf
 INPUT .\image\Instant messaging.pdf
 INPUT C:\Users\abc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti10.tfm
+INPUT .\image\choosing_K.png
+INPUT .\image\choosing_K.png
+INPUT .\image\choosing_K.png
+INPUT .\image\choosing_K.png
+INPUT .\image\choosing_K.png
+INPUT .\image\choosing_K.png
+INPUT .\image\choosing_K.png
+INPUT .\main.bbl
+INPUT .\main.bbl
+INPUT main.bbl
 INPUT main.aux
 INPUT .\titlepage.aux
 INPUT .\titlepage.aux

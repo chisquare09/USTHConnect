@@ -15,7 +15,6 @@
 \usepackage{xcolor}
 \usepackage{titlesec}
 \usepackage{natbib}
-\bibliographystyle{unsrt}
 
 \geometry{a4paper, portrait, margin=30mm, bmargin=30mm, tmargin=30mm}
 \setcounter{secnumdepth}{5}
@@ -1190,15 +1189,17 @@ all critical steps are carried out and described in detail.
 \subsection{One-Hot Encoding}
 One-hot Encoding is a data preprocessing technique that transforms a single categorical variable with n distinct categories 
 into n separate columns. Each column is represented by one number 0 or 1, where the value 1 presents the presence of that category 
-and the value 0 indicates its absence.\cite{thuy2020optimize} This method helps machine learning models, which typically require numerical input, 
+and the value 0 indicates its absence.\citep{thuy2020optimize} This method helps machine learning models, which typically require numerical input, 
 better understand and handle the data.
 
 \subsection{Dissimilarity Measure}
-The dissimilarity measure between two categorical objects X and Y (with m attributes) can be defined by the total mismatches of their corresponding categorical attributes. The two objects X and Y are considered to be more similar when the value of a mismatched number gets smaller.\cite{huang1998extensions}
+The dissimilarity measure between two categorical objects X and Y (with m attributes) can be defined by the total mismatches of their corresponding categorical attributes. The two objects X and Y are considered to be more similar when the value of a mismatched number gets smaller.\citep{huang1998extensions}
         $$d(X,Y) = \sum_{i=1}^{m}\delta{(x_i,y_i)}$$ where $$\delta{(x_i,y_i)} = \left\{\begin{array}{ll} 0 & (x_i = y_i) \\
         1 & (x_i \neq y_i)\end{array}\right.$$
 
-\subsection{Evaluation Metrics}
+\subsection{Evaluation Metrics} \label{evaluation metrics}
+This part covers the intrinsic evaluation metrics that be used to evaluate model performance.
+
 \subsubsection{Silhouette Coefficient}
 
 \noindent Choosing the optimal number of k value is crucial for the 
@@ -1245,23 +1246,21 @@ the clustering quality is the Davies-Bouldin Index (DBI). The DBI
 is calculated by the average similarity between each cluster and its
 most similar cluster. The lower the DBI value, the better the clustering
 quality. The DBI is defined as follows \citep{HOSEN2023688}:
-
 \begin{center}
-    $ DBI = \frac{1}{n} \sum_{i=1}^{n} max_{j \neq i} \frac{s_i + s_j}{d(c_i,c_j)}$
+
+$ DBI = \frac{1}{n} \sum_{i=1}^{n} max_{j \neq i} \frac{s_i + s_j}{d(c_i,c_j)}$
 
 \end{center}
-
-and 
+and
 \begin{center}
-    $s_i = \frac{1}{n_i} \sum_{j=1}^{n_i} d(x_j,c_i)$
+$s_i = \frac{1}{n_i} \sum_{j=1}^{n_i} d(x_j,c_i)$
 \end{center}
-
 \noindent In which $n$ is the number of clusters, $s_i$ is the average distance between
 each data point belonging to cluster $i$ and the centroid of cluster $i$, 
 $d(c_i,c_j)$ indicated the distance between the centroids of cluster $i$ and
 $j$.
 
-\subsection{K-Mode Algorithm}\cite{huang1998extensions}
+\subsection{K-Mode Algorithm\citep{huang1998extensions}}
 % Cost function
 Let $\{Q_1,Q_2,...,Q_k\}$ be the modes of clusters $\{C_1,C_2,...,C_k\}$. The cost function can be defined by taking the total dissimilarities of each sample and its assigned cluster's mode: 
 $$E = \sum_{l=1}^{k}\sum_{i=1}^{n}y_{i,l}d(X_i,Q_l)$$ 
@@ -1298,7 +1297,8 @@ ICT & Football, Cooking, Food tour, Travel, Rap & ... & Programming \\ \hline
 \end{table}
 
 \begin{table}[H]
-\resizebox{\columnwidth}{!}{%
+\centering
+\resizebox{0.8\textwidth}{!}{%
 \begin{tabular}{|c|c|c|c|c|c|c|c|}
 \hline
 \textbf{DS} & \textbf{ICT} & \textbf{V-pop} & \textbf{Volleyball} & \textbf{Board games} & \textbf{EDM} & \textbf{...} & \textbf{Programming} \\ \hline
@@ -1312,8 +1312,19 @@ ICT & Football, Cooking, Food tour, Travel, Rap & ... & Programming \\ \hline
 \end{table}
 
 \subsubsection{Model Training}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{image/choosing_K.png}
+    \caption{Optimal clusters K}
+    \label{fig:choosing_K}
+\end{figure}
 
-To determine the optimal number of clusters $K$, the K-Modes clustering model is trained with different values of K varying from 2 to 9 and select the best model according to the cost function. For each training iteration, the K-Modes algorithm is executed multiple times with different initial centroids seeds. The final result is the best output initialized centroids in terms of cost function.\cite{devos2015}
+To determine the optimal number of clusters $K$, the K-Modes clustering model is trained with different K values varying from 2 to 9 and select the best model according to the cost function. For each training iteration, the K-Modes algorithm is executed multiple times (15 in our problem) with different initial centroids seeds. The final result is the best initialized centroids in terms of cost function.\citep{devos2015}
+
+After the training is completed, each student is assigned to their predicted cluster, which will be used for the recommendation part.
+
+\subsubsection{Student Recommendation}
+Firstly, the information of new student is encoded by one-hot encoding and fed into the model. The output returned is the predicted cluster to which the new student belongs. Depending on this prediction, students within the same cluster are chosen to recommend.
 
 \section{System Design and Implementation}  
 
@@ -1424,6 +1435,26 @@ In this part we can have the demo for each feature of the app.
 In this part we will show the result of the clustering algorithm, using the evaluation 
 metrics that we mentioned in the previous section.
 
+\subsubsubsection{Model Performance}
+
+\begin{table}[H]
+\centering
+\resizebox{0.7\textwidth}{!}{%
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Model} & \textbf{Silhouette Score} & \textbf{Davies-Bouldin Score} \\ \hline
+K-Modes & 0.1389 & 3.4489 \\ \hline
+\end{tabular}%
+}
+\caption{Model Performance}
+\label{Model_Performance}
+\end{table}
+
+Table \ref{Model_Performance} presents the values of the Silhouette and Davies-Bouldin score, which is clearly explained in section \ref{evaluation metrics} The silhouette score indicates how close the data point is to its cluster compared to the others, while the Davies-Bouldin score shows how high the overall quality of clustering model. With a Silhouette score of 0.1389 and a Davies-Bouldin score of 3.4489, the centroids of each cluster are relatively close to each other, and the boundaries between clusters may not be ideal.
+
+\subsubsubsection{Comparison}
+The same pre-preocessing method and K-Modes model is applied to the Zoo dataset (with true label) and gives the result: 0.5362 of Silhouette Score and 1.21 of Davies-Bouldin Score. The Kuhn-Munkres\citep{zhu2011efficient} algorithm is used to match the predicted clusters with the true types of animals to maximize accuracy.
+
 \subsection{Discussion}
 
 \section{Conclusion {\&} Future Work}
@@ -1431,6 +1462,10 @@ metrics that we mentioned in the previous section.
 \subsection{Conclusion}
 \subsection{Future Work}
 
-
-
+\subsection{References}
+\begingroup
+\renewcommand{\bibname}{} 
+\bibliographystyle{IEEEtran} 
+\bibliography{bibliography} 
+\endgroup
 \end{document}
