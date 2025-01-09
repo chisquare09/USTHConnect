@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.6)  9 JAN 2025 11:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.6)  9 JAN 2025 11:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -397,7 +397,7 @@ Overfull \hbox (2.4488pt too wide) in paragraph at lines 49--50
 [3]
 
 [4]
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 82--82
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 87--87
  [][][]
  []
 
@@ -408,7 +408,7 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 82--82
 
 
 [5]
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 96--96
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 101--101
  [][][]
  []
 
@@ -421,12 +421,12 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 96--96
 [6]
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 107--110
+Underfull \hbox (badness 10000) in paragraph at lines 112--115
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--113
+Underfull \hbox (badness 10000) in paragraph at lines 116--118
 
  []
 
@@ -440,7 +440,7 @@ pdfTeX warning: pdflatex (file ./image/USTHConnect_usecase.pdf): PDF inclusion: 
 <image/USTHConnect_usecase.pdf, id=41, 980.70387pt x 1287.85132pt>
 File: image/USTHConnect_usecase.pdf Graphic file (type pdf)
 <use image/USTHConnect_usecase.pdf>
-Package pdftex.def Info: image/USTHConnect_usecase.pdf  used on input line 223.
+Package pdftex.def Info: image/USTHConnect_usecase.pdf  used on input line 228.
 (pdftex.def)             Requested size: 426.79135pt x 560.46628pt.
 
 
@@ -452,15 +452,15 @@ pdfTeX warning: pdflatex (file ./image/AuthenticationUseCase.pdf): PDF inclusion
 <image/AuthenticationUseCase.pdf, id=62, 484.69078pt x 264.99pt>
 File: image/AuthenticationUseCase.pdf Graphic file (type pdf)
 <use image/AuthenticationUseCase.pdf>
-Package pdftex.def Info: image/AuthenticationUseCase.pdf  used on input line 244.
+Package pdftex.def Info: image/AuthenticationUseCase.pdf  used on input line 249.
 (pdftex.def)             Requested size: 298.75264pt x 163.3338pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 248--249
+Underfull \hbox (badness 10000) in paragraph at lines 253--254
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--251
+Underfull \hbox (badness 10000) in paragraph at lines 255--256
 
  []
 
@@ -472,10 +472,10 @@ pdfTeX warning: pdflatex (file ./image/StudentScheduleUseCase.pdf): PDF inclusio
 <image/StudentScheduleUseCase.pdf, id=81, 743.8992pt x 397.485pt>
 File: image/StudentScheduleUseCase.pdf Graphic file (type pdf)
 <use image/StudentScheduleUseCase.pdf>
-Package pdftex.def Info: image/StudentScheduleUseCase.pdf  used on input line 286.
+Package pdftex.def Info: image/StudentScheduleUseCase.pdf  used on input line 291.
 (pdftex.def)             Requested size: 298.75264pt x 159.63408pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 290--291
+Underfull \hbox (badness 10000) in paragraph at lines 295--296
 
  []
 
@@ -487,17 +487,17 @@ pdfTeX warning: pdflatex (file ./image/CampusUseCase.pdf): PDF inclusion: found 
 <image/CampusUseCase.pdf, id=99, 644.4075pt x 316.3017pt>
 File: image/CampusUseCase.pdf Graphic file (type pdf)
 <use image/CampusUseCase.pdf>
-Package pdftex.def Info: image/CampusUseCase.pdf  used on input line 336.
+Package pdftex.def Info: image/CampusUseCase.pdf  used on input line 341.
 (pdftex.def)             Requested size: 298.75264pt x 146.6444pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 340--341
+Underfull \hbox (badness 10000) in paragraph at lines 345--346
 
  []
 
 
 
 [14 <./image/CampusUseCase.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 377--378
+Underfull \hbox (badness 10000) in paragraph at lines 382--383
 
  []
 
@@ -507,12 +507,12 @@ pdfTeX warning: pdflatex (file ./image/StudyBuddyUseCase.pdf): PDF inclusion: fo
 <image/StudyBuddyUseCase.pdf, id=117, 685.60138pt x 659.5842pt>
 File: image/StudyBuddyUseCase.pdf Graphic file (type pdf)
 <use image/StudyBuddyUseCase.pdf>
-Package pdftex.def Info: image/StudyBuddyUseCase.pdf  used on input line 407.
+Package pdftex.def Info: image/StudyBuddyUseCase.pdf  used on input line 412.
 (pdftex.def)             Requested size: 298.75264pt x 287.40996pt.
 
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 411--412
+Underfull \hbox (badness 10000) in paragraph at lines 416--417
 
  []
 
@@ -524,10 +524,10 @@ pdfTeX warning: pdflatex (file ./image/Real-timeNotificationUseCase.pdf): PDF in
 <image/Real-timeNotificationUseCase.pdf, id=138, 943.60526pt x 356.29109pt>
 File: image/Real-timeNotificationUseCase.pdf Graphic file (type pdf)
 <use image/Real-timeNotificationUseCase.pdf>
-Package pdftex.def Info: image/Real-timeNotificationUseCase.pdf  used on input line 461.
+Package pdftex.def Info: image/Real-timeNotificationUseCase.pdf  used on input line 466.
 (pdftex.def)             Requested size: 426.79135pt x 161.15042pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 465--466
+Underfull \hbox (badness 10000) in paragraph at lines 470--471
 
  []
 
@@ -539,7 +539,7 @@ pdfTeX warning: pdflatex (file ./image/USTH-Connect-System-Architecture.pdf): PD
 <image/USTH-Connect-System-Architecture.pdf, id=156, 711.62634pt x 595.6447pt>
 File: image/USTH-Connect-System-Architecture.pdf Graphic file (type pdf)
 <use image/USTH-Connect-System-Architecture.pdf>
-Package pdftex.def Info: image/USTH-Connect-System-Architecture.pdf  used on input line 514.
+Package pdftex.def Info: image/USTH-Connect-System-Architecture.pdf  used on input line 519.
 (pdftex.def)             Requested size: 426.79135pt x 357.24416pt.
 
 
@@ -553,12 +553,12 @@ pdfTeX warning: pdflatex (file ./image/USTH-Connect-Database-Schema-Light.pdf): 
 <image/USTH-Connect-Database-Schema-Light.pdf, id=169, 1308.57082pt x 1067.63712pt>
 File: image/USTH-Connect-Database-Schema-Light.pdf Graphic file (type pdf)
 <use image/USTH-Connect-Database-Schema-Light.pdf>
-Package pdftex.def Info: image/USTH-Connect-Database-Schema-Light.pdf  used on input line 584.
+Package pdftex.def Info: image/USTH-Connect-Database-Schema-Light.pdf  used on input line 589.
 (pdftex.def)             Requested size: 426.79135pt x 348.19975pt.
 
 
 [21]
-Overfull \hbox (55.50621pt too wide) in paragraph at lines 596--608
+Overfull \hbox (55.50621pt too wide) in paragraph at lines 601--613
  [][] 
  []
 
@@ -566,145 +566,145 @@ Overfull \hbox (55.50621pt too wide) in paragraph at lines 596--608
 
 [22 <./image/USTH-Connect-Database-Schema-Light.pdf>]
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 615.
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 620.
 
-Overfull \hbox (50.79453pt too wide) in paragraph at lines 631--641
+Overfull \hbox (50.79453pt too wide) in paragraph at lines 636--646
  [][] 
  []
 
 
-Overfull \hbox (34.46507pt too wide) in paragraph at lines 648--649
+Overfull \hbox (34.46507pt too wide) in paragraph at lines 653--654
 []\OT1/cmr/bx/n/10 Foreign Key (\OT1/cmtt/m/n/10 course[]id\OT1/cmr/bx/n/10 )\OT1/cmr/m/n/10 : In the \OT1/cmtt/m/n/10 student[]course \OT1/cmr/m/n/10 ta-ble, \OT1/cmtt/m/n/10 course[]id \OT1/cmr/m/n/10 ref-er-ences \OT1/cmtt/m/n/10 course(course[]id)\OT1/cmr/m/n/10 . 
  []
 
 
-Overfull \hbox (52.42284pt too wide) in paragraph at lines 662--675
+Overfull \hbox (52.42284pt too wide) in paragraph at lines 667--680
  [][] 
  []
 
 
 
 [23]
-Overfull \hbox (74.91708pt too wide) in paragraph at lines 699--709
+Overfull \hbox (74.91708pt too wide) in paragraph at lines 704--714
  [][] 
  []
 
 
-Overfull \hbox (60.59981pt too wide) in paragraph at lines 730--742
+Overfull \hbox (60.59981pt too wide) in paragraph at lines 735--747
  [][] 
  []
 
 
 
 [24]
-Overfull \hbox (0.23662pt too wide) in paragraph at lines 751--752
+Overfull \hbox (0.23662pt too wide) in paragraph at lines 756--757
 []\OT1/cmtt/m/n/10 connection[]id \OT1/cmr/m/n/10 ref-er-ences \OT1/cmtt/m/n/10 id \OT1/cmr/m/n/10 in the \OT1/cmtt/m/n/10 Study Connection \OT1/cmr/m/n/10 ta-ble, with \OT1/cmtt/m/n/10 ON DELETE CASCADE\OT1/cmr/m/n/10 . 
  []
 
 
-Overfull \hbox (4.01657pt too wide) in paragraph at lines 752--753
+Overfull \hbox (4.01657pt too wide) in paragraph at lines 757--758
 []\OT1/cmtt/m/n/10 receiver[]id \OT1/cmr/m/n/10 ref-er-ences \OT1/cmtt/m/n/10 student[]id \OT1/cmr/m/n/10 in the \OT1/cmtt/m/n/10 Study Buddy \OT1/cmr/m/n/10 ta-ble, with \OT1/cmtt/m/n/10 ON DELETE CASCADE\OT1/cmr/m/n/10 . 
  []
 
 
-Overfull \hbox (65.22375pt too wide) in paragraph at lines 778--790
+Overfull \hbox (65.22375pt too wide) in paragraph at lines 783--795
  [][] 
  []
 
 
 
 [25]
-Overfull \hbox (50.79453pt too wide) in paragraph at lines 818--826
+Overfull \hbox (50.79453pt too wide) in paragraph at lines 823--831
  [][] 
  []
 
 
-Overfull \hbox (50.79453pt too wide) in paragraph at lines 847--859
+Overfull \hbox (50.79453pt too wide) in paragraph at lines 852--864
  [][] 
  []
 
 
 
 [26]
-Overfull \hbox (4.01657pt too wide) in paragraph at lines 868--869
+Overfull \hbox (4.01657pt too wide) in paragraph at lines 873--874
 []\OT1/cmtt/m/n/10 activity[]id \OT1/cmr/m/n/10 ref-er-ences \OT1/cmtt/m/n/10 activity[]id \OT1/cmr/m/n/10 in the \OT1/cmtt/m/n/10 Activity \OT1/cmr/m/n/10 ta-ble, with \OT1/cmtt/m/n/10 ON DELETE NO ACTION\OT1/cmr/m/n/10 . 
  []
 
 
-Overfull \hbox (54.68343pt too wide) in paragraph at lines 884--902
+Overfull \hbox (54.68343pt too wide) in paragraph at lines 889--907
  [][] 
  []
 
 
 
 [27]
-Overfull \hbox (62.49384pt too wide) in paragraph at lines 923--935
+Overfull \hbox (62.49384pt too wide) in paragraph at lines 928--940
  [][] 
  []
 
 
 
 [28]
-Overfull \hbox (50.79453pt too wide) in paragraph at lines 959--966
+Overfull \hbox (50.79453pt too wide) in paragraph at lines 964--971
  [][] 
  []
 
 
-Overfull \hbox (16.82643pt too wide) in paragraph at lines 974--975
+Overfull \hbox (16.82643pt too wide) in paragraph at lines 979--980
 []\OT1/cmtt/m/n/10 study[]buddy[]id \OT1/cmr/m/n/10 ref-er-ences \OT1/cmtt/m/n/10 student[]id \OT1/cmr/m/n/10 in the \OT1/cmtt/m/n/10 study[]buddy \OT1/cmr/m/n/10 ta-ble, with \OT1/cmtt/m/n/10 ON DELETE CASCADE\OT1/cmr/m/n/10 . 
  []
 
 
-Overfull \hbox (2.54657pt too wide) in paragraph at lines 975--976
+Overfull \hbox (2.54657pt too wide) in paragraph at lines 980--981
 []\OT1/cmtt/m/n/10 opponent[]id \OT1/cmr/m/n/10 ref-er-ences \OT1/cmtt/m/n/10 student[]id \OT1/cmr/m/n/10 in the \OT1/cmtt/m/n/10 study[]buddy \OT1/cmr/m/n/10 ta-ble, with \OT1/cmtt/m/n/10 ON DELETE CASCADE\OT1/cmr/m/n/10 . 
  []
 
 
-Overfull \hbox (50.79453pt too wide) in paragraph at lines 990--997
+Overfull \hbox (50.79453pt too wide) in paragraph at lines 995--1002
  [][] 
  []
 
 
-Overfull \hbox (16.82643pt too wide) in paragraph at lines 1004--1005
+Overfull \hbox (16.82643pt too wide) in paragraph at lines 1009--1010
 []\OT1/cmtt/m/n/10 study[]buddy[]id \OT1/cmr/m/n/10 ref-er-ences \OT1/cmtt/m/n/10 student[]id \OT1/cmr/m/n/10 in the \OT1/cmtt/m/n/10 study[]buddy \OT1/cmr/m/n/10 ta-ble, with \OT1/cmtt/m/n/10 ON DELETE CASCADE\OT1/cmr/m/n/10 . 
  []
 
 
-Overfull \hbox (50.79453pt too wide) in paragraph at lines 1020--1027
+Overfull \hbox (50.79453pt too wide) in paragraph at lines 1025--1032
  [][] 
  []
 
 
 
 [29]
-Overfull \hbox (16.82643pt too wide) in paragraph at lines 1034--1035
+Overfull \hbox (16.82643pt too wide) in paragraph at lines 1039--1040
 []\OT1/cmtt/m/n/10 study[]buddy[]id \OT1/cmr/m/n/10 ref-er-ences \OT1/cmtt/m/n/10 student[]id \OT1/cmr/m/n/10 in the \OT1/cmtt/m/n/10 study[]buddy \OT1/cmr/m/n/10 ta-ble, with \OT1/cmtt/m/n/10 ON DELETE CASCADE\OT1/cmr/m/n/10 . 
  []
 
 
-Overfull \hbox (50.79453pt too wide) in paragraph at lines 1049--1056
+Overfull \hbox (50.79453pt too wide) in paragraph at lines 1054--1061
  [][] 
  []
 
 
-Overfull \hbox (16.82643pt too wide) in paragraph at lines 1063--1064
+Overfull \hbox (16.82643pt too wide) in paragraph at lines 1068--1069
 []\OT1/cmtt/m/n/10 study[]buddy[]id \OT1/cmr/m/n/10 ref-er-ences \OT1/cmtt/m/n/10 student[]id \OT1/cmr/m/n/10 in the \OT1/cmtt/m/n/10 study[]buddy \OT1/cmr/m/n/10 ta-ble, with \OT1/cmtt/m/n/10 ON DELETE CASCADE\OT1/cmr/m/n/10 . 
  []
 
 
-Overfull \hbox (50.79453pt too wide) in paragraph at lines 1078--1085
+Overfull \hbox (50.79453pt too wide) in paragraph at lines 1083--1090
  [][] 
  []
 
 
-Overfull \hbox (16.82643pt too wide) in paragraph at lines 1092--1093
+Overfull \hbox (16.82643pt too wide) in paragraph at lines 1097--1098
 []\OT1/cmtt/m/n/10 study[]buddy[]id \OT1/cmr/m/n/10 ref-er-ences \OT1/cmtt/m/n/10 student[]id \OT1/cmr/m/n/10 in the \OT1/cmtt/m/n/10 study[]buddy \OT1/cmr/m/n/10 ta-ble, with \OT1/cmtt/m/n/10 ON DELETE CASCADE\OT1/cmr/m/n/10 . 
  []
 
 
 
 [30]
-Overfull \hbox (53.76181pt too wide) in paragraph at lines 1107--1118
+Overfull \hbox (53.76181pt too wide) in paragraph at lines 1112--1123
  [][] 
  []
 
@@ -882,24 +882,24 @@ Package pdftex.def Info: image/Instant messaging.pdf  used on input line 97.
 
 [43 <./image/Instant messaging.pdf>]
 
-Package natbib Warning: Citation `thuy2020optimize' on page 44 undefined on input line 1188.
+Package natbib Warning: Citation `thuy2020optimize' on page 44 undefined on input line 1193.
 
 
-Package natbib Warning: Citation `huang1998extensions' on page 44 undefined on input line 1192.
+Package natbib Warning: Citation `huang1998extensions' on page 44 undefined on input line 1197.
 
 
-Package natbib Warning: Citation `2012vi' on page 44 undefined on input line 1204.
+Package natbib Warning: Citation `2012vi' on page 44 undefined on input line 1209.
 
 
-Package natbib Warning: Citation `9260048' on page 44 undefined on input line 1207.
+Package natbib Warning: Citation `9260048' on page 44 undefined on input line 1212.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1199--1208
+Underfull \hbox (badness 10000) in paragraph at lines 1204--1213
 
  []
 
 
-Package natbib Warning: Citation `2012vi' on page 44 undefined on input line 1213.
+Package natbib Warning: Citation `2012vi' on page 44 undefined on input line 1218.
 
 
 
@@ -908,16 +908,16 @@ Package natbib Warning: Citation `2012vi' on page 44 undefined on input line 121
 
 ]
 
-Package natbib Warning: Citation `HOSEN2023688' on page 45 undefined on input line 1242.
+Package natbib Warning: Citation `HOSEN2023688' on page 45 undefined on input line 1247.
 
 
-Package natbib Warning: Citation `huang1998extensions' on page 45 undefined on input line 1259.
+Package natbib Warning: Citation `huang1998extensions' on page 45 undefined on input line 1264.
 
 
 
 [45]
 
-Package natbib Warning: Citation `devos2015' on page 46 undefined on input line 1311.
+Package natbib Warning: Citation `devos2015' on page 46 undefined on input line 1316.
 
 
 
@@ -952,7 +952,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  57i,16n,79p,573b,329s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\abc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (49 pages, 2866638 bytes).
+Output written on main.pdf (49 pages, 2866760 bytes).
 PDF statistics:
  471 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
