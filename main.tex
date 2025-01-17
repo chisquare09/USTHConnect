@@ -548,11 +548,9 @@ Mapbox provides an overview map of a campus, allowing students to locate buildin
 Additionally, the app integrates the StudyBuddy feature, where students can find potential study partners based on their personal description, interests and habits. 
 Moreover, it supports real-time audio and message communication through the Linphone VoIP library.
 
-\subsubsection{VPN Hosting - Tailscale}
-Tailscale is used to create a secure VPN that provides private and safe communication between the backend server and students' devices.
-In the system, Tailscale pushes the public IP address of the backend system, enabling devices to securely connect to it without exposing sensitive information about the server's location and configuration.
-Therefore, all communication between the mobile application and the backend is secured and encrypted, reducing the risk of unauthorized access.
-By using Tailscale's VPN service, the system ensures secure and private access to the system's backend for all students, regardless of their network location.
+The frontend UI service is necessary in our system architecture because it acts as the bridge between the user and the system's backend service. The UI provides students with an user-friendly interface to access the application features such as schedule view, campus navigation, resource access, and academic collboration.
+Without the frontend UI, the system would lack a method for students to communicate to the backend service, therefore the application is considered unusable. 
+The frontend ensures that the students have a smooth and comfortable experience while using our platform, which helps them improving their academic life and connecting with their peers seamlessly.
 
 \pagebreak
 
@@ -562,6 +560,11 @@ When students enter details about their personality traits, hobbies, learning st
 After receiving data, the algorithm groups students with similar characteristics, enabling the system to send back the proper recommendation to the students.
 Then, the potential study partners will be displayed in the mobile app, allowing students to connect to each others who have compatible interests.
 This feature is implemented using Python's machine learning libraries, which provide the necessary methods for clustering and pattern recognition in student matching.
+
+There are many advantages for why Python was chosen over Java for the implementation of the machine learning model in our system architecture. First, the libraries which are designed specifically for machine learning configuration are offered by Python, such as (Add used libraries). These libraries provide powerful and optimized tools for implementing our algorithm which is K-modes clustering, fostering faster development and experimentation.
+Regarding Java, it lacks various of tools which directly support the implementation process and require more complex and custom implementations. Additionally, Python provides direct support for the K-modes clustering algorithm through the kmodes library, which is a key reason why we choose Python over Java in the implementation of the machine learning model.
+As regards to the process of prototyping and experimentation, which is significant for fine-tuning machine learning models, Python allows a faster and short duration for this process. Finally, Python integrates seamlessly with the backend services, ensuring easy communication with other system components through APIs.
+In conclusion, Python is considered as the most suitable choice for implementing the required machine Learning model which plays a crucial role in the StudyBuddy feature.
 
 \subsubsection{Communication - Linphone VoIP}
 To integrate real-time communication between matched students, the system implements Linphone, an open-source VoIP library.
