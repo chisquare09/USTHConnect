@@ -115,14 +115,20 @@
 \section{Introduction}
 
 \subsection{Context and Motivation}
-During the university life, especially first year students, they will find it difficult to manage academic schedules, navigate the location of study areas, find lecture resources, and build social connections to other students.
-As for our current traditional systems, they can serve their purposes well but they are fragmented and hard to maintain.
-Moreover, there are not many platforms for students to expand their social network and probably find suitable friends. \\
+During the academic journey, university students around the world face several challenges. Particularly, first-year students often struggle with managing academic schedules, finding their way around campus, accessing study materials, and forming meaningful social connections with their peers.
+In some universities, current traditional systems are able to serve their purposes well, but these systems are fragmented and difficult to maintain.
+Moreover, they often do not provide solutions for students to manage their schedules, access academic resources, and encourage interaction between students within a single platform.
+There are few platforms that help students expand their social networks or find suitable peers to connect with. However, these platforms lack other features which significantly improve their academic life. \\
 
-To overcome these challenges, we developed USTH Connect, an integrated University Life Assistant and Student Networking Application.
-USTH Connect is implemented with the aim of supporting students' university life. \\
+Around the world, there are existing apps whose purpose is to solve some of these challenges above. For example, platforms like Google Calendar and Moodle already help students manage schedules and access course materials, while apps like Google Maps support in navigation around campus section.
+However, these apps do not provide a comprehensive solution for improvement of university life. Each of these has their own limitation. Google Calendar manages academic schedules but does not help students find compatible study partners or navigate campus.
+Moodle allows students to access lecture resources but does not contribute to the encouragement of social connections or provide tools for campus navigation.
+Similarly, while Google Maps is responsible for navigating place and locating study areas, it does not include the academic support and social connection assistance. Furthermore, their limitation make those apps less user-friendly, especially for students who need a combination of all these functionalities in one platform. \\
 
-It combines modern yet simple technologies into an Android application, providing students with effortless access to the schedules, study materials and study location addresses.
+These drawbacks focus on how important a comprehensive solution which aims to meet all those specific needs is, especially the students at the University of Science and Technology of Hanoi.
+To overcome these challenges, we developed USTH Connect, an integrated University Life Assistant and Student Networking Application. \\
+
+USTH Connect is built with the goal of supporting students' university life by combining modern yet simple technologies into an Android application, providing students with effortless access to the schedules, study materials and study location addresses.
 Not only does it support their studies, it also encourages more connections between students, supporting them in their social life. That helps them to create more quality and meaningful relationships in the future.
 With StudyBuddy, students can find compatible study partners, chat, and even make audio calls through secure VoIP functionality powered by Linphone.
 To support the StudyBuddy features, we apply the K-modes model to help students find compatible people in the university.
@@ -132,8 +138,7 @@ This report explores the design and development of USTH Connect, detailing the p
 It also highlights the creative solutions used to address these challenges, demonstrating how USTH Connect enhances the university experience for students and administrators.
 
 \subsection{Project Objectives}
-The primary objective of this project is to design, develop and implement an integrated system that enhances
-university life and fosters student networking through advanced technological solutions.
+The primary objective of this project is to design, develop and implement an integrated system that enhances university life and fosters student networking through advanced technological solutions.
 The goal is to create a platform that seamlessly intergrates personal academic data, event annoucements, and campus resources.
 By using advanced frameworks and APIs, together with recommendation system, we aim to simplify the administrative tasks, improve campus accessibility, 
 and encourage more interaction among students.
@@ -148,12 +153,12 @@ Real-time notifications for calendar updates and events together with calling an
 The integration of Google Calendar, MapBox, and Moodle promise a student-friendly experience across Android devices.
 In summary, USTH Connect is supposed to significantly improve the university experience for students and administrators by encouraging a more efficient and connected academic environment.
 
-\subsection{Structure of Thesis}
-The thesis will be structured as follows:
+\subsection{Structure of Report}
+The report will be structured as follows:
 \begin{itemize}
     \item \textbf{Part I: Introduction }
     \newline
-    Provide a general introduction to the thesis, including an overview of the project, its objectives, and the scope of the work.
+    Provide a general introduction to the report, including an overview of the project, its objectives, and the scope of the work.
     \item \textbf{Part II: Requirement Analysis }
     \newline
     Lists all the tools, techniques, and system requirements used in the project. It includes
@@ -179,7 +184,6 @@ The thesis will be structured as follows:
 
 \pagebreak
 
-% \section{Theoretical Background}
 \section{Requirement Analysis}
 Ensuring and following the initial targets set for the project, we must be carefully analyzed the system
 architecture and developed a detailed work deployment plan. Below is a detailed description of
@@ -546,7 +550,7 @@ The app fetches data from the backend through APIs, ensuring that it always disp
 For the Google Calendar implementation, the app periodically retrieves and displays these followings events, which makes it easier for students to stay updated on their study schedules.
 Mapbox provides an overview map of a campus, allowing students to locate buildings and study halls using their latitude and longitude data.
 Additionally, the app integrates the StudyBuddy feature, where students can find potential study partners based on their personal description, interests and habits. 
-Moreover, it supports real-time audio and message communication through the Linphone VoIP library.
+Moreover, it supports real-time audio and message communication through the Linphone VoIP library. \\
 
 The frontend UI service is necessary in our system architecture because it acts as the bridge between the user and the system's backend service. The UI provides students with an user-friendly interface to access the application features such as schedule view, campus navigation, resource access, and academic collboration.
 Without the frontend UI, the system would lack a method for students to communicate to the backend service, therefore the application is considered unusable. 
@@ -559,7 +563,7 @@ The StudyBuddy feature of the system using a Python-based machine learning model
 When students enter details about their personality traits, hobbies, learning style and academic goals, this data is sent to the backend, which processes it using the K-modes algorithm.
 After receiving data, the algorithm groups students with similar characteristics, enabling the system to send back the proper recommendation to the students.
 Then, the potential study partners will be displayed in the mobile app, allowing students to connect to each others who have compatible interests.
-This feature is implemented using Python's machine learning libraries, which provide the necessary methods for clustering and pattern recognition in student matching.
+This feature is implemented using Python's machine learning libraries, which provide the necessary methods for clustering and pattern recognition in student matching. \\
 
 There are many advantages for why Python was chosen over Java for the implementation of the machine learning model in our system architecture. First, the libraries which are designed specifically for machine learning configuration are offered by Python, such as (Add used libraries). These libraries provide powerful and optimized tools for implementing our algorithm which is K-modes clustering, fostering faster development and experimentation.
 Regarding Java, it lacks various of tools which directly support the implementation process and require more complex and custom implementations. Additionally, Python provides direct support for the K-modes clustering algorithm through the kmodes library, which is a key reason why we choose Python over Java in the implementation of the machine learning model.
@@ -1176,7 +1180,7 @@ This section provides a detailed description of the tables within the USTH Conne
     \item Each \texttt{Study Connection} is associated with two \texttt{Study Buddy} entities (study\_buddy\_1\_id and study\_buddy\_2\_id). 
 \end{itemize}
 
-
+\pagebreak
 
 \section{Machine Learning Model Analysis and Training}
 \subsection{One-Hot Encoding}
@@ -1318,102 +1322,39 @@ Firstly, the information of new student is encoded by one-hot encoding and fed i
 \pagebreak
 
 \section{System Design and Implementation}  
-
-\subsection{Hardware and Software Setup}  
 This section describes the detailed process of setting up the system, covering hardware and software configurations, as well as initial testing to ensure all components work seamlessly.
+\subsection{Hardware and Software Setup}  
+The design and implementation of the system started by setting up the hardware and software environment. Regarding the hardware setup, we have development machines for hosting backend services and the PostgreSQL database, as well as user devices which are mostly Android smartphones or virtual Android devices for accessing features like Schedule view, Campus navigation, and Moodle resources. 
+Besides, we needed a networking equipment which was Tailscale VPN in our system to ensure secure and reliable connection between student devices and the backend server. \\
 
-\subsubsection{Hardware Setup}  
-The essential hardware components for the system include:  
-\begin{itemize}  
-    \item \textbf{Development Machines: }Computers used for developing and hosting backend services and databases (Spring Boot and PostgreSQL).  
-    \item \textbf{User Devices: }Smartphones or virtual devices running the Android app to access features such as Google Calendar, MapBox maps, and Moodle resources.  
-    \item \textbf{Networking Equipment: }Tailscale VPN for secure and reliable communication between student devices and the backend server.  
-\end{itemize}
+On the software side, the operating system used for hosting backend services and the database is Window, while Android acted as the primary platform for the mobile application.
+For the relational database management system, we choosed PostgreSQL to handle student data, calendar events, location details, and data for StudyBuddy feature.
+The backend framework used Spring Boot for managing REST API endpoints, authentication, authorization, as well as data synchronization.
+To potentially support the development of the application, we used Android Studio as the main environment for building the application using Java language, as it contains of libraries like Retrofit and MapBox SDK.
 
+\subsection{Application Software} 
+The application was divided into several modules, as each of them serve a specific feature.
+The Authentication and Authorization Module implemented JWT-based authentication and managed RBAC for ADMIN and USER roles.
+The Google Calendar Integration Module was responsible for fetching event data, detecting updates, and notifying students about changes.
+The MapBox Integration Module enabled storage of campus's study places coordinates and overall campus map viewing. \\
 
-\subsubsection{Software Environment Configuration}  
-The software setup involves configuring the necessary tools and platforms to support the development and operation of the system:  
-\begin{itemize}  
-    \item \textbf{Operating System: }Windows was used to host backend services and the database, while Android was the primary platform for the mobile application.  
-    \item \textbf{Database: }PostgreSQL was installed and configured as the relational database management system for managing student data, calendar events, location details, and StudyBuddy profiles.  
-    \item \textbf{Backend Framework: }Spring Boot was implemented to manage REST API endpoints, handle authentication and authorization, and synchronize data between components.  
-    \item \textbf{Mobile Development Tools: }Android Studio served as the primary integrated development environment (IDE) for creating the Android application, leveraging Java and libraries such as Retrofit and MapBox SDK.  
-\end{itemize}
+Regarding Moodle Resource Module, we set up a communication with Moodle APIs to retrieve course materials such as slides, source code, and PDFs.
+About StudyBuddy Matching Module, we implemented a machine learning recommendation system to suggest matches based on shared interests, collecting student profile data and offering text-based chat and SIP-based VoIP audio call using the Linphone library.
+The Notification System provided real-time alerts for calendar updates and incoming calls.
 
-\pagebreak
+\subsection{Initial Testing}
+To ensure all components were functioning correctly and fully compatible, we conducted initial testing divided into hardware, software, and integration testing. Hardware testing involved verifying the performance and the reliability of development machines, servers, as well as networking environment. 
+Regarding software testing, we focused on verifying proper installation, configuration, and performance. The Windows operating system installed on the backend machines was tested for resource allocation, security settings, and reliability.
+PostgreSQL was initialized with schemas and sample data, testin with CRUD operations to ensure smooth data handling. 
+Spring Boot REST API endpoints were tested individually using Postman to confirm proper functionality, including following the JWT authentication with token. \\ 
 
-\subsection{Application Software}  
-The application software comprises several core modules, each designed to handle specific functionalities:  
-
-\begin{itemize}  
-    \item \textbf{Authentication and Authorization Module:}  
-    \begin{itemize}  
-        \item Implements JWT-based authentication.  
-        \item Manages RBAC for ADMIN and USER roles.  
-    \end{itemize}  
-
-    \item \textbf{Google Calendar Integration Module:}  
-    \begin{itemize}  
-        \item Fetches event data from Google Calendar.  
-        \item Detects event updates and sends notifications to the student via the mobile application.  
-    \end{itemize}  
-
-    \item \textbf{MapBox Integration Module:}  
-    \begin{itemize}  
-        \item Stores campus location coordinates (latitude and longitude).  
-        \item Dynamically renders campus maps within the app.  
-    \end{itemize}  
-
-    \item \textbf{Moodle Resource Module:}  
-    \begin{itemize}  
-        \item Communicates with Moodle APIs to retrieve course resources, such as slides, source code, and PDFs.  
-    \end{itemize}  
-
-    \item \textbf{StudyBuddy Matching Module:}  
-    \begin{itemize}  
-        \item Collects student profile data (e.g., interests, personality).  
-        \item Uses a machine learning recommendation system to suggest matches based on shared interests.  
-        \item Features include:  
-        \begin{itemize}  
-            \item Chat functionality for text-based communication.  
-            \item Audio calling capabilities powered by the Linphone library, which provides SIP-based VoIP functionality.  
-        \end{itemize}  
-    \end{itemize}  
-
-    \item \textbf{Notification System:}  
-    \begin{itemize}  
-        \item Delivers real-time notifications for calendar updates and incoming calls.  
-    \end{itemize}  
-\end{itemize}
-
-\pagebreak
-
-\subsection{Initial Testing}  
-Extensive testing ensured all components functioned correctly and integrated seamlessly:  
-
-\begin{itemize}  
-    \item \textbf{Hardware Testing:}  
-    \begin{itemize}  
-        \item Verified the setup and operation of development machines, servers, and networking equipment using Tailscale VPN for secure communication.  
-    \end{itemize}  
-
-    \item \textbf{Software Testing:}  
-    \begin{itemize}  
-        \item Tested the configuration and performance of the operating system, PostgreSQL database, and Spring Boot services.  
-    \end{itemize}  
-
-    \item \textbf{Integration Testing:}  
-    \begin{itemize}  
-        \item Validated the interaction between backend APIs and mobile app features, ensuring functionality for:  
-        \begin{itemize}  
-            \item Google Calendar synchronization.  
-            \item MapBox map rendering.  
-            \item Moodle resource retrieval.  
-            \item StudyBuddy matching and chat capabilities.  
-            \item Linphone-based audio calling.  
-        \end{itemize}  
-    \end{itemize}  
-\end{itemize}
+Integration testing validated interactions between the various system components. For Google Calendar synchronization, we created dummy events and updated with dummy data to verify proper fetching and real-time notifications.
+MapBox integration was tested by checking stored campus location data with real-world coordinates, ensuring the accuracy and functionality for campus navigation on multiple devices, including virtual devices.
+Moodle API communication was verified by simulating the process of course material upload and confirmationo of successful retrieval of slides, source code, and PDFs.
+Additionally, the StudyBuddy matching feature was tested using both dummy and real profiles to validate the recommendation system, ensuring the high accuracy matches based on profile information.
+Chat functionality was tested for text-based messaging and SIP-based VoIP audio calls, with the Linphone library ensuring seamless connection and clear audio quality.
+Lastly, the notification system was tested by simulating calendar dummy events updates and incoming calls to confirm notification prompt message.
+This testing phase ensured a reliable and fully functional system, ready for deployment.
 
 \pagebreak
 
@@ -1493,6 +1434,8 @@ Despite the progress made, the project faced serveral challenges and limitations
 %     \item \textbf{Cross-Device Testing: } Although testing was done on emulators and Android devices, more testing across different screen size and operating system version is necessary to comprehensively optimize the application.
 %     \item \textbf{Moodle Integration: } Currently, the app uses a custom built Moodle system rather than integrating with the official Moodle platform provided by the school. This limitations prevent the synchronization with official course materials available on the university's Moodle. Full integration with the actual Moodle platform is necessary to provided students with seamless access to their course materials and academic resources.
 % \end{itemize}
+
+\pagebreak
 
 \section{Conclusion {\&} Future Work}
 \subsection{Conclusion}

@@ -1,25 +1,25 @@
-\contentsline {table}{\numberline {1}{\ignorespaces Actor Actions and System Actions for Authenticate}}{14}{}%
-\contentsline {table}{\numberline {2}{\ignorespaces Actor Actions and System Actions for Schedule}}{15}{}%
-\contentsline {table}{\numberline {3}{\ignorespaces Actor Actions and System Actions for Campus}}{16}{}%
-\contentsline {table}{\numberline {4}{\ignorespaces Actor Actions and System Actions for Resource}}{17}{}%
-\contentsline {table}{\numberline {5}{\ignorespaces Actor Actions and System Actions for StudyBuddy}}{19}{}%
-\contentsline {table}{\numberline {6}{\ignorespaces Actor Actions and System Actions for Real time Notification}}{20}{}%
-\contentsline {table}{\numberline {7}{\ignorespaces Attributes and data types for the \texttt {Activity} table}}{41}{}%
-\contentsline {table}{\numberline {8}{\ignorespaces Attributes and data types for the \texttt {Course} table}}{42}{}%
-\contentsline {table}{\numberline {9}{\ignorespaces Attributes and data types for the \texttt {Events} table}}{43}{}%
-\contentsline {table}{\numberline {10}{\ignorespaces Attributes and data types for the \texttt {Maps} table}}{44}{}%
-\contentsline {table}{\numberline {11}{\ignorespaces Attributes and data types for the \texttt {Message} table}}{45}{}%
-\contentsline {table}{\numberline {12}{\ignorespaces Attributes and data types for the \texttt {Notifications} table}}{46}{}%
-\contentsline {table}{\numberline {13}{\ignorespaces Attributes and data types for the \texttt {Organizers} table}}{47}{}%
-\contentsline {table}{\numberline {14}{\ignorespaces Attributes and data types for the \texttt {Resources} table}}{48}{}%
-\contentsline {table}{\numberline {15}{\ignorespaces Attributes and data types for the \texttt {Student} table}}{49}{}%
-\contentsline {table}{\numberline {16}{\ignorespaces Attributes and data types for the \texttt {study\_buddy} table}}{50}{}%
-\contentsline {table}{\numberline {17}{\ignorespaces Attributes and data types for the \texttt {study\_buddy\_connections} table}}{51}{}%
-\contentsline {table}{\numberline {18}{\ignorespaces Attributes and data types for the \texttt {study\_buddy\_favorite\_subjects} table}}{51}{}%
-\contentsline {table}{\numberline {19}{\ignorespaces Attributes and data types for the \texttt {study\_buddy\_interests} table}}{52}{}%
-\contentsline {table}{\numberline {20}{\ignorespaces Attributes and data types for the \texttt {study\_buddy\_preferred\_places} table}}{52}{}%
-\contentsline {table}{\numberline {21}{\ignorespaces Attributes and data types for the \texttt {study\_buddy\_preferred\_times} table}}{53}{}%
-\contentsline {table}{\numberline {22}{\ignorespaces Attributes and data types for the \texttt {study\_connection} table}}{53}{}%
-\contentsline {table}{\numberline {23}{\ignorespaces Data before preprocessing}}{56}{}%
-\contentsline {table}{\numberline {24}{\ignorespaces Data after preprocessing}}{57}{}%
-\contentsline {table}{\numberline {25}{\ignorespaces Model Performance}}{62}{}%
+\contentsline {table}{\numberline {1}{\ignorespaces Actor Actions and System Actions for Authenticate}}{16}{}%
+\contentsline {table}{\numberline {2}{\ignorespaces Actor Actions and System Actions for Schedule}}{17}{}%
+\contentsline {table}{\numberline {3}{\ignorespaces Actor Actions and System Actions for Campus}}{18}{}%
+\contentsline {table}{\numberline {4}{\ignorespaces Actor Actions and System Actions for Resource}}{19}{}%
+\contentsline {table}{\numberline {5}{\ignorespaces Actor Actions and System Actions for StudyBuddy}}{21}{}%
+\contentsline {table}{\numberline {6}{\ignorespaces Actor Actions and System Actions for Real time Notification}}{22}{}%
+\contentsline {table}{\numberline {7}{\ignorespaces Attributes and data types for the \texttt {Activity} table}}{43}{}%
+\contentsline {table}{\numberline {8}{\ignorespaces Attributes and data types for the \texttt {Course} table}}{44}{}%
+\contentsline {table}{\numberline {9}{\ignorespaces Attributes and data types for the \texttt {Events} table}}{45}{}%
+\contentsline {table}{\numberline {10}{\ignorespaces Attributes and data types for the \texttt {Maps} table}}{46}{}%
+\contentsline {table}{\numberline {11}{\ignorespaces Attributes and data types for the \texttt {Message} table}}{47}{}%
+\contentsline {table}{\numberline {12}{\ignorespaces Attributes and data types for the \texttt {Notifications} table}}{48}{}%
+\contentsline {table}{\numberline {13}{\ignorespaces Attributes and data types for the \texttt {Organizers} table}}{49}{}%
+\contentsline {table}{\numberline {14}{\ignorespaces Attributes and data types for the \texttt {Resources} table}}{50}{}%
+\contentsline {table}{\numberline {15}{\ignorespaces Attributes and data types for the \texttt {Student} table}}{51}{}%
+\contentsline {table}{\numberline {16}{\ignorespaces Attributes and data types for the \texttt {study\_buddy} table}}{52}{}%
+\contentsline {table}{\numberline {17}{\ignorespaces Attributes and data types for the \texttt {study\_buddy\_connections} table}}{53}{}%
+\contentsline {table}{\numberline {18}{\ignorespaces Attributes and data types for the \texttt {study\_buddy\_favorite\_subjects} table}}{53}{}%
+\contentsline {table}{\numberline {19}{\ignorespaces Attributes and data types for the \texttt {study\_buddy\_interests} table}}{54}{}%
+\contentsline {table}{\numberline {20}{\ignorespaces Attributes and data types for the \texttt {study\_buddy\_preferred\_places} table}}{54}{}%
+\contentsline {table}{\numberline {21}{\ignorespaces Attributes and data types for the \texttt {study\_buddy\_preferred\_times} table}}{55}{}%
+\contentsline {table}{\numberline {22}{\ignorespaces Attributes and data types for the \texttt {study\_connection} table}}{55}{}%
+\contentsline {table}{\numberline {23}{\ignorespaces Data before preprocessing}}{59}{}%
+\contentsline {table}{\numberline {24}{\ignorespaces Data after preprocessing}}{59}{}%
+\contentsline {table}{\numberline {25}{\ignorespaces Model Performance}}{64}{}%
