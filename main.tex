@@ -190,33 +190,55 @@ architecture and developed a detailed work deployment plan. Below is a detailed 
 the methodologies and procedures we implemented.
 
 \subsection{System requirements}
-This section outlines the essential requirements for the development and successful operation of USTH Connect, classified into functional, non-functional, and desired functionalities.  
+This section outlines the essential requirements for the development and successful operation of USTH Connect, classified into functional, non-functional, and desired functionalities.
 
 \subsubsection{Functional Requirements}
 The functional requirements specify the primary operations and features of USTH Connect to meet student and system objectives:  
 \begin{itemize}  
-    \item \textbf{Authentication and Authorization:} Implement secure student authentication using JWT-based tokens and role-based access control (RBAC) for managing access permissions.  
-    \item \textbf{Google Calendar Integration:} Enable users to sync, view, and manage academic schedules in real-time within the application.  
-    \item \textbf{StudyBuddy Matching:} Allow students to find study partners based on shared academic interests, goals, and compatibility through machine learning algorithms.  
-    \item \textbf{Moodle Resource Access:} Provide seamless access to course materials, including slides, assignments, and reference documents, fetched directly from Moodle.  
-    \item \textbf{Real-time Notifications:} Notify users promptly about calendar updates, study partner incoming communication, and scheduled events.  
-    \item \textbf{Map and Navigation:} Integrate MapBox to display campus maps, building locations, and navigation features for easy campus exploration.  
-    \item \textbf{Communication Features:} Facilitate text-based chatting and VoIP audio calls using Linphone for seamless interaction between users.  
-    \item \textbf{Administrative Tools:} Offer reporting tools for administrators to monitor student engagement, system usage.  
+    \item \textbf{Authenticate and Authorize:} Implement secure student authentication using JWT-based tokens and role-based access control (RBAC) for managing access permissions.  
+    \item \textbf{Integrate with Google Calendar:} Enable users to sync, view, and manage academic schedules in real-time within the application.  
+    \item \textbf{Match with StudyBuddy:} Allow students to find study partners based on shared academic interests, goals, and compatibility through machine learning algorithms.  
+    \item \textbf{Access Moodle Resources:} Provide seamless access to course materials, including slides, assignments, and reference documents, fetched directly from Moodle.  
+    \item \textbf{Send Real-time Notifications:} Notify users promptly about calendar updates, study partner incoming communication, and scheduled events.  
+    \item \textbf{Display Map and Navigation:} Integrate MapBox to display campus maps, building locations, and navigation features for easy campus exploration.  
+    \item \textbf{Enable Communication Features:} Facilitate text-based chatting and VoIP audio calls using Linphone for seamless interaction between users.  
+    \item \textbf{Provide Administrative Tools:} Offer reporting tools for administrators to monitor student engagement, system usage.  
 \end{itemize} 
 
 \pagebreak
 
 \subsubsection{Non-functional Requirements}
-The non-functional requirements outline the system's essential performance, reliability, and usability standards:  
-\begin{itemize}  
-    \item \textbf{Scalability:} The system should support a moderate increase in student numbers and data while maintaining acceptable performance levels.  
-    \item \textbf{Security:} User data must be protected with basic encryption protocols, secure database practices (PostgreSQL), and VPN communication (Tailscale) for backend interactions.  
-    \item \textbf{Availability:} Aim for a system uptime of at least 90\%, ensuring minimal disruption to student access.  
-    \item \textbf{Performance:} Key functionalities, such as schedule retrieval and StudyBuddy matching, should respond within 5 seconds under normal conditions.  
-    \item \textbf{Usability:} The interface should be straightforward and functional, providing a smooth experience on most Android devices.  
-    \item \textbf{Maintainability:} Updates and feature additions should be feasible without causing significant downtime or compatibility issues.  
-\end{itemize}  
+The non-functional requirements outline the system's essential performance, reliability, and usability standards. While official testing has not yet been carried out, the following testing are planned to validate each requirement:
+\begin{itemize}
+    \item \textbf{Scalability:} The system should support a moderate increase in student numbers and data while maintaining acceptable performance levels. 
+    To perform test on the increase of users, we plan to use Apache JMeter or Locust to simulate growth usage, scaling up to around 130\% of the current user load. 
+    These tests will focus on some important functionalities like schedule retrieval and display for each major, resources view, and StudyBuddy matching, in order to verify that performance of the application is stable and working well with a 30\% increase in user numbers.
+
+    \item \textbf{Security:} User data must be protected with basic encryption protocols, secure database practices (PostgreSQL), and VPN communication (Tailscale) for backend interactions. 
+    To test the security of the system, we plan to use OWASP ZAP to perform penetration testing and security audits. 
+    By taking advantages of the tools, we will simulate attacks, such as SQL injection and data interception, will be held to analyze and identify upcoming potential vulnerabilities to the system.
+    These tests will focus on the robust security of sensitive information and how the system will act when facing against unauthorized access attempts.
+
+    \item \textbf{Availability:} The system should aim for an uptime of at least 90\%, ensuring minimal disruption to student access. 
+    To validate this, we plan to perform tests which involve of simulating a situation like a high user usage and resource demand during peak usage times.
+    By using automated tools and performing a test around 30 days, we will check for the stability of the system behavior and uptime in these specific scenarios.
+    These tests will ensure to meet the target uptime we mention above and to maintain the reliable access for users.
+
+    \item \textbf{Performance:} Key functionalities, such as schedule retrieval and StudyBuddy matching, should respond within 5 seconds under normal conditions. 
+    To verify this, we plan to take advantages of libraries like Microbenchmark and Macrobenchmark to simulate the performance benchmarking. 
+    By dividing into different levels of concurrent user (e.g., 10, 50, and 100 users), we will apply the test for each levels to observe response time for these key features.
+    The goal is to ensure that the response time will be around 5 seconds for at least 90\% of all functionalities during typical and crowded conditions.
+
+    \item \textbf{Usability:} The interface should be straightforward and functional, providing a smooth experience on most Android devices. 
+    To test the usability, we plan to perform with a sample group of students who will be asked perform common tasks, such as retrieving schedules, acessing resources, and finding StudyBuddies. 
+    Then through surveys and interviews, we can collect the feedback which will be used to identify areas for improvement. 
+    The goal is for at least 80\% of participants to feel satisfied with the interface and find it functional and easy for them to use.
+
+    \item \textbf{Maintainability:} Updates and feature additions should be feasible without causing significant downtime or compatibility issues. 
+    To test the maintainability of the system, we plan to simulate updates in a controlled development environment. This involve introducing new features or patches while performing all the above testing to ensure that all functionalities are working as expected.
+    During the maintenance, we will also observe the update process for any potential errors, such as compatibility errorso or longer downtime. 
+    These tests will verify that the updates can be applied correctly with minimal interruption.
+\end{itemize}
 
 \subsubsection{Desired Functionalities}
 These functionalities are not critical but aim to enhance the overall student experience and system capabilities:  
@@ -1443,27 +1465,46 @@ The USTH Connect mobile application has achieved significant progress in impleme
 Along with obtained successes, some challenges are still there, especially in improving chat features, refining StudyBuddy features, and optimizing the clustering algorithm.
 The StudyBuddy feature's machine learning model indicates the need of improvement, especially the clustering algorithm's performance. The Silhouette and Davies-Bouldin scores suggest that the current model's cluster separation is not efficient as expected, which requires the further improving of the feature. \\
 
-On the other hand, the app's ability to fetch, manage and cache data for offline access, combined with real-time communication features such as audio calling and notifications, which improves the overall user experience.
+On the other hand, the app's ability to fetch, manage and cache data for offline access, combined with real-time communication features such as audio calling and notifications, which improves the overall user experience. \\
 
 In summary, USTH connect has shown potential in becoming a vital tools for students at the University of Science and Technology of Hanoi, enhancing their academic and social experiences. 
 Despite some challenges, its development is positive, and with future improvement, it can become a fully integrated, user-friendly application.
 
 \subsection{Future Work}
-To contribute to the successes of the current USTH Connect and address its limitations, future work will focus on several key areas:
-\begin{itemize}
-    \item \textbf{Enhancing the StudyBuddy feature: } The current machine learning model for recommending study partners can be improved by exploring different clustering algorithms or refining the feature selection process. Additionally, the image storage system for user profiles needs opimization to enhance visual interface and adapt with the larger user base.
-    \item \textbf{Improving UI/UX: } Upgrading the UI/UX, especially in sections like the chat interface, StudyBuddy profile views, and other sections, will significantly enhances the user experience. Deploying the app and gathering user feedback on design will be essential to make the app more intuitive and appealing.
-    \item \textbf{Optimizing Notifications Systems: } The notification system for the chat features needs improvement to ensure students have a better experience when using the chat features. Beside, notifications for new StudyBuddy matches and important calendar events should also be optimized to improve user interaction.
-    \item \textbf{Refining the Clustering Algorithm: } The existing clustering model can be optimized by fine-tuning its parameters, testing alternative clustering techniques, and introducing additional features to improve the prediction accuracy.
-    \item \textbf{Platform Compatibility and Cross-Device Testing: } To ensure broad compatibility, the app needs to be thoroughly tested across different screen sizes and operating systems beyond Android devices and emulators. This will help deliver a consistent user experience across all platforms.
-    \item \textbf{Integration with Moodle: } Having full integration with the university's Moodle system will be vital for providing students with up-to-date course materials and academic resources.
-    \item \textbf{Expanding Additional Features} After deploying the app, using user feedback and needs, future versions of USTH Connect could introduce additional features to further enhance its value.
-\end{itemize}
+To contribute to the current achievements of USTH Connect and address its existing limitations, future development will focus on several key areas. 
+Enhancing the StudyBuddy is our first priority, as it is our key feature of the application, involving the improvement of the machine learning model used for recommending study partners.
+We will find an alternative clustering algorithms, refining the feature selection process, and optimizing the image storage system for user profiles to improve the user experience to the full extent. \\
+
+Improving the application's user interface is another significant section that we need to focus on. 
+Sections like the chat interface, the StudyBuddy profile views, and other areas will be refined to improve the overall visual and make user more engaged into our application.
+To declare the problems about our user interface, user feedback play a vital role in creating these enhancement suggestion to verify a design that match the student expectations and preferences.
+Additionally, optimizing the notification system will be a key improvement as it associates with many key functionalities like schedule retrieval and StudyBuddy communication features.
+We will focus to enable a notification for chat features, as well as notify users about new StudyBuddy matches and importance calendar events such as Exam day or Meetings. \\
+
+Regarding the clusteing algorithm, the current one for StudyBuddy feature will need further optimization through fine-tuning parameters, testing alternative methods, and combining additional relevant features to improve the accuracy of the the recommendation.
+Similarly, the platform compatibility and cross-device testing will undergo improvement to ensure the application performs consistently across various screen sizes and operating systems.
+This work will help deliver a more unique and unified experience for all users. \\
+
+Moreover, full integration with the university's Moodle system is necessary to provide students with up-to-date course materials and academic resources. 
+Finally, future versions of the application will introduce more features based on our user feedback, enabling USTH Connect to address their needs and contribute more to the improvement of USTH student's university life. \\
+
 By addressing these key areas, USTH Connect can evolve to meet the growing needs of students, providing even greater benefits to both users and the university community. The continuous development of the app will ensures the valuable and vital tools for students.
 Through future improvements, USTH Connect has the potential to become a necessary platform that supports both academic and social activities, as well as encourage a more connected and engaged academic environment.
 
+% To contribute to the successes of the current USTH Connect and address its limitations, future work will focus on several key areas:
+% \begin{itemize}
+%     \item \textbf{Enhancing the StudyBuddy feature: } The current machine learning model for recommending study partners can be improved by exploring different clustering algorithms or refining the feature selection process. Additionally, the image storage system for user profiles needs opimization to enhance visual interface and adapt with the larger user base.
+%     \item \textbf{Improving UI/UX: } Upgrading the UI/UX, especially in sections like the chat interface, StudyBuddy profile views, and other sections, will significantly enhances the user experience. Deploying the app and gathering user feedback on design will be essential to make the app more intuitive and appealing.
+%     \item \textbf{Optimizing Notifications Systems: } The notification system for the chat features needs improvement to ensure students have a better experience when using the chat features. Beside, notifications for new StudyBuddy matches and important calendar events should also be optimized to improve user interaction.
+%     \item \textbf{Refining the Clustering Algorithm: } The existing clustering model can be optimized by fine-tuning its parameters, testing alternative clustering techniques, and introducing additional features to improve the prediction accuracy.
+%     \item \textbf{Platform Compatibility and Cross-Device Testing: } To ensure broad compatibility, the app needs to be thoroughly tested across different screen sizes and operating systems beyond Android devices and emulators. This will help deliver a consistent user experience across all platforms.
+%     \item \textbf{Integration with Moodle: } Having full integration with the university's Moodle system will be vital for providing students with up-to-date course materials and academic resources.
+%     \item \textbf{Expanding Additional Features} After deploying the app, using user feedback and needs, future versions of USTH Connect could introduce additional features to further enhance its value.
+% \end{itemize}
+% By addressing these key areas, USTH Connect can evolve to meet the growing needs of students, providing even greater benefits to both users and the university community. The continuous development of the app will ensures the valuable and vital tools for students.
+% Through future improvements, USTH Connect has the potential to become a necessary platform that supports both academic and social activities, as well as encourage a more connected and engaged academic environment.
+
 \pagebreak
-% \subsection{References}
 \renewcommand{\bibname}{REFERENCES} 
 \begingroup
 \bibliographystyle{IEEEtran} 
