@@ -16,6 +16,7 @@
 \usepackage{titlesec}
 \usepackage{natbib}
 \usepackage{caption}
+\usepackage{appendix}
 \usepackage[margin=0cm]{geometry}
 
 \geometry{a4paper, portrait, margin=30mm, bmargin=30mm, tmargin=30mm}
@@ -133,7 +134,7 @@ Not only does it support their studies, it also encourages more connections betw
 With StudyBuddy, students can find compatible study partners, chat, and even make audio calls through secure VoIP functionality powered by Linphone.
 To support the StudyBuddy features, we apply the K-modes model to help students find compatible people in the university.
 USTH Connect uses a secure PostgreSQL database to manage data centrally, ensuring both protection and efficiency.
-In addition, communication between the backend and mobile devices is secured through Tailscale VPN, providing strong protection for student privacy and seamless access to the platform's feature.
+
 This report explores the design and development of USTH Connect, detailing the project's workflow, main features, and the challenges faced during its implementation. 
 It also highlights the creative solutions used to address these challenges, demonstrating how USTH Connect enhances the university experience for students and administrators.
 
@@ -184,6 +185,7 @@ The report will be structured as follows:
 
 \pagebreak
 
+
 \section{Requirement Analysis}
 Ensuring and following the initial targets set for the project, we must be carefully analyzed the system
 architecture and developed a detailed work deployment plan. Below is a detailed description of
@@ -214,7 +216,7 @@ The non-functional requirements outline the system's essential performance, reli
     To perform test on the increase of users, we plan to use Apache JMeter or Locust to simulate growth usage, scaling up to around 130\% of the current user load. 
     These tests will focus on some important functionalities like schedule retrieval and display for each major, resources view, and StudyBuddy matching, in order to verify that performance of the application is stable and working well with a 30\% increase in user numbers.
 
-    \item \textbf{Security:} User data must be protected with basic encryption protocols, secure database practices (PostgreSQL), and VPN communication (Tailscale) for backend interactions. 
+    \item \textbf{Security:} User data must be protected with basic encryption protocols, secure database practices (PostgreSQL). 
     To test the security of the system, we plan to use OWASP ZAP to perform penetration testing and security audits. 
     By taking advantages of the tools, we will simulate attacks, such as SQL injection and data interception, will be held to analyze and identify upcoming potential vulnerabilities to the system.
     These tests will focus on the robust security of sensitive information and how the system will act when facing against unauthorized access attempts.
@@ -261,7 +263,7 @@ features.
     % Figure
     \begin{figure}[H]
         \centering
-        \includegraphics[width=0.9\textwidth]{image/USTHConnect_usecase.pdf} 
+       \includegraphics[width=0.8\textwidth]{image/USTHConnect_usecase_diagram.pdf} 
         \caption{Use case diagram}
         \label{fig:usthconnect_use_case}
     \end{figure}
@@ -278,8 +280,10 @@ features.
 
 \subsection{Use Case and Scenario Description}
     This section provides a detailed description of the various use cases and scenarios within the USTH Connect application. 
-    Each use case outlines the interactions between students and the system, describing how the system responds to specific student actions.
-\subsubsection{Use case: Authenticate}
+    Each use case outlines the interactions between students and the system, describing how the system responds to specific student actions. \\
+    
+\textbf{Use case: Authenticate} \\
+
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.7\textwidth]{image/AuthenticationUseCase.pdf} 
@@ -318,10 +322,9 @@ features.
         \caption{Actor Actions and System Actions for Authenticate}
         \label{tab:authenticate_table}
     \end{table}
-    
-    
 
-\subsubsection{Use case: Student Schedule}
+\textbf{Use case: Student Schedule} \\
+
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.7\textwidth]{image/StudentScheduleUseCase.pdf} 
@@ -371,7 +374,10 @@ features.
         \label{tab:schedule_table}
     \end{table}
 
-\subsubsection{Use case: University Campus}
+\pagebreak
+
+\textbf{Use case: University Campus} \\
+
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.7\textwidth]{image/CampusUseCase.pdf} 
@@ -412,7 +418,8 @@ features.
         \label{tab:campus_table}
     \end{table}
 
-\subsubsection{Use case: University Resource}
+\textbf{Use case: University Resource} \\
+
     \textbf{Description:} Students can access lectures, slides, exercises and homework from all bachelor’s programs, which the system displays. \\
 
     \noindent \textbf{Pre-conditions:} 
@@ -440,7 +447,10 @@ features.
         \label{tab:resource_table}
     \end{table}
 
-\subsubsection{Use case: Student StudyBuddy}
+\pagebreak
+
+\textbf{Use case: Student StudyBuddy} \\
+
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.7\textwidth]{image/StudyBuddyUseCase.pdf} 
@@ -494,7 +504,10 @@ features.
         \label{tab:studyBuddy_table}
     \end{table}
 
-\subsubsection{Use case: Real Time Notification}
+\pagebreak
+
+\textbf{Use case: Real Time Notification} \\
+
     \begin{figure}[H]
         \centering
         \includegraphics[width=1\textwidth]{image/Real-timeNotificationUseCase.pdf} 
@@ -543,7 +556,22 @@ features.
 \section{Methodologies}
 This section offers an overview of the methodologies used throughout the system development
 after examining the objectives of the USTH Connect. It ensures that
-essential actions are executed in a systematic and well-planned manner
+essential actions are executed in a systematic and well-planned manner. \\
+
+\subsection{Use Case Implementation}
+This section provides an overview of the implementation of use cases in the system, ensuring that
+all critical steps are carried out and described in detail.
+\subsubsection{Sync Calendar Sequence Diagram}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\textwidth]{image/SyncCalendar.pdf} 
+        \caption{Synchronize Calendar sequence diagram}
+        \label{fig:sync_calendar_sequence}
+    \end{figure}
+\include{usecase_implementation}
+\include{analysis_call_message}
+\include{communication_handling}
 
 \subsection{System Architecture}
 This section provides an overview of the technologies and components used in the system.
@@ -580,6 +608,8 @@ The frontend ensures that the students have a smooth and comfortable experience 
 
 \pagebreak
 
+\pagebreak
+
 \subsubsection{Machine Learning - K-modes Clustering}
 The StudyBuddy feature of the system using a Python-based machine learning model that uses the K-modes clusteting algorithm to match students based on their personal interests and study preferences.
 When students enter details about their personality traits, hobbies, learning style and academic goals, this data is sent to the backend, which processes it using the K-modes algorithm.
@@ -602,18 +632,13 @@ Linphone provides a reliable and efficient platform for voice communication, con
 \subsubsection{How does it work together ?}
 This system works by seamlessly integrating various components. 
 The Spring Boot backend serves as the brain of the operation, managing user accounts, data storage, and communication with external services like Google Calendar, Mapbox, Moodle, and Linphone VoIP library.
-The mobile app, built with Java, communicates with the backend to access real-time information.
-Tailscale's VPN keeps the communication secure by encrypting all data, ensuring user privacy. To connect students with similar interests, the system employs a smart matching algorithm (using Python). 
+The mobile app, built with Java, communicates with the backend to access real-time information. To connect students with similar interests, the system employs a smart matching algorithm (using Python). 
 Once matched, students can easily make voice calls within the app thanks to Linphone's built-in calling feature.
 Each part of this system depends on the others. 
 The app relies on the backend for accurate information, while the backend utilizes external services and the database to operate smoothly. 
 The backend also processes the matching results and ensures secure data delivery to the app.
 In summary, this integrated system creates a comprehensive platform that enhances the university experience for students by supporting their academic and encouraging more communication between them.
 
-
-\include{usecase_implementation}
-\include{analysis_call_message}
-\include{communication_handling}
     
 \subsection{Database Design}
 This section provides a detailed description of the database design for the USTH Connect application.
@@ -640,9 +665,9 @@ The database for USTH Connect is designed to manage a wide range of information,
 \restoregeometry
 
 \subsubsection{Table and Relationships}
-This section provides a detailed description of the tables within the USTH Connect database and their relationship.
+This section provides a detailed description of the tables within the USTH Connect database and their relationship. \\
 
-\subsubsubsection{Table: Activity}
+\textbf{Table: Activity} \\
 
 \textbf{Attributes and Data Types}
 \begin{table}[H]
@@ -680,7 +705,8 @@ This section provides a detailed description of the tables within the USTH Conne
 
 \pagebreak
 
-\subsubsubsection{Table: Course}
+\textbf{Table: Course} \\
+
 \textbf{Attributes and Data Types}
 \begin{table}[H]
     \centering
@@ -713,7 +739,8 @@ This section provides a detailed description of the tables within the USTH Conne
 
 \pagebreak
 
-\subsubsubsection{Table: Events}
+\textbf{Table: Events} \\
+
 \textbf{Attributes and Data Types}
 \begin{table}[H]
     \centering
@@ -751,7 +778,8 @@ This section provides a detailed description of the tables within the USTH Conne
 \end{itemize}
 
 \pagebreak
-\subsubsubsection{Table: Maps}
+\textbf{Table: Maps} \\
+
 \textbf{Attributes and Data Types}
 \begin{table}[H]
     \centering
@@ -784,7 +812,8 @@ This section provides a detailed description of the tables within the USTH Conne
 
 \pagebreak
 
-\subsubsubsection{Table: Message}
+\textbf{Table: Message} \\
+
 \textbf{Attributes and Data Types}
 \begin{table}[H]
     \centering
@@ -824,6 +853,8 @@ This section provides a detailed description of the tables within the USTH Conne
     \item \texttt{idx\_sender\_id}: Index on \texttt{sender\_id} for optimized query performance.
 \end{itemize}
 
+\pagebreak
+
 \noindent
 \textbf{Relationships} 
 \begin{itemize}
@@ -832,7 +863,8 @@ This section provides a detailed description of the tables within the USTH Conne
 \end{itemize}
 
 
-\subsubsubsection{Table: Notifications}
+\textbf{Table: Notifications} \\
+
 \textbf{Attributes and Data Types}
 \begin{table}[H]
     \centering
@@ -852,12 +884,13 @@ This section provides a detailed description of the tables within the USTH Conne
     \caption{Attributes and data types for the \texttt{Notifications} table}
 \end{table}
 
+\pagebreak
+
 \noindent
 \textbf{Constraints}
 \begin{itemize}
     \item \textbf{Primary Key}: \texttt{notification\_id}.
-    
-    \pagebreak
+
     \item \textbf{Foreign Key}: 
     \begin{itemize}
         \item \texttt{student\_id} references \texttt{id} in the \texttt{Student} table, with \texttt{ON DELETE NO ACTION}.
@@ -874,7 +907,10 @@ This section provides a detailed description of the tables within the USTH Conne
     \item \texttt{organizer\_id} references the \texttt{Organizers} table, linking notifications to the organizer of the event.
 \end{itemize}
 
-\subsubsubsection{Table: Organizers}
+\pagebreak
+
+\textbf{Table: Organizers} \\
+
 \textbf{Attributes and Data Types}
 \begin{table}[H]
     \centering
@@ -905,7 +941,8 @@ This section provides a detailed description of the tables within the USTH Conne
 
 \pagebreak
 
-\subsubsubsection{Table: Resources}
+\textbf{Table: Resources} \\
+
 \textbf{Attributes and Data Types}
 \begin{table}[H]
     \centering
@@ -944,7 +981,8 @@ This section provides a detailed description of the tables within the USTH Conne
 
 \pagebreak
 
-\subsubsubsection{Table: Student}
+\textbf{Table: Student} \\
+
 \textbf{Attributes and Data Types}
 \begin{table}[H]
     \centering
@@ -983,7 +1021,8 @@ This section provides a detailed description of the tables within the USTH Conne
     \item Each student can be enrolled in one or more courses, as represented in the \texttt{Student Course} table. This is a many-to-many relationship between the \texttt{Student} table and the \texttt{Course} table.
 \end{itemize}
 
-\subsubsubsection{Table: Study Buddy}
+\textbf{Table: Study Buddy} \\
+
 \textbf{Attributes and Data Types}
 \begin{table}[H] 
     \centering 
@@ -1019,7 +1058,8 @@ This section provides a detailed description of the tables within the USTH Conne
     \item Each \texttt{Study Buddy} is associated with a student through the \texttt{student\_id}. 
 \end{itemize}
 
-\subsubsubsection{Table: Study Buddy Connections}
+\textbf{Table: Study Buddy Connections} \\
+
 \textbf{Attributes and Data Types}
 \begin{table}[H] 
     \centering 
@@ -1050,7 +1090,10 @@ This section provides a detailed description of the tables within the USTH Conne
     \item Each \texttt{Study Buddy Connection} is associated with two \texttt{Study Buddy} entities (study\_buddy\_id and opponent\_id). 
 \end{itemize}
 
-\subsubsubsection{Table: Study Buddy Favorite Subjects}
+\pagebreak
+
+\textbf{Table: Study Buddy Favorite Subjects} \\
+
 \textbf{Attributes and Data Types}
 \begin{table}[H] 
     \centering 
@@ -1080,7 +1123,8 @@ This section provides a detailed description of the tables within the USTH Conne
 \end{itemize}
 
 
-\subsubsubsection{Table: Study Buddy Interests}
+\textbf{Table: Study Buddy Interests} \\
+
 \textbf{Attributes and Data Types}
 \begin{table}[H] 
     \centering 
@@ -1109,7 +1153,8 @@ This section provides a detailed description of the tables within the USTH Conne
     \item Each \texttt{Study Buddy Interest} is associated with a specific \texttt{Study Buddy}. 
 \end{itemize}
 
-\subsubsubsection{Table: Study Buddy Preferred Places}
+\textbf{Table: Study Buddy Preferred Places} \\
+
 \textbf{Attributes and Data Types}
 \begin{table}[H] 
     \centering 
@@ -1138,7 +1183,8 @@ This section provides a detailed description of the tables within the USTH Conne
     \item Each \texttt{Study Buddy Preferred Place} is associated with a specific \texttt{Study Buddy}.
 \end{itemize}
 
-\subsubsubsection{Table: Study Buddy Preferred Times}
+\textbf{Table: Study Buddy Preferred Times} \\
+
 \textbf{Attributes and Data Types}
 \begin{table}[H] 
     \centering 
@@ -1165,9 +1211,10 @@ This section provides a detailed description of the tables within the USTH Conne
 \textbf{Relationships} 
 \begin{itemize} 
     \item Each \texttt{Study Buddy Preferred Time} is associated with a specific \texttt{Study Buddy}. 
-\end{itemize}
+\end{itemize} 
 
-\subsubsubsection{Table: Study Connection}
+\textbf{Table: Study Connection} \\
+
 \textbf{Attributes and Data Types}
 \begin{table}[H] 
     \centering 
@@ -1186,7 +1233,6 @@ This section provides a detailed description of the tables within the USTH Conne
     \caption{Attributes and data types for the \texttt{study\_connection} table} 
 \end{table}
 
-\pagebreak
 \noindent 
 \textbf{Constraints}
 \begin{itemize} 
@@ -1344,8 +1390,7 @@ Firstly, the information of new student is encoded by one-hot encoding and fed i
 \section{System Design and Implementation}  
 This section describes the detailed process of setting up the system, covering hardware and software configurations, as well as initial testing to ensure all components work seamlessly.
 \subsection{Hardware and Software Setup}  
-The design and implementation of the system started by setting up the hardware and software environment. Regarding the hardware setup, we have development machines for hosting backend services and the PostgreSQL database, as well as user devices which are mostly Android smartphones or virtual Android devices for accessing features like Schedule view, Campus navigation, and Moodle resources. 
-Besides, we needed a networking equipment which was Tailscale VPN in our system to ensure secure and reliable connection between student devices and the backend server. \\
+The design and implementation of the system started by setting up the hardware and software environment. Regarding the hardware setup, we have development machines for hosting backend services and the PostgreSQL database, as well as user devices which are mostly Android smartphones or virtual Android devices for accessing features like Schedule view, Campus navigation, and Moodle resources. \\
 
 On the software side, the operating system used for hosting backend services and the database is Window, while Android acted as the primary platform for the mobile application.
 For the relational database management system, we choosed PostgreSQL to handle student data, calendar events, location details, and data for StudyBuddy feature.
@@ -1378,14 +1423,90 @@ This testing phase ensured a reliable and fully functional system, ready for dep
 
 \pagebreak
 
+\subsection{Application Software}  
+The application software comprises several core modules, each designed to handle specific functionalities:  
+
+\begin{itemize}  
+    \item \textbf{Authentication and Authorization Module:}  
+    \begin{itemize}  
+        \item Implements JWT-based authentication.  
+        \item Manages RBAC for ADMIN and USER roles.  
+    \end{itemize}  
+
+    \item \textbf{Google Calendar Integration Module:}  
+    \begin{itemize}  
+        \item Fetches event data from Google Calendar.  
+        \item Detects event updates and sends notifications to the student via the mobile application.  
+    \end{itemize}  
+
+    \item \textbf{MapBox Integration Module:}  
+    \begin{itemize}  
+        \item Stores campus location coordinates (latitude and longitude).  
+        \item Dynamically renders campus maps within the app.  
+    \end{itemize}  
+
+    \item \textbf{Moodle Resource Module:}  
+    \begin{itemize}  
+        \item Communicates with Moodle APIs to retrieve course resources, such as slides, source code, and PDFs.  
+    \end{itemize}  
+
+    \item \textbf{StudyBuddy Matching Module:}  
+    \begin{itemize}  
+        \item Collects student profile data (e.g., interests, personality).  
+        \item Uses a machine learning recommendation system to suggest matches based on shared interests.  
+        \item Features include:  
+        \begin{itemize}  
+            \item Chat functionality for text-based communication.  
+            \item Audio calling capabilities powered by the Linphone library, which provides SIP-based VoIP functionality.  
+        \end{itemize}  
+    \end{itemize}  
+
+    \item \textbf{Notification System:}  
+    \begin{itemize}  
+        \item Delivers real-time notifications for calendar updates and incoming calls.  
+    \end{itemize}  
+\end{itemize}
+
+\pagebreak
+
+\subsection{Initial Testing}  
+Extensive testing ensured all components functioned correctly and integrated seamlessly:  
+
+\begin{itemize}  
+    \item \textbf{Hardware Testing:}  
+    \begin{itemize}  
+        \item Verified the setup and operation of development machines, servers, and networking equipment using Tailscale VPN for secure communication.  
+    \end{itemize}  
+
+    \item \textbf{Software Testing:}  
+    \begin{itemize}  
+        \item Tested the configuration and performance of the operating system, PostgreSQL database, and Spring Boot services.  
+    \end{itemize}  
+
+    \item \textbf{Integration Testing:}  
+    \begin{itemize}  
+        \item Validated the interaction between backend APIs and mobile app features, ensuring functionality for:  
+        \begin{itemize}  
+            \item Google Calendar synchronization.  
+            \item MapBox map rendering.  
+            \item Moodle resource retrieval.  
+            \item StudyBuddy matching and chat capabilities.  
+            \item Linphone-based audio calling.  
+        \end{itemize}  
+    \end{itemize}  
+\end{itemize}
+
+\pagebreak
+
 \section{Results and Discussion}
 This section focus on the results and discuss the outcome of the USTH Connect project, focusing on key aspects such as model performance, application development progress, and challenges we encounter during the development.
 \subsection{Results}
 
 \subsubsection{Mobile App Results}
-In this part we will show the result of the application developement, mainly about what we have developed so far and some specific results of the application.
+In this part we will show the result of the application developement, mainly about what we have developed so far and some specific results of the application. \\
 
-\subsubsubsection{Application Features Progress}
+\textbf{Application Features Progress} \\
+
 The USTH Connect mobile application has made significant progress in its development, results in successful implementation of several features.
 Apart from the configuration of login and registration system using JWT authentication and RBAC, we manage to develop a functions for synchronizing calendar events with the school's Google Calendar.
 In our application, we have displayed the schedule according to the student's major and study year to save student effort finding the correct schedule. 
@@ -1395,17 +1516,18 @@ Regarding lecture resources, we have successfully linked the application to Mood
 For the main feature StudyBuddy, we have developed a recommendation system using machine learning model. By retrieving student's data, we can successfully return and display a list of compatible partners for students to enrich their social life.
 The app provides a chat platform and audio call using Linphone VoIP library for real-time communication between matched students. Especially, the audio call has been improved with real-time connection and notifications. 
 However, the chat platform yet does not have a notification for incoming messages and more appealing UI for better application experience.
-Also, we have not figure out an efficient way to store the image to support Study Buddy feature in displaying images for each users. 
+Also, we have not figure out an efficient way to store the image to support Study Buddy feature in displaying images for each users. \\
 
-\subsubsubsection{Mobile-Specific Results}
+\textbf{Mobile-Specific Results} \\
+
 We tested across a variety of devices (emulator and Android) and the performance was consistent, with the two main factors: App Launch Time and Network Usage. The average app launch time was 2 seconds on Android devices and 4 seconds on Emulator devices. The app also optimized data usage by caching schedule events, map location and course materials, which partly reduce a dependency on continuous internet access for those features. 
 By combining many features of other applications into one, USTH Connect offer students an efficient tool. This eliminates the need for multiple applications, saving students time and enhancing their overall experience.
 
 \subsubsection{Machine Learning Results}
 In this part we will show the result of the clustering algorithm, using the evaluation of
-metrics that we mentioned in the previous section.
+metrics that we mentioned in the previous section. \\
 
-\subsubsubsection{Model Performance}
+\textbf{Model Performance} \\
 
 \begin{table}[H]
 \centering
@@ -1422,7 +1544,11 @@ K-Modes & 0.1389 & 3.4489 \\ \hline
 
 Table \ref{Model_Performance} presents the values of the Silhouette and Davies-Bouldin score. The silhouette score indicates how close the data point is to its cluster compared to the others, while the Davies-Bouldin score shows how high the overall quality of the clustering model. With a Silhouette score of 0.1389 and a Davies-Bouldin score of 3.4489, the centroids of each cluster are relatively close to each other, and the boundaries between clusters may not be ideal.\\
 
-The same pre-processing method and K-Modes model is also applied to the Zoo dataset (with true label) and gives the result: 0.5362 of Silhouette Score and 1.21 of Davies-Bouldin Score. The Kuhn-Munkres\citep{zhu2011efficient} algorithm is used to match predicted clusters with the true types of animals to maximize accuracy. This performance is notably better than the results obtained in our dataset. The possible reason for this may be the higher dimensionality of the input data in our dataset, which can increase noise and complexity for clustering. 
+The same pre-processing method and K-Modes model is also applied to the Zoo dataset (with true label) and gives the result: 0.5362 of Silhouette Score and 1.21 of Davies-Bouldin Score. The Kuhn-Munkres\citep{zhu2011efficient} algorithm is used to match predicted clusters with the true types of animals to maximize accuracy. This performance is notably better than the results obtained in our dataset. The possible reason for this may be the higher dimensionality of the input data in our dataset, which can increase noise and complexity for clustering.\\ 
+
+\textbf{Similar System} \\
+
+The same pre-preocessing method and K-Modes model is applied to the Zoo dataset (with true label) and gives the result: 0.5362 of Silhouette Score and 1.21 of Davies-Bouldin Score. The Kuhn-Munkres\citep{zhu2011efficient} algorithm is used to match the predicted clusters with the true types of animals to maximize accuracy.
 
 \subsection{Discussion}
 \subsubsection{Intepretation of Results}
@@ -1437,7 +1563,7 @@ However, the lack of chat message notifications and a more optimized image stora
 
 \pagebreak
 
-\subsubsubsection{Comparison to Similar System}
+\subsubsection{Comparison to Similar System}
 Unlike traditional university assistance apps that mostly focus on course and student management or navigation, USTH Connect combines multiple features into a single application, implementing academic tools with a social networking developed by machine learning.
 In contrast to other platforms which may recommend compatible groups or clubs, USTH Connect's StudyBuddy feature offers a more personalized study partner recommendation system.
 In terms of user experience, many similar systems lack seamless communication methods, such as real-time audio calling with real-time notification, which is one of the features that USTH Connect offers.
@@ -1503,8 +1629,46 @@ Through future improvements, USTH Connect has the potential to become a necessar
 
 \pagebreak
 \renewcommand{\bibname}{REFERENCES} 
+\addcontentsline{toc}{section}{References}
 \begingroup
 \bibliographystyle{IEEEtran} 
 \bibliography{bibliography} 
 \endgroup
+
+\pagebreak
+
+\appendix
+\section*{Appendices}
+\addcontentsline{toc}{section}{Appendices} 
+
+\begin{figure}[H]
+        \centering
+        \includegraphics[width=1\textwidth]{image/StudyBuddySequenceDiagram-SB.pdf} 
+        \caption{Study Buddy recommend list sequence diagram}
+        \label{fig:studyBuddy_recommendlist_sequence}
+    \end{figure}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\textwidth, height=0.5\textheight]{image/StudyBuddySequenceDiagram-Message.pdf} 
+        \caption{Study Buddy chat message sequence diagram}
+        \label{fig:studyBuddy_chatmessage_sequence}
+    \end{figure}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\textwidth, height=0.5\textheight]{image/StudyBuddySequenceDiagram-Contact.pdf} 
+        \caption{Study Buddy audio call sequence diagram}
+        \label{fig:studyBuddy_audiocall_sequence}
+    \end{figure}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\textwidth]{image/StudyBuddySequenceDiagram-Profile.pdf} 
+        \caption{Study Buddy profile sequence diagram}
+        \label{fig:studyBuddy_profile_sequence}
+    \end{figure}
+
+
+
 \end{document}
