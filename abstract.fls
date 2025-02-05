@@ -1,0 +1,5 @@
+PWD D:\USTH\Project\usth-connect\Report\USTHConnect
+INPUT C:\Users\PCM\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
+INPUT abstract.tex
+OUTPUT abstract.log
+INPUT C:\Users\PCM\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
