@@ -5,7 +5,6 @@
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{setspace}
-\usepackage{geometry}
 \usepackage{enumitem}
 \usepackage{multirow}
 \usepackage{tabularx}
@@ -86,7 +85,9 @@
     \textbf{UAC} \> User Agent Client \\
     \textbf{UAS} \> User Agent Server \\
     \textbf{URI} \> Uniform Resource Identifier \\
-    \textbf{DBI} \> Davies-Bouldin Index
+    \textbf{DBI} \> Davies-Bouldin Index \\
+    \textbf{ORM} \> Object-Relational Mapping \\
+    \textbf{JPA} \> Java Persistence API
 \end{tabbing}
 
 \newpage
@@ -116,27 +117,32 @@
 \section{Introduction}
 
 \subsection{Context and Motivation}
-During the academic journey, university students around the world face several challenges. Particularly, first-year students often struggle with managing academic schedules, finding their way around campus, accessing study materials, and forming meaningful social connections with their peers.
-In some universities, current traditional systems are able to serve their purposes well, but these systems are fragmented and difficult to maintain.
-Moreover, they often do not provide solutions for students to manage their schedules, access academic resources, and encourage interaction between students within a single platform.
-There are few platforms that help students expand their social networks or find suitable peers to connect with. However, these platforms lack other features which significantly improve their academic life. \\
+University students face many challenges, especially in their first year. Managing academic schedules, finding campus locations, accessing study materials, and forming social connections can be overwhelming.
+While some universities provide tools to help, these systems are often fragmented and difficult to use. \\
 
-Around the world, there are existing apps whose purpose is to solve some of these challenges above. For example, platforms like Google Calendar and Moodle already help students manage schedules and access course materials, while apps like Google Maps support in navigation around campus section.
-However, these apps do not provide a comprehensive solution for improvement of university life. Each of these has their own limitation. Google Calendar manages academic schedules but does not help students find compatible study partners or navigate campus.
-Moodle allows students to access lecture resources but does not contribute to the encouragement of social connections or provide tools for campus navigation.
-Similarly, while Google Maps is responsible for navigating place and locating study areas, it does not include the academic support and social connection assistance. Furthermore, their limitation make those apps less user-friendly, especially for students who need a combination of all these functionalities in one platform. \\
+Around the world, many existing apps have already addressed specific student needs. 
+For example, Google Calendar helps with scheduling, Moodle provides lecture resources, Google Maps assists with navigation, and Google Classroom helps managing assignments and course updates.
+However, these tools work separately and don’t provide a single platform that connects academics, social life, and campus navigation.
+While Google Calendar does not help students connect with peers, Google Maps lacks academic support, and Moodle and Google Classroom do not offer campus navigation or social networking features.
+This seperation makes it harder for students to handle everything in one place. \\
 
-These drawbacks focus on how important a comprehensive solution which aims to meet all those specific needs is, especially the students at the University of Science and Technology of Hanoi.
-To overcome these challenges, we developed USTH Connect, an integrated University Life Assistant and Student Networking Application. \\
-
+To overcome these challenges, we developed USTH Connect, an integrated University Life Assistant and Student Networking Application. 
 USTH Connect is built with the goal of supporting students' university life by combining modern yet simple technologies into an Android application, providing students with effortless access to the schedules, study materials and study location addresses.
 Not only does it support their studies, it also encourages more connections between students, supporting them in their social life. That helps them to create more quality and meaningful relationships in the future.
 With StudyBuddy, students can find compatible study partners, chat, and even make audio calls through secure VoIP functionality powered by Linphone.
 To support the StudyBuddy features, we apply the K-modes model to help students find compatible people in the university.
-USTH Connect uses a secure PostgreSQL database to manage data centrally, ensuring both protection and efficiency.
+USTH Connect uses a secure PostgreSQL database to manage data centrally, ensuring both protection and efficiency.\\
 
-This report explores the design and development of USTH Connect, detailing the project's workflow, main features, and the challenges faced during its implementation. 
-It also highlights the creative solutions used to address these challenges, demonstrating how USTH Connect enhances the university experience for students and administrators.
+Below is an illustration showing how USTH Connect connects to the other products mentioned above: 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{image/Integration-USTH-Connect-External-Services.pdf} 
+    \caption{Integration of USTH Connect with External Services}
+    \label{fig:integration-external-services}
+\end{figure}
+
+This report explains the design and development of USTH Connect, highlights its features, and discusses the challenges we faced. 
+It also shows how USTH Connect enhances the university experience for students.
 
 \subsection{Project Objectives}
 The primary objective of this project is to design, develop and implement an integrated system that enhances university life and fosters student networking through advanced technological solutions.
@@ -188,8 +194,7 @@ The report will be structured as follows:
 
 \section{Requirement Analysis}
 Ensuring and following the initial targets set for the project, we must be carefully analyzed the system
-architecture and developed a detailed work deployment plan. Below is a detailed description of
-the methodologies and procedures we implemented.
+architecture and and implemented clear methodologies and procedures. Below is a detailed description of our approach.
 
 \subsection{System requirements}
 This section outlines the essential requirements for the development and successful operation of USTH Connect, classified into functional, non-functional, and desired functionalities.
@@ -580,7 +585,7 @@ It focuses on the roles and interactions of various systems and services that wo
 \subsubsection{System Architecture Diagram}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{image/USTH-Connect-System-Architecture-v1.pdf} 
+    \includegraphics[width=\textwidth]{image/USTH-Connect-System-Architecture-v2.pdf} 
     \caption{USTH Connect System Architecture Diagram}
 \end{figure}
 
@@ -629,17 +634,22 @@ After the StudyBuddy algorithm matches two studens, they can contact and communi
 Therefore, that students can interact with their matches without relying on external messaging or calling services.
 Linphone provides a reliable and efficient platform for voice communication, contributing to the goal of encouraging more interaction and collaboration between students in the university.
 
-\subsubsection{How does it work together ?}
-This system works by seamlessly integrating various components. 
+\subsubsection{How Does The System Work?}
+This system combines multiple components to work well together.
 The Spring Boot backend serves as the brain of the operation, managing user accounts, data storage, and communication with external services like Google Calendar, Mapbox, Moodle, and Linphone VoIP library.
 The mobile app, built with Java, communicates with the backend to access real-time information. To connect students with similar interests, the system employs a smart matching algorithm (using Python). 
-Once matched, students can easily make voice calls within the app thanks to Linphone's built-in calling feature.
-Each part of this system depends on the others. 
-The app relies on the backend for accurate information, while the backend utilizes external services and the database to operate smoothly. 
-The backend also processes the matching results and ensures secure data delivery to the app.
-In summary, this integrated system creates a comprehensive platform that enhances the university experience for students by supporting their academic and encouraging more communication between them.
+Once matched, students can easily make voice calls within the app thanks to Linphone's built-in calling feature. \\
 
-    
+The mobile app uses REST APIs to send requests to the backend and receive responses for features like schedules, campus navigation, learning material, and StudyBuddy matches. 
+The backend connects to the PostgreSQL databases through JPA, which simplifies database interaction by using ORM.
+This allows the backend to retrieve, update, and store data, such as user profiles, schedules, and course materials, through entities and repositories.
+When necessary, the backend also interacts with external services like Google Calendar, MapBox, Moodle, and Linphone VoIP through their APIs to fetch or synchronize required information.
+This structured communication ensures all components can work together, provide accurate and real-time data to the users.\\
+
+The mobile app depends on the backend for up-to-date information, while the backend uses the database and external services to ensure smooth operations.
+In summary, this system provides students with a comprehensive platform that support their academic needs and encourages better communication and collaboration.
+
+\pagebreak
 \subsection{Database Design}
 This section provides a detailed description of the database design for the USTH Connect application.
 It highlights the key requirements, objectives, and the structure that support the system's functionality.
@@ -909,38 +919,6 @@ This section provides a detailed description of the tables within the USTH Conne
 
 \pagebreak
 
-\textbf{Table: Organizers} \\
-
-\textbf{Attributes and Data Types}
-\begin{table}[H]
-    \centering
-    \renewcommand{\arraystretch}{1.5}
-    \begin{tabular}{|l|l|p{4.5cm}|l|}
-    \hline
-    \rowcolor[HTML]{96FFFB} 
-    \textbf{Column Name} & \textbf{Data type}        & \textbf{Description}                                   & \textbf{Constraints}             \\ \hline
-    id                   & serial                  & Unique identifier for the organizer                    & Primary Key, Not Null            \\ \hline
-    email                & varchar(255)            & Email of the organizer                                 & Not Null, Unique                 \\ \hline
-    name                 & varchar(255)            & Name of the organizer                                  &                                 \\ \hline
-    \end{tabular}
-    \caption{Attributes and data types for the \texttt{Organizers} table}
-\end{table}
-
-\noindent
-\textbf{Constraints}
-\begin{itemize}
-    \item \textbf{Primary Key}: \texttt{id}.
-    \item \textbf{Unique Key}: \texttt{email}.
-\end{itemize}
-
-\noindent
-\textbf{Relationships}
-\begin{itemize}
-    \item \texttt{Organizers} table contains information about the organizers who manage events or resources.
-\end{itemize}
-
-\pagebreak
-
 \textbf{Table: Resources} \\
 
 \textbf{Attributes and Data Types}
@@ -1056,196 +1034,6 @@ This section provides a detailed description of the tables within the USTH Conne
 \textbf{Relationships} 
 \begin{itemize} 
     \item Each \texttt{Study Buddy} is associated with a student through the \texttt{student\_id}. 
-\end{itemize}
-
-\textbf{Table: Study Buddy Connections} \\
-
-\textbf{Attributes and Data Types}
-\begin{table}[H] 
-    \centering 
-    \renewcommand{\arraystretch}{1.5} 
-    \begin{tabular}{|l|l|p{4.5cm}|l|} 
-    \hline 
-    \rowcolor[HTML]{96FFFB} 
-    \textbf{Column Name} & \textbf{Data type} & \textbf{Description} & \textbf{Constraints} \\ \hline 
-    study\_buddy\_id & varchar(255) & ID of the first study buddy & Primary Key, Not Null \\ \hline 
-    opponent\_id & varchar(255) & ID of the second study buddy (opponent) & Primary Key, Not Null \\ \hline 
-    \end{tabular} 
-    \caption{Attributes and data types for the \texttt{study\_buddy\_connections} table} 
-\end{table}
-
-\noindent 
-\textbf{Constraints} 
-\begin{itemize} 
-    \item \textbf{Primary Key}: \texttt{study\_buddy\_id}, \texttt{opponent\_id}. 
-    \item \textbf{Foreign Key}: \begin{itemize} 
-        \item \texttt{study\_buddy\_id} references \texttt{student\_id} in the \texttt{study\_buddy} table, with \texttt{ON DELETE NO ACTION}. 
-        \item \texttt{opponent\_id} references \texttt{student\_id} in the \texttt{study\_buddy} table, with \texttt{ON DELETE NO ACTION}. 
-    \end{itemize} 
-\end{itemize}
-
-\noindent 
-\textbf{Relationships} 
-\begin{itemize} 
-    \item Each \texttt{Study Buddy Connection} is associated with two \texttt{Study Buddy} entities (study\_buddy\_id and opponent\_id). 
-\end{itemize}
-
-\pagebreak
-
-\textbf{Table: Study Buddy Favorite Subjects} \\
-
-\textbf{Attributes and Data Types}
-\begin{table}[H] 
-    \centering 
-    \renewcommand{\arraystretch}{1.5} 
-    \begin{tabular}{|l|l|p{4.5cm}|l|} 
-    \hline 
-    \rowcolor[HTML]{96FFFB} 
-    \textbf{Column Name} & \textbf{Data type} & \textbf{Description} & \textbf{Constraints} \\ \hline 
-    study\_buddy\_id & varchar(255) & ID of the study buddy & Primary Key, Not Null \\ \hline 
-    subject & varchar(255) & Name of the favorite subject & Primary Key, Not Null \\ \hline 
-    \end{tabular} 
-    \caption{Attributes and data types for the \texttt{study\_buddy\_favorite\_subjects} table} 
-\end{table}
-
-\noindent 
-\textbf{Constraints} 
-\begin{itemize} 
-    \item \textbf{Primary Key}: \texttt{study\_buddy\_id}, \texttt{subject}. 
-    \item \textbf{Foreign Key}: \begin{itemize} \item \texttt{study\_buddy\_id} references \texttt{student\_id} in the \texttt{study\_buddy} table, with \texttt{ON DELETE NO ACTION}. 
-    \end{itemize} 
-\end{itemize}
-
-\noindent 
-\textbf{Relationships} 
-\begin{itemize} 
-    \item Each \texttt{Study Buddy Favorite Subject} is associated with a specific \texttt{Study Buddy}.
-\end{itemize}
-
-
-\textbf{Table: Study Buddy Interests} \\
-
-\textbf{Attributes and Data Types}
-\begin{table}[H] 
-    \centering 
-    \renewcommand{\arraystretch}{1.5} 
-    \begin{tabular}{|l|l|p{4.5cm}|l|} 
-    \hline 
-    \rowcolor[HTML]{96FFFB} 
-    \textbf{Column Name} & \textbf{Data type} & \textbf{Description} & \textbf{Constraints} \\ \hline 
-    study\_buddy\_id & varchar(255) & ID of the study buddy & Primary Key, Not Null \\ \hline 
-    interest & varchar(255) & Interest of the study buddy & Primary Key, Not Null \\ \hline 
-    \end{tabular} 
-    \caption{Attributes and data types for the \texttt{study\_buddy\_interests} table} 
-\end{table}
-
-\noindent 
-\textbf{Constraints} 
-\begin{itemize} 
-    \item \textbf{Primary Key}: \texttt{study\_buddy\_id}, \texttt{interest}. 
-    \item \textbf{Foreign Key}: \begin{itemize} \item \texttt{study\_buddy\_id} references \texttt{student\_id} in the \texttt{study\_buddy} table, with \texttt{ON DELETE NO ACTION}. 
-    \end{itemize} 
-\end{itemize}
-
-\noindent 
-\textbf{Relationships} 
-\begin{itemize} 
-    \item Each \texttt{Study Buddy Interest} is associated with a specific \texttt{Study Buddy}. 
-\end{itemize}
-
-\textbf{Table: Study Buddy Preferred Places} \\
-
-\textbf{Attributes and Data Types}
-\begin{table}[H] 
-    \centering 
-    \renewcommand{\arraystretch}{1.5} 
-    \begin{tabular}{|l|l|p{4.5cm}|l|} 
-    \hline 
-    \rowcolor[HTML]{96FFFB} 
-    \textbf{Column Name} & \textbf{Data type} & \textbf{Description} & \textbf{Constraints} \\ \hline 
-    study\_buddy\_id & varchar(255) & ID of the study buddy & Primary Key, Not Null \\ \hline 
-    place & varchar(255) & Name of the preferred place & Primary Key, Not Null \\ \hline 
-    \end{tabular} 
-    \caption{Attributes and data types for the \texttt{study\_buddy\_preferred\_places} table} 
-\end{table}
-
-\noindent 
-\textbf{Constraints} 
-\begin{itemize} 
-    \item \textbf{Primary Key}: \texttt{study\_buddy\_id}, \texttt{place}. 
-    \item \textbf{Foreign Key}: \begin{itemize} \item \texttt{study\_buddy\_id} references \texttt{student\_id} in the \texttt{study\_buddy} table, with \texttt{ON DELETE NO ACTION}. 
-    \end{itemize} 
-\end{itemize}
-
-\noindent 
-\textbf{Relationships} 
-\begin{itemize} 
-    \item Each \texttt{Study Buddy Preferred Place} is associated with a specific \texttt{Study Buddy}.
-\end{itemize}
-
-\textbf{Table: Study Buddy Preferred Times} \\
-
-\textbf{Attributes and Data Types}
-\begin{table}[H] 
-    \centering 
-    \renewcommand{\arraystretch}{1.5} 
-    \begin{tabular}{|l|l|p{4.5cm}|l|} 
-    \hline 
-    \rowcolor[HTML]{96FFFB} 
-    \textbf{Column Name} & \textbf{Data type} & \textbf{Description} & \textbf{Constraints} \\ \hline 
-    study\_buddy\_id & varchar(255) & ID of the study buddy & Primary Key, Not Null \\ \hline 
-    time & varchar(255) & Preferred time of the study buddy & Primary Key, Not Null \\ \hline 
-    \end{tabular} 
-    \caption{Attributes and data types for the \texttt{study\_buddy\_preferred\_times} table} 
-\end{table}
-
-\noindent 
-\textbf{Constraints} 
-\begin{itemize} 
-    \item \textbf{Primary Key}: \texttt{study\_buddy\_id}, \texttt{time}. 
-    \item \textbf{Foreign Key}: \begin{itemize} \item \texttt{study\_buddy\_id} references \texttt{student\_id} in the \texttt{study\_buddy} table, with \texttt{ON DELETE NO ACTION}. 
-    \end{itemize} 
-\end{itemize}
-
-\noindent 
-\textbf{Relationships} 
-\begin{itemize} 
-    \item Each \texttt{Study Buddy Preferred Time} is associated with a specific \texttt{Study Buddy}. 
-\end{itemize} 
-
-\textbf{Table: Study Connection} \\
-
-\textbf{Attributes and Data Types}
-\begin{table}[H] 
-    \centering 
-    \renewcommand{\arraystretch}{1.5} 
-    \begin{tabular}{|l|l|p{4.5cm}|l|} 
-    \hline 
-    \rowcolor[HTML]{96FFFB} 
-    \textbf{Column Name} & \textbf{Data type} & \textbf{Description} & \textbf{Constraints} \\ \hline 
-    id & bigint & Unique identifier for the connection & Primary Key, Not Null \\ \hline 
-    study\_buddy\_1\_id & varchar(255) & ID of the first study buddy & Foreign Key, Not Null \\ \hline 
-    study\_buddy\_2\_id & varchar(255) & ID of the second study buddy & Foreign Key, Not Null \\ \hline 
-    status & varchar(255) & Status of the connection & Not NullI \\ \hline 
-    created\_at & timestamp & Timestamp when the connection was created & Not Null \\ \hline 
-    updated\_at & timestamp & Timestamp when the connection was last updated & Not Null \\ \hline 
-    \end{tabular} 
-    \caption{Attributes and data types for the \texttt{study\_connection} table} 
-\end{table}
-
-\noindent 
-\textbf{Constraints}
-\begin{itemize} 
-    \item \textbf{Primary Key}: \texttt{id}. 
-    \item \textbf{Foreign Key}: \begin{itemize} \item \texttt{study\_buddy\_1\_id} references \texttt{student\_id} in the \texttt{study\_buddy} table, with \texttt{ON DELETE NO ACTION}. 
-    \item \texttt{study\_buddy\_2\_id} references \texttt{student\_id} in the \texttt{study\_buddy} table, with \texttt{ON DELETE NO ACTION}. 
-    \end{itemize} 
-\end{itemize}
-
-\noindent 
-\textbf{Relationships} 
-\begin{itemize} 
-    \item Each \texttt{Study Connection} is associated with two \texttt{Study Buddy} entities (study\_buddy\_1\_id and study\_buddy\_2\_id). 
 \end{itemize}
 
 \pagebreak
@@ -1670,5 +1458,227 @@ Through future improvements, USTH Connect has the potential to become a necessar
     \end{figure}
 
 
+
+    \textbf{Table: Organizers} \\
+
+    \textbf{Attributes and Data Types}
+    \begin{table}[H]
+        \centering
+        \renewcommand{\arraystretch}{1.5}
+        \begin{tabular}{|l|l|p{4.5cm}|l|}
+        \hline
+        \rowcolor[HTML]{96FFFB} 
+        \textbf{Column Name} & \textbf{Data type}        & \textbf{Description}                                   & \textbf{Constraints}             \\ \hline
+        id                   & serial                  & Unique identifier for the organizer                    & Primary Key, Not Null            \\ \hline
+        email                & varchar(255)            & Email of the organizer                                 & Not Null, Unique                 \\ \hline
+        name                 & varchar(255)            & Name of the organizer                                  &                                 \\ \hline
+        \end{tabular}
+        \caption{Attributes and data types for the \texttt{Organizers} table}
+    \end{table}
+
+    \noindent
+    \textbf{Constraints}
+    \begin{itemize}
+        \item \textbf{Primary Key}: \texttt{id}.
+        \item \textbf{Unique Key}: \texttt{email}.
+    \end{itemize}
+
+    \noindent
+    \textbf{Relationships}
+    \begin{itemize}
+        \item \texttt{Organizers} table contains information about the organizers who manage events or resources.
+    \end{itemize}
+
+    \pagebreak
+        
+    \textbf{Table: Study Buddy Connections} \\
+
+    \textbf{Attributes and Data Types}
+    \begin{table}[H] 
+        \centering 
+        \renewcommand{\arraystretch}{1.5} 
+        \begin{tabular}{|l|l|p{4.5cm}|l|} 
+        \hline 
+        \rowcolor[HTML]{96FFFB} 
+        \textbf{Column Name} & \textbf{Data type} & \textbf{Description} & \textbf{Constraints} \\ \hline 
+        study\_buddy\_id & varchar(255) & ID of the first study buddy & Primary Key, Not Null \\ \hline 
+        opponent\_id & varchar(255) & ID of the second study buddy (opponent) & Primary Key, Not Null \\ \hline 
+        \end{tabular} 
+        \caption{Attributes and data types for the \texttt{study\_buddy\_connections} table} 
+    \end{table}
+
+    \noindent 
+    \textbf{Constraints} 
+    \begin{itemize} 
+        \item \textbf{Primary Key}: \texttt{study\_buddy\_id}, \texttt{opponent\_id}. 
+        \item \textbf{Foreign Key}: \begin{itemize} 
+            \item \texttt{study\_buddy\_id} references \texttt{student\_id} in the \texttt{study\_buddy} table, with \texttt{ON DELETE NO ACTION}. 
+            \item \texttt{opponent\_id} references \texttt{student\_id} in the \texttt{study\_buddy} table, with \texttt{ON DELETE NO ACTION}. 
+        \end{itemize} 
+    \end{itemize}
+
+    \noindent 
+    \textbf{Relationships} 
+    \begin{itemize} 
+        \item Each \texttt{Study Buddy Connection} is associated with two \texttt{Study Buddy} entities (study\_buddy\_id and opponent\_id). 
+    \end{itemize}
+
+    \pagebreak
+
+    \textbf{Table: Study Buddy Favorite Subjects} \\
+
+    \textbf{Attributes and Data Types}
+    \begin{table}[H] 
+        \centering 
+        \renewcommand{\arraystretch}{1.5} 
+        \begin{tabular}{|l|l|p{4.5cm}|l|} 
+        \hline 
+        \rowcolor[HTML]{96FFFB} 
+        \textbf{Column Name} & \textbf{Data type} & \textbf{Description} & \textbf{Constraints} \\ \hline 
+        study\_buddy\_id & varchar(255) & ID of the study buddy & Primary Key, Not Null \\ \hline 
+        subject & varchar(255) & Name of the favorite subject & Primary Key, Not Null \\ \hline 
+        \end{tabular} 
+        \caption{Attributes and data types for the \texttt{study\_buddy\_favorite\_subjects} table} 
+    \end{table}
+
+    \noindent 
+    \textbf{Constraints} 
+    \begin{itemize} 
+        \item \textbf{Primary Key}: \texttt{study\_buddy\_id}, \texttt{subject}. 
+        \item \textbf{Foreign Key}: \begin{itemize} \item \texttt{study\_buddy\_id} references \texttt{student\_id} in the \texttt{study\_buddy} table, with \texttt{ON DELETE NO ACTION}. 
+        \end{itemize} 
+    \end{itemize}
+
+    \noindent 
+    \textbf{Relationships} 
+    \begin{itemize} 
+        \item Each \texttt{Study Buddy Favorite Subject} is associated with a specific \texttt{Study Buddy}.
+    \end{itemize}
+
+
+    \textbf{Table: Study Buddy Interests} \\
+
+    \textbf{Attributes and Data Types}
+    \begin{table}[H] 
+        \centering 
+        \renewcommand{\arraystretch}{1.5} 
+        \begin{tabular}{|l|l|p{4.5cm}|l|} 
+        \hline 
+        \rowcolor[HTML]{96FFFB} 
+        \textbf{Column Name} & \textbf{Data type} & \textbf{Description} & \textbf{Constraints} \\ \hline 
+        study\_buddy\_id & varchar(255) & ID of the study buddy & Primary Key, Not Null \\ \hline 
+        interest & varchar(255) & Interest of the study buddy & Primary Key, Not Null \\ \hline 
+        \end{tabular} 
+        \caption{Attributes and data types for the \texttt{study\_buddy\_interests} table} 
+    \end{table}
+
+    \noindent 
+    \textbf{Constraints} 
+    \begin{itemize} 
+        \item \textbf{Primary Key}: \texttt{study\_buddy\_id}, \texttt{interest}. 
+        \item \textbf{Foreign Key}: \begin{itemize} \item \texttt{study\_buddy\_id} references \texttt{student\_id} in the \texttt{study\_buddy} table, with \texttt{ON DELETE NO ACTION}. 
+        \end{itemize} 
+    \end{itemize}
+
+    \noindent 
+    \textbf{Relationships} 
+    \begin{itemize} 
+        \item Each \texttt{Study Buddy Interest} is associated with a specific \texttt{Study Buddy}. 
+    \end{itemize}
+
+    \textbf{Table: Study Buddy Preferred Places} \\
+
+    \textbf{Attributes and Data Types}
+    \begin{table}[H] 
+        \centering 
+        \renewcommand{\arraystretch}{1.5} 
+        \begin{tabular}{|l|l|p{4.5cm}|l|} 
+        \hline 
+        \rowcolor[HTML]{96FFFB} 
+        \textbf{Column Name} & \textbf{Data type} & \textbf{Description} & \textbf{Constraints} \\ \hline 
+        study\_buddy\_id & varchar(255) & ID of the study buddy & Primary Key, Not Null \\ \hline 
+        place & varchar(255) & Name of the preferred place & Primary Key, Not Null \\ \hline 
+        \end{tabular} 
+        \caption{Attributes and data types for the \texttt{study\_buddy\_preferred\_places} table} 
+    \end{table}
+
+    \noindent 
+    \textbf{Constraints} 
+    \begin{itemize} 
+        \item \textbf{Primary Key}: \texttt{study\_buddy\_id}, \texttt{place}. 
+        \item \textbf{Foreign Key}: \begin{itemize} \item \texttt{study\_buddy\_id} references \texttt{student\_id} in the \texttt{study\_buddy} table, with \texttt{ON DELETE NO ACTION}. 
+        \end{itemize} 
+    \end{itemize}
+
+    \noindent 
+    \textbf{Relationships} 
+    \begin{itemize} 
+        \item Each \texttt{Study Buddy Preferred Place} is associated with a specific \texttt{Study Buddy}.
+    \end{itemize}
+
+    \textbf{Table: Study Buddy Preferred Times} \\
+
+    \textbf{Attributes and Data Types}
+    \begin{table}[H] 
+        \centering 
+        \renewcommand{\arraystretch}{1.5} 
+        \begin{tabular}{|l|l|p{4.5cm}|l|} 
+        \hline 
+        \rowcolor[HTML]{96FFFB} 
+        \textbf{Column Name} & \textbf{Data type} & \textbf{Description} & \textbf{Constraints} \\ \hline 
+        study\_buddy\_id & varchar(255) & ID of the study buddy & Primary Key, Not Null \\ \hline 
+        time & varchar(255) & Preferred time of the study buddy & Primary Key, Not Null \\ \hline 
+        \end{tabular} 
+        \caption{Attributes and data types for the \texttt{study\_buddy\_preferred\_times} table} 
+    \end{table}
+
+    \noindent 
+    \textbf{Constraints} 
+    \begin{itemize} 
+        \item \textbf{Primary Key}: \texttt{study\_buddy\_id}, \texttt{time}. 
+        \item \textbf{Foreign Key}: \begin{itemize} \item \texttt{study\_buddy\_id} references \texttt{student\_id} in the \texttt{study\_buddy} table, with \texttt{ON DELETE NO ACTION}. 
+        \end{itemize} 
+    \end{itemize}
+
+    \noindent 
+    \textbf{Relationships} 
+    \begin{itemize} 
+        \item Each \texttt{Study Buddy Preferred Time} is associated with a specific \texttt{Study Buddy}. 
+    \end{itemize} 
+
+    \textbf{Table: Study Connection} \\
+
+    \textbf{Attributes and Data Types}
+    \begin{table}[H] 
+        \centering 
+        \renewcommand{\arraystretch}{1.5} 
+        \begin{tabular}{|l|l|p{4.5cm}|l|} 
+        \hline 
+        \rowcolor[HTML]{96FFFB} 
+        \textbf{Column Name} & \textbf{Data type} & \textbf{Description} & \textbf{Constraints} \\ \hline 
+        id & bigint & Unique identifier for the connection & Primary Key, Not Null \\ \hline 
+        study\_buddy\_1\_id & varchar(255) & ID of the first study buddy & Foreign Key, Not Null \\ \hline 
+        study\_buddy\_2\_id & varchar(255) & ID of the second study buddy & Foreign Key, Not Null \\ \hline 
+        status & varchar(255) & Status of the connection & Not NullI \\ \hline 
+        created\_at & timestamp & Timestamp when the connection was created & Not Null \\ \hline 
+        updated\_at & timestamp & Timestamp when the connection was last updated & Not Null \\ \hline 
+        \end{tabular} 
+        \caption{Attributes and data types for the \texttt{study\_connection} table} 
+    \end{table}
+
+    \noindent 
+    \textbf{Constraints}
+    \begin{itemize} 
+        \item \textbf{Primary Key}: \texttt{id}. 
+        \item \textbf{Foreign Key}: \begin{itemize} \item \texttt{study\_buddy\_1\_id} references \texttt{student\_id} in the \texttt{study\_buddy} table, with \texttt{ON DELETE NO ACTION}. 
+        \item \texttt{study\_buddy\_2\_id} references \texttt{student\_id} in the \texttt{study\_buddy} table, with \texttt{ON DELETE NO ACTION}. 
+        \end{itemize} 
+    \end{itemize}
+
+    \noindent 
+    \textbf{Relationships} 
+    \begin{itemize} 
+        \item Each \texttt{Study Connection} is associated with two \texttt{Study Buddy} entities (study\_buddy\_1\_id and study\_buddy\_2\_id). 
+    \end{itemize}
 
 \end{document}
