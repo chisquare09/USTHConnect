@@ -1,0 +1,72 @@
+\contentsline {section}{Acknowledgement}{2}{}%
+\contentsline {section}{List of Abbreviations}{3}{}%
+\contentsline {section}{List of Figures}{4}{}%
+\contentsline {section}{List of Tables}{5}{}%
+\contentsline {section}{Abstract}{6}{}%
+\contentsline {section}{\numberline {I/}Introduction}{7}{}%
+\contentsline {subsection}{\numberline {1.}Context and Motivation}{7}{}%
+\contentsline {subsection}{\numberline {2.}Project Objectives}{8}{}%
+\contentsline {subsection}{\numberline {3.}Desired Outcomes}{8}{}%
+\contentsline {subsection}{\numberline {4.}Structure of Report}{8}{}%
+\contentsline {section}{\numberline {II/}Requirement Analysis}{10}{}%
+\contentsline {subsection}{\numberline {1.}System requirements}{10}{}%
+\contentsline {subsubsection}{\numberline {1.1}Functional Requirements}{10}{}%
+\contentsline {subsubsection}{\numberline {1.2}Non-functional Requirements}{11}{}%
+\contentsline {subsubsection}{\numberline {1.3}Desired Functionalities}{12}{}%
+\contentsline {subsection}{\numberline {2.}Use Case}{13}{}%
+\contentsline {subsubsection}{\numberline {2.1}Use Cases Diagram}{13}{}%
+\contentsline {subsubsection}{\numberline {2.2}Use Case Characteristics}{14}{}%
+\contentsline {subsection}{\numberline {3.}Use Case and Scenario Description}{14}{}%
+\contentsline {section}{\numberline {III/}Methodologies}{23}{}%
+\contentsline {subsection}{\numberline {1.}Use Case Implementation}{23}{}%
+\contentsline {subsubsection}{\numberline {1.1}Sync Calendar Sequence Diagram}{23}{}%
+\contentsline {subsubsection}{\numberline {1.2}StudyBuddy Sequence Diagram}{24}{}%
+\contentsline {subsubsection}{\numberline {1.3}Real-Time Notification Sequence Diagram}{25}{}%
+\contentsline {subsubsection}{\numberline {1.4}SIP-Based Communication Analysis}{26}{}%
+\contentsline {paragraph}{\numberline {1.4.1}Session Initiation Protocol}{26}{}%
+\contentsline {paragraph}{\numberline {1.4.2}Linphone}{27}{}%
+\contentsline {paragraph}{\numberline {1.4.3}Transport Layer Security Protocol (TLS)}{27}{}%
+\contentsline {paragraph}{\numberline {1.4.4}Communication Handling}{28}{}%
+\contentsline {subparagraph}{\numberline {1.4.4.1}Call Initialization}{28}{}%
+\contentsline {subparagraph}{\numberline {1.4.4.2}Locating the callee}{29}{}%
+\contentsline {subparagraph}{\numberline {1.4.4.3}One-on-One Instant Messaging}{31}{}%
+\contentsline {subsection}{\numberline {2.}System Architecture}{33}{}%
+\contentsline {subsubsection}{\numberline {2.1}System Architecture Diagram}{33}{}%
+\contentsline {subsubsection}{\numberline {2.2}Backend - Spring Boot}{34}{}%
+\contentsline {subsubsection}{\numberline {2.3}Mobile Frontend - Java (Android)}{34}{}%
+\contentsline {subsubsection}{\numberline {2.4}Machine Learning - K-modes Clustering}{35}{}%
+\contentsline {subsubsection}{\numberline {2.5}Communication - Linphone VoIP}{35}{}%
+\contentsline {subsubsection}{\numberline {2.6}How does it work together ?}{36}{}%
+\contentsline {subsection}{\numberline {3.}Database Design}{36}{}%
+\contentsline {subsubsection}{\numberline {3.1}Database Requirements and Objectives}{36}{}%
+\contentsline {subsubsection}{\numberline {3.2}Entity-Relationship Diagram}{36}{}%
+\contentsline {subsubsection}{\numberline {3.3}Table and Relationships}{38}{}%
+\contentsline {section}{\numberline {IV/}Clustering Model for Recommendation}{53}{}%
+\contentsline {subsection}{\numberline {1.}K-Mode Algorithm}{53}{}%
+\contentsline {subsection}{\numberline {2.}One-Hot Encoding}{53}{}%
+\contentsline {subsection}{\numberline {3.}Evaluation Metrics}{54}{}%
+\contentsline {subsubsection}{\numberline {3.1}Silhouette Coefficient}{54}{}%
+\contentsline {subsubsection}{\numberline {3.2}Davies-Bouldin Index}{55}{}%
+\contentsline {subsection}{\numberline {4.}Model Implementation}{55}{}%
+\contentsline {subsubsection}{\numberline {4.1}Data Preprocessing}{55}{}%
+\contentsline {subsubsection}{\numberline {4.2}Model Training}{56}{}%
+\contentsline {subsubsection}{\numberline {4.3}Student Recommendation}{56}{}%
+\contentsline {section}{\numberline {V/}System Design and Implementation}{57}{}%
+\contentsline {subsection}{\numberline {1.}Hardware and Software Setup}{57}{}%
+\contentsline {subsection}{\numberline {2.}Application Software}{57}{}%
+\contentsline {subsection}{\numberline {3.}Initial Testing}{57}{}%
+\contentsline {subsection}{\numberline {4.}Application Software}{59}{}%
+\contentsline {subsection}{\numberline {5.}Initial Testing}{60}{}%
+\contentsline {section}{\numberline {VI/}Results and Discussion}{61}{}%
+\contentsline {subsection}{\numberline {1.}Results}{61}{}%
+\contentsline {subsubsection}{\numberline {1.1}Mobile App Results}{61}{}%
+\contentsline {subsubsection}{\numberline {1.2}Machine Learning Results}{62}{}%
+\contentsline {subsection}{\numberline {2.}Discussion}{62}{}%
+\contentsline {subsubsection}{\numberline {2.1}Intepretation of Results}{62}{}%
+\contentsline {subsubsection}{\numberline {2.2}Comparison to Similar System}{64}{}%
+\contentsline {subsubsection}{\numberline {2.3}Challenges and Limitations}{64}{}%
+\contentsline {section}{\numberline {VII/}Conclusion {\&} Future Work}{65}{}%
+\contentsline {subsection}{\numberline {1.}Conclusion}{65}{}%
+\contentsline {subsection}{\numberline {2.}Future Work}{65}{}%
+\contentsline {section}{References}{67}{}%
+\contentsline {section}{Appendices}{68}{}%
