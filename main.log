@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.6)  6 FEB 2025 21:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.6)  6 FEB 2025 22:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -272,24 +272,7 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count299
 \l__pdf_internal_box=\box60
-) (main.aux (titlepage.aux) (usecase_implementation.aux) (analysis_call_message.aux) (communication_handling.aux)
-
-LaTeX Warning: Label `data preprocessing' multiply defined.
-
-
-main.aux:153: Package natbib Error: Bibliography not compatible with author-year citations.
-(natbib)                Press <return> to continue in numerical citation style.
-
-See the natbib package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.153 ...and\NAT@force@numbers{}\NAT@force@numbers
-                                                  
-Check the bibliography entries for non-compliant syntax,
-or select author-year BibTeX style, e.g. plainnat
-
-)
+) (main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
@@ -418,19 +401,18 @@ Overfull \hbox (3.6154pt too wide) in paragraph at lines 49--50
 
 
 
-{C:/Users/abc/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./image/usth.png>]) (main.toc
-
-[1
-
-
-
-])
+{C:/Users/abc/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./image/usth.png>])
+No file main.toc.
 \tf@toc=\write3
 \openout3 = `main.toc'.
 
 
 
-[2] (acknowledgement.tex
+[1
+
+
+
+] (acknowledgement.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--2
 
  []
@@ -447,46 +429,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
 )
 
-[3]
+[2]
 
-[4]
+[3]
 Overfull \hbox (2.61108pt too wide) in paragraph at lines 94--94
  [][][]
  []
 
-(main.lof)
+No file main.lof.
 \tf@lof=\write4
 \openout4 = `main.lof'.
 
 
 
-[5]
+[4]
 Overfull \hbox (2.61108pt too wide) in paragraph at lines 108--108
  [][][]
  []
 
-(main.lot
-Overfull \hbox (21.32169pt too wide) in paragraph at lines 22--22
- [][] []\OT1/cmr/m/n/12 Attributes and data types for the \OT1/cmtt/m/n/12 study[]buddy[]favorite[]subjects 
- []
-
-
-Overfull \hbox (15.14668pt too wide) in paragraph at lines 24--24
- [][] []\OT1/cmr/m/n/12 Attributes and data types for the \OT1/cmtt/m/n/12 study[]buddy[]preferred[]places 
- []
-
-
-Overfull \hbox (8.97168pt too wide) in paragraph at lines 25--25
- [][] []\OT1/cmr/m/n/12 Attributes and data types for the \OT1/cmtt/m/n/12 study[]buddy[]preferred[]times 
- []
-
-)
+No file main.lot.
 \tf@lot=\write5
 \openout5 = `main.lot'.
 
 
 
-[6] (abstract.tex
+[5] (abstract.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--14
 
  []
@@ -498,7 +465,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--26
 
 )
 
-[7]
+[6]
 Underfull \hbox (badness 10000) in paragraph at lines 120--122
 
  []
@@ -516,16 +483,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 129--135
 
 
 pdfTeX warning: pdflatex (file ./image/Integration-USTH-Connect-External-Services.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<image/Integration-USTH-Connect-External-Services.pdf, id=33, 426.09187pt x 334.24875pt>
+<image/Integration-USTH-Connect-External-Services.pdf, id=29, 426.09187pt x 334.24875pt>
 File: image/Integration-USTH-Connect-External-Services.pdf Graphic file (type pdf)
 <use image/Integration-USTH-Connect-External-Services.pdf>
 Package pdftex.def Info: image/Integration-USTH-Connect-External-Services.pdf  used on input line 139.
 (pdftex.def)             Requested size: 298.75264pt x 234.37033pt.
 
 
-[8]
+[7]
 
-[9 <./image/Integration-USTH-Connect-External-Services.pdf>]
+[8 <./image/Integration-USTH-Connect-External-Services.pdf>]
+
+[9]
 
 [10]
 
@@ -533,165 +502,163 @@ Package pdftex.def Info: image/Integration-USTH-Connect-External-Services.pdf  u
 
 [12]
 
-[13]
-
 pdfTeX warning: pdflatex (file ./image/USTHConnect_usecase_diagram.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<image/USTHConnect_usecase_diagram.pdf, id=56, 4939.41356pt x 6124.8825pt>
+<image/USTHConnect_usecase_diagram.pdf, id=52, 4939.41356pt x 6124.8825pt>
 File: image/USTHConnect_usecase_diagram.pdf Graphic file (type pdf)
 <use image/USTHConnect_usecase_diagram.pdf>
-Package pdftex.def Info: image/USTHConnect_usecase_diagram.pdf  used on input line 270.
+Package pdftex.def Info: image/USTHConnect_usecase_diagram.pdf  used on input line 269.
 (pdftex.def)             Requested size: 405.45047pt x 502.71092pt.
 
 
-[14 <./image/USTHConnect_usecase_diagram.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 286--288
+[13 <./image/USTHConnect_usecase_diagram.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 285--287
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 289--290
+Underfull \hbox (badness 10000) in paragraph at lines 288--289
 
  []
 
 
 
 pdfTeX warning: pdflatex (file ./image/AuthenticationUseCase.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<image/AuthenticationUseCase.pdf, id=74, 961.67276pt x 523.9575pt>
+<image/AuthenticationUseCase.pdf, id=70, 961.67276pt x 523.9575pt>
 File: image/AuthenticationUseCase.pdf Graphic file (type pdf)
 <use image/AuthenticationUseCase.pdf>
-Package pdftex.def Info: image/AuthenticationUseCase.pdf  used on input line 293.
+Package pdftex.def Info: image/AuthenticationUseCase.pdf  used on input line 292.
 (pdftex.def)             Requested size: 298.75264pt x 162.76892pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 297--298
+Underfull \hbox (badness 10000) in paragraph at lines 296--297
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 299--300
+Underfull \hbox (badness 10000) in paragraph at lines 298--299
 
  []
 
 
-Overfull \hbox (2.86569pt too wide) in paragraph at lines 315--315
+Overfull \hbox (2.86569pt too wide) in paragraph at lines 314--314
  []|[]| 
  []
 
 
 
-[15 <./image/AuthenticationUseCase.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 330--331
+[14 <./image/AuthenticationUseCase.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 329--330
 
  []
 
 
 
 pdfTeX warning: pdflatex (file ./image/StudentScheduleUseCase.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<image/StudentScheduleUseCase.pdf, id=92, 1085.01357pt x 567.07857pt>
+<image/StudentScheduleUseCase.pdf, id=88, 1085.01357pt x 567.07857pt>
 File: image/StudentScheduleUseCase.pdf Graphic file (type pdf)
 <use image/StudentScheduleUseCase.pdf>
-Package pdftex.def Info: image/StudentScheduleUseCase.pdf  used on input line 334.
+Package pdftex.def Info: image/StudentScheduleUseCase.pdf  used on input line 333.
 (pdftex.def)             Requested size: 298.75264pt x 156.14177pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 338--339
+Underfull \hbox (badness 10000) in paragraph at lines 337--338
 
  []
 
 
 
-[16 <./image/StudentScheduleUseCase.pdf>]
+[15 <./image/StudentScheduleUseCase.pdf>]
 
-[17]
-Underfull \hbox (badness 10000) in paragraph at lines 383--384
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 382--383
 
  []
 
 
 
 pdfTeX warning: pdflatex (file ./image/CampusUseCase.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<image/CampusUseCase.pdf, id=113, 943.60526pt x 408.56638pt>
+<image/CampusUseCase.pdf, id=109, 943.60526pt x 408.56638pt>
 File: image/CampusUseCase.pdf Graphic file (type pdf)
 <use image/CampusUseCase.pdf>
-Package pdftex.def Info: image/CampusUseCase.pdf  used on input line 387.
+Package pdftex.def Info: image/CampusUseCase.pdf  used on input line 386.
 (pdftex.def)             Requested size: 298.75264pt x 129.35367pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 391--392
+Underfull \hbox (badness 10000) in paragraph at lines 390--391
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 425--426
+Underfull \hbox (badness 10000) in paragraph at lines 424--425
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 427--428
+Underfull \hbox (badness 10000) in paragraph at lines 426--427
 
  []
 
 
 
-[18 <./image/CampusUseCase.pdf>]
+[17 <./image/CampusUseCase.pdf>]
 
-[19]
-Underfull \hbox (badness 10000) in paragraph at lines 456--457
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 455--456
 
  []
 
 
 
 pdfTeX warning: pdflatex (file ./image/StudyBuddyUseCase.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<image/StudyBuddyUseCase.pdf, id=135, 1078.99106pt x 769.91638pt>
+<image/StudyBuddyUseCase.pdf, id=131, 1078.99106pt x 769.91638pt>
 File: image/StudyBuddyUseCase.pdf Graphic file (type pdf)
 <use image/StudyBuddyUseCase.pdf>
-Package pdftex.def Info: image/StudyBuddyUseCase.pdf  used on input line 460.
+Package pdftex.def Info: image/StudyBuddyUseCase.pdf  used on input line 459.
 (pdftex.def)             Requested size: 298.75264pt x 213.17853pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 464--465
+Underfull \hbox (badness 10000) in paragraph at lines 463--464
 
  []
 
 
 
-[20 <./image/StudyBuddyUseCase.pdf>]
+[19 <./image/StudyBuddyUseCase.pdf>]
 
-[21]
-Underfull \hbox (badness 10000) in paragraph at lines 513--514
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 512--513
 
  []
 
 
 
 pdfTeX warning: pdflatex (file ./image/Real-timeNotificationUseCase.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<image/Real-timeNotificationUseCase.pdf, id=156, 1907.20526pt x 726.79526pt>
+<image/Real-timeNotificationUseCase.pdf, id=152, 1907.20526pt x 726.79526pt>
 File: image/Real-timeNotificationUseCase.pdf Graphic file (type pdf)
 <use image/Real-timeNotificationUseCase.pdf>
-Package pdftex.def Info: image/Real-timeNotificationUseCase.pdf  used on input line 517.
+Package pdftex.def Info: image/Real-timeNotificationUseCase.pdf  used on input line 516.
 (pdftex.def)             Requested size: 426.79135pt x 162.63467pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 521--522
+Underfull \hbox (badness 10000) in paragraph at lines 520--521
 
  []
 
 
 
-[22 <./image/Real-timeNotificationUseCase.pdf>]
+[21 <./image/Real-timeNotificationUseCase.pdf>]
 
-[23]
-Underfull \hbox (badness 10000) in paragraph at lines 561--564
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 560--563
 
  []
 
 
 
 pdfTeX warning: pdflatex (file ./image/SyncCalendar.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<image/SyncCalendar.pdf, id=177, 1578.85857pt x 813.0375pt>
+<image/SyncCalendar.pdf, id=173, 1578.85857pt x 813.0375pt>
 File: image/SyncCalendar.pdf Graphic file (type pdf)
 <use image/SyncCalendar.pdf>
-Package pdftex.def Info: image/SyncCalendar.pdf  used on input line 572.
+Package pdftex.def Info: image/SyncCalendar.pdf  used on input line 571.
 (pdftex.def)             Requested size: 426.79135pt x 219.77118pt.
 
 
-[24 <./image/SyncCalendar.pdf>]
+[23 <./image/SyncCalendar.pdf>]
 \openout2 = `usecase_implementation.aux'.
 
  (usecase_implementation.tex
@@ -707,14 +674,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--23
 
 
 pdfTeX warning: pdflatex (file ./image/Real-timeNotification.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<image/Real-timeNotification.pdf, id=191, 1119.22131pt x 1087.1817pt>
+<image/Real-timeNotification.pdf, id=186, 1119.22131pt x 1087.1817pt>
 File: image/Real-timeNotification.pdf Graphic file (type pdf)
 <use image/Real-timeNotification.pdf>
 Package pdftex.def Info: image/Real-timeNotification.pdf  used on input line 41.
 (pdftex.def)             Requested size: 298.75264pt x 290.192pt.
 
 
-[25
+[24
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 46--50
@@ -723,13 +690,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 46--50
 
 )
 
-[26 <./image/Real-timeNotification.pdf>]
+[25 <./image/Real-timeNotification.pdf>]
 \openout2 = `analysis_call_message.aux'.
 
  (analysis_call_message.tex
 Underfull \hbox (badness 10000) in paragraph at lines 5--9
 
  []
+
+
+Package natbib Warning: Citation `sip' on page 26 undefined on input line 10.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 10--17
@@ -743,7 +713,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--23
 
 
 
-[27
+[26
 
 
 
@@ -759,7 +729,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--56
 
 )
 
-[28]
+[27]
 \openout2 = `communication_handling.aux'.
 
  (communication_handling.tex
@@ -774,21 +744,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--10
 
 
 
-[29
+[28
 
 
 
 ]
 
 pdfTeX warning: pdflatex (file ./image/Call Initiation.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<image/Call Initiation.pdf, id=216, 677.53125pt x 904.67986pt>
+<image/Call Initiation.pdf, id=212, 677.53125pt x 904.67986pt>
 File: image/Call Initiation.pdf Graphic file (type pdf)
 <use image/Call Initiation.pdf>
 Package pdftex.def Info: image/Call Initiation.pdf  used on input line 34.
 (pdftex.def)             Requested size: 298.75264pt x 398.91623pt.
 
 
-[30 <./image/Call Initiation.pdf>]
+[29 <./image/Call Initiation.pdf>]
 Overfull \hbox (16.185pt too wide) in paragraph at lines 57--60
 []\OT1/cmr/bx/n/12 Step 1: \OT1/cmr/m/n/12 One user agent with SIP URI \OT1/cmtt/m/n/12 sip:callee[]username@sip.linphone.org
  []
@@ -806,80 +776,80 @@ Overfull \hbox (36.36206pt too wide) in paragraph at lines 61--64
 
 
 pdfTeX warning: pdflatex (file ./image/Locating_callee.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<image/Locating_callee.pdf, id=269, 704.6325pt x 375.32219pt>
+<image/Locating_callee.pdf, id=264, 704.6325pt x 375.32219pt>
 File: image/Locating_callee.pdf Graphic file (type pdf)
 <use image/Locating_callee.pdf>
 Package pdftex.def Info: image/Locating_callee.pdf  used on input line 70.
 (pdftex.def)             Requested size: 384.1085pt x 269.73352pt.
 
 
-[31]
+[30]
 Underfull \hbox (badness 10000) in paragraph at lines 76--81
 
  []
 
 
 
-[32 <./image/Locating_callee.pdf>]
+[31 <./image/Locating_callee.pdf>]
 
 pdfTeX warning: pdflatex (file ./image/Instant messaging.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<image/Instant messaging.pdf, id=289, 370.5042pt x 329.31029pt>
+<image/Instant messaging.pdf, id=286, 370.5042pt x 329.31029pt>
 File: image/Instant messaging.pdf Graphic file (type pdf)
 <use image/Instant messaging.pdf>
 Package pdftex.def Info: image/Instant messaging.pdf  used on input line 97.
 (pdftex.def)             Requested size: 298.75264pt x 265.53389pt.
 )
 
-[33 <./image/Instant messaging.pdf>]
+[32 <./image/Instant messaging.pdf>]
 
 pdfTeX warning: pdflatex (file ./image/System_Architecture_USTH_Connect.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<image/System_Architecture_USTH_Connect.pdf, id=310, 6632.69962pt x 3947.86908pt>
+<image/System_Architecture_USTH_Connect.pdf, id=307, 6632.69962pt x 3947.86908pt>
 File: image/System_Architecture_USTH_Connect.pdf Graphic file (type pdf)
 <use image/System_Architecture_USTH_Connect.pdf>
-Package pdftex.def Info: image/System_Architecture_USTH_Connect.pdf  used on input line 587.
+Package pdftex.def Info: image/System_Architecture_USTH_Connect.pdf  used on input line 586.
 (pdftex.def)             Requested size: 426.79135pt x 254.0302pt.
 
 
-[34
+[33
 
 
  <./image/System_Architecture_USTH_Connect.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 607--609
+Underfull \hbox (badness 10000) in paragraph at lines 606--608
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 610--611
+Underfull \hbox (badness 10000) in paragraph at lines 609--610
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 612--613
+Underfull \hbox (badness 10000) in paragraph at lines 611--612
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 614--615
+Underfull \hbox (badness 10000) in paragraph at lines 613--614
+
+ []
+
+
+
+[34]
+Underfull \hbox (badness 10000) in paragraph at lines 623--627
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 628--633
 
  []
 
 
 
 [35]
-Underfull \hbox (badness 10000) in paragraph at lines 624--628
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 629--634
-
- []
-
-
 
 [36]
-
-[37]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -915,192 +885,212 @@ Underfull \hbox (badness 10000) in paragraph at lines 629--634
 
 
 pdfTeX warning: pdflatex (file ./image/USTH-Connect-Database-Schema-v1-cropped.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<image/USTH-Connect-Database-Schema-v1-cropped.pdf, id=353, 696.72295pt x 629.38335pt>
+<image/USTH-Connect-Database-Schema-v1-cropped.pdf, id=350, 696.72295pt x 629.38335pt>
 File: image/USTH-Connect-Database-Schema-v1-cropped.pdf Graphic file (type pdf)
 <use image/USTH-Connect-Database-Schema-v1-cropped.pdf>
-Package pdftex.def Info: image/USTH-Connect-Database-Schema-v1-cropped.pdf  used on input line 659.
+Package pdftex.def Info: image/USTH-Connect-Database-Schema-v1-cropped.pdf  used on input line 658.
 (pdftex.def)             Requested size: 597.53285pt x 539.78018pt.
 
 
-[38
+[37
 
  <./image/USTH-Connect-Database-Schema-v1-cropped.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 666--667
+Underfull \hbox (badness 10000) in paragraph at lines 665--666
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--669
+Underfull \hbox (badness 10000) in paragraph at lines 667--668
 
  []
 
 
-Overfull \hbox (25.02318pt too wide) in paragraph at lines 674--686
+Overfull \hbox (25.02318pt too wide) in paragraph at lines 673--685
  [][] 
  []
 
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 693.
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 692.
 
 
-[39
+[38
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 706--707
+Underfull \hbox (badness 10000) in paragraph at lines 705--706
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 720--720
+Underfull \hbox (badness 10000) in paragraph at lines 719--719
 []|\OT1/cmr/m/n/12 The cur-rent vis-i-bil-ity
  []
 
 
-Overfull \hbox (19.37192pt too wide) in paragraph at lines 712--722
+Overfull \hbox (19.37192pt too wide) in paragraph at lines 711--721
  [][] 
  []
 
 
-Overfull \hbox (28.62679pt too wide) in paragraph at lines 735--736
+Overfull \hbox (28.62679pt too wide) in paragraph at lines 734--735
 []\OT1/cmr/m/n/12 Each \OT1/cmtt/m/n/12 course \OT1/cmr/m/n/12 can be as-so-ci-ated with mul-ti-ple \OT1/cmtt/m/n/12 students \OT1/cmr/m/n/12 through the \OT1/cmtt/m/n/12 student[]course
  []
 
 
 
-[40]
-Underfull \hbox (badness 10000) in paragraph at lines 740--741
+[39]
+Underfull \hbox (badness 10000) in paragraph at lines 739--740
 
  []
 
 
-Overfull \hbox (21.36766pt too wide) in paragraph at lines 746--759
+Overfull \hbox (21.36766pt too wide) in paragraph at lines 745--758
+ [][] 
+ []
+
+
+
+[40]
+Underfull \hbox (badness 10000) in paragraph at lines 778--779
+
+ []
+
+
+Overfull \hbox (8.09491pt too wide) in paragraph at lines 787--787
+[]|\OT1/cmr/bx/n/12 Description| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 788--788
+[]|\OT1/cmr/m/n/12 Unique
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 788--788
+\OT1/cmr/m/n/12 iden-ti-fier
+ []
+
+
+Underfull \hbox (badness 7273) in paragraph at lines 789--789
+[]|\OT1/cmr/m/n/12 The name
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 790--790
+[]|\OT1/cmr/m/n/12 Value the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 792--792
+[]|\OT1/cmr/m/n/12 Longitude
+ []
+
+
+Overfull \hbox (22.95973pt too wide) in paragraph at lines 784--794
  [][] 
  []
 
 
 
 [41]
-Underfull \hbox (badness 10000) in paragraph at lines 779--780
+Underfull \hbox (badness 10000) in paragraph at lines 812--813
 
  []
 
 
-Overfull \hbox (8.09491pt too wide) in paragraph at lines 788--788
-[]|\OT1/cmr/bx/n/12 Description| 
+Underfull \hbox (badness 3138) in paragraph at lines 823--823
+[]|\OT1/cmr/m/n/12 Reference to the con-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 789--789
-[]|\OT1/cmr/m/n/12 Unique
+Underfull \hbox (badness 5302) in paragraph at lines 823--823
+\OT1/cmr/m/n/12 nec-tion in the \OT1/cmtt/m/n/12 Study
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 789--789
-\OT1/cmr/m/n/12 iden-ti-fier
+Underfull \hbox (badness 10000) in paragraph at lines 827--827
+[]|\OT1/cmr/m/n/12 Timestamp when the
  []
 
 
-Underfull \hbox (badness 7273) in paragraph at lines 790--790
-[]|\OT1/cmr/m/n/12 The name
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 791--791
-[]|\OT1/cmr/m/n/12 Value the
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 793--793
-[]|\OT1/cmr/m/n/12 Longitude
- []
-
-
-Overfull \hbox (22.95973pt too wide) in paragraph at lines 785--795
+Overfull \hbox (30.99435pt too wide) in paragraph at lines 818--830
  [][] 
  []
 
 
 
 [42]
-Underfull \hbox (badness 10000) in paragraph at lines 813--814
+Underfull \hbox (badness 10000) in paragraph at lines 863--864
 
  []
 
 
-Underfull \hbox (badness 3138) in paragraph at lines 824--824
-[]|\OT1/cmr/m/n/12 Reference to the con-
- []
-
-
-Underfull \hbox (badness 5302) in paragraph at lines 824--824
-\OT1/cmr/m/n/12 nec-tion in the \OT1/cmtt/m/n/12 Study
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 828--828
-[]|\OT1/cmr/m/n/12 Timestamp when the
- []
-
-
-Overfull \hbox (30.99435pt too wide) in paragraph at lines 819--831
- [][] 
- []
-
-
-
-[43]
-Underfull \hbox (badness 10000) in paragraph at lines 864--865
-
- []
-
-
-Overfull \hbox (8.09491pt too wide) in paragraph at lines 873--873
+Overfull \hbox (8.09491pt too wide) in paragraph at lines 872--872
 []|\OT1/cmr/bx/n/12 Description| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 874--874
+Underfull \hbox (badness 10000) in paragraph at lines 873--873
 []|\OT1/cmr/m/n/12 Unique
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 874--874
+Underfull \hbox (badness 10000) in paragraph at lines 873--873
 \OT1/cmr/m/n/12 iden-ti-fier
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 874--874
+Underfull \hbox (badness 10000) in paragraph at lines 873--873
 \OT1/cmr/m/n/12 for the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 875--875
+Underfull \hbox (badness 10000) in paragraph at lines 874--874
 \OT1/cmr/m/n/12 re-ceiv-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 875--875
+Underfull \hbox (badness 10000) in paragraph at lines 874--874
 \OT1/cmr/m/n/12 the no-ti-fi-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 876--876
+Underfull \hbox (badness 10000) in paragraph at lines 875--875
 []|\OT1/cmr/m/n/12 The con-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 877--877
+Underfull \hbox (badness 10000) in paragraph at lines 876--876
 []|\OT1/cmr/m/n/12 Timestamp
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 877--877
+Underfull \hbox (badness 10000) in paragraph at lines 876--876
 \OT1/cmr/m/n/12 when the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 877--877
+Underfull \hbox (badness 10000) in paragraph at lines 876--876
 \OT1/cmr/m/n/12 no-ti-fi-ca-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 877--877
+\OT1/cmr/m/n/12 the no-ti-fi-
+ []
+
+
+Underfull \hbox (badness 5519) in paragraph at lines 877--877
+\OT1/cmr/m/n/12 ca-tion has
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 878--878
+[]|\OT1/cmr/m/n/12 Reference
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 878--878
+\OT1/cmr/m/n/12 re-lated to
  []
 
 
@@ -1109,321 +1099,338 @@ Underfull \hbox (badness 10000) in paragraph at lines 878--878
  []
 
 
-Underfull \hbox (badness 5519) in paragraph at lines 878--878
-\OT1/cmr/m/n/12 ca-tion has
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 879--879
 []|\OT1/cmr/m/n/12 Reference
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 879--879
-\OT1/cmr/m/n/12 re-lated to
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 879--879
-\OT1/cmr/m/n/12 the no-ti-fi-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 880--880
-[]|\OT1/cmr/m/n/12 Reference
- []
-
-
-Underfull \hbox (badness 2088) in paragraph at lines 880--880
+Underfull \hbox (badness 2088) in paragraph at lines 879--879
 \OT1/cmr/m/n/12 to the or-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 880--880
+Underfull \hbox (badness 10000) in paragraph at lines 879--879
 \OT1/cmr/m/n/12 ga-nizer of
  []
 
 
-Overfull \hbox (35.07893pt too wide) in paragraph at lines 870--882
+Overfull \hbox (35.07893pt too wide) in paragraph at lines 869--881
  [][] 
  []
 
 
 
-[44]
+[43]
 
-[45]
-Underfull \hbox (badness 10000) in paragraph at lines 910--911
+[44]
+Underfull \hbox (badness 10000) in paragraph at lines 909--910
 
  []
 
 
-Underfull \hbox (badness 5403) in paragraph at lines 921--921
+Underfull \hbox (badness 5403) in paragraph at lines 920--920
 []|\OT1/cmr/m/n/12 Type of the re-source
  []
 
 
-Underfull \hbox (badness 1092) in paragraph at lines 921--921
+Underfull \hbox (badness 1092) in paragraph at lines 920--920
 \OT1/cmr/m/n/12 (e.g., video, doc-u-ment,
  []
 
 
-Overfull \hbox (19.37192pt too wide) in paragraph at lines 916--928
+Overfull \hbox (19.37192pt too wide) in paragraph at lines 915--927
  [][] 
+ []
+
+
+
+[45]
+Underfull \hbox (badness 10000) in paragraph at lines 949--950
+
+ []
+
+
+Underfull \hbox (badness 1648) in paragraph at lines 961--961
+[]|\OT1/cmr/m/n/12 Gender of the stu-dent
+ []
+
+
+Underfull \hbox (badness 2894) in paragraph at lines 964--964
+[]|\OT1/cmr/m/n/12 The aca-demic year of
+ []
+
+
+Overfull \hbox (24.00659pt too wide) in paragraph at lines 955--973
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 989--990
+
  []
 
 
 
 [46]
-Underfull \hbox (badness 10000) in paragraph at lines 950--951
-
+Overfull \hbox (8.09491pt too wide) in paragraph at lines 998--998
+[]|\OT1/cmr/bx/n/12 Description| 
  []
 
 
-Underfull \hbox (badness 1648) in paragraph at lines 962--962
-[]|\OT1/cmr/m/n/12 Gender of the stu-dent
+Underfull \hbox (badness 10000) in paragraph at lines 999--999
+[]|\OT1/cmr/m/n/12 Unique
  []
 
 
-Underfull \hbox (badness 2894) in paragraph at lines 965--965
-[]|\OT1/cmr/m/n/12 The aca-demic year of
+Underfull \hbox (badness 10000) in paragraph at lines 999--999
+\OT1/cmr/m/n/12 iden-ti-fier
  []
 
 
-Overfull \hbox (24.00659pt too wide) in paragraph at lines 956--974
+Underfull \hbox (badness 10000) in paragraph at lines 999--999
+\OT1/cmr/m/n/12 for the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1000--1000
+[]|\OT1/cmr/m/n/12 Gender of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1001--1001
+[]|\OT1/cmr/m/n/12 Personality
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1001--1001
+\OT1/cmr/m/n/12 de-scrip-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1002
+[]|\OT1/cmr/m/n/12 Preferred
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1002
+\OT1/cmr/m/n/12 com-mu-ni-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1003--1003
+[]|\OT1/cmr/m/n/12 What the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1003--1003
+\OT1/cmr/m/n/12 stu-dent is
+ []
+
+
+Underfull \hbox (badness 1286) in paragraph at lines 1003--1003
+\OT1/cmr/m/n/12 look-ing for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1004--1004
+[]|\OT1/cmr/m/n/12 Full name
+ []
+
+
+Overfull \hbox (15.09029pt too wide) in paragraph at lines 995--1007
  [][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 990--991
-
  []
 
 
 
 [47]
-Overfull \hbox (8.09491pt too wide) in paragraph at lines 999--999
-[]|\OT1/cmr/bx/n/12 Description| 
- []
+
+Package natbib Warning: Citation `huang1998extensions' on page 48 undefined on input line 1032.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1000--1000
-[]|\OT1/cmr/m/n/12 Unique
- []
+Package natbib Warning: Citation `huang1998extensions' on page 48 undefined on input line 1039.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1000--1000
-\OT1/cmr/m/n/12 iden-ti-fier
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1000--1000
-\OT1/cmr/m/n/12 for the
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1001--1001
-[]|\OT1/cmr/m/n/12 Gender of
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1002--1002
-[]|\OT1/cmr/m/n/12 Personality
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1002--1002
-\OT1/cmr/m/n/12 de-scrip-tion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1003--1003
-[]|\OT1/cmr/m/n/12 Preferred
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1003--1003
-\OT1/cmr/m/n/12 com-mu-ni-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1004--1004
-[]|\OT1/cmr/m/n/12 What the
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1004--1004
-\OT1/cmr/m/n/12 stu-dent is
- []
-
-
-Underfull \hbox (badness 1286) in paragraph at lines 1004--1004
-\OT1/cmr/m/n/12 look-ing for
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1005--1005
-[]|\OT1/cmr/m/n/12 Full name
- []
-
-
-Overfull \hbox (15.09029pt too wide) in paragraph at lines 996--1008
- [][] 
- []
+Package natbib Warning: Citation `thuy2020optimize' on page 48 undefined on input line 1054.
 
 
 
 [48]
 
-[49]
-Underfull \hbox (badness 10000) in paragraph at lines 1062--1071
+Package natbib Warning: Citation `2012vi' on page 49 undefined on input line 1066.
+
+
+Package natbib Warning: Citation `9260048' on page 49 undefined on input line 1069.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1061--1070
 
  []
 
 
-Overfull \hbox (8.87994pt too wide) in paragraph at lines 1072--1077
+Package natbib Warning: Citation `2012vi' on page 49 undefined on input line 1075.
+
+
+Overfull \hbox (8.87994pt too wide) in paragraph at lines 1071--1076
 \OT1/cmr/m/n/12 With a dataset D of n ob-jects, in which D is par-ti-tioned into k clus-ters, $\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 C[]; C[]; :::; C[]\OMS/cmsy/m/n/12 g$\OT1/cmr/m/n/12 .
  []
 
 
 
-[50]
-Overfull \hbox (9.14719pt too wide) in paragraph at lines 1123--1138
+[49]
+
+Package natbib Warning: Citation `HOSEN2023688' on page 50 undefined on input line 1102.
+
+
+Overfull \hbox (9.14719pt too wide) in paragraph at lines 1122--1137
  [][] 
  []
 
 
 
-[51]
+[50]
 
-[52]
-<image/choosing_K.png, id=435, 615.0177pt x 383.031pt>
+[51]
+<image/choosing_K.png, id=432, 615.0177pt x 383.031pt>
 File: image/choosing_K.png Graphic file (type png)
 <use image/choosing_K.png>
-Package pdftex.def Info: image/choosing_K.png  used on input line 1178.
+Package pdftex.def Info: image/choosing_K.png  used on input line 1177.
 (pdftex.def)             Requested size: 298.75264pt x 186.06203pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1183--1184
+
+Package natbib Warning: Citation `devos2015' on page 52 undefined on input line 1182.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1182--1183
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1185--1186
+Underfull \hbox (badness 10000) in paragraph at lines 1184--1185
 
  []
 
 
 
-[53 <./image/choosing_K.png>]
+[52 <./image/choosing_K.png>]
+
+[53]
+Underfull \hbox (badness 10000) in paragraph at lines 1202--1206
+
+ []
+
+
 
 [54]
-Underfull \hbox (badness 10000) in paragraph at lines 1203--1207
+Underfull \hbox (badness 10000) in paragraph at lines 1228--1229
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1230--1231
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1232--1242
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1243--1244
 
  []
 
 
 
 [55]
-Underfull \hbox (badness 10000) in paragraph at lines 1229--1230
+Underfull \hbox (badness 10000) in paragraph at lines 1249--1251
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1231--1232
+Underfull \hbox (badness 10000) in paragraph at lines 1252--1253
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1233--1243
+LaTeX Warning: Reference `Model_Performance' on page 56 undefined on input line 1267.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1267--1268
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1244--1245
+Package natbib Warning: Citation `zhu2011efficient' on page 56 undefined on input line 1269.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1269--1270
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1271--1272
+
+ []
+
+
+Package natbib Warning: Citation `zhu2011efficient' on page 56 undefined on input line 1273.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1280--1282
 
  []
 
 
 
 [56]
-Underfull \hbox (badness 10000) in paragraph at lines 1250--1252
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1253--1254
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1268--1269
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1270--1271
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1272--1273
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1281--1283
-
- []
-
-
 
 [57]
+Underfull \hbox (badness 10000) in paragraph at lines 1307--1310
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1311--1312
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1317--1320
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1321--1326
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1327--1330
+
+ []
+
+
 
 [58]
-Underfull \hbox (badness 10000) in paragraph at lines 1308--1311
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1312--1313
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1318--1321
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1322--1327
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1328--1331
+Underfull \hbox (badness 10000) in paragraph at lines 1331--1334
 
  []
 
 
 
-[59]
-Underfull \hbox (badness 10000) in paragraph at lines 1332--1334
-
- []
-
-
-
-[60] (main.bbl
+[59] (main.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 64--66
 []\OT1/cmr/m/n/12 N. J. de Vos, ``kmodes cat-e-gor-i-cal clus-ter-ing li-brary,''
  []
 
 )
 
-[61]
+[60]
 
 pdfTeX warning: pdflatex (file ./image/StudyBuddySequenceDiagram-SB.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<image/StudyBuddySequenceDiagram-SB.pdf, id=466, 1535.7375pt x 957.5775pt>
+<image/StudyBuddySequenceDiagram-SB.pdf, id=463, 1535.7375pt x 957.5775pt>
 File: image/StudyBuddySequenceDiagram-SB.pdf Graphic file (type pdf)
 <use image/StudyBuddySequenceDiagram-SB.pdf>
 Package pdftex.def Info: image/StudyBuddySequenceDiagram-SB.pdf  used on input line 1367.
@@ -1431,34 +1438,34 @@ Package pdftex.def Info: image/StudyBuddySequenceDiagram-SB.pdf  used on input l
 
 
 pdfTeX warning: pdflatex (file ./image/StudyBuddySequenceDiagram-Message.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<image/StudyBuddySequenceDiagram-Message.pdf, id=467, 1752.5475pt x 1405.16962pt>
+<image/StudyBuddySequenceDiagram-Message.pdf, id=464, 1752.5475pt x 1405.16962pt>
 File: image/StudyBuddySequenceDiagram-Message.pdf Graphic file (type pdf)
 <use image/StudyBuddySequenceDiagram-Message.pdf>
 Package pdftex.def Info: image/StudyBuddySequenceDiagram-Message.pdf  used on input line 1374.
 (pdftex.def)             Requested size: 426.77058pt x 337.16183pt.
 
 
-[62 <./image/StudyBuddySequenceDiagram-SB.pdf>]
+[61 <./image/StudyBuddySequenceDiagram-SB.pdf>]
 
 pdfTeX warning: pdflatex (file ./image/StudyBuddySequenceDiagram-Contact.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<image/StudyBuddySequenceDiagram-Contact.pdf, id=480, 1752.5475pt x 1391.1975pt>
+<image/StudyBuddySequenceDiagram-Contact.pdf, id=477, 1752.5475pt x 1391.1975pt>
 File: image/StudyBuddySequenceDiagram-Contact.pdf Graphic file (type pdf)
 <use image/StudyBuddySequenceDiagram-Contact.pdf>
 Package pdftex.def Info: image/StudyBuddySequenceDiagram-Contact.pdf  used on input line 1381.
 (pdftex.def)             Requested size: 426.77058pt x 337.16333pt.
 
 
-[63 <./image/StudyBuddySequenceDiagram-Message.pdf>]
+[62 <./image/StudyBuddySequenceDiagram-Message.pdf>]
 
 pdfTeX warning: pdflatex (file ./image/StudyBuddySequenceDiagram-Profile.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<image/StudyBuddySequenceDiagram-Profile.pdf, id=493, 1387.10213pt x 971.54968pt>
+<image/StudyBuddySequenceDiagram-Profile.pdf, id=490, 1387.10213pt x 971.54968pt>
 File: image/StudyBuddySequenceDiagram-Profile.pdf Graphic file (type pdf)
 <use image/StudyBuddySequenceDiagram-Profile.pdf>
 Package pdftex.def Info: image/StudyBuddySequenceDiagram-Profile.pdf  used on input line 1388.
 (pdftex.def)             Requested size: 426.79135pt x 298.92395pt.
 
 
-[64 <./image/StudyBuddySequenceDiagram-Contact.pdf>]
+[63 <./image/StudyBuddySequenceDiagram-Contact.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 1395--1396
 
  []
@@ -1470,7 +1477,7 @@ Overfull \hbox (19.37192pt too wide) in paragraph at lines 1401--1409
 
 
 
-[65 <./image/StudyBuddySequenceDiagram-Profile.pdf>]
+[64 <./image/StudyBuddySequenceDiagram-Profile.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 1427--1428
 
  []
@@ -1487,7 +1494,7 @@ Overfull \hbox (19.37192pt too wide) in paragraph at lines 1433--1440
 
 
 
-[66]
+[65]
 Underfull \hbox (badness 10000) in paragraph at lines 1461--1462
 
  []
@@ -1529,7 +1536,7 @@ Overfull \hbox (19.37192pt too wide) in paragraph at lines 1528--1535
 
 
 
-[67]
+[66]
 Overfull \hbox (9.66084pt too wide) in paragraph at lines 1549--1550
 []\OT1/cmr/m/n/12 Each \OT1/cmtt/m/n/12 Study Buddy Preferred Place \OT1/cmr/m/n/12 is as-so-ci-ated with a spe-cific \OT1/cmtt/m/n/12 Study Buddy\OT1/cmr/m/n/12 . 
  []
@@ -1586,14 +1593,35 @@ Overfull \hbox (22.97346pt too wide) in paragraph at lines 1588--1599
 
 
 
-[68]
+[67]
 Overfull \hbox (47.18442pt too wide) in paragraph at lines 1614--1615
 []\OT1/cmr/m/n/12 Each \OT1/cmtt/m/n/12 Study Connection \OT1/cmr/m/n/12 is as-so-ci-ated with two \OT1/cmtt/m/n/12 Study Buddy \OT1/cmr/m/n/12 en-ti-ties (study[]buddy[]1[]id
  []
 
 
+Package natbib Warning: There were undefined citations.
 
-[69] (main.aux (titlepage.aux) (usecase_implementation.aux) (analysis_call_message.aux) (communication_handling.aux))
+
+
+[68] (main.aux (titlepage.aux) (usecase_implementation.aux) (analysis_call_message.aux) (communication_handling.aux)
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+
+main.aux:153: Package natbib Error: Bibliography not compatible with author-year citations.
+(natbib)                Press <return> to continue in numerical citation style.
+
+See the natbib package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.153 ...and\NAT@force@numbers{}\NAT@force@numbers
+                                                  
+Check the bibliography entries for non-compliant syntax,
+or select author-year BibTeX style, e.g. plainnat
+
+)
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
@@ -1604,21 +1632,24 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.72pt have occurred.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 6632 strings out of 473682
- 114492 string characters out of 5720168
- 521517 words of memory out of 5000000
- 29610 multiletter control sequences out of 15000+600000
+ 6610 strings out of 473682
+ 113678 string characters out of 5720168
+ 518385 words of memory out of 5000000
+ 29602 multiletter control sequences out of 15000+600000
  563859 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,16n,79p,1772b,346s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\abc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/abc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (70 pages, 5670442 bytes).
+Output written on main.pdf (69 pages, 5665819 bytes).
 PDF statistics:
- 587 PDF objects out of 1000 (max. 8388607)
+ 584 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  101 words of extra memory for PDF output out of 10000 (max. 10000000)
 

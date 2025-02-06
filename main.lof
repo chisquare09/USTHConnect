@@ -1,19 +1,19 @@
-\contentsline {figure}{\numberline {1}{\ignorespaces Integration of USTH Connect with External Services}}{9}{}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Use case diagram}}{14}{}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Authentication use case diagram}}{15}{}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Schedule use case diagram}}{16}{}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Campus use case diagram}}{18}{}%
-\contentsline {figure}{\numberline {6}{\ignorespaces StudyBuddy use case diagram}}{20}{}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Real Time Notification use case diagram}}{22}{}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Synchronize Calendar sequence diagram}}{24}{}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Real Time Notification sequence diagram}}{26}{}%
-\contentsline {figure}{\numberline {10}{\ignorespaces SIP signaling and key components}}{30}{}%
-\contentsline {figure}{\numberline {11}{\ignorespaces SIP registration and locating callee}}{32}{}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Simple instant messaging flow}}{33}{}%
-\contentsline {figure}{\numberline {13}{\ignorespaces USTH Connect System Architecture Diagram}}{34}{}%
-\contentsline {figure}{\numberline {14}{\ignorespaces USTH Connect Entity-Relationship Diagram}}{38}{}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Optimal clusters K}}{53}{}%
-\contentsline {figure}{\numberline {16}{\ignorespaces Study Buddy recommend list sequence diagram}}{62}{}%
-\contentsline {figure}{\numberline {17}{\ignorespaces Study Buddy chat message sequence diagram}}{63}{}%
-\contentsline {figure}{\numberline {18}{\ignorespaces Study Buddy audio call sequence diagram}}{64}{}%
-\contentsline {figure}{\numberline {19}{\ignorespaces Study Buddy profile sequence diagram}}{65}{}%
+\contentsline {figure}{\numberline {1}{\ignorespaces Integration of USTH Connect with External Services}}{8}{}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Use case diagram}}{13}{}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Authentication use case diagram}}{14}{}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Schedule use case diagram}}{15}{}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Campus use case diagram}}{17}{}%
+\contentsline {figure}{\numberline {6}{\ignorespaces StudyBuddy use case diagram}}{19}{}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Real Time Notification use case diagram}}{21}{}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Synchronize Calendar sequence diagram}}{23}{}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Real Time Notification sequence diagram}}{25}{}%
+\contentsline {figure}{\numberline {10}{\ignorespaces SIP signaling and key components}}{29}{}%
+\contentsline {figure}{\numberline {11}{\ignorespaces SIP registration and locating callee}}{31}{}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Simple instant messaging flow}}{32}{}%
+\contentsline {figure}{\numberline {13}{\ignorespaces USTH Connect System Architecture Diagram}}{33}{}%
+\contentsline {figure}{\numberline {14}{\ignorespaces USTH Connect Entity-Relationship Diagram}}{37}{}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Optimal clusters K}}{52}{}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Study Buddy recommend list sequence diagram}}{61}{}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Study Buddy chat message sequence diagram}}{62}{}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Study Buddy audio call sequence diagram}}{63}{}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Study Buddy profile sequence diagram}}{64}{}%
