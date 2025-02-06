@@ -604,9 +604,10 @@ This user-friendly interface connects students seamlessly to the system’s feat
 
 \subsubsection{Machine Learning - K-modes Clustering}
 We power the StudyBuddy feature with a Python-based machine learning model that uses the K-modes clustering algorithm to group students by personality traits, hobbies, learning styles, and academic goals. 
-When students submit their details, we send the data to the backend, where the model groups similar students and recommends study partners through the mobile app. \\
+When students submit their details, we send the data to the backend, where the model groups similar students and recommends study partners through the mobile app.
+The information of students is processed before being used as input for clustering model. The expected outcome is the different groups of students; students in each group may share similar characteristics. More details about the model and data will be provided in part IV. \\
 
-There are many advantages for why Python was chosen over Java for the implementation of the machine learning model in our system architecture. First, the libraries which are designed specifically for machine learning configuration are offered by Python, such as (Add used libraries). These libraries provide powerful and optimized tools for implementing our algorithm which is K-modes clustering, fostering faster development and experimentation. \\
+There are many advantages for why Python was chosen over Java for the implementation of the machine learning model in our system architecture. First, the libraries which are designed specifically for machine learning configuration are offered by Python, such as scikit-learn and kmodes. These libraries provide powerful and optimized tools for implementing our algorithm which is K-modes clustering, fostering faster development and experimentation. \\
 
 Regarding Java, it lacks various of tools which directly support the implementation process and require more complex and custom implementations. Additionally, Python provides direct support for the K-modes clustering algorithm through the kmodes library, which is a key reason why we choose Python over Java in the implementation of the machine learning model. \\
 
