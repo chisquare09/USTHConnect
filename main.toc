@@ -34,39 +34,38 @@
 \contentsline {subsubsection}{\numberline {2.1}System Architecture Diagram}{34}{}%
 \contentsline {subsubsection}{\numberline {2.2}Backend - Spring Boot}{35}{}%
 \contentsline {subsubsection}{\numberline {2.3}Mobile Frontend - Java (Android)}{35}{}%
-\contentsline {subsubsection}{\numberline {2.4}Machine Learning - K-modes Clustering}{36}{}%
+\contentsline {subsubsection}{\numberline {2.4}Machine Learning - K-modes Clustering}{35}{}%
 \contentsline {subsubsection}{\numberline {2.5}Communication - Linphone VoIP}{36}{}%
-\contentsline {subsubsection}{\numberline {2.6}How Does The System Work?}{37}{}%
-\contentsline {subsection}{\numberline {3.}Database Design}{38}{}%
-\contentsline {subsubsection}{\numberline {3.1}Database Requirements and Objectives}{38}{}%
-\contentsline {subsubsection}{\numberline {3.2}Entity-Relationship Diagram}{38}{}%
-\contentsline {subsubsection}{\numberline {3.3}Table and Relationships}{40}{}%
-\contentsline {section}{\numberline {IV/}Clustering Model for Recommendation}{50}{}%
-\contentsline {subsection}{\numberline {1.}K-Mode Algorithm}{50}{}%
+\contentsline {subsubsection}{\numberline {2.6}How Does The System Work?}{36}{}%
+\contentsline {subsection}{\numberline {3.}Database Design}{37}{}%
+\contentsline {subsubsection}{\numberline {3.1}Database Requirements and Objectives}{37}{}%
+\contentsline {subsubsection}{\numberline {3.2}Entity-Relationship Diagram}{37}{}%
+\contentsline {subsubsection}{\numberline {3.3}Table and Relationships}{39}{}%
+\contentsline {section}{\numberline {IV/}Clustering Model for Recommendation}{49}{}%
+\contentsline {subsection}{\numberline {1.}K-Mode Algorithm}{49}{}%
 \contentsline {subsection}{\numberline {2.}One-Hot Encoding}{50}{}%
-\contentsline {subsection}{\numberline {3.}Evaluation Metrics}{51}{}%
-\contentsline {subsubsection}{\numberline {3.1}Silhouette Coefficient}{51}{}%
-\contentsline {subsubsection}{\numberline {3.2}Davies-Bouldin Index}{52}{}%
+\contentsline {subsection}{\numberline {3.}Evaluation Metrics}{50}{}%
+\contentsline {subsubsection}{\numberline {3.1}Silhouette Coefficient}{50}{}%
+\contentsline {subsubsection}{\numberline {3.2}Davies-Bouldin Index}{51}{}%
 \contentsline {subsection}{\numberline {4.}Model Implementation}{52}{}%
-\contentsline {subsubsection}{\numberline {4.1}Data Preprocessing}{52}{}%
-\contentsline {subsubsection}{\numberline {4.2}Model Training}{53}{}%
-\contentsline {subsubsection}{\numberline {4.3}Student Recommendation}{53}{}%
-\contentsline {section}{\numberline {V/}System Design and Implementation}{54}{}%
-\contentsline {subsection}{\numberline {1.}Hardware and Software Setup}{54}{}%
-\contentsline {subsection}{\numberline {2.}Application Software}{54}{}%
-\contentsline {subsection}{\numberline {3.}Initial Testing}{54}{}%
-\contentsline {subsection}{\numberline {4.}Application Software}{56}{}%
-\contentsline {subsection}{\numberline {5.}Initial Testing}{57}{}%
-\contentsline {section}{\numberline {VI/}Results and Discussion}{58}{}%
-\contentsline {subsection}{\numberline {1.}Results}{58}{}%
-\contentsline {subsubsection}{\numberline {1.1}Mobile App Results}{58}{}%
-\contentsline {subsubsection}{\numberline {1.2}Machine Learning Results}{59}{}%
-\contentsline {subsection}{\numberline {2.}Discussion}{59}{}%
-\contentsline {subsubsection}{\numberline {2.1}Intepretation of Results}{59}{}%
-\contentsline {subsubsection}{\numberline {2.2}Comparison to Similar System}{61}{}%
-\contentsline {subsubsection}{\numberline {2.3}Challenges and Limitations}{61}{}%
-\contentsline {section}{\numberline {VII/}Conclusion {\&} Future Work}{62}{}%
-\contentsline {subsection}{\numberline {1.}Conclusion}{62}{}%
-\contentsline {subsection}{\numberline {2.}Future Work}{62}{}%
-\contentsline {section}{References}{64}{}%
-\contentsline {section}{Appendices}{65}{}%
+\contentsline {subsubsection}{\numberline {4.1}Features Selection}{52}{}%
+\contentsline {subsubsection}{\numberline {4.2}Data Preprocessing}{52}{}%
+\contentsline {subsubsection}{\numberline {4.3}Model Training}{53}{}%
+\contentsline {subsubsection}{\numberline {4.4}Student Recommendation}{54}{}%
+\contentsline {section}{\numberline {V/}System Design and Implementation}{55}{}%
+\contentsline {subsection}{\numberline {1.}Hardware and Software Setup}{55}{}%
+\contentsline {subsection}{\numberline {2.}Application Software}{55}{}%
+\contentsline {subsection}{\numberline {3.}Initial Testing}{55}{}%
+\contentsline {section}{\numberline {VI/}Results and Discussion}{56}{}%
+\contentsline {subsection}{\numberline {1.}Results}{56}{}%
+\contentsline {subsubsection}{\numberline {1.1}Mobile App Results}{56}{}%
+\contentsline {subsubsection}{\numberline {1.2}Machine Learning Results}{57}{}%
+\contentsline {subsection}{\numberline {2.}Discussion}{57}{}%
+\contentsline {subsubsection}{\numberline {2.1}Intepretation of Results}{57}{}%
+\contentsline {subsubsection}{\numberline {2.2}Comparison to Similar System}{58}{}%
+\contentsline {subsubsection}{\numberline {2.3}Challenges and Limitations}{58}{}%
+\contentsline {section}{\numberline {VII/}Conclusion {\&} Future Work}{59}{}%
+\contentsline {subsection}{\numberline {1.}Conclusion}{59}{}%
+\contentsline {subsection}{\numberline {2.}Future Work}{59}{}%
+\contentsline {section}{References}{61}{}%
+\contentsline {section}{Appendices}{62}{}%

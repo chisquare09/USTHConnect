@@ -172,7 +172,7 @@ The report will be structured as follows:
     \item \textbf{Part III: Methodologies }
     \newline
     System architecture, database design, and implementation details of various features, illustrated with sequence diagrams.
-    \item \textbf{Part IV: Clustering Model for Recommendation }
+    \item \textbf{Part IV: K-Mode Clustering for Recommendation }
     \newline
     Explains technical methods to process data and evaluate the performance of K-modes clustering algorithm, which is used for StudyBuddy matching.
     \item \textbf{Part V: System Design and Implementation }
@@ -267,7 +267,7 @@ features.
     % Figure
     \begin{figure}[H]
         \centering
-       \includegraphics[width=0.8\textwidth]{image/USTHConnect_usecase_diagram.pdf} 
+       \includegraphics[width=0.95\textwidth]{image/USTHConnect_usecase_diagram.pdf} 
         \caption{Use case diagram}
         \label{fig:usthconnect_use_case}
     \end{figure}
@@ -350,7 +350,7 @@ features.
         \item \textbf{Success:} 
         \begin{itemize}
             \item Students can see their daily events.
-            \item System sends notification if there is a new class or a cancelled class.
+            \item System sends notification if there are any new changes to the event.
         \end{itemize}
         \item \textbf{Failure:} Not display the event daily and show error messages.
     \end{itemize}
@@ -361,15 +361,15 @@ features.
         \begin{tabular}{|m{3.5cm}|p{10cm}|} 
             \hline
             \multicolumn{1}{|c|}{\textbf{Actor Action}} & \multicolumn{1}{c|}{\textbf{System Action}} \\ \hline
-            \multirow{3}{=}{\centering \shortstack[c]{User click button \\ "Timetable"}} 
+            \multirow{3.5}{=}{\centering \shortstack[c]{User click button \\ "Timetable"}} 
             & 1. The system shows a calendar \\ \cline{2-2} 
             & 2. Students can change the day, week, month format in the calendar \\ \cline{2-2}
             & 3. After choosing a day, students can see daily events \\ \hline
-            \multirow{3}{=}{\centering \shortstack[c]{User click button \\ "Favorite Course"}} 
+            \multirow{4.9}{=}{\centering \shortstack[c]{User click button \\ "Favorite Course"}} 
             & 1. The system shows a list of favorite courses which are added by Students \\ \cline{2-2}
             & 2. Students can see the timetable of their favorite course after clicking it \\ \cline{2-2}
             & 3. Un-click the favorite icon, the system will delete that course out of the list of favorite courses \\ \hline
-            \multirow{3}{=}{\centering \shortstack[c]{User click button \\ "Course"}} 
+            \multirow{5.4}{=}{\centering \shortstack[c]{User click button \\ "Course"}} 
             & 1. The system shows all the courses which match with the student’s major and year \\ \cline{2-2}
             & 2. Students can see the course class timetable after clicking the course \\ \cline{2-2}
             & 3. Click the favorite icon, the system will add that course to the list of favorite courses and show them in Favorite Course \\ \hline
@@ -412,10 +412,10 @@ features.
         \begin{tabular}{|m{3.5cm}|p{10cm}|} 
             \hline
             \multicolumn{1}{|c|}{\textbf{Actor Action}} & \multicolumn{1}{c|}{\textbf{System Action}} \\ \hline
-            \multirow{2}{=}{\centering \shortstack[c]{User click button \\ "Building"}} 
+            \multirow{2.8}{=}{\centering \shortstack[c]{User click button \\ "Building"}} 
             & 1. The system shows a list of buildings which students study in \\ \cline{2-2} 
             & 2. After clicking a building, the system returns its details \\ \hline
-            \multirow{1}{=}{\centering \shortstack[c]{User click button \\ "Map"}} 
+            \multirow{1.5}{=}{\centering \shortstack[c]{User click button \\ "Map"}} 
             & 1. System loads a map to locate your location and each building \\ \hline
         \end{tabular}
         \caption{Actor Actions and System Actions for Campus}
@@ -429,7 +429,7 @@ features.
     \noindent \textbf{Pre-conditions:} 
         \begin{itemize}
             \item Before this use case begins, students must be logged into the system.
-            \item Lectures, slides, exes and homeworks must be fetched successfully.
+            \item Lectures, slides, exercises and homeworks must be fetched successfully.
         \end{itemize}
     \noindent \textbf{Post-conditions:}
     \begin{itemize}
@@ -443,7 +443,7 @@ features.
         \begin{tabular}{|m{3.5cm}|p{10cm}|} 
             \hline
             \multicolumn{1}{|c|}{\textbf{Actor Action}} & \multicolumn{1}{c|}{\textbf{System Action}} \\ \hline
-            \multirow{2}{=}{\centering \shortstack[c]{User click button \\ "Show Resource"}} 
+            \multirow{2.8}{=}{\centering \shortstack[c]{User click button \\ "Show Resource"}} 
             & 1. The system displays a list of bachelor’s programs \\ \cline{2-2} 
             & 2. After choosing bachelor’s programs, the screen shows majors, then, the system shows the subject of the major and lectures, slides, … of a subject of major \\ \hline
         \end{tabular}
@@ -489,18 +489,18 @@ features.
         \begin{tabular}{|m{3.5cm}|p{10cm}|} 
             \hline
             \multicolumn{1}{|c|}{\textbf{Actor Action}} & \multicolumn{1}{c|}{\textbf{System Action}} \\ \hline
-            \multirow{4}{=}{\centering \shortstack[c]{User click button \\ "StudyBuddy"}} 
+            \multirow{6.3}{=}{\centering \shortstack[c]{User click button \\ "StudyBuddy"}} 
             & 1. The system displays a list of Students who are in the list of recommendations \\ \cline{2-2} 
             & 2. After clicking the “Yes” button, add that Student to Chat and Contact \\ \cline{2-2}
             & 3. After clicking the “No” button, remove that Student from the list \\ \cline{2-2}
             & 4. After clicking the “Refresh” button, the system will refresh the list of recommended students \\ \hline
-            \multirow{2}{=}{\centering \shortstack[c]{User click button \\ "Message"}} 
+            \multirow{3.4}{=}{\centering \shortstack[c]{User click button \\ "Message"}} 
             & 1. The system displays students who Students have matched with \\ \cline{2-2}
             & 2. After clicking the box chat, start a chat with another student \\ \hline
-            \multirow{2}{=}{\centering \shortstack[c]{User click button \\ "Contact"}} 
+            \multirow{3.4}{=}{\centering \shortstack[c]{User click button \\ "Contact"}} 
             & 1. The system displays students who Students have matched with \\ \cline{2-2}
             & 2. After clicking the contact, start an audio call with another student \\ \hline
-            \multirow{2}{=}{\centering \shortstack[c]{User click button \\ "Profile"}} 
+            \multirow{3.9}{=}{\centering \shortstack[c]{User click button \\ "Profile"}} 
             & 1. The system fetches the StudyBuddy profile of Student from the database \\ \cline{2-2}
             & 2. After clicking “Edit Profile”, Students can change information about their StudyBuddy profile after the system is verified \\ \hline
         \end{tabular}
@@ -542,12 +542,12 @@ features.
         \begin{tabular}{|m{3.5cm}|p{10cm}|} 
             \hline
             \multicolumn{1}{|c|}{\textbf{Actor Action}} & \multicolumn{1}{c|}{\textbf{System Action}} \\ \hline
-            \multirow{2}{=}{\centering \shortstack[c]{Admin update or \\ add event to \\ the user’s calendar}} 
+            \multirow{2.7}{=}{\centering \shortstack[c]{Admin update or \\ add event to \\ the user’s calendar}} 
             & 1. The system detects the calendar changes and triggers the notification \\
             & \\ \hline 
-            \multirow{2}{=}{\centering \shortstack[c]{User receives \\ an incoming call}} 
+            \multirow{1.8}{=}{\centering \shortstack[c]{User receives \\ an incoming call}} 
             & 1. The system identifies incoming calls and sends a push notification to inform users in real time \\ \hline
-            \multirow{2}{=}{\centering \shortstack[c]{User click on \\ the notification}} 
+            \multirow{4.8}{=}{\centering \shortstack[c]{User click on \\ the notification}} 
             & 1. \textbf{Calendar notification:} The system will open the application and display the updated event on the calendar \\ \cline{2-2}
             & 2. \textbf{Incoming call notification:} The system will open the application and allow the student to handle the incoming call (accept or decline) \\ \hline
         \end{tabular}
@@ -605,11 +605,14 @@ This user-friendly interface connects students seamlessly to the system’s feat
 
 \subsubsection{Machine Learning - K-modes Clustering}
 We power the StudyBuddy feature with a Python-based machine learning model that uses the K-modes clustering algorithm to group students by personality traits, hobbies, learning styles, and academic goals. 
-When students submit their details, we send the data to the backend, where the model groups similar students and recommends study partners through the mobile app.
+When students submit their details, we send the data to the backend, where the model groups similar students and recommends study partners through the mobile app. \\
 
-There are many advantages for why Python was chosen over Java for the implementation of the machine learning model in our system architecture. First, the libraries which are designed specifically for machine learning configuration are offered by Python, such as (Add used libraries). These libraries provide powerful and optimized tools for implementing our algorithm which is K-modes clustering, fostering faster development and experimentation.
-Regarding Java, it lacks various of tools which directly support the implementation process and require more complex and custom implementations. Additionally, Python provides direct support for the K-modes clustering algorithm through the kmodes library, which is a key reason why we choose Python over Java in the implementation of the machine learning model.
-As regards to the process of prototyping and experimentation, which is significant for fine-tuning machine learning models, Python allows a faster and short duration for this process. Finally, Python integrates seamlessly with the backend services, ensuring easy communication with other system components through APIs.
+There are many advantages for why Python was chosen over Java for the implementation of the machine learning model in our system architecture. First, the libraries which are designed specifically for machine learning configuration are offered by Python, such as (Add used libraries). These libraries provide powerful and optimized tools for implementing our algorithm which is K-modes clustering, fostering faster development and experimentation. \\
+
+Regarding Java, it lacks various of tools which directly support the implementation process and require more complex and custom implementations. Additionally, Python provides direct support for the K-modes clustering algorithm through the kmodes library, which is a key reason why we choose Python over Java in the implementation of the machine learning model. \\
+
+As regards to the process of prototyping and experimentation, which is significant for fine-tuning machine learning models, Python allows a faster and short duration for this process. Finally, Python integrates seamlessly with the backend services, ensuring easy communication with other system components through APIs. \\
+
 In conclusion, Python is considered as the most suitable choice for implementing the required machine Learning model which plays a crucial role in the StudyBuddy feature.
 
 \subsubsection{Communication - Linphone VoIP}
@@ -654,6 +657,8 @@ We design the USTH Connect database to store student profiles, schedules, study 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{image/USTH-Connect-Database-Schema-v1-cropped.pdf}
+    \caption{USTH Connect Entity-Relationship Diagram}
+        \label{fig:entity_relationship_diagram}
 \end{figure}
 \restoregeometry
 
@@ -832,9 +837,9 @@ This section provides a detailed description of the tables within the USTH Conne
     \item \textbf{Primary Key}: \texttt{id}.
     \item \textbf{Foreign Key}: 
     \begin{itemize}
-        \item \texttt{connection\_id} references \texttt{id} in the \texttt{Study Connection} table, with \texttt{ON DELETE NO ACTION}.
-        \item \texttt{receiver\_id} references \texttt{student\_id} in the \texttt{Study Buddy} table, with \texttt{ON DELETE NO ACTION}.
-        \item \texttt{sender\_id} references \texttt{student\_id} in the \texttt{Study Buddy} table, with \texttt{ON DELETE NO ACTION}.
+        \item \texttt{connection\_id} references \texttt{id} in the \texttt{Study Connection} table.
+        \item \texttt{receiver\_id} references \texttt{student\_id} in the \texttt{Study Buddy} table.
+        \item \texttt{sender\_id} references \texttt{student\_id} in the \texttt{Study Buddy} table.
     \end{itemize}
 \end{itemize}
 
@@ -886,9 +891,9 @@ This section provides a detailed description of the tables within the USTH Conne
 
     \item \textbf{Foreign Key}: 
     \begin{itemize}
-        \item \texttt{student\_id} references \texttt{id} in the \texttt{Student} table, with \texttt{ON DELETE NO ACTION}.
-        \item \texttt{event\_id} references \texttt{event\_id} in the \texttt{Events} table, with \texttt{ON DELETE NO ACTION}.
-        \item \texttt{organizer\_id} references \texttt{id} in the \texttt{Organizers} table, with \texttt{ON DELETE NO ACTION}.
+        \item \texttt{student\_id} references \texttt{id} in the \texttt{Student} table.
+        \item \texttt{event\_id} references \texttt{event\_id} in the \texttt{Events} table.
+        \item \texttt{organizer\_id} references \texttt{id} in the \texttt{Organizers} table.
     \end{itemize}
 \end{itemize}
 
@@ -929,8 +934,8 @@ This section provides a detailed description of the tables within the USTH Conne
     \item \textbf{Primary Key}: \texttt{id}.
     \item \textbf{Foreign Key}: 
     \begin{itemize}
-        \item \texttt{activity\_id} references \texttt{activity\_id} in the \texttt{Activity} table, with \texttt{ON DELETE NO ACTION}.
-        \item \texttt{course\_id} references \texttt{course\_id} in the \texttt{Course} table, with \texttt{ON DELETE NO ACTION}.
+        \item \texttt{activity\_id} references \texttt{activity\_id} in the \texttt{Activity} table.
+        \item \texttt{course\_id} references \texttt{course\_id} in the \texttt{Course} table.
     \end{itemize}
 \end{itemize}
 
@@ -1009,7 +1014,7 @@ This section provides a detailed description of the tables within the USTH Conne
     \item \textbf{Primary Key}: \texttt{student\_id}. 
     \item \textbf{Unique}: \texttt{student\_id} must be unique. 
     \item \textbf{Foreign Key}: \begin{itemize} 
-        \item \texttt{student\_id} references \texttt{id} in the \texttt{student} table, with \texttt{ON DELETE NO ACTION}. 
+        \item \texttt{student\_id} references \texttt{id} in the \texttt{student} table. 
     \end{itemize} 
 \end{itemize}
 
@@ -1213,81 +1218,6 @@ During integration tests, we simulated dummy events to check Google Calendar syn
 We also tested the StudyBuddy matching with sample profiles, and we checked text chat and SIP-based VoIP audio calls using Linphone. 
 Finally, we simulated calendar updates and incoming calls to ensure notifications appear correctly. 
 Together, these tests confirm that the system works reliably and is ready for deployment.
-
-\pagebreak
-
-\subsection{Application Software}  
-The application software comprises several core modules, each designed to handle specific functionalities:  
-
-\begin{itemize}  
-    \item \textbf{Authentication and Authorization Module:}  
-    \begin{itemize}  
-        \item Implements JWT-based authentication.  
-        \item Manages RBAC for ADMIN and USER roles.  
-    \end{itemize}  
-
-    \item \textbf{Google Calendar Integration Module:}  
-    \begin{itemize}  
-        \item Fetches event data from Google Calendar.  
-        \item Detects event updates and sends notifications to the student via the mobile application.  
-    \end{itemize}  
-
-    \item \textbf{MapBox Integration Module:}  
-    \begin{itemize}  
-        \item Stores campus location coordinates (latitude and longitude).  
-        \item Dynamically renders campus maps within the app.  
-    \end{itemize}  
-
-    \item \textbf{Moodle Resource Module:}  
-    \begin{itemize}  
-        \item Communicates with Moodle APIs to retrieve course resources, such as slides, source code, and PDFs.  
-    \end{itemize}  
-
-    \item \textbf{StudyBuddy Matching Module:}  
-    \begin{itemize}  
-        \item Collects student profile data (e.g., interests, personality).  
-        \item Uses a machine learning recommendation system to suggest matches based on shared interests.  
-        \item Features include:  
-        \begin{itemize}  
-            \item Chat functionality for text-based communication.  
-            \item Audio calling capabilities powered by the Linphone library, which provides SIP-based VoIP functionality.  
-        \end{itemize}  
-    \end{itemize}  
-
-    \item \textbf{Notification System:}  
-    \begin{itemize}  
-        \item Delivers real-time notifications for calendar updates and incoming calls.  
-    \end{itemize}  
-\end{itemize}
-
-\pagebreak
-
-\subsection{Initial Testing}  
-Extensive testing ensured all components functioned correctly and integrated seamlessly:  
-
-\begin{itemize}  
-    \item \textbf{Hardware Testing:}  
-    \begin{itemize}  
-        \item Verified the setup and operation of development machines, servers, and networking equipment using Tailscale VPN for secure communication.  
-    \end{itemize}  
-
-    \item \textbf{Software Testing:}  
-    \begin{itemize}  
-        \item Tested the configuration and performance of the operating system, PostgreSQL database, and Spring Boot services.  
-    \end{itemize}  
-
-    \item \textbf{Integration Testing:}  
-    \begin{itemize}  
-        \item Validated the interaction between backend APIs and mobile app features, ensuring functionality for:  
-        \begin{itemize}  
-            \item Google Calendar synchronization.  
-            \item MapBox map rendering.  
-            \item Moodle resource retrieval.  
-            \item StudyBuddy matching and chat capabilities.  
-            \item Linphone-based audio calling.  
-        \end{itemize}  
-    \end{itemize}  
-\end{itemize}
 
 \pagebreak
 
@@ -1515,8 +1445,8 @@ Through future improvements, USTH Connect has the potential to become a necessar
     \begin{itemize} 
         \item \textbf{Primary Key}: \texttt{study\_buddy\_id}, \texttt{opponent\_id}. 
         \item \textbf{Foreign Key}: \begin{itemize} 
-            \item \texttt{study\_buddy\_id} references \texttt{student\_id} in the \texttt{study\_buddy} table, with \texttt{ON DELETE NO ACTION}. 
-            \item \texttt{opponent\_id} references \texttt{student\_id} in the \texttt{study\_buddy} table, with \texttt{ON DELETE NO ACTION}. 
+            \item \texttt{study\_buddy\_id} references \texttt{student\_id} in the \texttt{study\_buddy} table. 
+            \item \texttt{opponent\_id} references \texttt{student\_id} in the \texttt{study\_buddy} table. 
         \end{itemize} 
     \end{itemize}
 
@@ -1548,7 +1478,7 @@ Through future improvements, USTH Connect has the potential to become a necessar
     \textbf{Constraints} 
     \begin{itemize} 
         \item \textbf{Primary Key}: \texttt{study\_buddy\_id}, \texttt{subject}. 
-        \item \textbf{Foreign Key}: \begin{itemize} \item \texttt{study\_buddy\_id} references \texttt{student\_id} in the \texttt{study\_buddy} table, with \texttt{ON DELETE NO ACTION}. 
+        \item \textbf{Foreign Key}: \begin{itemize} \item \texttt{study\_buddy\_id} references \texttt{student\_id} in the \texttt{study\_buddy} table. 
         \end{itemize} 
     \end{itemize}
 
@@ -1579,7 +1509,7 @@ Through future improvements, USTH Connect has the potential to become a necessar
     \textbf{Constraints} 
     \begin{itemize} 
         \item \textbf{Primary Key}: \texttt{study\_buddy\_id}, \texttt{interest}. 
-        \item \textbf{Foreign Key}: \begin{itemize} \item \texttt{study\_buddy\_id} references \texttt{student\_id} in the \texttt{study\_buddy} table, with \texttt{ON DELETE NO ACTION}. 
+        \item \textbf{Foreign Key}: \begin{itemize} \item \texttt{study\_buddy\_id} references \texttt{student\_id} in the \texttt{study\_buddy} table. 
         \end{itemize} 
     \end{itemize}
 
@@ -1609,7 +1539,7 @@ Through future improvements, USTH Connect has the potential to become a necessar
     \textbf{Constraints} 
     \begin{itemize} 
         \item \textbf{Primary Key}: \texttt{study\_buddy\_id}, \texttt{place}. 
-        \item \textbf{Foreign Key}: \begin{itemize} \item \texttt{study\_buddy\_id} references \texttt{student\_id} in the \texttt{study\_buddy} table, with \texttt{ON DELETE NO ACTION}. 
+        \item \textbf{Foreign Key}: \begin{itemize} \item \texttt{study\_buddy\_id} references \texttt{student\_id} in the \texttt{study\_buddy} table. 
         \end{itemize} 
     \end{itemize}
 
@@ -1639,7 +1569,7 @@ Through future improvements, USTH Connect has the potential to become a necessar
     \textbf{Constraints} 
     \begin{itemize} 
         \item \textbf{Primary Key}: \texttt{study\_buddy\_id}, \texttt{time}. 
-        \item \textbf{Foreign Key}: \begin{itemize} \item \texttt{study\_buddy\_id} references \texttt{student\_id} in the \texttt{study\_buddy} table, with \texttt{ON DELETE NO ACTION}. 
+        \item \textbf{Foreign Key}: \begin{itemize} \item \texttt{study\_buddy\_id} references \texttt{student\_id} in the \texttt{study\_buddy} table. 
         \end{itemize} 
     \end{itemize}
 
@@ -1673,8 +1603,8 @@ Through future improvements, USTH Connect has the potential to become a necessar
     \textbf{Constraints}
     \begin{itemize} 
         \item \textbf{Primary Key}: \texttt{id}. 
-        \item \textbf{Foreign Key}: \begin{itemize} \item \texttt{study\_buddy\_1\_id} references \texttt{student\_id} in the \texttt{study\_buddy} table, with \texttt{ON DELETE NO ACTION}. 
-        \item \texttt{study\_buddy\_2\_id} references \texttt{student\_id} in the \texttt{study\_buddy} table, with \texttt{ON DELETE NO ACTION}. 
+        \item \textbf{Foreign Key}: \begin{itemize} \item \texttt{study\_buddy\_1\_id} references \texttt{student\_id} in the \texttt{study\_buddy} table. 
+        \item \texttt{study\_buddy\_2\_id} references \texttt{student\_id} in the \texttt{study\_buddy} table. 
         \end{itemize} 
     \end{itemize}
 
