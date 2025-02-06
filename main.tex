@@ -173,7 +173,7 @@ The report will be structured as follows:
     \item \textbf{Part III: Methodologies }
     \newline
     System architecture, database design, and implementation details of various features, illustrated with sequence diagrams.
-    \item \textbf{Part IV: Machine Learning Model Analysis and Training }
+    \item \textbf{Part IV: Clustering Model for Recommendation }
     \newline
     Analysis and training of AI models for recommend system for study buddy matchmaking, including datasets and model development, with (Model Name) integration.
     \item \textbf{Part V: System Design and Implementation }
@@ -616,11 +616,11 @@ The frontend ensures that the students have a smooth and comfortable experience 
 \pagebreak
 
 \subsubsection{Machine Learning - K-modes Clustering}
-The StudyBuddy feature of the system using a Python-based machine learning model that uses the K-modes clusteting algorithm to match students based on their personal interests and study preferences.
+The StudyBuddy feature of the system using a Python-based machine learning model that uses the K-modes clustering algorithm to group students according to their personal characteristics.
 When students enter details about their personality traits, hobbies, learning style and academic goals, this data is sent to the backend, which processes it using the K-modes algorithm.
 After receiving data, the algorithm groups students with similar characteristics, enabling the system to send back the proper recommendation to the students.
-Then, the potential study partners will be displayed in the mobile app, allowing students to connect to each others who have compatible interests.
-This feature is implemented using Python's machine learning libraries, which provide the necessary methods for clustering and pattern recognition in student matching. \\
+Then, potential study partners will be displayed in the mobile app, allowing students to connect to each other with compatible interests.
+This feature is implemented using Python's machine learning libraries, which provide the necessary methods for clustering and pattern recognition in student matching. More details about the model and data will be provided in part IV.\\
 
 There are many advantages for why Python was chosen over Java for the implementation of the machine learning model in our system architecture. First, the libraries which are designed specifically for machine learning configuration are offered by Python, such as (Add used libraries). These libraries provide powerful and optimized tools for implementing our algorithm which is K-modes clustering, fostering faster development and experimentation.
 Regarding Java, it lacks various of tools which directly support the implementation process and require more complex and custom implementations. Additionally, Python provides direct support for the K-modes clustering algorithm through the kmodes library, which is a key reason why we choose Python over Java in the implementation of the machine learning model.
@@ -1039,6 +1039,8 @@ This section provides a detailed description of the tables within the USTH Conne
 \pagebreak
 
 \section{Clustering Model for Recommendation}
+K-Mode clustering algorithm is an unsupervised model that applies the same method as K-Means clustering but with a different approach to distance measurement. Instead of using mean to group data points, K-Mode uses mode (the highest frequent value) to separate categorical data effectively.
+
 \subsection{K-Mode Algorithm}
 The dissimilarity measure between two categorical objects X and Y (with m attributes) can be defined by the total mismatches of their corresponding categorical attributes. The two objects X and Y are considered to be more similar when the value of a mismatched number gets smaller.\citep{huang1998extensions}
         $$d(X,Y) = \sum_{i=1}^{m}\delta{(x_i,y_i)}$$ where $$\delta{(x_i,y_i)} = \left\{\begin{array}{ll} 0 & (x_i = y_i) \\
@@ -1065,7 +1067,7 @@ where $y_{i,l}$ is a binary indicator variable (1 if $X_i$ refers to cluster l, 
 One-hot Encoding is a data preprocess method to change text format to numerical data type so that the machine can understand and process the data. It transforms a variable with $n$ distinct categories into $n$ separate columns as new features. Each column is represented by two numbers: 0 and 1. The value 1 indicates the presence of a category, while the value 0 shows its absence.\citep{thuy2020optimize}
 
 \subsection{Evaluation Metrics} \label{evaluation metrics}
-This part covers the intrinsic evaluation metrics that be used to evaluate model performance.
+This part covers the intrinsic evaluation metrics that be used to evaluate model performance. Moreover, these metrics are also used to determine the appropriate number of clusters.
 
 \subsubsection{Silhouette Coefficient}
 
@@ -1126,6 +1128,30 @@ $d(c_i,c_j)$ indicated the distance between the centroids of cluster $i$ and
 $j$.
 
 \subsection{Model Implementation}
+\subsubsection{Features Selection}
+\begin{table}[H] 
+    \centering 
+    \renewcommand{\arraystretch}{1.2} 
+    \begin{tabular}{|>{\centering\arraybackslash}m{4cm}|>{\raggedright\arraybackslash}m{4.5cm}|>{\raggedright\arraybackslash}m{5.5cm}|} 
+    \hline 
+    \multicolumn{1}{|>{\centering\arraybackslash}m{4cm}|}{\textbf{Feature}} & 
+    \multicolumn{1}{>{\centering\arraybackslash}m{4.5cm}|}{\textbf{Description}} & 
+    \multicolumn{1}{>{\centering\arraybackslash}m{5.5cm}|}{\textbf{Example}} \\ \hline 
+    Major & Major field of study of the student (exactly 1 for each student)& DS, ICT, CS, CH, Pharmacy, MST, BIT, MAT, FST, AMS, EER, SIC, MET, AE, AES, ATE, SST \\ \hline 
+    Interest & The activities that students want to do & Volleyball, Football, Movie, Travel, Bowling, Hiphop, Yoga, Coffee, Esport, Skateboarding,...\\ \hline
+    Personality & Personality description of the student & ENFJ, ENTP, ESFP, INTJ, INTP,... \\ \hline 
+    Communication Style & Preferred communication style& Text message, In-person (face-to-face), Video call, Phone call \\ \hline 
+    Looking For & What the student is looking for in a study buddy & Study supporter, Chit Chatting, Share knowledge \\ \hline 
+    Subject & Courses student want to study & Calculus, Linear Algebra, Chemistry,... \\ \hline
+    Study Place & Locations where student want to study & Café, Home, Library, Bookstore, Online\\ \hline
+    Study Time & Time student want to study & Early Morning, Midday, Evening, Night, Midnight, Overnight \\ \hline
+    
+    \end{tabular} 
+    \caption{Selected features for K-Mode clustering model} 
+\end{table}
+
+The features that be used as input data for the model are chosen manually. Since all selected features are categorical, they need to be pre-processed before fed into the model (which will be described in the next part).
+
 \subsubsection{Data Preprocessing}
 The input data is processed by applying one-hot encoding method. In the beginning, the student's data has been converted into a dense binary array before being used as input for the machine learning model. Moreover, since each student has to provide their information before having permission to use this application (choose at least one category for each attribute \emph{(Interests, Favorite Subject,...)}), there are no missing data in our dataset. These tables below show the example for the data preprocessing part:
 
@@ -1166,9 +1192,11 @@ ICT & Football, Cooking, Food tour, Travel, Rap & ... & Programming \\ \hline
     \label{fig:choosing_K}
 \end{figure}
 
-To determine the optimal number of clusters $K$, the K-Modes clustering model is trained with different K values varying from 2 to 9 and select the best model according to the cost function. For each training iteration, the K-Modes algorithm is executed multiple times (15 in our problem) with different initial centroids seeds. The final result is the best initialized centroids in terms of cost function.\citep{devos2015}
+To determine the optimal number of clusters $K$, the K-Modes clustering model is trained with different K values varying from 2 to 9 and select the best model according to the cost function. For each training iteration, the K-Modes algorithm is executed multiple times (15 in our problem) with different initial centroids seeds. The final result is the best initialized centroids in terms of cost function.\citep{devos2015}\\
 
-After the training is completed, each student is assigned to their predicted cluster, which will be used for the recommendation part.
+After the training is completed, each student is assigned to their predicted cluster, which will be used for the recommendation part.\\
+
+Performance of the model will be discussed in the Results section. We will show both strengths and limitations of our approach and compare the performance with the same method on different dataset.
 
 \subsubsection{Student Recommendation}
 Firstly, the information of new student is encoded by one-hot encoding and fed into the model. The output returned is the predicted cluster to which the new student belongs. Depending on this prediction, students within the same cluster are chosen to recommend.
